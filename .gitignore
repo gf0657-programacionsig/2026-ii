@@ -1,0 +1,20 @@
+# Documentos privados: calificaciones, documentos administrativos recibidos,
+# correspondencia y cualquier material que no debe publicarse.
+privado/
+
+# Jupyter Book / Quarto
+_build/
+.quarto/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Archivos temporales de LibreOffice / Word
+.~lock.*
+~$*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
