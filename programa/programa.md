@@ -38,7 +38,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
-| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br>Google (s. f.)<br>Wes McKinney (2022, capítulo 2) |
+| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
 | 2 (17 al 21 de agosto) |  |  |
 | 3 (24 al 28 de agosto) |  |  |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
