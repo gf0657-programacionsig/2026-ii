@@ -40,7 +40,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 |---|---|---|
 | **I. INTRODUCCIÓN A LA CIENCIA DE DATOS Y A LA PROGRAMACIÓN DE COMPUTADORAS** |  |  |
 | 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
-| 2 (17 al 21 de agosto) | El lenguaje de marcado Markdown.<br><br>Introducción a la programación de computadoras. | *Markdown Tutorial* (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
+| 2 (17 al 21 de agosto) | El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | *Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
 | 3 (24 al 28 de agosto) |  |  |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
 | 5 (7 al 11 de setiembre) |  |  |
@@ -120,9 +120,13 @@ De acuerdo con la normativa universitaria, únicamente el correo oficial de la U
 
 #### Bibliografía obligatoria
 
+Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*. freeCodeCamp. https://www.freecodecamp.org/news/git-and-github-for-beginners/
+
 Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/
 
 Downey, A. B. (2024). *Think Python: How to think like a computer scientist* (3.ª ed.). O'Reilly Media. https://greenteapress.com/wp/think-python-3rd-edition/
+
+GitHub. (s. f.). *Quickstart for GitHub Pages*. GitHub Docs. Recuperado el 3 de agosto de 2026, de https://docs.github.com/en/pages/quickstart
 
 Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Colab. Recuperado el 3 de agosto de 2026, de https://colab.research.google.com/
 
