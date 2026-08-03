@@ -81,6 +81,9 @@ def fusionar_filas_seccion(doc):
             "<w:tcPr />", '<w:tcPr><w:gridSpan w:val="3" /></w:tcPr>', 1
         )
         celda = centrar_parrafo(celda)
+        # Línea en blanco antes y después del título de sección.
+        celda = celda.replace("</w:tcPr>", "</w:tcPr><w:p />", 1)
+        celda = celda.replace("</w:tc>", "<w:p /></w:tc>")
         return "<w:tr>" + celda + "</w:tr>"
 
     tabla = re.sub(r"<w:tr>.*?</w:tr>", fusionar, tabla, flags=re.S)
