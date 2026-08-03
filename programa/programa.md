@@ -40,8 +40,9 @@ Al finalizar el curso, el estudiantado será capaz de:
 |---|---|---|
 | **I. INTRODUCCIÓN A LA CIENCIA DE DATOS Y A LA PROGRAMACIÓN DE COMPUTADORAS** |  |  |
 | 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
-| 2 (17 al 21 de agosto) | El editor de código Visual Studio Code.<br><br>El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | Microsoft (s. f.)<br><br>*Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
-| 3 (24 al 28 de agosto) |  |  |
+| 2 (17 al 21 de agosto) | El editor de código Visual Studio Code.<br><br>El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | Microsoft (s. f.-b)<br><br>*Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
+| **II. EL LENGUAJE DE PROGRAMACIÓN PYTHON** |  |  |
+| 3 (24 al 28 de agosto) | Instalación de Python mediante la plataforma Miniconda. Ambientes virtuales.<br><br>Introducción a Python.<br><br>Tipos de datos básicos. Variables, expresiones y sentencias.<br><br>**EXAMEN CORTO 1** | Anaconda (s. f.)<br><br>Microsoft (s. f.-a)<br><br>Charles Severance (2016, capítulos 1 y 2) |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
 | 5 (7 al 11 de setiembre) |  |  |
 | 6 (14 al 18 de setiembre) |  |  |
@@ -77,6 +78,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 
 | Semana de realización | Secciones a evaluar | Porcentaje de la calificación final del curso |
 |---|---|---|
+| 3 | I | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
@@ -122,6 +124,8 @@ De acuerdo con la normativa universitaria, únicamente el correo oficial de la U
 
 Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*. freeCodeCamp. https://www.freecodecamp.org/news/git-and-github-for-beginners/
 
+Anaconda. (s. f.). *Getting started with conda*. Conda Documentation. Recuperado el 3 de agosto de 2026, de https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
+
 Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/
 
 Downey, A. B. (2024). *Think Python: How to think like a computer scientist* (3.ª ed.). O'Reilly Media. https://greenteapress.com/wp/think-python-3rd-edition/
@@ -134,7 +138,9 @@ Markdown Tutorial. (s. f.). Recuperado el 3 de agosto de 2026, de https://www.ma
 
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
 
-Microsoft. (s. f.). *Getting started with Visual Studio Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs
+Microsoft. (s. f.-a). *Getting started with Python in VS Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs/python/python-tutorial
+
+Microsoft. (s. f.-b). *Getting started with Visual Studio Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs
 
 Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
 
