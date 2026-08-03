@@ -38,7 +38,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
-| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1) |
+| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br>Google (s. f.)<br>Wes McKinney (2022, capítulo 2) |
 | 2 (17 al 21 de agosto) |  |  |
 | 3 (24 al 28 de agosto) |  |  |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
@@ -120,5 +120,9 @@ De acuerdo con la normativa universitaria, únicamente el correo oficial de la U
 #### Bibliografía obligatoria
 
 Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/
+
+Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Colab. Recuperado el 3 de agosto de 2026, de https://colab.research.google.com/
+
+McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
 
 #### Bibliografía complementaria
