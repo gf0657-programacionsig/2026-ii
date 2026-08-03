@@ -38,28 +38,23 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
-|  | **1. INTRODUCCIÓN A LA PROGRAMACIÓN DE COMPUTADORAS Y A LA CIENCIA DE DATOS GEOESPACIALES** |  |
-| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br>Introducción a la programación de computadoras:<br>• Modelo entrada – procesamiento – salida.<br>• Lenguajes de programación.<br>• Pensamiento computacional.<br>Introducción a la ciencia de datos:<br>• Datos, observaciones, variables.<br>• El proceso de la ciencia de datos: importar, ordenar, transformar, visualizar, modelar y comunicar. | Charles Severance (2016, capítulo 1)<br>Allen B. Downey (2024, capítulo 1)<br>Mine Çetinkaya-Rundel & Johanna Hardin (2021, capítulo 1) |
-| 2 (17 al 21 de agosto) | Introducción a la ciencia de datos geoespaciales:<br>• Pensamiento geográfico para ciencia de datos.<br>• Herramientas computacionales.<br>Herramientas para investigación reproducible y desarrollo colaborativo:<br>• Markdown: lenguaje de marcado ligero para comunicación científica.<br>• Git y GitHub: control de versiones y publicación en la Web (GitHub Pages).<br>• Ambientes de trabajo: conda, Jupyter Notebook, Google Colab.<br>Introducción a los asistentes de programación basados en inteligencia artificial: panorama, alcances, limitaciones y lineamientos para su uso en el curso. | Sergio J. Rey et al. (2023, capítulos 1 y 2)<br>Ihechikara Vincent Abba (2021)<br>Stanford University (2025, lección 1) |
-|  | **2. EL LENGUAJE DE PROGRAMACIÓN PYTHON** |  |
-| 3 (24 al 28 de agosto) | Introducción a Python: historia, principales características, principios de diseño y mejores prácticas.<br>El lenguaje Python:<br>• Tipos de datos básicos: números, textos, lógicos.<br>• Variables, expresiones y sentencias.<br>• Comentarios.<br>• Entrada y salida. | Charles Severance (2016, capítulos 1 y 2) |
-| 4 (31 de agosto al 4 de setiembre) | El lenguaje Python:<br>• Condicionales: sentencia if.<br>• Excepciones: sentencias try y except.<br>• Ciclos: sentencias while, for, break y continue.<br>**ENTREGA DE TAREA 1** | Charles Severance (2016, capítulos 3 y 5) |
-| 5 (7 al 11 de setiembre) | El lenguaje Python:<br>• Funciones predefinidas, de la biblioteca estándar y de módulos externos.<br>• Definición de nuevas funciones.<br>• Módulos y paquetes.<br>**EXAMEN CORTO 1** | Charles Severance (2016, capítulo 4) |
-| 6 (14 al 18 de setiembre)<br>Feriado: martes 15 de setiembre | El lenguaje Python:<br>• Hileras de caracteres.<br>• Archivos.<br>Uso de asistentes de inteligencia artificial para explicar y depurar código. | Charles Severance (2016, capítulos 6 y 7) |
-| 7 (21 al 25 de setiembre) | El lenguaje Python:<br>• Estructuras de datos: listas, diccionarios, tuplas y conjuntos. | Charles Severance (2016, capítulos 8, 9 y 10) |
-| 8 (28 de setiembre al 2 de octubre) | El lenguaje Python:<br>• Programación orientada a objetos: clases, objetos, atributos, métodos y herencia.<br>**EXAMEN CORTO 2** | Allen B. Downey (2024, capítulos 14-17) |
-| 9 (5 al 9 de octubre) | El lenguaje Python:<br>• Acceso a servicios web.<br>• Formatos para intercambio de datos: JSON, XML.<br>• Interfaces de programación de aplicaciones (API). | Charles Severance (2016, capítulos 12 y 13) |
-|  | **3. ANÁLISIS Y VISUALIZACIÓN DE DATOS** |  |
-| 10 (12 al 16 de octubre) | pandas: biblioteca para manipulación y análisis de datos:<br>• Importación de datos.<br>• Creación de subconjuntos.<br>• Creación de columnas.<br>• Ordenamiento y agrupación.<br>Uso de asistentes de inteligencia artificial para generación y verificación de código de análisis de datos. | Kaggle (s. f.-c, lecciones 1-4)<br>Wes McKinney (2022, capítulos 5 y 6) |
-| 11 (19 al 23 de octubre) | Bibliotecas de graficación:<br>• matplotlib: gráficos personalizados.<br>• plotly: graficación interactiva.<br>**EXAMEN CORTO 3** | The Matplotlib Development Team (s. f., Quick start guide)<br>Plotly (s. f., sección Fundamentals)<br>Kaggle (s. f.-a, lecciones 1-4) |
-|  | **4. PROCESAMIENTO DE DATOS GEOESPACIALES** |  |
-| 12 (26 al 30 de octubre) | Introducción al manejo de datos geoespaciales en Python: modelos de datos vectorial y raster, sistemas de referencia de coordenadas.<br>geopandas: biblioteca para manipulación y análisis de datos vectoriales.<br>**ENTREGA DE TAREA 2** | Kaggle (s. f.-b, lecciones 1 y 2)<br>GeoPandas developers (s. f., sección Getting started) |
-| 13 (2 al 6 de noviembre) | geopandas (continuación): operaciones y uniones espaciales.<br>rasterio: biblioteca para lectura, escritura y procesamiento de datos raster. | GeoPandas developers (s. f., sección User guide)<br>Rasterio Contributors (s. f., sección Python quickstart) |
-| 14 (9 al 13 de noviembre) | Visualización de datos geoespaciales:<br>• folium: biblioteca para desarrollo de mapas web.<br>• leafmap: biblioteca para análisis geoespacial y mapeo interactivo.<br>**EXAMEN CORTO 4** | python-visualization (s. f., sección Getting started)<br>Qiusheng Wu (s. f., sección Get started) |
-|  | **5. DESARROLLO DE APLICACIONES INTERACTIVAS** |  |
-| 15 (16 al 20 de noviembre)<br>Jueves 19 de noviembre: Día del SIG (participación en las jornadas) | streamlit: marco de trabajo para desarrollo de aplicaciones web de ciencia de datos:<br>• Estructura de una aplicación.<br>• Componentes interactivos.<br>• Integración de visualizaciones tabulares, gráficas y geoespaciales.<br>**ENTREGA DE TAREA 3** | Snowflake Inc. (s. f., sección Get started)<br>Tyler Richards (2023, capítulos 1 y 2) |
-| 16 (23 al 27 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br>Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br>Integración del proyecto final.<br>**EXAMEN CORTO 5** | Snowflake Inc. (s. f., sección Deploy)<br>Stanford University (2025, lecciones sobre agentes) |
-| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | **PRESENTACIÓN PRESENCIAL Y ENTREGA DE PROYECTOS FINALES: LUNES 30 DE NOVIEMBRE**, en el aula y horario del curso. |  |
+| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso. |  |
+| 2 (17 al 21 de agosto) |  |  |
+| 3 (24 al 28 de agosto) |  |  |
+| 4 (31 de agosto al 4 de setiembre) |  |  |
+| 5 (7 al 11 de setiembre) |  |  |
+| 6 (14 al 18 de setiembre) |  |  |
+| 7 (21 al 25 de setiembre) |  |  |
+| 8 (28 de setiembre al 2 de octubre) |  |  |
+| 9 (5 al 9 de octubre) |  |  |
+| 10 (12 al 16 de octubre) |  |  |
+| 11 (19 al 23 de octubre) |  |  |
+| 12 (26 al 30 de octubre) |  |  |
+| 13 (2 al 6 de noviembre) |  |  |
+| 14 (9 al 13 de noviembre) |  |  |
+| 15 (16 al 20 de noviembre) |  |  |
+| 16 (23 al 27 de noviembre) |  |  |
+| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) |  |  |
 
 ### 4. METODOLOGÍA
 
@@ -81,27 +76,16 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 
 | Semana de realización | Secciones a evaluar | Porcentaje de la calificación final del curso |
 |---|---|---|
-| 5 | 1 y 2 (semanas 3 y 4) | 5 % |
-| 8 | 2 | 5 % |
-| 11 | 3 | 5 % |
-| 14 | 4 | 5 % |
-| 16 | 5 | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
 | Semana de entrega | Tema a desarrollar | Porcentaje de la calificación final del curso |
 |---|---|---|
-| 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
-| 12 | Documento computacional (Jupyter Notebook) con datos del tema elegido procesados mediante Python y presentados en tablas y gráficos, publicado en Internet. | 15 % |
-| 15 | Documento computacional (Jupyter Notebook) que incorpora datos geoespaciales del tema elegido, presentados en mapas, publicado en Internet. Incluye un breve informe de participación en las jornadas del Día del SIG (jueves 19 de noviembre). | 15 % |
 
 **c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. Los componentes y su valor se presentan en la siguiente tabla:
 
 | Fecha de entrega o realización | Componente | Porcentaje de la calificación final del curso |
 |---|---|---|
-| Lunes 30 de noviembre (semana de exámenes finales) | Aplicación web interactiva (Streamlit o similar) publicada en Internet. | 20 % |
-| Lunes 30 de noviembre (semana de exámenes finales) | Documento computacional (Jupyter Notebook) estilo artículo, con la documentación del proceso y de los principales hallazgos. | 10 % |
-| Lunes 30 de noviembre (semana de exámenes finales) | Presentación oral presencial del proyecto. | 5 % |
 
 En todas las evaluaciones, excepto los exámenes cortos, se permite el uso de herramientas de inteligencia artificial, siempre que este se declare explícitamente y que la persona estudiante comprenda y sea capaz de explicar el trabajo entregado. El uso no declarado de estas herramientas, o la incapacidad de explicar el trabajo propio, se considerará una falta a la honestidad académica, según lo establecido en el Reglamento de Orden y Disciplina de los Estudiantes de la Universidad de Costa Rica.
 
@@ -135,64 +119,4 @@ De acuerdo con la normativa universitaria, únicamente el correo oficial de la U
 
 #### Bibliografía obligatoria
 
-Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*. freeCodeCamp. https://www.freecodecamp.org/news/git-and-github-for-beginners/
-
-Çetinkaya-Rundel, M., & Hardin, J. (2021). *Introduction to modern statistics*. OpenIntro. https://openintro-ims.netlify.app/
-
-Downey, A. B. (2024). *Think Python: How to think like a computer scientist* (3.ª ed.). O'Reilly Media. https://greenteapress.com/wp/think-python-3rd-edition/
-
-GeoPandas developers. (s. f.). *GeoPandas documentation*. Recuperado el 2 de agosto de 2026, de https://geopandas.org/
-
-Kaggle. (s. f.-a). *Data visualization*. Kaggle Learn. Recuperado el 2 de agosto de 2026, de https://www.kaggle.com/learn/data-visualization
-
-Kaggle. (s. f.-b). *Geospatial analysis*. Kaggle Learn. Recuperado el 2 de agosto de 2026, de https://www.kaggle.com/learn/geospatial-analysis
-
-Kaggle. (s. f.-c). *Pandas*. Kaggle Learn. Recuperado el 2 de agosto de 2026, de https://www.kaggle.com/learn/pandas
-
-McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
-
-Plotly. (s. f.). *Plotly open source graphing library for Python*. Recuperado el 2 de agosto de 2026, de https://plotly.com/python/
-
-python-visualization. (s. f.). *Folium documentation*. Recuperado el 2 de agosto de 2026, de https://python-visualization.github.io/folium/
-
-Rasterio Contributors. (s. f.). *Rasterio: Access to geospatial raster data*. Recuperado el 2 de agosto de 2026, de https://rasterio.readthedocs.io/
-
-Rey, S. J., Arribas-Bel, D., & Wolf, L. J. (2023). *Geographic data science with Python*. CRC Press. https://geographicdata.science/book/
-
-Richards, T. (2023). *Streamlit for data science: Create interactive data apps in Python* (2.ª ed.). Packt Publishing.
-
-Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
-
-Snowflake Inc. (s. f.). *Streamlit documentation*. Recuperado el 2 de agosto de 2026, de https://docs.streamlit.io/
-
-Stanford University. (2025). *CS146S: The modern software developer*. Recuperado el 2 de agosto de 2026, de https://themodernsoftware.dev/
-
-The Matplotlib Development Team. (s. f.). *Matplotlib tutorials*. Recuperado el 2 de agosto de 2026, de https://matplotlib.org/stable/tutorials/
-
-Wu, Q. (s. f.). *Leafmap*. Recuperado el 2 de agosto de 2026, de https://leafmap.org/
-
 #### Bibliografía complementaria
-
-Arribas-Bel, D. (2019). A course on geographic data science. *Journal of Open Source Education, 2*(14), 42. https://doi.org/10.21105/jose.00042
-
-Dorman, M. (s. f.). *Spatial data programming with Python*. Recuperado el 2 de agosto de 2026, de https://geobgu.xyz/py/
-
-Gandhi, U. (s. f.). *Python foundation for spatial analysis*. Spatial Thoughts. Recuperado el 2 de agosto de 2026, de https://spatialthoughts.com/courses/python-foundation-for-spatial-analysis/
-
-GitHub. (s. f.). *GitHub Copilot documentation*. Recuperado el 2 de agosto de 2026, de https://docs.github.com/copilot
-
-Gruber, J. (s. f.). *Markdown*. Daring Fireball. Recuperado el 2 de agosto de 2026, de https://daringfireball.net/projects/markdown/
-
-Olaya, V. (2020). *Sistemas de información geográfica*. https://volaya.github.io/libro-sig/
-
-The pandas development team. (s. f.). *pandas documentation*. Recuperado el 2 de agosto de 2026, de https://pandas.pydata.org/docs/
-
-Python Software Foundation. (s. f.). *The Python tutorial*. Recuperado el 2 de agosto de 2026, de https://docs.python.org/3/tutorial/
-
-Tenkanen, H., Heikinheimo, V., & Whipp, D. (s. f.). *Introduction to Python for geographic data analysis*. Recuperado el 2 de agosto de 2026, de https://pythongis.org/
-
-Whipp, D., Tenkanen, H., Heikinheimo, V., & Aagesen, H. W. (s. f.). *Geo-Python*. Recuperado el 2 de agosto de 2026, de https://geo-python-site.readthedocs.io/
-
-Wickham, H., Çetinkaya-Rundel, M., & Grolemund, G. (2023). *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/
-
-Wu, Q. (2024). *Geographic software design*. Recuperado el 2 de agosto de 2026, de https://sites.google.com/utk.edu/geog-510
