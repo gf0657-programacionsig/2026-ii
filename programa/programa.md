@@ -38,7 +38,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
-| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso. |  |
+| 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br>Introducción a la ciencia de datos:<br>• Datos.<br>• El proceso de la ciencia de datos.<br>• Reproducibilidad.<br>• Herramientas: lenguajes de programación, sintaxis y formatos para documentación, sistemas de control de versiones.<br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1) |
 | 2 (17 al 21 de agosto) |  |  |
 | 3 (24 al 28 de agosto) |  |  |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
@@ -118,5 +118,7 @@ De acuerdo con la normativa universitaria, únicamente el correo oficial de la U
 ### 9. BIBLIOGRAFÍA
 
 #### Bibliografía obligatoria
+
+Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/
 
 #### Bibliografía complementaria
