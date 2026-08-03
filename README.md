@@ -19,6 +19,10 @@ Curso de la Escuela de Geografía de la Universidad de Costa Rica (UCR).
 - `privado/`: documentos no publicados (calificaciones, documentos
   administrativos recibidos). Excluido del repositorio mediante `.gitignore`.
 
+Las convenciones de Git del repositorio (mensajes de commit, flujo de
+trabajo, qué no se versiona) están documentadas en
+[CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Flujo de trabajo del programa del curso
 
 1. Editar `programa/programa.md`.
