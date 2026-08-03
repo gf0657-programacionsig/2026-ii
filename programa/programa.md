@@ -1,6 +1,6 @@
 # GF-0657 Programación en SIG
 
-Manuel Vargas Del Valle
+**Profesor: Manuel Vargas Del Valle**
 
 Grupo 001, horario L 17-18-19 y K 17-18-19 (17:00 a 19:50), aula 215, Créditos: 3
 
@@ -16,7 +16,7 @@ II ciclo lectivo 2026
 
 ## PROGRAMA DEL CURSO
 
-## 1. DESCRIPCIÓN
+### 1. DESCRIPCIÓN
 
 Este curso trata sobre el manejo, visualización y análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones para sistemas de información geográfica (SIG) y para la Web. Se demuestra cómo metodologías y técnicas de ciencia de datos pueden ser aplicadas al componente geoespacial de diversos problemas. Adicionalmente, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
 
@@ -24,7 +24,7 @@ El enfoque del curso es teórico-práctico, con lecciones teóricas combinadas c
 
 El curso es presencial y el entorno virtual se emplea como apoyo a los aprendizajes. Los contenidos del curso y los recursos relacionados se comparten en el sitio web [https://gf0657-programacionsig.github.io/2026-ii/](https://gf0657-programacionsig.github.io/2026-ii/), así como en la plataforma Mediación Virtual de la Universidad de Costa Rica.
 
-## 2. OBJETIVOS
+### 2. OBJETIVOS
 
 Al finalizar el curso, el estudiantado será capaz de:
 
@@ -34,7 +34,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 4. Integrar visualizaciones tabulares, gráficas y geoespaciales de datos en documentos computacionales y aplicaciones interactivas desarrolladas en Python.
 5. Emplear de manera crítica, responsable y transparente herramientas de inteligencia artificial como apoyo en el desarrollo de programas y en el análisis de datos.
 
-## 3. CONTENIDO DEL CURSO
+### 3. CONTENIDO DEL CURSO
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
@@ -61,7 +61,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 16 (23 al 27 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br>Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br>Integración del proyecto final.<br>**EXAMEN CORTO 5** | Snowflake Inc. (s. f.)<br>Stanford University (2025) |
 | SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | **PRESENTACIÓN PRESENCIAL Y ENTREGA DE PROYECTOS FINALES: LUNES 30 DE NOVIEMBRE**, en el aula y horario del curso. |  |
 
-## 4. METODOLOGÍA
+### 4. METODOLOGÍA
 
 El curso se desarrolla mediante clases teórico-prácticas presenciales. Los conceptos teóricos son explicados por el profesor durante las sesiones de clase y también se abordan mediante lecturas previamente asignadas. Las sesiones prácticas se destinan a la realización de ejercicios de programación en los que el estudiantado aplica los conocimientos aprendidos y las habilidades desarrolladas, tanto en ejercicios cortos como en el desarrollo incremental del tema elegido para las tareas y el proyecto final.
 
@@ -73,7 +73,7 @@ Los recursos didácticos incluyen lecturas, documentación en línea, tutoriales
 
 La atención de dudas y consultas se realiza en clase, en el horario de atención al estudiantado (K 14-15-16), por medio del correo electrónico institucional y mediante el sistema de mensajes de Mediación Virtual.
 
-## 5. EVALUACIÓN
+### 5. EVALUACIÓN
 
 La evaluación incluye tres componentes: exámenes cortos, tareas programadas y proyecto final. Desde el inicio del curso, cada estudiante, individualmente o en parejas, elige un tema basado en datos geoespaciales, el cual desarrolla a lo largo del ciclo mediante las tareas, que funcionan como aproximaciones incrementales al proyecto final. Las pautas y rúbricas específicas de cada evaluación se entregarán al estudiantado al menos ocho días naturales antes de su aplicación o fecha de entrega.
 
@@ -105,11 +105,11 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 
 En todas las evaluaciones, excepto los exámenes cortos, se permite el uso de herramientas de inteligencia artificial, siempre que este se declare explícitamente y que la persona estudiante comprenda y sea capaz de explicar el trabajo entregado. El uso no declarado de estas herramientas, o la incapacidad de explicar el trabajo propio, se considerará una falta a la honestidad académica, según lo establecido en el Reglamento de Orden y Disciplina de los Estudiantes de la Universidad de Costa Rica.
 
-## 6. TRABAJO DE CAMPO
+### 6. TRABAJO DE CAMPO
 
 Este curso no incluye trabajo de campo.
 
-## 7. NORMATIVA DE INTERÉS
+### 7. NORMATIVA DE INTERÉS
 
 Como primera instancia, el estudiantado puede acudir a: geografia@ucr.ac.cr; o bien, al director de Escuela: pascal.girotpignot@ucr.ac.cr.
 
@@ -127,13 +127,13 @@ En los cursos que se imparten en la Escuela de Geografía, se da especial import
 
 Para casos de emergencias, comunicarse al teléfono: 2511-4911.
 
-## 8. SOBRE LAS COMUNICACIONES OFICIALES ENTRE DOCENTES Y ESTUDIANTES
+### 8. SOBRE LAS COMUNICACIONES OFICIALES ENTRE DOCENTES Y ESTUDIANTES
 
 De acuerdo con la normativa universitaria, únicamente el correo oficial de la Universidad de Costa Rica, así como el sistema de mensajes de mediación virtual de la Universidad son los mecanismos oficiales de comunicación entre docentes y estudiantes. Por tanto, es obligación del estudiante contar con el correo de la Universidad, consultarlo al menos una vez al día durante días hábiles y utilizar los medios descritos para comunicarse con la persona docente. El uso de cualquier otro medio electrónico no será aceptado por la persona docente, quien no tendrá obligación alguna de responder a mensajes por otras vías no oficiales.
 
-## 9. BIBLIOGRAFÍA
+### 9. BIBLIOGRAFÍA
 
-### Bibliografía obligatoria
+#### Bibliografía obligatoria
 
 Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*. freeCodeCamp. https://www.freecodecamp.org/news/git-and-github-for-beginners/
 
@@ -171,7 +171,7 @@ The Matplotlib Development Team. (s. f.). *Matplotlib tutorials*. Recuperado el 
 
 Wu, Q. (s. f.). *Leafmap*. Recuperado el 2 de agosto de 2026, de https://leafmap.org/
 
-### Bibliografía complementaria
+#### Bibliografía complementaria
 
 Arribas-Bel, D. (2019). A course on geographic data science. *Journal of Open Source Education, 2*(14), 42. https://doi.org/10.21105/jose.00042
 
