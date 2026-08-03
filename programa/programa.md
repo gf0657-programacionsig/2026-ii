@@ -38,6 +38,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 | SEMANA | CONTENIDO | LECTURA OBLIGATORIA |
 |---|---|---|
+| **I. Introducción a la ciencia de datos y a la programación de computadoras** |  |  |
 | 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
 | 2 (17 al 21 de agosto) | El lenguaje de marcado Markdown.<br><br>Introducción a la programación de computadoras. | *Markdown Tutorial* (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
 | 3 (24 al 28 de agosto) |  |  |
