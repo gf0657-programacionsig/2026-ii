@@ -8,6 +8,11 @@ y las tablas los bordes. Este script:
   2. Inyecta en la plantilla los que falten (por styleId).
   3. Ajusta los estilos de encabezados (color negro, fuente heredada).
   4. Ajusta el estilo de tabla para que tenga bordes completos.
+  5. Corrige la posición del logo de la Escuela de Geografía en el encabezado
+     de la primera página (header2.xml): en la plantilla oficial quedó anclado
+     ~2.9 cm por encima del borde de la página (posOffset vertical -1057143
+     EMU), por lo que solo asoma una franja; se alinea con el logo de la UCR
+     (-419112 EMU), como en los programas de años anteriores.
 
 Uso: python3 generar-referencia.py
 """
@@ -73,6 +78,11 @@ def main():
             data = zin.read(item)
             if item == "word/styles.xml":
                 data = nuevo_xml.encode()
+            elif item == "word/header2.xml":
+                data = data.replace(
+                    b"<wp:posOffset>-1057143</wp:posOffset>",
+                    b"<wp:posOffset>-419112</wp:posOffset>",
+                )
             zout.writestr(item, data)
 
     print(f"{SALIDA} creado ({len(inyectados)} estilos inyectados)")
