@@ -2,6 +2,10 @@
 # correspondencia y cualquier material que no debe publicarse.
 privado/
 
+# Derivada de la plantilla oficial (interna) de la Escuela de Geografía.
+# Se genera localmente con generar-referencia.py a partir de privado/.
+programa/referencia.docx
+
 # Jupyter Book / Quarto
 _build/
 .quarto/

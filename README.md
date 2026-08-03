@@ -10,7 +10,9 @@ Curso de la Escuela de Geografía de la Universidad de Costa Rica (UCR).
 - `programa/`: programa del curso.
   - `programa.md`: fuente de la verdad del contenido del programa.
   - `generar-referencia.py`: crea `referencia.docx` (plantilla oficial de la
-    Escuela de Geografía + estilos requeridos por pandoc).
+    Escuela de Geografía + estilos requeridos por pandoc). Tanto la plantilla
+    como `referencia.docx` son documentos internos: no se versionan y el
+    script requiere la plantilla en `privado/documentos-recibidos/`.
   - `generar.sh`: genera el DOCX (pandoc, con `referencia.docx` como documento
     de referencia) y el PDF (LibreOffice) a partir de `programa.md`.
   - `postprocesar.py`: ajustes finales al DOCX (anchos de columnas).
