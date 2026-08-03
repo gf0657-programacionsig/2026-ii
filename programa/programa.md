@@ -40,7 +40,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 |---|---|---|
 | **I. INTRODUCCIÓN A LA CIENCIA DE DATOS Y A LA PROGRAMACIÓN DE COMPUTADORAS** |  |  |
 | 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
-| 2 (17 al 21 de agosto) | El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | *Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
+| 2 (17 al 21 de agosto) | El editor de código Visual Studio Code.<br><br>El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | Microsoft (s. f.)<br><br>*Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
 | 3 (24 al 28 de agosto) |  |  |
 | 4 (31 de agosto al 4 de setiembre) |  |  |
 | 5 (7 al 11 de setiembre) |  |  |
@@ -133,6 +133,8 @@ Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Co
 Markdown Tutorial. (s. f.). Recuperado el 3 de agosto de 2026, de https://www.markdowntutorial.com/
 
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
+
+Microsoft. (s. f.). *Getting started with Visual Studio Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs
 
 Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
 
