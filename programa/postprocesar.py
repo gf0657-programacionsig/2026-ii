@@ -4,6 +4,8 @@
   del documento): SEMANA 20 %, CONTENIDO 50 %, LECTURA OBLIGATORIA 30 %.
 - Centra el bloque de encabezado (del nombre del curso hasta el título
   "PROGRAMA DEL CURSO"), como en la plantilla oficial.
+- En la tabla de contenidos, fusiona en una sola celda centrada las filas de
+  título de sección (las que inician con numeración romana, ej. "I. …").
 - Aplica espaciado sencillo (sin espacio entre párrafos) a las líneas desde
   "Profesor:" hasta "II ciclo lectivo 2026" y deja una línea en blanco antes
   de "PROGRAMA DEL CURSO".
@@ -59,6 +61,35 @@ def procesar_encabezado(doc):
     return "".join(resultado)
 
 
+def fusionar_filas_seccion(doc):
+    """Fusiona las filas de título de sección de la tabla de contenidos."""
+    ini = doc.index("<w:tbl>")
+    fin = doc.index("</w:tbl>", ini) + len("</w:tbl>")
+    tabla = doc[ini:fin]
+
+    def fusionar(m):
+        fila = m.group(0)
+        celdas = re.findall(r"<w:tc>.*?</w:tc>", fila, re.S)
+        if len(celdas) != 3:
+            return fila
+        texto = "".join(re.findall(r"<w:t[^>]*>([^<]*)</w:t>", celdas[0]))
+        if not re.match(r"[IVX]+\.\s", texto):
+            return fila
+        if any(re.search(r"<w:t[^>]*>[^<]", c) for c in celdas[1:]):
+            return fila
+        celda = celdas[0].replace(
+            "<w:tcPr />", '<w:tcPr><w:gridSpan w:val="3" /></w:tcPr>', 1
+        )
+        celda = centrar_parrafo(celda)
+        # Línea en blanco antes y después del título de sección.
+        celda = celda.replace("</w:tcPr>", "</w:tcPr><w:p />", 1)
+        celda = celda.replace("</w:tc>", "<w:p /></w:tc>")
+        return "<w:tr>" + celda + "</w:tr>"
+
+    tabla = re.sub(r"<w:tr>.*?</w:tr>", fusionar, tabla, flags=re.S)
+    return doc[:ini] + tabla + doc[fin:]
+
+
 def main(path):
     zin = zipfile.ZipFile(path)
     doc = zin.read("word/document.xml").decode()
@@ -73,6 +104,7 @@ def main(path):
     )
 
     doc = procesar_encabezado(doc)
+    doc = fusionar_filas_seccion(doc)
 
     datos = {item: zin.read(item) for item in zin.namelist()}
     datos["word/document.xml"] = doc.encode()
