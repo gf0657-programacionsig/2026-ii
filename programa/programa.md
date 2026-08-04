@@ -30,7 +30,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 
 1. Desarrollar programas en el lenguaje de programación Python orientados al procesamiento de datos geoespaciales.
 2. Aplicar un enfoque de ciencia de datos en los procesos de importación, transformación, visualización, análisis y comunicación de datos.
-3. Desarrollar soluciones reproducibles a problemas computacionales mediante Python y herramientas de código y datos abiertos.
+3. Desarrollar soluciones reproducibles a problemas computacionales mediante Python.
 4. Integrar visualizaciones tabulares, gráficas y geoespaciales de datos en documentos computacionales y aplicaciones interactivas desarrolladas en Python.
 5. Emplear de manera crítica, responsable y transparente herramientas de inteligencia artificial como apoyo en el desarrollo de programas y en el análisis de datos.
 
@@ -130,6 +130,8 @@ Para casos de emergencias, comunicarse al teléfono: 2511-4911.
 ### 8. SOBRE LAS COMUNICACIONES OFICIALES ENTRE DOCENTES Y ESTUDIANTES
 
 De acuerdo con la normativa universitaria, únicamente el correo oficial de la Universidad de Costa Rica, así como el sistema de mensajes de mediación virtual de la Universidad son los mecanismos oficiales de comunicación entre docentes y estudiantes. Por tanto, es obligación del estudiante contar con el correo de la Universidad, consultarlo al menos una vez al día durante días hábiles y utilizar los medios descritos para comunicarse con la persona docente. El uso de cualquier otro medio electrónico no será aceptado por la persona docente, quien no tendrá obligación alguna de responder a mensajes por otras vías no oficiales.
+
+<img src="salud-mental.jpeg" alt="Hablemos de nuestra salud mental en la Facultad de Ciencias Sociales" width="148">
 
 ### 9. BIBLIOGRAFÍA
 
