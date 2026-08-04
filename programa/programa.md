@@ -18,7 +18,7 @@ II ciclo lectivo 2026
 
 ### 1. DESCRIPCIÓN
 
-Este curso trata sobre el manejo, la visualización y el análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones para sistemas de información geográfica (SIG) y para la Web. Se muestra cómo las metodologías y técnicas de ciencia de datos pueden aplicarse al componente geoespacial de diversos problemas. Además, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
+Este curso trata sobre el manejo, la visualización y el análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones de sistemas de información geográfica (SIG), incluidas las destinadas a la Web. Se muestra cómo las metodologías y técnicas de ciencia de datos pueden aplicarse al componente geoespacial de diversos problemas. Además, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
 
 El enfoque del curso es teórico-práctico, con lecciones teóricas combinadas con sesiones prácticas de programación en las cuales el estudiantado aplica, en diversos escenarios de procesamiento de datos, los conocimientos aprendidos y las habilidades desarrolladas. A lo largo del curso, cada estudiante (individualmente o en parejas) desarrolla un tema de su elección mediante tareas que funcionan como aproximaciones incrementales al proyecto final.
 
