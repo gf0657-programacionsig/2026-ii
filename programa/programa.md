@@ -56,9 +56,10 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 12 (26 al 30 de octubre) | rasterio: biblioteca para lectura, escritura y procesamiento de datos raster. | Rasterio Contributors (s. f.) |
 | 13 (2 al 6 de noviembre) | rasterio (continuación).<br><br>Ejemplos de análisis de datos vectoriales y raster. | Rasterio Contributors (s. f.) |
 | 14 (9 al 13 de noviembre) | folium: biblioteca para desarrollo de mapas web.<br><br>leafmap: biblioteca para análisis geoespacial y mapeo interactivo.<br><br>**EXAMEN CORTO 4** | python-visualization (s. f.)<br><br>Qiusheng Wu (s. f.) |
-| 15 (16 al 20 de noviembre) |  |  |
-| 16 (23 al 27 de noviembre) |  |  |
-| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) |  |  |
+| **V. DESARROLLO DE APLICACIONES INTERACTIVAS** |  |  |
+| 15 (16 al 20 de noviembre)<br>(Día del SIG: jueves 19 de noviembre) | streamlit: marco de trabajo para el desarrollo de aplicaciones web de ciencia de datos.<br><br>Participación en las jornadas del Día del SIG.<br><br>**ENTREGA DE TAREA 3** | Snowflake Inc. (s. f.)<br><br>Tyler Richards (2023, capítulos 1 y 2) |
+| 16 (23 al 27 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br><br>Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br><br>**EXAMEN CORTO 5**<br><br>**PRESENTACIÓN ORAL Y ENTREGA DE LA APLICACIÓN DEL PROYECTO FINAL** | Snowflake Inc. (s. f.)<br><br>Stanford University (2025) |
+| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | Entrega del documento computacional del proyecto final (examen final en modalidad para la casa): viernes 4 de diciembre. |  |
 
 ### 4. METODOLOGÍA
 
@@ -84,6 +85,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 | 6 | II | 5 % |
 | 10 | III | 5 % |
 | 14 | IV | 5 % |
+| 16 | V | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
@@ -91,11 +93,15 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 |---|---|---|
 | 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
 | 11 | Documento computacional (Jupyter Notebook) con datos del tema elegido, procesados mediante pandas y presentados en tablas y gráficos, publicado en Internet. | 15 % |
+| 15 | Documento computacional (Jupyter Notebook) que incorpora datos geoespaciales del tema elegido, presentados en mapas, publicado en Internet. Incluye un breve informe de participación en las jornadas del Día del SIG. | 15 % |
 
-**c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. Los componentes y su valor se presentan en la siguiente tabla:
+**c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. La aplicación se entrega y se presenta oralmente en la semana 16, última semana de clases; el documento computacional se entrega en la semana de exámenes finales, como examen final en modalidad "para la casa". Los componentes y su valor se presentan en la siguiente tabla:
 
 | Fecha de entrega o realización | Componente | Porcentaje de la calificación final del curso |
 |---|---|---|
+| Semana 16 | Aplicación web interactiva (Streamlit o un marco de trabajo similar) con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet. | 20 % |
+| Semana 16 | Presentación oral presencial del proyecto. | 5 % |
+| Semana de exámenes (viernes 4 de diciembre) | Documento computacional (Jupyter Notebook) con estructura de artículo, que documenta el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos. Se entrega como examen final en modalidad "para la casa". | 10 % |
 
 En todas las evaluaciones, excepto los exámenes cortos, se permite el uso de herramientas de inteligencia artificial, siempre que este se declare explícitamente y que la persona estudiante comprenda y sea capaz de explicar el trabajo entregado. El uso no declarado de estas herramientas, o la incapacidad de explicar el trabajo propio, se considerará una falta a la honestidad académica, según lo establecido en el Reglamento de Orden y Disciplina de los Estudiantes de la Universidad de Costa Rica.
 
@@ -163,7 +169,11 @@ python-visualization. (s. f.). *Folium documentation*. Recuperado el 3 de agosto
 
 Rasterio Contributors. (s. f.). *Rasterio: Access to geospatial raster data*. Recuperado el 3 de agosto de 2026, de https://rasterio.readthedocs.io/
 
+Richards, T. (2023). *Streamlit for data science: Create interactive data apps in Python* (2.ª ed.). Packt Publishing.
+
 Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
+
+Snowflake Inc. (s. f.). *Streamlit documentation*. Recuperado el 3 de agosto de 2026, de https://docs.streamlit.io/
 
 Stanford University. (2025). *CS146S: The modern software developer*. Recuperado el 3 de agosto de 2026, de https://themodernsoftware.dev/
 
