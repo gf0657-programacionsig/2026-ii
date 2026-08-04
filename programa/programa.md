@@ -59,7 +59,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 14 (9 al 13 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br><br>**ENTREGA DE TAREA 3** | Snowflake Inc. (s. f.) |
 | 15 (16 al 20 de noviembre)<br>(Día del SIG: jueves 19 de noviembre) | Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br><br>Taller de desarrollo del proyecto final.<br><br>Participación en las jornadas del Día del SIG. | Stanford University (2025) |
 | 16 (23 al 27 de noviembre) | Taller de cierre del proyecto final.<br><br>**EXAMEN CORTO 5**<br><br>**PRESENTACIÓN ORAL Y ENTREGA DE LA APLICACIÓN DEL PROYECTO FINAL** |  |
-| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | Entrega del documento computacional del proyecto final (examen final en modalidad para la casa): viernes 4 de diciembre. |  |
+| SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | Entrega del documento computacional del proyecto final (examen final en modalidad para la casa). |  |
 
 ### 4. METODOLOGÍA
 
@@ -101,7 +101,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 |---|---|---|
 | Semana 16 | Aplicación web interactiva (streamlit o un marco de trabajo similar) con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet. | 20 % |
 | Semana 16 | Presentación oral presencial del proyecto. | 5 % |
-| Semana de exámenes (viernes 4 de diciembre) | Documento computacional (Jupyter Notebook) con estructura de artículo, que documenta el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos, e incluye un breve informe de participación en las jornadas del Día del SIG (jueves 19 de noviembre). Se entrega como examen final en modalidad "para la casa". | 10 % |
+| Semana de exámenes | Documento computacional (Jupyter Notebook) con estructura de artículo, que documenta el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos, e incluye un breve informe de participación en las jornadas del Día del SIG (jueves 19 de noviembre). Se entrega como examen final en modalidad "para la casa". | 10 % |
 
 En todas las evaluaciones, excepto los exámenes cortos, se permite el uso de herramientas de inteligencia artificial, siempre que este se declare explícitamente y que la persona estudiante comprenda y sea capaz de explicar el trabajo entregado. El uso no declarado de estas herramientas, o la incapacidad de explicar el trabajo propio, se considerará una falta a la honestidad académica, según lo establecido en el Reglamento de Orden y Disciplina de los Estudiantes de la Universidad de Costa Rica.
 
