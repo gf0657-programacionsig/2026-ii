@@ -46,9 +46,10 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 4 (31 de agosto al 4 de setiembre) | El lenguaje Python (continuación):<br>• Condicionales.<br>• Funciones.<br>• Iteración.<br><br>**ENTREGA DE TAREA 1** | Charles Severance (2016, capítulos 3, 4 y 5) |
 | 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Archivos.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Expresiones regulares.<br><br>Uso de asistentes de inteligencia artificial para explicar y depurar código. | Charles Severance (2016, capítulos 6-11) |
 | 6 (14 al 18 de setiembre)<br>(Feriado: martes 15 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
-| 7 (21 al 25 de setiembre) |  |  |
-| 8 (28 de setiembre al 2 de octubre) |  |  |
-| 9 (5 al 9 de octubre) |  |  |
+| **III. ANÁLISIS Y VISUALIZACIÓN DE DATOS** |  |  |
+| 7 (21 al 25 de setiembre) | pandas: biblioteca para manipulación y análisis de datos. | Kaggle (s. f.)<br><br>Wes McKinney (2022, capítulos 5 y 6) |
+| 8 (28 de setiembre al 2 de octubre) | pandas (continuación).<br><br>matplotlib: biblioteca para visualización de datos.<br><br>Uso de asistentes de inteligencia artificial para generación y verificación de código de análisis de datos. | The Matplotlib Development Team (s. f.) |
+| 9 (5 al 9 de octubre) | plotly: biblioteca para graficación interactiva. | Plotly (s. f.) |
 | 10 (12 al 16 de octubre) |  |  |
 | 11 (19 al 23 de octubre) |  |  |
 | 12 (26 al 30 de octubre) |  |  |
@@ -136,13 +137,19 @@ GitHub. (s. f.). *Quickstart for GitHub Pages*. GitHub Docs. Recuperado el 3 de 
 
 Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Colab. Recuperado el 3 de agosto de 2026, de https://colab.research.google.com/
 
+Kaggle. (s. f.). *Pandas*. Kaggle Learn. Recuperado el 3 de agosto de 2026, de https://www.kaggle.com/learn/pandas
+
 Markdown Tutorial. (s. f.). Recuperado el 3 de agosto de 2026, de https://www.markdowntutorial.com/
+
+The Matplotlib Development Team. (s. f.). *Matplotlib tutorials*. Recuperado el 3 de agosto de 2026, de https://matplotlib.org/stable/tutorials/
 
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
 
 Microsoft. (s. f.-a). *Getting started with Python in VS Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs/python/python-tutorial
 
 Microsoft. (s. f.-b). *Getting started with Visual Studio Code*. Recuperado el 3 de agosto de 2026, de https://code.visualstudio.com/docs
+
+Plotly. (s. f.). *Plotly open source graphing library for Python*. Recuperado el 3 de agosto de 2026, de https://plotly.com/python/
 
 Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
 
