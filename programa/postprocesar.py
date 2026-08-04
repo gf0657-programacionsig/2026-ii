@@ -8,6 +8,8 @@
   "PROGRAMA DEL CURSO"), como en la plantilla oficial.
 - En la tabla de contenidos, fusiona en una sola celda centrada las filas de
   título de sección (las que inician con numeración romana, ej. "I. …").
+- Impide que las filas de las tablas se partan entre páginas y mantiene las
+  filas de título de sección junto a la fila que les sigue.
 - Aplica espaciado sencillo (sin espacio entre párrafos) a las líneas desde
   "Profesor:" hasta "II ciclo lectivo 2026" y deja una línea en blanco antes
   de "PROGRAMA DEL CURSO".
@@ -85,13 +87,28 @@ def fusionar_filas_seccion(doc):
             "<w:tcPr />", '<w:tcPr><w:gridSpan w:val="3" /></w:tcPr>', 1
         )
         celda = centrar_parrafo(celda)
+        # "Mantener con el siguiente" para que la fila de sección no quede
+        # sola al final de una página.
+        celda = agregar_a_ppr(celda, "<w:keepNext />")
         # Línea en blanco antes y después del título de sección.
         celda = celda.replace("</w:tcPr>", "</w:tcPr><w:p />", 1)
         celda = celda.replace("</w:tc>", "<w:p /></w:tc>")
+        celda = celda.replace(
+            "<w:p />", "<w:p><w:pPr><w:keepNext /></w:pPr></w:p>"
+        )
         return "<w:tr>" + celda + "</w:tr>"
 
     tabla = re.sub(r"<w:tr>.*?</w:tr>", fusionar, tabla, flags=re.S)
     return doc[:ini] + tabla + doc[fin:]
+
+
+def evitar_particion_filas(doc):
+    """Impide que las filas de las tablas se partan entre páginas."""
+    doc = re.sub(r"<w:tr><w:trPr>", "<w:tr><w:trPr><w:cantSplit />", doc)
+    doc = re.sub(
+        r"<w:tr>(?!<w:trPr>)", "<w:tr><w:trPr><w:cantSplit /></w:trPr>", doc
+    )
+    return doc
 
 
 def main(path):
@@ -118,6 +135,7 @@ def main(path):
 
     doc = procesar_encabezado(doc)
     doc = fusionar_filas_seccion(doc)
+    doc = evitar_particion_filas(doc)
 
     datos = {item: zin.read(item) for item in zin.namelist()}
     datos["word/document.xml"] = doc.encode()
