@@ -47,14 +47,15 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Archivos.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Expresiones regulares.<br><br>Uso de asistentes de inteligencia artificial para explicar y depurar código. | Charles Severance (2016, capítulos 6-11) |
 | 6 (14 al 18 de setiembre)<br>(Feriado: martes 15 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
 | **III. ANÁLISIS Y VISUALIZACIÓN DE DATOS** |  |  |
-| 7 (21 al 25 de setiembre) | pandas: biblioteca para manipulación y análisis de datos. | Kaggle (s. f.)<br><br>Wes McKinney (2022, capítulos 5 y 6) |
+| 7 (21 al 25 de setiembre) | pandas: biblioteca para manipulación y análisis de datos. | Kaggle (s. f.-b)<br><br>Wes McKinney (2022, capítulos 5 y 6) |
 | 8 (28 de setiembre al 2 de octubre) | pandas (continuación).<br><br>matplotlib: biblioteca para visualización de datos.<br><br>Uso de asistentes de inteligencia artificial para generación y verificación de código de análisis de datos. | The Matplotlib Development Team (s. f.) |
 | 9 (5 al 9 de octubre) | plotly: biblioteca para graficación interactiva. | Plotly (s. f.) |
-| 10 (12 al 16 de octubre) |  |  |
-| 11 (19 al 23 de octubre) |  |  |
-| 12 (26 al 30 de octubre) |  |  |
-| 13 (2 al 6 de noviembre) |  |  |
-| 14 (9 al 13 de noviembre) |  |  |
+| **IV. PROCESAMIENTO DE DATOS GEOESPACIALES** |  |  |
+| 10 (12 al 16 de octubre) | Introducción al manejo de datos geoespaciales: modelos de datos vectorial y raster, sistemas de referencia de coordenadas.<br><br>geopandas: biblioteca para manipulación y análisis de datos vectoriales.<br><br>**EXAMEN CORTO 3** | Kaggle (s. f.-a)<br><br>GeoPandas developers (s. f.) |
+| 11 (19 al 23 de octubre) | geopandas (continuación).<br><br>**ENTREGA DE TAREA 2** | GeoPandas developers (s. f.) |
+| 12 (26 al 30 de octubre) | rasterio: biblioteca para lectura, escritura y procesamiento de datos raster. | Rasterio Contributors (s. f.) |
+| 13 (2 al 6 de noviembre) | rasterio (continuación).<br><br>Ejemplos de análisis de datos vectoriales y raster. | Rasterio Contributors (s. f.) |
+| 14 (9 al 13 de noviembre) | folium: biblioteca para desarrollo de mapas web.<br><br>leafmap: biblioteca para análisis geoespacial y mapeo interactivo.<br><br>**EXAMEN CORTO 4** | python-visualization (s. f.)<br><br>Qiusheng Wu (s. f.) |
 | 15 (16 al 20 de noviembre) |  |  |
 | 16 (23 al 27 de noviembre) |  |  |
 | SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) |  |  |
@@ -81,12 +82,15 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 |---|---|---|
 | 3 | I | 5 % |
 | 6 | II | 5 % |
+| 10 | III | 5 % |
+| 14 | IV | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
 | Semana de entrega | Tema a desarrollar | Porcentaje de la calificación final del curso |
 |---|---|---|
 | 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
+| 11 | Documento computacional (Jupyter Notebook) con datos del tema elegido, procesados mediante pandas y presentados en tablas y gráficos, publicado en Internet. | 15 % |
 
 **c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. Los componentes y su valor se presentan en la siguiente tabla:
 
@@ -133,11 +137,15 @@ Anaconda. (s. f.). *Getting started with conda*. Conda Documentation. Recuperado
 
 Downey, A. B. (2024). *Think Python: How to think like a computer scientist* (3.ª ed.). O'Reilly Media. https://greenteapress.com/wp/think-python-3rd-edition/
 
+GeoPandas developers. (s. f.). *GeoPandas documentation*. Recuperado el 3 de agosto de 2026, de https://geopandas.org/
+
 GitHub. (s. f.). *Quickstart for GitHub Pages*. GitHub Docs. Recuperado el 3 de agosto de 2026, de https://docs.github.com/en/pages/quickstart
 
 Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Colab. Recuperado el 3 de agosto de 2026, de https://colab.research.google.com/
 
-Kaggle. (s. f.). *Pandas*. Kaggle Learn. Recuperado el 3 de agosto de 2026, de https://www.kaggle.com/learn/pandas
+Kaggle. (s. f.-a). *Geospatial analysis*. Kaggle Learn. Recuperado el 3 de agosto de 2026, de https://www.kaggle.com/learn/geospatial-analysis
+
+Kaggle. (s. f.-b). *Pandas*. Kaggle Learn. Recuperado el 3 de agosto de 2026, de https://www.kaggle.com/learn/pandas
 
 Markdown Tutorial. (s. f.). Recuperado el 3 de agosto de 2026, de https://www.markdowntutorial.com/
 
@@ -151,9 +159,15 @@ Microsoft. (s. f.-b). *Getting started with Visual Studio Code*. Recuperado el 3
 
 Plotly. (s. f.). *Plotly open source graphing library for Python*. Recuperado el 3 de agosto de 2026, de https://plotly.com/python/
 
+python-visualization. (s. f.). *Folium documentation*. Recuperado el 3 de agosto de 2026, de https://python-visualization.github.io/folium/
+
+Rasterio Contributors. (s. f.). *Rasterio: Access to geospatial raster data*. Recuperado el 3 de agosto de 2026, de https://rasterio.readthedocs.io/
+
 Severance, C. R. (2016). *Python for everybody: Exploring data in Python 3* (S. Blumenberg & E. Hauser, Eds.). CreateSpace Independent Publishing Platform. https://www.py4e.com/html3/
 
 Stanford University. (2025). *CS146S: The modern software developer*. Recuperado el 3 de agosto de 2026, de https://themodernsoftware.dev/
+
+Wu, Q. (s. f.). *Leafmap*. Recuperado el 3 de agosto de 2026, de https://leafmap.org/
 
 #### Bibliografía complementaria
 
