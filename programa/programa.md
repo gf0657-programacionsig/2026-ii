@@ -75,7 +75,7 @@ La atención de dudas y consultas se realiza en clase, en el horario de atenció
 
 ### 5. EVALUACIÓN
 
-La evaluación incluye tres componentes: exámenes cortos, tareas programadas y proyecto final. Desde el inicio del curso, cada estudiante elige un tema basado en datos geoespaciales, el cual desarrolla a lo largo del ciclo mediante las tareas, que funcionan como aproximaciones incrementales al proyecto final. Las pautas y rúbricas específicas de cada evaluación se entregarán al estudiantado al menos ocho días naturales antes de su aplicación o fecha de entrega.
+La evaluación incluye tres componentes: exámenes cortos, tareas programadas y proyecto final.
 
 **a. Exámenes cortos (25 %)**. Consisten en pruebas cortas individuales, realizadas presencialmente y sin asistencia de herramientas de inteligencia artificial. Su propósito es evaluar la comprensión de las lecturas y de los conceptos teóricos y prácticos cubiertos en clase. Las semanas estimadas de realización y las secciones del contenido del curso a evaluar en cada examen corto se presentan en la siguiente tabla:
 
