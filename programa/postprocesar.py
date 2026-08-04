@@ -1,7 +1,9 @@
 """Posprocesa el DOCX generado por pandoc.
 
-- Ajusta los anchos de columna de la tabla de contenidos (la primera tabla
-  del documento): SEMANA 20 %, CONTENIDO 50 %, LECTURA OBLIGATORIA 30 %.
+- Ajusta los anchos de columna de todas las tablas al ancho completo de la
+  página: la tabla de contenidos queda 20/50/30 % y las tablas de
+  evaluación 18/62/20 % (columna central ancha).
+- Centra los párrafos que contienen imágenes (código QR).
 - Centra el bloque de encabezado (del nombre del curso hasta el título
   "PROGRAMA DEL CURSO"), como en la plantilla oficial.
 - En la tabla de contenidos, fusiona en una sola celda centrada las filas de
@@ -17,7 +19,9 @@ import re
 import sys
 import zipfile
 
-ANCHOS = [1584, 3960, 2376]  # 20 %, 50 %, 30 % de 7920 twips
+# Ancho útil de la página: 21.59 cm - 4 cm de márgenes ≈ 9970 twips.
+ANCHOS_CONTENIDOS = [1994, 4985, 2991]   # 20 %, 50 %, 30 %
+ANCHOS_EVALUACION = [1794, 6182, 1994]   # 18 %, 62 %, 20 %
 FIN_ENCABEZADO = "PROGRAMA DEL CURSO"
 INICIO_COMPACTO = "Profesor:"
 FIN_COMPACTO = "II ciclo lectivo 2026"
@@ -94,12 +98,21 @@ def main(path):
     zin = zipfile.ZipFile(path)
     doc = zin.read("word/document.xml").decode()
 
-    grid = "".join(f'<w:gridCol w:w="{w}" />' for w in ANCHOS)
+    tabla_n = [0]
+
+    def anchos_tabla(m):
+        tabla_n[0] += 1
+        anchos = ANCHOS_CONTENIDOS if tabla_n[0] == 1 else ANCHOS_EVALUACION
+        grid = "".join(f'<w:gridCol w:w="{w}" />' for w in anchos)
+        return f"<w:tblGrid>{grid}</w:tblGrid>"
+
+    doc = re.sub(r"<w:tblGrid>.*?</w:tblGrid>", anchos_tabla, doc, flags=re.S)
+
+    # Centra los párrafos que contienen imágenes (código QR).
     doc = re.sub(
-        r"<w:tblGrid>.*?</w:tblGrid>",
-        f"<w:tblGrid>{grid}</w:tblGrid>",
+        r"<w:p>(?:(?!</w:p>).)*?<w:drawing>.*?</w:p>",
+        lambda m: centrar_parrafo(m.group(0)),
         doc,
-        count=1,
         flags=re.S,
     )
 
