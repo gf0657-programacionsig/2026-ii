@@ -42,10 +42,10 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 1 (10 al 14 de agosto) | Entrega y discusión del programa del curso.<br><br>Divulgación del Reglamento de la Universidad de Costa Rica en contra del Hostigamiento Sexual y promoción de un ambiente libre de discriminación.<br><br>Introducción a la ciencia de datos.<br><br>Cuadernos de notas Jupyter y Google Colab. | Mine Çetinkaya-Rundel & Johanna Hardin (2024, capítulo 1)<br><br>Google (s. f.)<br><br>Wes McKinney (2022, capítulo 2) |
 | 2 (17 al 21 de agosto) | El editor de código Visual Studio Code.<br><br>El lenguaje de marcado Markdown.<br><br>Git, GitHub y GitHub Pages.<br><br>Introducción a la programación de computadoras. | Microsoft (s. f.-b)<br><br>*Markdown Tutorial* (s. f.)<br><br>Ihechikara Vincent Abba (2021)<br><br>GitHub (s. f.)<br><br>Allen B. Downey (2024, capítulo 1)<br><br>Charles Severance (2016, capítulo 1) |
 | **II. EL LENGUAJE DE PROGRAMACIÓN PYTHON** |  |  |
-| 3 (24 al 28 de agosto) | Instalación de Python mediante la plataforma Miniconda. Ambientes virtuales.<br><br>Introducción a Python.<br><br>Tipos de datos básicos. Variables, expresiones y sentencias.<br><br>**EXAMEN CORTO 1** | Anaconda (s. f.)<br><br>Microsoft (s. f.-a)<br><br>Charles Severance (2016, capítulos 1 y 2) |
-| 4 (31 de agosto al 4 de setiembre) |  |  |
-| 5 (7 al 11 de setiembre) |  |  |
-| 6 (14 al 18 de setiembre) |  |  |
+| 3 (24 al 28 de agosto) | Instalación de Python mediante la plataforma Miniconda. Ambientes virtuales.<br><br>El lenguaje Python:<br>• Historia y características.<br>• Tipos de datos básicos.<br>• Variables, expresiones y sentencias.<br><br>**EXAMEN CORTO 1** | Anaconda (s. f.)<br><br>Microsoft (s. f.-a)<br><br>Charles Severance (2016, capítulos 1 y 2) |
+| 4 (31 de agosto al 4 de setiembre) | El lenguaje Python (continuación):<br>• Condicionales.<br>• Funciones.<br>• Iteración.<br><br>**ENTREGA DE TAREA 1** | Charles Severance (2016, capítulos 3, 4 y 5) |
+| 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Archivos.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Expresiones regulares. | Charles Severance (2016, capítulos 6-11) |
+| 6 (14 al 18 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
 | 7 (21 al 25 de setiembre) |  |  |
 | 8 (28 de setiembre al 2 de octubre) |  |  |
 | 9 (5 al 9 de octubre) |  |  |
@@ -79,11 +79,13 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 | Semana de realización | Secciones a evaluar | Porcentaje de la calificación final del curso |
 |---|---|---|
 | 3 | I | 5 % |
+| 6 | II | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
 | Semana de entrega | Tema a desarrollar | Porcentaje de la calificación final del curso |
 |---|---|---|
+| 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
 
 **c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. Los componentes y su valor se presentan en la siguiente tabla:
 
