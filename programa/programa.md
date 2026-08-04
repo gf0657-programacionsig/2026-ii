@@ -20,7 +20,7 @@ II ciclo lectivo 2026
 
 Este curso trata sobre el manejo, la visualización y el análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones de sistemas de información geográfica (SIG), incluidas las destinadas a la Web. Se muestra cómo las metodologías y técnicas de ciencia de datos pueden aplicarse al componente geoespacial de diversos problemas. Además, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
 
-El enfoque del curso es teórico-práctico, con lecciones teóricas combinadas con sesiones prácticas de programación en las cuales el estudiantado aplica, en diversos escenarios de procesamiento de datos, los conocimientos aprendidos y las habilidades desarrolladas. A lo largo del curso, cada estudiante (individualmente o en parejas) desarrolla un tema de su elección mediante tareas que funcionan como aproximaciones incrementales al proyecto final.
+El enfoque del curso es teórico-práctico, con lecciones teóricas combinadas con sesiones prácticas de programación en las cuales el estudiantado aplica, en diversos escenarios de procesamiento de datos, los conocimientos aprendidos y las habilidades desarrolladas. A lo largo del curso, cada estudiante desarrolla un tema de su elección mediante tareas que funcionan como aproximaciones incrementales al proyecto final.
 
 El curso es presencial y el entorno virtual se emplea como apoyo a los aprendizajes. Los contenidos del curso y los recursos relacionados se comparten en el sitio web [https://gf0657-programacionsig.github.io/2026-ii/](https://gf0657-programacionsig.github.io/2026-ii/), así como en la plataforma Mediación Virtual de la Universidad de Costa Rica.
 
@@ -75,7 +75,7 @@ La atención de dudas y consultas se realiza en clase, en el horario de atenció
 
 ### 5. EVALUACIÓN
 
-La evaluación incluye tres componentes: exámenes cortos, tareas programadas y proyecto final. Desde el inicio del curso, cada estudiante, individualmente o en parejas, elige un tema basado en datos geoespaciales, el cual desarrolla a lo largo del ciclo mediante las tareas, que funcionan como aproximaciones incrementales al proyecto final. Las pautas y rúbricas específicas de cada evaluación se entregarán al estudiantado al menos ocho días naturales antes de su aplicación o fecha de entrega.
+La evaluación incluye tres componentes: exámenes cortos, tareas programadas y proyecto final. Desde el inicio del curso, cada estudiante elige un tema basado en datos geoespaciales, el cual desarrolla a lo largo del ciclo mediante las tareas, que funcionan como aproximaciones incrementales al proyecto final. Las pautas y rúbricas específicas de cada evaluación se entregarán al estudiantado al menos ocho días naturales antes de su aplicación o fecha de entrega.
 
 **a. Exámenes cortos (25 %)**. Consisten en pruebas cortas individuales, realizadas presencialmente y sin asistencia de herramientas de inteligencia artificial. Su propósito es evaluar la comprensión de las lecturas y de los conceptos teóricos y prácticos cubiertos en clase. Las semanas estimadas de realización y las secciones del contenido del curso a evaluar en cada examen corto se presentan en la siguiente tabla:
 
@@ -87,7 +87,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 | 13 | IV | 5 % |
 | 16 | V | 5 % |
 
-**b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
+**b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
 
 | Semana de entrega | Tema a desarrollar | Porcentaje de la calificación final del curso |
 |---|---|---|
