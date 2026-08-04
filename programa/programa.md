@@ -45,7 +45,7 @@ Al finalizar el curso, el estudiantado será capaz de:
 | 3 (24 al 28 de agosto) | Instalación de Python mediante la plataforma Miniconda. Ambientes virtuales.<br><br>El lenguaje Python:<br>• Historia y características.<br>• Tipos de datos básicos.<br>• Variables, expresiones y sentencias.<br><br>**EXAMEN CORTO 1** | Anaconda (s. f.)<br><br>Microsoft (s. f.-a)<br><br>Charles Severance (2016, capítulos 1 y 2) |
 | 4 (31 de agosto al 4 de setiembre) | El lenguaje Python (continuación):<br>• Condicionales.<br>• Funciones.<br>• Iteración.<br><br>**ENTREGA DE TAREA 1** | Charles Severance (2016, capítulos 3, 4 y 5) |
 | 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Archivos.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Expresiones regulares. | Charles Severance (2016, capítulos 6-11) |
-| 6 (14 al 18 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
+| 6 (14 al 18 de setiembre)<br>(Feriado: martes 15 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
 | 7 (21 al 25 de setiembre) |  |  |
 | 8 (28 de setiembre al 2 de octubre) |  |  |
 | 9 (5 al 9 de octubre) |  |  |
