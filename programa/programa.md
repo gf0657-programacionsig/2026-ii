@@ -44,20 +44,20 @@ Al finalizar el curso, el estudiantado será capaz de:
 | **II. EL LENGUAJE DE PROGRAMACIÓN PYTHON** |  |  |
 | 3 (24 al 28 de agosto) | Instalación de Python mediante la plataforma Miniconda. Ambientes virtuales.<br><br>El lenguaje Python:<br>• Historia y características.<br>• Tipos de datos básicos.<br>• Variables, expresiones y sentencias.<br>• Condicionales.<br><br>**EXAMEN CORTO 1** | Anaconda (s. f.)<br><br>Microsoft (s. f.-a)<br><br>Charles Severance (2016, capítulos 1-3) |
 | 4 (31 de agosto al 4 de setiembre)<br>(Feriado: lunes 31 de agosto) | El lenguaje Python (continuación):<br>• Funciones.<br>• Iteración.<br><br>**ENTREGA DE TAREA 1** | Charles Severance (2016, capítulos 4 y 5) |
-| 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Archivos.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Expresiones regulares.<br><br>Uso de asistentes de inteligencia artificial para explicar y depurar código. | Charles Severance (2016, capítulos 6-11) |
-| 6 (14 al 18 de setiembre)<br>(Feriado: martes 15 de setiembre) | El lenguaje Python (continuación):<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>**EXAMEN CORTO 2** | Charles Severance (2016, capítulos 12 y 13) |
+| 5 (7 al 11 de setiembre) | El lenguaje Python (continuación):<br>• Hileras de caracteres.<br>• Listas.<br>• Diccionarios.<br>• Tuplas.<br>• Servicios web.<br>• Formatos para intercambio de datos: XML, JSON.<br>• Interfaces de programación de aplicaciones (API).<br><br>Uso de asistentes de inteligencia artificial para explicar y depurar código. | Charles Severance (2016, capítulos 6, 8-10, 12 y 13) |
 | **III. ANÁLISIS Y VISUALIZACIÓN DE DATOS** |  |  |
-| 7 (21 al 25 de setiembre) | pandas: biblioteca para manipulación y análisis de datos. | Kaggle (s. f.-b)<br><br>Wes McKinney (2022, capítulos 5 y 6) |
-| 8 (28 de setiembre al 2 de octubre) | pandas (continuación).<br><br>matplotlib: biblioteca para visualización de datos.<br><br>Uso de asistentes de inteligencia artificial para generación y verificación de código de análisis de datos. | The Matplotlib Development Team (s. f.) |
-| 9 (5 al 9 de octubre) | plotly: biblioteca para graficación interactiva. | Plotly (s. f.) |
+| 6 (14 al 18 de setiembre)<br>(Feriado: martes 15 de setiembre) | pandas: biblioteca para manipulación y análisis de datos.<br><br>**EXAMEN CORTO 2** | Kaggle (s. f.-b)<br><br>Wes McKinney (2022, capítulos 5 y 6) |
+| 7 (21 al 25 de setiembre) | pandas (continuación).<br><br>matplotlib: biblioteca para visualización de datos.<br><br>Uso de asistentes de inteligencia artificial para generación y verificación de código de análisis de datos. | The Matplotlib Development Team (s. f.) |
+| 8 (28 de setiembre al 2 de octubre) | plotly: biblioteca para graficación interactiva. | Plotly (s. f.) |
 | **IV. PROCESAMIENTO DE DATOS GEOESPACIALES** |  |  |
-| 10 (12 al 16 de octubre) | Introducción al manejo de datos geoespaciales: modelos de datos vectorial y raster, sistemas de referencia de coordenadas.<br><br>geopandas: biblioteca para manipulación y análisis de datos vectoriales.<br><br>**EXAMEN CORTO 3** | Kaggle (s. f.-a)<br><br>GeoPandas developers (s. f.) |
-| 11 (19 al 23 de octubre) | geopandas (continuación).<br><br>**ENTREGA DE TAREA 2** | GeoPandas developers (s. f.) |
-| 12 (26 al 30 de octubre) | rasterio: biblioteca para lectura, escritura y procesamiento de datos raster.<br><br>Ejemplos de análisis de datos vectoriales y raster. | Rasterio Contributors (s. f.) |
-| 13 (2 al 6 de noviembre) | folium: biblioteca para desarrollo de mapas web.<br><br>leafmap: biblioteca para análisis geoespacial y mapeo interactivo. | python-visualization (s. f.)<br><br>Qiusheng Wu (s. f.) |
+| 9 (5 al 9 de octubre) | Introducción al manejo de datos geoespaciales: modelos de datos vectorial y raster, sistemas de referencia de coordenadas.<br><br>geopandas: biblioteca para manipulación y análisis de datos vectoriales.<br><br>**EXAMEN CORTO 3** | Kaggle (s. f.-a)<br><br>GeoPandas developers (s. f.) |
+| 10 (12 al 16 de octubre) | geopandas (continuación).<br><br>**ENTREGA DE TAREA 2** | GeoPandas developers (s. f.) |
+| 11 (19 al 23 de octubre) | rasterio: biblioteca para lectura, escritura y procesamiento de datos raster.<br><br>Ejemplos de análisis de datos vectoriales y raster. | Rasterio Contributors (s. f.) |
+| 12 (26 al 30 de octubre) | folium: biblioteca para desarrollo de mapas web.<br><br>leafmap: biblioteca para análisis geoespacial y mapeo interactivo. | python-visualization (s. f.)<br><br>Qiusheng Wu (s. f.) |
 | **V. DESARROLLO DE APLICACIONES INTERACTIVAS** |  |  |
-| 14 (9 al 13 de noviembre) | streamlit: marco de trabajo para el desarrollo de aplicaciones web de ciencia de datos.<br><br>**EXAMEN CORTO 4**<br><br>**ENTREGA DE TAREA 3** | Snowflake Inc. (s. f.)<br><br>Tyler Richards (2023, capítulos 1 y 2) |
-| 15 (16 al 20 de noviembre)<br>(Día del SIG: jueves 19 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br><br>Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br><br>Taller de desarrollo del proyecto final.<br><br>Participación en las jornadas del Día del SIG. | Snowflake Inc. (s. f.)<br><br>Stanford University (2025) |
+| 13 (2 al 6 de noviembre) | streamlit: marco de trabajo para el desarrollo de aplicaciones web de ciencia de datos.<br><br>**EXAMEN CORTO 4** | Snowflake Inc. (s. f.)<br><br>Tyler Richards (2023, capítulos 1 y 2) |
+| 14 (9 al 13 de noviembre) | streamlit (continuación): despliegue de aplicaciones en la Web.<br><br>**ENTREGA DE TAREA 3** | Snowflake Inc. (s. f.) |
+| 15 (16 al 20 de noviembre)<br>(Día del SIG: jueves 19 de noviembre) | Herramientas agénticas de inteligencia artificial para programación: revisión crítica del código generado y documentación de su uso.<br><br>Taller de desarrollo del proyecto final.<br><br>Participación en las jornadas del Día del SIG. | Stanford University (2025) |
 | 16 (23 al 27 de noviembre) | Taller de cierre del proyecto final.<br><br>**EXAMEN CORTO 5**<br><br>**PRESENTACIÓN ORAL Y ENTREGA DE LA APLICACIÓN DEL PROYECTO FINAL** |  |
 | SEMANA DE EXÁMENES (30 de noviembre al 4 de diciembre) | Entrega del documento computacional del proyecto final (examen final en modalidad para la casa): viernes 4 de diciembre. |  |
 
@@ -83,8 +83,8 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 |---|---|---|
 | 3 | I | 5 % |
 | 6 | II | 5 % |
-| 10 | III | 5 % |
-| 14 | IV | 5 % |
+| 9 | III | 5 % |
+| 13 | IV | 5 % |
 | 16 | V | 5 % |
 
 **b. Tareas programadas (40 %)**. Consisten en ejercicios de programación que deben ser resueltos fuera del tiempo de clase y que aplican los contenidos del curso al tema elegido por cada estudiante o pareja. Su propósito es que el estudiantado construya de manera incremental los productos que integrará en el proyecto final. Las semanas estimadas de entrega, los temas a desarrollar y el valor de cada tarea se presentan en la siguiente tabla:
@@ -92,7 +92,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 | Semana de entrega | Tema a desarrollar | Porcentaje de la calificación final del curso |
 |---|---|---|
 | 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
-| 11 | Documento computacional (Jupyter Notebook) con datos del tema elegido, procesados mediante pandas y presentados en tablas y gráficos, publicado en Internet. | 15 % |
+| 10 | Documento computacional (Jupyter Notebook) con datos del tema elegido, procesados mediante pandas y presentados en tablas y gráficos, publicado en Internet. | 15 % |
 | 14 | Documento computacional (Jupyter Notebook) que incorpora datos geoespaciales del tema elegido, presentados en mapas, publicado en Internet. | 15 % |
 
 **c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en Streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. La aplicación se entrega y se presenta oralmente en la semana 16, última semana de clases; el documento computacional se entrega en la semana de exámenes finales, como examen final en modalidad "para la casa". Los componentes y su valor se presentan en la siguiente tabla:
