@@ -93,7 +93,7 @@ La evaluación incluye tres componentes: exámenes cortos, tareas programadas y 
 |---|---|---|
 | 4 | Elección del tema a desarrollar en las tareas y el proyecto final. Creación de un repositorio en GitHub y de una página web desarrollada en Markdown, con la descripción del tema y de sus fuentes de datos, publicada en Internet. | 10 % |
 | 10 | Documento computacional (Jupyter Notebook) con datos del tema elegido, procesados mediante pandas y presentados en tablas y gráficos, publicado en Internet. | 15 % |
-| 14 | Documento computacional (Jupyter Notebook) que incorpora datos geoespaciales del tema elegido, presentados en mapas, publicado en Internet. | 15 % |
+| 14 | Documento computacional (Jupyter Notebook) que incorpora datos geoespaciales del tema elegido, presentados en tablas, gráficos y mapas, publicado en Internet. | 15 % |
 
 **c. Proyecto final (35 %)**. Su objetivo es sintetizar los conocimientos y habilidades aprendidos durante el curso. Consiste en el desarrollo del tema elegido en tres productos: (1) una aplicación web interactiva desarrollada en streamlit, o un marco de trabajo similar, con visualizaciones tabulares, gráficas y geoespaciales, publicada en Internet; (2) un documento computacional (Jupyter Notebook), con estructura de artículo, que documente el proceso de desarrollo, los datos y métodos utilizados y los principales hallazgos; y (3) una presentación oral presencial de la aplicación y de los resultados. La aplicación se entrega y se presenta oralmente en la semana 16, última semana de clases; el documento computacional se entrega en la semana de exámenes finales, como examen final en modalidad "para la casa". Los componentes y su valor se presentan en la siguiente tabla:
 
