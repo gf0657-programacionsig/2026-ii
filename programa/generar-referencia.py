@@ -53,10 +53,20 @@ def main():
     pandoc_xml = leer_styles(REF_PANDOC)
 
     ids_plantilla = set(re.findall(r'w:styleId="([^"]+)"', plantilla_xml))
+    # Word y LibreOffice identifican los estilos por nombre, no por styleId:
+    # inyectar un estilo cuyo nombre ya existe en la plantilla (ej. Heading2
+    # de pandoc vs. Ttulo2 de la plantilla, ambos "heading 2") crea un
+    # duplicado que anula al de la plantilla (los títulos pierden la negrita).
+    nombres_plantilla = {
+        n.lower() for n in re.findall(r'<w:name w:val="([^"]+)"', plantilla_xml)
+    }
     inyectados = []
     for estilo in re.findall(r"<w:style [^>]*>.*?</w:style>", pandoc_xml, re.S):
         sid = re.search(r'w:styleId="([^"]+)"', estilo).group(1)
         if sid in ids_plantilla:
+            continue
+        nombre = re.search(r'<w:name w:val="([^"]+)"', estilo)
+        if nombre and nombre.group(1).lower() in nombres_plantilla:
             continue
         if sid.startswith("Heading"):
             # Heredar fuente y color de la plantilla (negro, no azul).

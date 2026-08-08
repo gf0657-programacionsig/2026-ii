@@ -1,8 +1,15 @@
 """Posprocesa el DOCX generado por pandoc.
 
-- Ajusta los anchos de columna de todas las tablas al ancho completo de la
-  página: la tabla de contenidos queda 20/50/30 % y las tablas de
-  evaluación 18/62/20 % (columna central ancha).
+- Ajusta los anchos de columna de las tablas: la tabla de contenidos queda
+  20/50/30 % del ancho de la página y las tablas de evaluación usan los
+  anchos de la revisión de la comisión de docencia (agosto 2026).
+- Centra la fila de encabezado de la tabla de componentes de la evaluación
+  (también de la revisión de la comisión de docencia).
+- Justifica los párrafos del cuerpo del documento — desde "PROGRAMA DEL
+  CURSO" hasta la bibliografía, sin tocar títulos, tablas ni imágenes —,
+  como en la revisión de la comisión de docencia.
+- Deja una línea en blanco antes y después de las tablas de la sección de
+  evaluación.
 - Centra los párrafos que contienen imágenes (código QR).
 - Centra el bloque de encabezado (del nombre del curso hasta el título
   "PROGRAMA DEL CURSO"), como en la plantilla oficial.
@@ -22,8 +29,17 @@ import sys
 import zipfile
 
 # Ancho útil de la página: 21.59 cm - 4 cm de márgenes ≈ 9970 twips.
-ANCHOS_CONTENIDOS = [1994, 4985, 2991]   # 20 %, 50 %, 30 %
-ANCHOS_EVALUACION = [1794, 6182, 1994]   # 18 %, 62 %, 20 %
+# Los anchos de las tablas de evaluación provienen del DOCX revisado por la
+# comisión de docencia (agosto 2026).
+ANCHOS_TABLAS = [
+    [1994, 4985, 2991],  # contenidos: 20 %, 50 %, 30 %
+    [2375, 2109, 4361],  # evaluación: quices (tabla al 89 % del ancho)
+    [1235, 6647, 2080],  # evaluación: tareas
+    [1572, 6562, 1828],  # evaluación: componentes de la calificación
+]
+ENCABEZADO_COMPONENTES = "Fecha de entrega o realización"
+INICIO_JUSTIFICADO = "PROGRAMA DEL CURSO"
+FIN_JUSTIFICADO = "9. BIBLIOGRAFÍA"
 FIN_ENCABEZADO = "PROGRAMA DEL CURSO"
 INICIO_COMPACTO = "Profesor:"
 FIN_COMPACTO = "II ciclo lectivo 2026"
@@ -102,6 +118,77 @@ def fusionar_filas_seccion(doc):
     return doc[:ini] + tabla + doc[fin:]
 
 
+def justificar_parrafo(parrafo):
+    if "<w:jc " in parrafo:
+        return parrafo
+    return agregar_a_ppr(parrafo, '<w:jc w:val="both" />')
+
+
+def justificar_cuerpo(doc):
+    """Justifica los párrafos del cuerpo (fuera de tablas, sin títulos ni imágenes)."""
+    resultado = []
+    pos = 0
+    activo = False
+    for m in re.finditer(
+        r"<w:tbl>.*?</w:tbl>|<w:p\b[^>]*?/>|<w:p\b.*?</w:p>", doc, re.S
+    ):
+        resultado.append(doc[pos : m.start()])
+        pos = m.end()
+        bloque = m.group(0)
+        if bloque.startswith("<w:tbl>") or bloque.endswith("/>"):
+            resultado.append(bloque)
+            continue
+        texto = re.sub(r"<[^>]+>", "", bloque)
+        es_titulo = re.search(r'w:pStyle w:val="(Ttulo|Heading)', bloque)
+        if not activo and INICIO_JUSTIFICADO in texto:
+            activo = True
+        elif activo and es_titulo and FIN_JUSTIFICADO in texto:
+            activo = False
+        elif activo and not es_titulo and "<w:drawing>" not in bloque:
+            bloque = justificar_parrafo(bloque)
+        resultado.append(bloque)
+    resultado.append(doc[pos:])
+    return "".join(resultado)
+
+
+def centrar_encabezado_componentes(doc):
+    """Centra la fila de encabezado de la tabla de componentes de la evaluación."""
+    resultado = []
+    pos = 0
+    for m in re.finditer(r"<w:tbl>.*?</w:tbl>", doc, re.S):
+        tabla = m.group(0)
+        if ENCABEZADO_COMPONENTES in re.sub(r"<[^>]+>", "", tabla):
+            fila = re.search(r"<w:tr\b.*?</w:tr>", tabla, re.S)
+            nueva = re.sub(
+                r"<w:p>.*?</w:p>",
+                lambda p: centrar_parrafo(p.group(0)),
+                fila.group(0),
+                flags=re.S,
+            )
+            tabla = tabla[: fila.start()] + nueva + tabla[fila.end() :]
+        resultado.append(doc[pos : m.start()] + tabla)
+        pos = m.end()
+    resultado.append(doc[pos:])
+    return "".join(resultado)
+
+
+def espaciar_tablas_evaluacion(doc):
+    """Deja una línea en blanco antes y después de las tablas de evaluación."""
+    resultado = []
+    pos = 0
+    n = 0
+    for m in re.finditer(r"<w:tbl>.*?</w:tbl>", doc, re.S):
+        n += 1
+        resultado.append(doc[pos : m.start()])
+        pos = m.end()
+        if n >= 2:  # la tabla 1 es la de contenidos
+            resultado.append("<w:p />" + m.group(0) + "<w:p />")
+        else:
+            resultado.append(m.group(0))
+    resultado.append(doc[pos:])
+    return "".join(resultado)
+
+
 def evitar_particion_filas(doc):
     """Impide que las filas de las tablas se partan entre páginas."""
     doc = re.sub(r"<w:tr><w:trPr>", "<w:tr><w:trPr><w:cantSplit />", doc)
@@ -119,7 +206,7 @@ def main(path):
 
     def anchos_tabla(m):
         tabla_n[0] += 1
-        anchos = ANCHOS_CONTENIDOS if tabla_n[0] == 1 else ANCHOS_EVALUACION
+        anchos = ANCHOS_TABLAS[min(tabla_n[0], len(ANCHOS_TABLAS)) - 1]
         grid = "".join(f'<w:gridCol w:w="{w}" />' for w in anchos)
         return f"<w:tblGrid>{grid}</w:tblGrid>"
 
@@ -135,6 +222,9 @@ def main(path):
 
     doc = procesar_encabezado(doc)
     doc = fusionar_filas_seccion(doc)
+    doc = justificar_cuerpo(doc)
+    doc = centrar_encabezado_componentes(doc)
+    doc = espaciar_tablas_evaluacion(doc)
     doc = evitar_particion_filas(doc)
 
     datos = {item: zin.read(item) for item in zin.namelist()}

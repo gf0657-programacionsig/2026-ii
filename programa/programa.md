@@ -6,7 +6,7 @@ Grupo 001, horario L 17-18-19 y K 17-18-19 (17:00 a 19:50), aula 215, Créditos:
 
 Requisitos: GF-0624 o GF-0412
 
-Horas totales semanales: 6 horas (teoría 0, laboratorio 6, gira 0).
+Horas totales semanales: 6 horas (laboratorio 6).
 
 Horario de atención al estudiantado: K 14-15-16 (14:00 a 16:50).
 
