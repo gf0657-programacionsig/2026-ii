@@ -149,7 +149,7 @@ Toman valores específicos que se pueden contar. La variable `individuos` (canti
 
 ##### Continuas
 
-Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `longitud`, `latitud` y `altitud` son continuas.
+Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `longitud`, `latitud` y `altitud` son continuas. Nótese que la altitud aparece redondeada al metro en la tabla 1: esto refleja la precisión con que se midió, no la naturaleza de la variable, ya que entre dos altitudes cualesquiera siempre hay valores intermedios posibles. En cambio, una variable discreta como `individuos` solo puede tomar ciertos valores, sin intermedios.
 
 #### Categóricas
 
