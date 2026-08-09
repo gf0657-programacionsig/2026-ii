@@ -52,10 +52,8 @@ siguen la misma estructura de secciones, en este orden:
 3. `## Introducción` — presentación breve del tema y su motivación.
 4. Secciones de contenido (`##`) propias del tema.
 5. `## Ejercicios` — en los capítulos prácticos (típicamente notebooks).
-6. `## Referencias bibliográficas` — al final, en formato APA 7 con el
-   aparato en español: apellidos e iniciales, conjunción «y» antes del
-   último autor (no «&»), «En» para capítulos de libro y títulos con
-   mayúscula solo en la primera palabra.
+6. `## Referencias bibliográficas` — al final, según la sección
+   [Referencias bibliográficas](#referencias-bibliográficas).
 
 Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran
@@ -118,6 +116,29 @@ TPB-708 2026-I, que usa el mismo tema `book-theme`):
   código se agrega una captura de pantalla PNG en un bloque `<figure>`
   numerado como el resto de las figuras del capítulo, con la imagen en el
   subdirectorio `img/` de la sección.
+
+## Referencias bibliográficas
+
+Todo el material del curso — capítulos del sitio web, pautas de tareas y
+del proyecto, evaluaciones — usa el formato **APA 7** con el aparato en
+español:
+
+- Apellidos e iniciales de los autores ("Wickham, H."), no nombres
+  completos.
+- Conjunción «y» antes del último autor, no «&», y sin coma antes de la
+  conjunción.
+- «En» para capítulos o secciones de una obra mayor.
+- Títulos con mayúscula solo en la primera palabra (y en nombres propios),
+  en el idioma original de la obra.
+- Ediciones en español: «(2.ª ed.)».
+- Citas en el texto: «(Autor, año)» o «Autor (año)»; en las leyendas de
+  tablas y figuras se usa la forma narrativa («Fuente: Autor (año)»).
+
+Este mismo formato es el que se pide a los estudiantes en las tareas y en
+el documento del proyecto final. La única excepción es el **programa
+impreso del curso**, cuyo cronograma cita con nombres completos
+("Charles Severance (2016, capítulos 1-3)") por requerimiento de la
+plantilla oficial de la Escuela de Geografía.
 
 ## Qué no se versiona
 
