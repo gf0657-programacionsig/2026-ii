@@ -233,6 +233,14 @@ La documentación es vital durante todo el ciclo de vida de una investigación r
 
 Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como hospedaje de sitios web.
 
+## Ejercicios
+
+1. En el portal de [GBIF](https://www.gbif.org/occurrence/search) busque registros de presencia de una especie de su interés (puede filtrar por país u otros criterios). Elija un registro y examine su página de detalle.
+    - Identifique al menos cinco variables presentes en el registro y clasifique cada una según la jerarquía de la figura 1.
+    - ¿Cuáles variables del registro tienen valores faltantes?
+2. Un conjunto de datos de estaciones meteorológicas de Costa Rica contiene las siguientes variables: nombre de la estación, provincia, altitud, temperatura promedio anual, cantidad de días con lluvia al año y categoría climática (seca, intermedia, lluviosa). Clasifique cada variable según la jerarquía de la figura 1 y justifique cada clasificación.
+3. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad de la figura 3 se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
+
 ## Referencias bibliográficas
 
 Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner. https://www.gartner.com/doc/2057415
