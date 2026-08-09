@@ -19,7 +19,7 @@ Este capítulo introduce los conceptos fundamentales sobre los datos —observac
 
 En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology - Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
 
-Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original.
+Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original. Los nombres de las variables corresponden a términos del estándar [Darwin Core](https://dwc.tdwg.org/), tal como los entrega GBIF (`gbifID` e `iucnRedListCategory` son campos agregados por GBIF, no términos del estándar). La altitud (`elevation`) se expresa en metros.
 
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla 1</strong>. Registros de presencia de especies de fauna silvestre en Costa Rica. Fuente: <a href="https://www.gbif.org/">GBIF</a> (consulta: 8 de agosto de 2026).</figcaption>
@@ -27,14 +27,14 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
         <thead>
             <tr>
                 <th>gbifID</th>
-                <th>Nombre científico</th>
-                <th>Longitud</th>
-                <th>Latitud</th>
-                <th>Altitud (m)</th>
-                <th>Fecha</th>
-                <th>Individuos</th>
-                <th>Categoría UICN</th>
-                <th>Tipo de registro</th>
+                <th>species</th>
+                <th>decimalLongitude</th>
+                <th>decimalLatitude</th>
+                <th>elevation</th>
+                <th>eventDate</th>
+                <th>individualCount</th>
+                <th>iucnRedListCategory</th>
+                <th>basisOfRecord</th>
             </tr>
         </thead>
         <tbody>
@@ -154,11 +154,11 @@ Corresponden a números a los cuales se les pueden aplicar operaciones como suma
 
 ##### Discretas
 
-Toman valores específicos que se pueden contar. La variable `individuos` (cantidad de individuos observados en cada registro), en este caso, es discreta.
+Toman valores específicos que se pueden contar. La variable `individualCount` (cantidad de individuos observados en cada registro), en este caso, es discreta.
 
 ##### Continuas
 
-Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `longitud`, `latitud` y `altitud` son continuas. Nótese que la altitud aparece redondeada al metro en la tabla 1: esto refleja la precisión con que se midió, no la naturaleza de la variable, ya que entre dos altitudes cualesquiera siempre hay valores intermedios posibles. En cambio, una variable discreta como `individuos` solo puede tomar ciertos valores, sin intermedios.
+Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `decimalLongitude` (longitud), `decimalLatitude` (latitud) y `elevation` (altitud) son continuas. Nótese que la altitud aparece redondeada al metro en la tabla 1: esto refleja la precisión con que se midió, no la naturaleza de la variable, ya que entre dos altitudes cualesquiera siempre hay valores intermedios posibles. En cambio, una variable discreta como `individualCount` solo puede tomar ciertos valores, sin intermedios.
 
 #### Categóricas
 
@@ -166,11 +166,11 @@ Las variables categóricas (también llamadas cualitativas), son aquellas que de
 
 ##### Nominales
 
-No existe un orden inherente o jerarquía entre las categorías. Las variables `nombre científico` y `tipo de registro` son nominales. También lo es `gbifID`: aunque sus valores son números, funcionan como etiquetas que identifican cada registro, por lo que no tiene sentido aplicarles operaciones aritméticas.
+No existe un orden inherente o jerarquía entre las categorías. Las variables `species` (nombre científico) y `basisOfRecord` (tipo de registro) son nominales. También lo es `gbifID`: aunque sus valores son números, funcionan como etiquetas que identifican cada registro, por lo que no tiene sentido aplicarles operaciones aritméticas.
 
 ##### Ordinales
 
-Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `categoría UICN`, cuyos valores corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN), las cuales siguen un orden creciente de riesgo (ej. LC: preocupación menor, NT: casi amenazada, VU: vulnerable, EN: en peligro).
+Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyos valores corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN), las cuales siguen un orden creciente de riesgo (ej. LC: preocupación menor, NT: casi amenazada, VU: vulnerable, EN: en peligro).
 
 ## Ciencia de datos
 
