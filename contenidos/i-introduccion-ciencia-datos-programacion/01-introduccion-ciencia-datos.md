@@ -13,7 +13,7 @@ Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R f
 
 Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2021).
 
-La ciencia de datos es un campo multidisciplinario que estudia los datos para extraer información útil y ayudar a tomar decisiones. Combina conocimientos de matemáticas, estadística, inteligencia artificial e ingeniería de computación para analizar grandes cantidades de datos.
+Este capítulo introduce los conceptos fundamentales sobre los datos —observaciones, variables y sus tipos— y presenta la ciencia de datos como la disciplina que permite convertirlos en conocimiento. Además, aborda dos ideas que acompañarán todo el curso: la reproducibilidad de los análisis y las herramientas informáticas que la hacen posible.
 
 ## Datos
 
