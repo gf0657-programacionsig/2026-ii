@@ -1,0 +1,21 @@
+# Configuración del sitio web del curso.
+# Documentación: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  title: GF-0657 Programación en SIG - 2026-II
+  github: gf0657-programacionsig/2026-ii
+  exclude:
+    - README.md
+    - CONTRIBUTING.md
+    - programa/**
+    - privado/**
+  toc:
+    - file: index.md
+    - title: "I. Introducción a la ciencia de datos y a la programación de computadoras"
+      children:
+        - file: contenidos/i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md
+site:
+  template: book-theme
+  # options:
+  #   favicon: favicon.ico
+  #   logo: site_logo.png
