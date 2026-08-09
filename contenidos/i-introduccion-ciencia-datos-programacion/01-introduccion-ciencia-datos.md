@@ -19,13 +19,14 @@ Este capítulo introduce los conceptos fundamentales sobre los datos —observac
 
 En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology - Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
 
-Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). Cada nombre científico enlaza al registro original.
+Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original.
 
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla 1</strong>. Registros de presencia de especies de fauna silvestre en Costa Rica. Fuente: <a href="https://www.gbif.org/">GBIF</a> (consulta: 8 de agosto de 2026).</figcaption>
     <table class="table table-bordered table-striped" style="margin: 0 auto;">
         <thead>
             <tr>
+                <th>gbifID</th>
                 <th>Nombre científico</th>
                 <th>Longitud</th>
                 <th>Latitud</th>
@@ -38,7 +39,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
         </thead>
         <tbody>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/5083205506"><em>Panthera onca</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/5083205506">5083205506</a></td>
+            <td><em>Panthera onca</em></td>
             <td class="align-right">-85.414700</td>
             <td class="align-right">10.819316</td>
             <td class="align-right"></td>
@@ -48,7 +50,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>MACHINE_OBSERVATION</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/5891408331"><em>Puma concolor</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/5891408331">5891408331</a></td>
+            <td><em>Puma concolor</em></td>
             <td class="align-right">-85.058334</td>
             <td class="align-right">9.873334</td>
             <td class="align-right">362</td>
@@ -58,7 +61,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>MATERIAL_CITATION</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/4174649301"><em>Tapirella bairdii</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/4174649301">4174649301</a></td>
+            <td><em>Tapirella bairdii</em></td>
             <td class="align-right">-83.500000</td>
             <td class="align-right">9.500000</td>
             <td class="align-right">3654</td>
@@ -68,7 +72,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>PRESERVED_SPECIMEN</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/4174649340"><em>Ateles geoffroyi</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/4174649340">4174649340</a></td>
+            <td><em>Ateles geoffroyi</em></td>
             <td class="align-right">-84.893100</td>
             <td class="align-right">10.437500</td>
             <td class="align-right">905</td>
@@ -78,7 +83,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>PRESERVED_SPECIMEN</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/6150492462"><em>Crocodylus acutus</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/6150492462">6150492462</a></td>
+            <td><em>Crocodylus acutus</em></td>
             <td class="align-right">-84.617872</td>
             <td class="align-right">9.757316</td>
             <td class="align-right"></td>
@@ -88,7 +94,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>HUMAN_OBSERVATION</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/5131991086"><em>Chelonia mydas</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/5131991086">5131991086</a></td>
+            <td><em>Chelonia mydas</em></td>
             <td class="align-right">-83.873328</td>
             <td class="align-right">8.716209</td>
             <td class="align-right"></td>
@@ -98,7 +105,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>HUMAN_OBSERVATION</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/6150672236"><em>Ara macao</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/6150672236">6150672236</a></td>
+            <td><em>Ara macao</em></td>
             <td class="align-right">-83.469447</td>
             <td class="align-right">8.873869</td>
             <td class="align-right"></td>
@@ -108,7 +116,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
             <td>HUMAN_OBSERVATION</td>
         </tr>
         <tr>
-            <td><a href="https://www.gbif.org/occurrence/896284939"><em>Ara macao</em></a></td>
+            <td><a href="https://www.gbif.org/occurrence/896284939">896284939</a></td>
+            <td><em>Ara macao</em></td>
             <td class="align-right">-85.317394</td>
             <td class="align-right">10.810174</td>
             <td class="align-right">853</td>
@@ -121,11 +130,11 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
     </table>
 </figure>
 
-El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y ocho variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan valores faltantes, algo que debe tenerse en cuenta al procesarlos.
+El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y nueve variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan valores faltantes, algo que debe tenerse en cuenta al procesarlos.
 
 ### Observaciones y variables
 
-La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel y Hardin, 2024). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
+La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel y Hardin, 2024). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por nueve variables.
 
 ### Tipos de variables
 
@@ -157,7 +166,7 @@ Las variables categóricas (también llamadas cualitativas), son aquellas que de
 
 ##### Nominales
 
-No existe un orden inherente o jerarquía entre las categorías. Las variables `nombre científico` y `tipo de registro` son nominales.
+No existe un orden inherente o jerarquía entre las categorías. Las variables `nombre científico` y `tipo de registro` son nominales. También lo es `gbifID`: aunque sus valores son números, funcionan como etiquetas que identifican cada registro, por lo que no tiene sentido aplicarles operaciones aritméticas.
 
 ##### Ordinales
 
