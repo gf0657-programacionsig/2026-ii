@@ -283,7 +283,7 @@ Como se ha mencionado, la programación de computadoras es una actividad present
 
 ### Ambientes y gestores de paquetes
 
-Los proyectos de ciencia de datos dependen de bibliotecas que evolucionan con el tiempo. Un **ambiente de programación** agrupa un conjunto de bibliotecas, con versiones específicas, aislado de otros proyectos. Los gestores de paquetes y de ambientes, como [conda](https://docs.conda.io/), permiten crear ambientes, documentarlos y recrearlos en otras computadoras, lo cual es clave para la reproducibilidad. El ambiente de este curso, por ejemplo, está documentado, con versiones fijadas, en un archivo `environment.yml` a partir del cual cualquier persona puede recrearlo; su instalación se estudiará en las próximas semanas.
+Los proyectos de ciencia de datos dependen de bibliotecas que evolucionan con el tiempo. Un **ambiente de programación** agrupa un conjunto de bibliotecas, con versiones específicas, aislado de otros proyectos. Los gestores de paquetes y de ambientes, como [conda](https://docs.conda.io/), permiten crear ambientes, documentarlos y recrearlos en otras computadoras, lo cual es clave para la reproducibilidad. El ambiente de este curso, por ejemplo, está documentado, con versiones fijadas, en un archivo `environment.yml` a partir del cual cualquier persona puede recrearlo; su instalación se estudiará en las próximas semanas. Un paso más allá de los ambientes están los **contenedores**, como los de [Docker](https://www.docker.com/), que empaquetan no solo las bibliotecas sino también el sistema operativo y demás componentes necesarios para ejecutar un programa en cualquier computadora; son comunes en ciencia de datos, aunque no se utilizan en este curso.
 
 ### Cuadernos de notas
 
