@@ -316,26 +316,25 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 1. En el portal de [GBIF](https://www.gbif.org/occurrence/search) busque registros de presencia de una especie de su interés (puede filtrar por país u otros criterios). Elija un registro y examine su página de detalle.
     - Identifique al menos cinco variables presentes en el registro y clasifique cada una según la jerarquía de la figura 1.
     - ¿Cuáles variables del registro tienen valores faltantes?
-2. Un conjunto de datos de estaciones meteorológicas de Costa Rica contiene las siguientes variables: nombre de la estación, provincia, altitud, temperatura promedio anual, cantidad de días con lluvia al año y categoría climática (seca, intermedia, lluviosa). Clasifique cada variable según la jerarquía de la figura 1 y justifique cada clasificación.
-3. [Kaggle](https://www.kaggle.com/datasets) es una plataforma que reúne miles de conjuntos de datos abiertos y que se utilizará más adelante en el curso. Explore el conjunto de datos [Significant Earthquakes, 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database), del Servicio Geológico de los Estados Unidos (USGS), el cual contiene registros de los sismos más significativos de ese período. A partir de la descripción del conjunto y de la vista previa de los datos:
+2. [Kaggle](https://www.kaggle.com/datasets) es una plataforma que reúne miles de conjuntos de datos abiertos y que se utilizará más adelante en el curso. Explore el conjunto de datos [Significant Earthquakes, 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database), del Servicio Geológico de los Estados Unidos (USGS), el cual contiene registros de los sismos más significativos de ese período. A partir de la descripción del conjunto y de la vista previa de los datos:
     - Determine cuántas observaciones y cuántas variables tiene el conjunto y qué representa cada observación.
     - Clasifique las variables principales (fecha, hora, latitud, longitud, profundidad, magnitud y tipo de evento) según la jerarquía de la figura 1.
-    - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos?
+    - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos? Para cada tipo ausente, proponga una variable de ese tipo que podría agregarse al conjunto.
     - Como ejercicio adicional, repita el análisis con otro conjunto de datos de Kaggle de su interés.
 (ejercicios-ciencia-datos)=
 ### Ciencia de datos
 
-4. Cuatro de los procesos descritos en la sección (importar, ordenar, transformar y visualizar) se implementan, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb). Ábralo, observe cómo se implementa cada proceso y realice los ejercicios que contiene; el primero explica cómo ejecutarlo y copiarlo en Google Colab.
+3. Cuatro de los procesos descritos en la sección (importar, ordenar, transformar y visualizar) se implementan, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb). Ábralo, observe cómo se implementa cada proceso y realice los ejercicios que contiene; el primero explica cómo ejecutarlo y copiarlo en Google Colab.
 
 (ejercicios-reproducibilidad)=
 ### Reproducibilidad
 
-5. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad (figuras 3 y 4) se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
+4. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad (figuras 3 y 4) se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
 
 (ejercicios-herramientas)=
 ### Herramientas
 
-6. Este curso se desarrolla en un repositorio público de GitHub: [github.com/gf0657-programacionsig/2026-ii](https://github.com/gf0657-programacionsig/2026-ii). Explórelo e identifique:
+5. Este curso se desarrolla en un repositorio público de GitHub: [github.com/gf0657-programacionsig/2026-ii](https://github.com/gf0657-programacionsig/2026-ii). Explórelo e identifique:
     - El archivo `environment.yml` y tres de las bibliotecas cuyas versiones fija.
     - En el historial de confirmaciones (*commits*) del repositorio, un cambio reciente: qué archivo modificó y qué describe su mensaje.
     - El archivo Markdown en el que está escrito este capítulo (en el directorio `contenidos/`) y una diferencia entre cómo se ve el archivo fuente y cómo se ve esta página del sitio web.
