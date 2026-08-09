@@ -19,259 +19,117 @@ La ciencia de datos es un campo multidisciplinario que estudia los datos para ex
 
 En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology - Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
 
-Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de la especie [*Bradypus variegatus*](https://es.wikipedia.org/wiki/Bradypus_variegatus) (perezoso de tres dedos).
+Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). Cada nombre científico enlaza al registro original.
 
 <figure style="text-align: center; margin: 20px 0;">
-    <figcaption><strong>Tabla 1</strong>. Registros de presencia de <em>Bradypus variegatus</em>. Fuente: GBIF <a href="https://www.gbif.org/occurrence/download/0065516-241126133413365">(https://www.gbif.org/occurrence/download/0065516-241126133413365)</a>.</figcaption>
+    <figcaption><strong>Tabla 1</strong>. Registros de presencia de especies de fauna silvestre en Costa Rica. Fuente: <a href="https://www.gbif.org/">GBIF</a> (consulta: 8 de agosto de 2026).</figcaption>
     <table class="table table-bordered table-striped" style="margin: 0 auto;">
         <thead>
             <tr>
-                <th>Tipo de registro</th>
-                <th>País</th>
-                <th>Localidad</th>
+                <th>Nombre científico</th>
                 <th>Longitud</th>
                 <th>Latitud</th>
+                <th>Altitud (m)</th>
                 <th>Fecha</th>
-                <th>Observador</th>
+                <th>Individuos</th>
+                <th>Categoría UICN</th>
+                <th>Tipo de registro</th>
             </tr>
         </thead>
         <tbody>
         <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>VE</td>
-            <td>Casa Maria und nähere Umgebung, Bejuma / Carabobo</td>
-            <td class="align-right">-68.254486</td>
-            <td class="align-right">10.282892</td>
-            <td>2015-02-19T00:00</td>
-            <td>881932368</td>
+            <td><a href="https://www.gbif.org/occurrence/5083205506"><em>Panthera onca</em></a></td>
+            <td class="align-right">-85.414700</td>
+            <td class="align-right">10.819316</td>
+            <td class="align-right"></td>
+            <td>2024-01-26</td>
+            <td class="align-right">3</td>
+            <td>NT</td>
+            <td>MACHINE_OBSERVATION</td>
         </tr>
         <tr>
+            <td><a href="https://www.gbif.org/occurrence/5891408331"><em>Puma concolor</em></a></td>
+            <td class="align-right">-85.058334</td>
+            <td class="align-right">9.873334</td>
+            <td class="align-right">362</td>
+            <td>2018-04-10</td>
+            <td class="align-right">1</td>
+            <td>LC</td>
+            <td>MATERIAL_CITATION</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.gbif.org/occurrence/4174649301"><em>Tapirella bairdii</em></a></td>
+            <td class="align-right">-83.500000</td>
+            <td class="align-right">9.500000</td>
+            <td class="align-right">3654</td>
+            <td>1967-02-04</td>
+            <td class="align-right">1</td>
+            <td></td>
             <td>PRESERVED_SPECIMEN</td>
-            <td>CO</td>
-            <td>Unguia</td>
-            <td class="align-right">-77.213341</td>
-            <td class="align-right">8.097215</td>
-            <td>1950</td>
-            <td>P. Hershkovitz</td>
         </tr>
         <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>CR</td>
-            <td>La Selva Reserve</td>
-            <td class="align-right">-84.003922</td>
-            <td class="align-right">10.431209</td>
-            <td>2019-03-24</td>
-            <td>User 16594</td>
-        </tr>
-        <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>CR</td>
-            <td>Talamanca</td>
-            <td class="align-right">-82.802523</td>
-            <td class="align-right">9.669042</td>
-            <td>2017-10-21</td>
-            <td>User 5551</td>
-        </tr>
-        <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>VE</td>
-            <td>Casa Maria und nähere Umgebung, Bejuma / Carabobo</td>
-            <td class="align-right">-68.254486</td>
-            <td class="align-right">10.282892</td>
-            <td>2013-04-22T00:00</td>
-            <td>1665984680</td>
-        </tr>
-        <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>CO</td>
-            <td>Vereda Brasilar | Cerro Maco</td>
-            <td class="align-right">-75.194920</td>
-            <td class="align-right">9.885820</td>
-            <td>2018-07-27</td>
-            <td>User 12345</td>
-        </tr>
-        <tr>
-            <td>HUMAN_OBSERVATION</td>
-            <td>CR</td>
-            <td>Manuel Antonio N.P.</td>
-            <td class="align-right">-84.149261</td>
-            <td class="align-right">9.415193</td>
-            <td>2000-02-04</td>
-            <td>Volunteer 1</td>
-        </tr>
-        <tr>
+            <td><a href="https://www.gbif.org/occurrence/4174649340"><em>Ateles geoffroyi</em></a></td>
+            <td class="align-right">-84.893100</td>
+            <td class="align-right">10.437500</td>
+            <td class="align-right">905</td>
+            <td>1969-11-07</td>
+            <td class="align-right">1</td>
+            <td>EN</td>
             <td>PRESERVED_SPECIMEN</td>
-            <td>PA</td>
-            <td>Pacific end of Panama Canal Zone, Canal Zone</td>
-            <td class="align-right">-79.777222</td>
-            <td class="align-right">9.133283</td>
-            <td>1915-01-01/2020-01-01</td>
-            <td>Scientist X</td>
         </tr>
         <tr>
+            <td><a href="https://www.gbif.org/occurrence/6150492462"><em>Crocodylus acutus</em></a></td>
+            <td class="align-right">-84.617872</td>
+            <td class="align-right">9.757316</td>
+            <td class="align-right"></td>
+            <td>2026-01-13</td>
+            <td class="align-right">1</td>
+            <td>VU</td>
             <td>HUMAN_OBSERVATION</td>
-            <td>PA</td>
-            <td>Almirante</td>
-            <td class="align-right">-82.400000</td>
-            <td class="align-right">9.300000</td>
-            <td>1960-01-22</td>
-            <td>Local Observer</td>
         </tr>
         <tr>
+            <td><a href="https://www.gbif.org/occurrence/5131991086"><em>Chelonia mydas</em></a></td>
+            <td class="align-right">-83.873328</td>
+            <td class="align-right">8.716209</td>
+            <td class="align-right"></td>
+            <td>2025-04-16</td>
+            <td class="align-right">2</td>
+            <td>LC</td>
             <td>HUMAN_OBSERVATION</td>
-            <td>PA</td>
-            <td>Achiote Road</td>
-            <td class="align-right">-79.990768</td>
-            <td class="align-right">9.203782</td>
-            <td>2009-01-11T00:00</td>
-            <td>Research Team</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.gbif.org/occurrence/6150672236"><em>Ara macao</em></a></td>
+            <td class="align-right">-83.469447</td>
+            <td class="align-right">8.873869</td>
+            <td class="align-right"></td>
+            <td>2026-01-29</td>
+            <td class="align-right">8</td>
+            <td>LC</td>
+            <td>HUMAN_OBSERVATION</td>
+        </tr>
+        <tr>
+            <td><a href="https://www.gbif.org/occurrence/896284939"><em>Ara macao</em></a></td>
+            <td class="align-right">-85.317394</td>
+            <td class="align-right">10.810174</td>
+            <td class="align-right">853</td>
+            <td>1930-10-25</td>
+            <td class="align-right"></td>
+            <td>LC</td>
+            <td>PRESERVED_SPECIMEN</td>
         </tr>
     </tbody>
     </table>
 </figure>
 
-El conjunto de datos de la tabla 1 consta de diez observaciones (filas) y siete variables (columnas).
+El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y ocho variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan valores faltantes, algo que debe tenerse en cuenta al procesarlos.
 
 ### Observaciones y variables
 
-La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel & Hardin, 2021). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de *Bradypus variegatus*, descrito por siete variables.
-
-Como otro ejemplo, la tabla 2 muestra registros de presencia de varias especies, con un conjunto más amplio de tipos de variables.
-
-<figure style="text-align: center; margin: 20px 0;">
-    <figcaption><strong>Tabla 2</strong>. Registros de presencia de especies.</figcaption>
-    <table class="table table-bordered table-striped" style="margin: 0 auto;">
-  <thead>
-    <tr>
-      <th>Nombre científico</th>
-      <th>Longitud</th>
-      <th>Latitud</th>
-      <th>Fecha</th>
-      <th>Sexo</th>
-      <th>Edad (años)</th>
-      <th>Peso (g)</th>
-      <th>Longitud (cm)</th>
-      <th>Estado de conservación</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><i>Panthera onca</i></td>
-      <td>-84.5678</td>
-      <td>10.1234</td>
-      <td>2024-05-12</td>
-      <td>Macho</td>
-      <td>5</td>
-      <td>56700</td>
-      <td>170</td>
-      <td>Casi amenazada (NT)</td>
-    </tr>
-    <tr>
-      <td><i>Ara macao</i></td>
-      <td>-83.2345</td>
-      <td>9.8765</td>
-      <td>2024-06-18</td>
-      <td>Hembra</td>
-      <td>3</td>
-      <td>1000</td>
-      <td>85</td>
-      <td>Preocupación menor (LC)</td>
-    </tr>
-    <tr>
-      <td><i>Dendrobates auratus</i></td>
-      <td>-82.1234</td>
-      <td>8.5432</td>
-      <td>2024-07-22</td>
-      <td>Macho</td>
-      <td>1</td>
-      <td>2</td>
-      <td>4</td>
-      <td>Preocupación menor (LC)</td>
-    </tr>
-    <tr>
-      <td><i>Cebus imitator</i></td>
-      <td>-85.4321</td>
-      <td>10.6543</td>
-      <td>2024-08-30</td>
-      <td>Hembra</td>
-      <td>8</td>
-      <td>3000</td>
-      <td>45</td>
-      <td>Vulnerable (VU)</td>
-    </tr>
-    <tr>
-      <td><i>Iguana iguana</i></td>
-      <td>-84.7890</td>
-      <td>9.3456</td>
-      <td>2024-09-15</td>
-      <td>Macho</td>
-      <td>4</td>
-      <td>4000</td>
-      <td>150</td>
-      <td>Preocupación menor (LC)</td>
-    </tr>
-    <tr>
-      <td><i>Basiliscus basiliscus</i></td>
-      <td>-83.4567</td>
-      <td>8.9876</td>
-      <td>2024-10-05</td>
-      <td>Hembra</td>
-      <td>2</td>
-      <td>200</td>
-      <td>80</td>
-      <td>Preocupación menor (LC)</td>
-    </tr>
-    <tr>
-      <td><i>Ateles geoffroyi</i></td>
-      <td>-84.1234</td>
-      <td>10.2345</td>
-      <td>2024-11-12</td>
-      <td>Macho</td>
-      <td>6</td>
-      <td>7000</td>
-      <td>50</td>
-      <td>En peligro (EN)</td>
-    </tr>
-    <tr>
-      <td><i>Boa imperator</i></td>
-      <td>-82.3456</td>
-      <td>9.8765</td>
-      <td>2024-12-01</td>
-      <td>Hembra</td>
-      <td>10</td>
-      <td>12000</td>
-      <td>300</td>
-      <td>Preocupación menor (LC)</td>
-    </tr>
-    <tr>
-      <td><i>Sotalia fluviatilis</i></td>
-      <td>-83.9876</td>
-      <td>8.1234</td>
-      <td>2024-12-20</td>
-      <td>Macho</td>
-      <td>12</td>
-      <td>35000</td>
-      <td>210</td>
-      <td>En peligro (EN)</td>
-    </tr>
-    <tr>
-      <td><i>Chelonia mydas</i></td>
-      <td>-84.1234</td>
-      <td>9.6543</td>
-      <td>2025-01-05</td>
-      <td>Hembra</td>
-      <td>50</td>
-      <td>150000</td>
-      <td>120</td>
-      <td>En peligro (EN)</td>
-    </tr>
-  </tbody>
-    </table>
-</figure>
+La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel & Hardin, 2021). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
 
 ### Tipos de variables
 
-Las variables de los datos de la tabla 2 son de varios tipos, cuya jerarquía se muestra en la figura 1.
+Las variables de los datos de la tabla 1 son de varios tipos, cuya jerarquía se muestra en la figura 1.
 
 <figure style="text-align: center;">
   <img
@@ -287,11 +145,11 @@ Corresponden a números a los cuales se les pueden aplicar operaciones como suma
 
 ##### Discretas
 
-Toman valores específicos que se pueden contar. La variable `edad`, en este caso, es discreta.
+Toman valores específicos que se pueden contar. La variable `individuos` (cantidad de individuos observados en cada registro), en este caso, es discreta.
 
 ##### Continuas
 
-Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `peso` y `longitud` son continuas.
+Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas variables se caracterizan por su capacidad para representar medidas precisas y pueden asumir un número infinito de valores, incluso dentro de un rango limitado (ej. entre 0 y 1). Las variables `longitud`, `latitud` y `altitud` son continuas.
 
 #### Categóricas
 
@@ -299,11 +157,11 @@ Las variables categóricas (también llamadas cualitativas), son aquellas que de
 
 ##### Nominales
 
-No existe un orden inherente o jerarquía entre las categorías. Las variables `nombre científico` y `sexo` son nominales.
+No existe un orden inherente o jerarquía entre las categorías. Las variables `nombre científico` y `tipo de registro` son nominales.
 
 ##### Ordinales
 
-Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `estado de conservación`.
+Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `categoría UICN`, cuyos valores corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN), las cuales siguen un orden creciente de riesgo (ej. LC: preocupación menor, NT: casi amenazada, VU: vulnerable, EN: en peligro).
 
 ## Ciencia de datos
 
