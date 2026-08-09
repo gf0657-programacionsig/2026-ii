@@ -19,7 +19,7 @@ Este capítulo introduce los conceptos fundamentales sobre los datos —observac
 
 En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology - Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
 
-Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original. Los nombres de las variables corresponden a términos del estándar [Darwin Core](https://dwc.tdwg.org/), tal como los entrega GBIF (`gbifID` e `iucnRedListCategory` son campos agregados por GBIF, no términos del estándar). La altitud (`elevation`) se expresa en metros.
+Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original. Los nombres de las variables corresponden a términos del estándar [Darwin Core](https://dwc.tdwg.org/), tal como los entrega GBIF (`gbifID` e `iucnRedListCategory` son campos agregados por GBIF, no términos del estándar). La altitud (`elevation`) se expresa en metros. Los valores de `iucnRedListCategory` corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN): LC (preocupación menor), NT (casi amenazada), VU (vulnerable) y EN (en peligro).
 
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla 1</strong>. Registros de presencia de especies de fauna silvestre en Costa Rica. Fuente: <a href="https://www.gbif.org/">GBIF</a> (consulta: 8 de agosto de 2026).</figcaption>
@@ -172,7 +172,7 @@ No existe un orden inherente o jerarquía entre las categorías. Las variables `
 
 ##### Ordinales
 
-Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyos valores corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN), las cuales siguen un orden creciente de riesgo (ej. LC: preocupación menor, NT: casi amenazada, VU: vulnerable, EN: en peligro).
+Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyas categorías siguen un orden creciente de riesgo de extinción (LC < NT < VU < EN).
 
 ## Ciencia de datos
 
