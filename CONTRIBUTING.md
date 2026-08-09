@@ -56,7 +56,10 @@ siguen la misma estructura de secciones, en este orden:
    [Referencias bibliográficas](#referencias-bibliográficas).
 
 Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
-capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran
+capítulo introductorio sin trabajo previo). Los nombres de las bibliotecas de
+Python se escriben en minúsculas en la prosa (pandas, plotly, folium),
+como en el programa del curso; los títulos de las obras citadas conservan
+su forma original. Las tablas y figuras se numeran
 consecutivamente dentro de cada capítulo (`Tabla 1`, `Figura 1`, …) y llevan
 leyenda con la fuente. Las tablas en HTML se envuelven en `<figure>` con la
 leyenda en `<figcaption>` antes del `<table>` — **no** usar `<caption>`
@@ -93,7 +96,7 @@ El sitio se publica como HTML estático, por lo que las salidas basadas en
 JavaScript requieren patrones específicos (verificados en el sitio de
 TPB-708 2026-I, que usa el mismo tema `book-theme`):
 
-- **Plotly**: no usar `fig.show()`, que no se renderiza en el sitio. Cada
+- **plotly**: no usar `fig.show()`, que no se renderiza en el sitio. Cada
   notebook define al inicio una función auxiliar y la usa en todo el
   capítulo:
 
@@ -108,10 +111,10 @@ TPB-708 2026-I, que usa el mismo tema `book-theme`):
   `display(fig)` produce una salida con el MIME
   `application/vnd.plotly.v1+json`, que el sitio, Jupyter y Colab
   renderizan de forma interactiva.
-- **Folium**: no requiere tratamiento especial. Una celda que termina en el
+- **folium**: no requiere tratamiento especial. Una celda que termina en el
   objeto del mapa (`m`) guarda la salida como `text/html` (un *iframe*
   autocontenido) que el sitio muestra correctamente.
-- **Leafmap** (y otros basados en *widgets* de Jupyter, como ipyleaflet):
+- **leafmap** (y otros basados en *widgets* de Jupyter, como ipyleaflet):
   sus salidas **no** se publican en el sitio. Después de cada celda de
   código se agrega una captura de pantalla PNG en un bloque `<figure>`
   numerado como el resto de las figuras del capítulo, con la imagen en el
