@@ -23,7 +23,7 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
 
 <figure style="text-align: center; margin: 20px 0;">
     <table class="table table-bordered table-striped" style="margin: 0 auto;">
-    <caption><strong>Tabla 1</strong>. Registros de presencia de <em>Bradypus variegatus</em>. Fuente: GBIF <a href="https://doi.org/10.15468/dl.8m47hn">(https://doi.org/10.15468/dl.8m47hn).</a></caption>
+    <caption><strong>Tabla 1</strong>. Registros de presencia de <em>Bradypus variegatus</em>. Fuente: GBIF <a href="https://www.gbif.org/occurrence/download/0065516-241126133413365">(https://www.gbif.org/occurrence/download/0065516-241126133413365).</a></caption>
         <thead>
             <tr>
                 <th>Tipo de registro</th>
@@ -398,10 +398,10 @@ Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.a ed.). CRC Pr
 ISO/IEC 2382. (2015). *Information Technology - Vocabulary*. International Organization for Standardization.
 \
 \
-Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. https://doi.org/10.1126/science.1213847
+Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
 \
 \
-Singleton, A. D., Spielman, S., & Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. *International Journal of Geographical Information Science*, 30(8), 1507–1521. https://doi.org/10.1080/13658816.2015.1137579
+Singleton, A. D., Spielman, S., & Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. *International Journal of Geographical Information Science*, 30(8), 1507–1521. [https://www.tandfonline.com/doi/full/10.1080/13658816.2015.1137579](https://www.tandfonline.com/doi/full/10.1080%2F13658816.2015.1137579)
 \
 \
 Wickham, Hadley; Çetinkaya-Rundel, Mine; & Grolemund, Garret (2023). *Introduction* en *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data* (2nd ed.). O'Reilly Media. https://r4ds.hadley.nz/intro

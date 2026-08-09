@@ -59,6 +59,21 @@ capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran
 consecutivamente dentro de cada capítulo (`Tabla 1`, `Figura 1`, …) y llevan
 leyenda con la fuente.
 
+### Enlaces con DOI en las referencias
+
+MyST detecta los DOI en los enlaces (tanto `doi.org` como URLs de editor
+con `/doi/10.xxxx/...`) y genera automáticamente una sección "References"
+en inglés, duplicando la sección propia de referencias. Para evitarlo, en
+los enlaces Markdown de las referencias se codifica la barra del DOI como
+`%2F` en el destino, manteniendo la URL normal como texto visible:
+
+```markdown
+[https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
+```
+
+Los enlaces en HTML (`<a href="...">`) no son procesados por MyST y no
+necesitan este ajuste.
+
 ### Gráficos interactivos y mapas en notebooks
 
 El sitio se publica como HTML estático, por lo que las salidas basadas en
