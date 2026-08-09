@@ -154,9 +154,13 @@ flowchart TD
   T --> TF([Fechas])
   T --> TH([Horas])
   T --> TFH([Fechas y horas])
+  V --> E([Espaciales])
+  E --> EP([Puntos])
+  E --> EL([Líneas])
+  E --> EPO([Polígonos])
 ```
 
-<p style="text-align: center;"><strong>Figura 1</strong>. Tipos de variables. Elaboración propia con base en Çetinkaya-Rundel y Hardin (2024) y McKinney (2022).</p>
+<p style="text-align: center;"><strong>Figura 1</strong>. Tipos de variables. Elaboración propia con base en Çetinkaya-Rundel y Hardin (2024), McKinney (2022) y Open Geospatial Consortium (2011).</p>
 
 #### Numéricas
 
@@ -185,6 +189,12 @@ Hay un orden o jerarquía clara entre las categorías, como en el caso de la var
 #### Temporales
 
 Representan puntos en el tiempo: fechas, horas o combinaciones de ambas (McKinney, 2022). Permiten ordenar cronológicamente las observaciones y calcular duraciones. Aunque suelen registrarse como texto, los lenguajes de programación ofrecen tipos de datos específicos para manejarlas y se recomienda expresarlas en formatos estándar como el de la norma [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) (ej. `2024-01-26`). La variable `eventDate`, en este caso, es temporal.
+
+#### Espaciales
+
+Representan la ubicación y la forma de los objetos en el espacio geográfico mediante geometrías como puntos, líneas y polígonos, según el estándar *Simple Feature Access* (Open Geospatial Consortium, 2011). En la tabla 1 no hay una variable espacial como tal, pero las variables `decimalLongitude` y `decimalLatitude`, que por separado son numéricas continuas, pueden combinarse para construir una de tipo punto: la ubicación de cada registro de presencia. Esta distinción entre coordenadas y geometrías se retomará al estudiar el procesamiento de datos geoespaciales.
+
+Existen otros tipos adicionales, como el texto libre y los valores lógicos (verdadero o falso), que se estudiarán como tipos de datos del lenguaje Python.
 
 ## Ciencia de datos
 
@@ -279,6 +289,9 @@ ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organ
 \
 \
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
+\
+\
+Open Geospatial Consortium. (2011). *OpenGIS implementation standard for geographic information - Simple feature access - Part 1: Common architecture* (OGC 06-103r4). https://www.ogc.org/standard/sfa/
 \
 \
 Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
