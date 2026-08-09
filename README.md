@@ -10,6 +10,9 @@ Curso de la Escuela de Geografía de la Universidad de Costa Rica (UCR).
 - `myst.yml`, `index.md`, `contenidos/`: fuentes del sitio web del curso,
   construido con [MyST](https://mystmd.org/) y desplegado en GitHub Pages
   mediante GitHub Actions (`.github/workflows/deploy.yml`).
+- `traducir-sitio.py`: traduce al español las etiquetas de la interfaz del
+  sitio generado (MyST aún no tiene internacionalización); se ejecuta después
+  de `myst build --html`, localmente y en el workflow de despliegue.
 - `environment.yml`: ambiente conda del curso, compartido por estudiantes
   (`conda env create -f environment.yml`, crea el ambiente `geopython`) y
   profesor (mismo comando con `-n gf0657-programacionsig-2026-ii`).
@@ -42,6 +45,9 @@ conda activate gf0657-programacionsig-2026-ii
 
 # Construir el sitio HTML estático (salida en _build/html/)
 myst build --html
+
+# Traducir al español las etiquetas de la interfaz
+python3 traducir-sitio.py
 
 # Servidor de desarrollo local (puerto 3000)
 myst start
