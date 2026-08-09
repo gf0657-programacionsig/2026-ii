@@ -304,6 +304,8 @@ La documentación es vital durante todo el ciclo de vida de una investigación r
 
 Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como el hospedaje de sitios web mediante [GitHub Pages](https://pages.github.com/). En este curso, Git y GitHub se utilizan para desarrollar y publicar los materiales — incluido este sitio web — y el estudiantado los empleará en las tareas y en el proyecto.
 
+*Ejercicios de esta sección: [ejercicios sobre herramientas](#ejercicios-herramientas).*
+
 ## Ejercicios
 
 Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
@@ -329,6 +331,14 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 ### Reproducibilidad
 
 5. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad (figuras 3 y 4) se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
+
+(ejercicios-herramientas)=
+### Herramientas
+
+6. Este curso se desarrolla en un repositorio público de GitHub: [github.com/gf0657-programacionsig/2026-ii](https://github.com/gf0657-programacionsig/2026-ii). Explórelo e identifique:
+    - El archivo `environment.yml` y tres de las bibliotecas cuyas versiones fija.
+    - En el historial de confirmaciones (*commits*) del repositorio, un cambio reciente: qué archivo modificó y qué describe su mensaje.
+    - El archivo Markdown en el que está escrito este capítulo (en el directorio `contenidos/`) y una diferencia entre cómo se ve el archivo fuente y cómo se ve esta página del sitio web.
 
 ## Referencias bibliográficas
 
