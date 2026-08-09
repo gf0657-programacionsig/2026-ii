@@ -52,7 +52,10 @@ siguen la misma estructura de secciones, en este orden:
 3. `## Introducción` — presentación breve del tema y su motivación.
 4. Secciones de contenido (`##`) propias del tema.
 5. `## Ejercicios` — en los capítulos prácticos (típicamente notebooks).
-6. `## Referencias bibliográficas` — en formato APA, al final.
+6. `## Referencias bibliográficas` — al final, en formato APA 7 con el
+   aparato en español: apellidos e iniciales, conjunción «y» antes del
+   último autor (no «&»), «En» para capítulos de libro y títulos con
+   mayúscula solo en la primera palabra.
 
 Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran

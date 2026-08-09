@@ -4,14 +4,14 @@
 
 ### Lecturas
 
-Çetinkaya-Rundel, Mine, & Hardin, Johanna (2021). *Chapter 1: Hello data* en *Introduction to Modern Statistics* (1st ed.). OpenIntro, Inc. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2021). Chapter 1: Hello data. En *Introduction to modern statistics* (1.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
 \
 \
-Wickham, Hadley; Çetinkaya-Rundel, Mine; & Grolemund, Garret (2023). *Introduction* en *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data* (2nd ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
+Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
 
 ## Introducción
 
-Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel & Hardin, 2021).
+Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2021).
 
 La ciencia de datos es un campo multidisciplinario que estudia los datos para extraer información útil y ayudar a tomar decisiones. Combina conocimientos de matemáticas, estadística, inteligencia artificial e ingeniería de computación para analizar grandes cantidades de datos.
 
@@ -125,7 +125,7 @@ El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y ocho v
 
 ### Observaciones y variables
 
-La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel & Hardin, 2021). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
+La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel y Hardin, 2021). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
 
 ### Tipos de variables
 
@@ -136,7 +136,7 @@ Las variables de los datos de la tabla 1 son de varios tipos, cuya jerarquía se
     src="img/tipos-variables-estadisticas.png"
     alt="Tipos de variables"
   >
-  <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: (Çetinkaya-Rundel & Hardin, 2021).</figcaption>
+  <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: Çetinkaya-Rundel y Hardin (2021).</figcaption>
 </figure>
 
 #### Numéricas
@@ -174,7 +174,7 @@ La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos,
     src="img/modelo-ciencia-datos.svg"
     alt="Procesos de ciencia de datos"
   >
-  <figcaption><strong>Figura 2</strong>. Procesos de ciencia de datos. Fuente: (Wickham et al., 2023).</figcaption>
+  <figcaption><strong>Figura 2</strong>. Procesos de ciencia de datos. Fuente: Wickham et al. (2023).</figcaption>
 </figure>
 
 **Importar** los datos generalmente implica leerlos de un archivo, una base de datos o una [interfaz de programación de aplicaciones (API)](https://es.wikipedia.org/wiki/API) y cargarlos en estructuras apropiadas para este propósito en un lenguaje de programación.
@@ -214,7 +214,7 @@ En general, el estándar mínimo de reproducibilidad requiere que los datos y el
     src="img/espectro-reproducibilidad.png"
     alt="Espectro de reproducibilidad"
   >
-  <figcaption><strong>Figura 3</strong>. Espectro de reproducibilidad. Fuente: <a href="https://www.youtube.com/watch?v=ZjXb53pOor0">Anita Graser</a> con base en (Peng, 2011).</figcaption>
+  <figcaption><strong>Figura 3</strong>. Espectro de reproducibilidad. Fuente: <a href="https://www.youtube.com/watch?v=ZjXb53pOor0">Anita Graser</a> con base en Peng (2011).</figcaption>
 </figure>
 
 ## Herramientas
@@ -235,22 +235,22 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 ## Referencias bibliográficas
 
-Beyer, M. A. & Laney, D. (2012). *The Importance of 'Big Data': A Definition*. Gartner. https://www.gartner.com/doc/2057415
+Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner. https://www.gartner.com/doc/2057415
 \
 \
-Çetinkaya-Rundel, Mine, & Hardin, Johanna (2021). *Chapter 1: Hello data* en *Introduction to Modern Statistics* (1st ed.). OpenIntro, Inc. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2021). Chapter 1: Hello data. En *Introduction to modern statistics* (1.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
 \
 \
-Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.a ed.). CRC Press.
+Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC Press.
 \
 \
-ISO/IEC 2382. (2015). *Information Technology - Vocabulary*. International Organization for Standardization.
+ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organization for Standardization.
 \
 \
 Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
 \
 \
-Singleton, A. D., Spielman, S., & Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. *International Journal of Geographical Information Science*, 30(8), 1507–1521. [https://www.tandfonline.com/doi/full/10.1080/13658816.2015.1137579](https://www.tandfonline.com/doi/full/10.1080%2F13658816.2015.1137579)
+Singleton, A. D., Spielman, S. y Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. *International Journal of Geographical Information Science*, 30(8), 1507–1521. [https://www.tandfonline.com/doi/full/10.1080/13658816.2015.1137579](https://www.tandfonline.com/doi/full/10.1080%2F13658816.2015.1137579)
 \
 \
-Wickham, Hadley; Çetinkaya-Rundel, Mine; & Grolemund, Garret (2023). *Introduction* en *R for Data Science: Import, Tidy, Transform, Visualize, and Model Data* (2nd ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
+Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
