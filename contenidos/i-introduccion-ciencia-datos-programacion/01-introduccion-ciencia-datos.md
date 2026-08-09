@@ -142,13 +142,21 @@ La presentación y descripción efectivas de los datos constituyen el primer pas
 
 Las variables de los datos de la tabla 1 son de varios tipos, cuya jerarquía se muestra en la figura 1.
 
-<figure style="text-align: center;">
-  <img
-    src="img/tipos-variables-estadisticas.png"
-    alt="Tipos de variables"
-  >
-  <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: Çetinkaya-Rundel y Hardin (2024).</figcaption>
-</figure>
+```{mermaid}
+flowchart TD
+  V([Variables]) --> N([Numéricas])
+  V --> C([Categóricas])
+  V --> T([Temporales])
+  N --> ND([Discretas])
+  N --> NC([Continuas])
+  C --> CN([Nominales])
+  C --> CO([Ordinales])
+  T --> TF([Fechas])
+  T --> TH([Horas])
+  T --> TFH([Fechas y horas])
+```
+
+<p style="text-align: center;"><strong>Figura 1</strong>. Tipos de variables. Elaboración propia con base en Çetinkaya-Rundel y Hardin (2024) y McKinney (2022).</p>
 
 #### Numéricas
 
@@ -173,6 +181,10 @@ No existe un orden inherente o jerarquía entre las categorías. Las variables `
 ##### Ordinales
 
 Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyas categorías siguen un orden creciente de riesgo de extinción (LC < NT < VU < EN).
+
+#### Temporales
+
+Representan puntos en el tiempo: fechas, horas o combinaciones de ambas (McKinney, 2022). Permiten ordenar cronológicamente las observaciones y calcular duraciones. Aunque suelen registrarse como texto, los lenguajes de programación ofrecen tipos de datos específicos para manejarlas y se recomienda expresarlas en formatos estándar como el de la norma [ISO 8601](https://es.wikipedia.org/wiki/ISO_8601) (ej. `2024-01-26`). La variable `eventDate`, en este caso, es temporal.
 
 ## Ciencia de datos
 
@@ -264,6 +276,9 @@ Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC P
 \
 \
 ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organization for Standardization.
+\
+\
+McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
 \
 \
 Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
