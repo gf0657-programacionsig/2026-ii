@@ -141,7 +141,7 @@ Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*.
 
 Anaconda. (s. f.). *Getting started with conda*. Conda Documentation. Recuperado el 3 de agosto de 2026, de https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html
 
-Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/
+Çetinkaya-Rundel, M., & Hardin, J. (2024). *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/
 
 Downey, A. B. (2024). *Think Python: How to think like a computer scientist* (3.ª ed.). O'Reilly Media. https://greenteapress.com/wp/think-python-3rd-edition/
 
