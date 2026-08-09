@@ -4,7 +4,7 @@
 
 ### Lecturas
 
-Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
 \
 \
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
@@ -246,7 +246,7 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner.
 \
 \
-Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
 \
 \
 Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC Press.
