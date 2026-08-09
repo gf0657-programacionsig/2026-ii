@@ -284,7 +284,7 @@ Las variables de los datos de la tabla 2 son de varios tipos, cuya jerarquía se
 
 <figure style="text-align: center;">
   <img
-    src="https://raw.githubusercontent.com/datos-geoespaciales-biodiversidad/python/refs/heads/main/img/tipos-variables-estadisticas.png"
+    src="img/tipos-variables-estadisticas.png"
     alt="Tipos de variables"
   >
   <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: (Çetinkaya-Rundel & Hardin, 2021).</figcaption>
@@ -322,7 +322,7 @@ La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos,
 
 <figure style="text-align: center;">
   <img
-    src="https://raw.githubusercontent.com/datos-geoespaciales-biodiversidad/python/refs/heads/main/img/modelo-ciencia-datos.svg"
+    src="img/modelo-ciencia-datos.svg"
     alt="Procesos de ciencia de datos"
   >
   <figcaption><strong>Figura 2</strong>. Procesos de ciencia de datos. Fuente: (Wickham et al., 2023).</figcaption>
@@ -362,7 +362,7 @@ En general, el estándar mínimo de reproducibilidad requiere que los datos y el
 
 <figure style="text-align: center;">
   <img
-    src="https://raw.githubusercontent.com/datos-geoespaciales-biodiversidad/python/refs/heads/main/img/espectro-reproducibilidad.png"
+    src="img/espectro-reproducibilidad.png"
     alt="Espectro de reproducibilidad"
   >
   <figcaption><strong>Figura 3</strong>. Espectro de reproducibilidad. Fuente: <a href="https://www.youtube.com/watch?v=ZjXb53pOor0">Anita Graser</a> con base en (Peng, 2011).</figcaption>
