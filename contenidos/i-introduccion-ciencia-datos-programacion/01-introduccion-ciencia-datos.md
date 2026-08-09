@@ -250,7 +250,17 @@ Singleton et al. (2016) han identificado los siguientes retos para la reproducib
 4. El proceso de [revisión por pares (*peer review process*)](https://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares) y la publicación académica deben requerir la presentación de un modelo de flujo de trabajo e idealmente la disponibilidad de los materiales necesarios para la replicación.
 5. En los casos en los que la reproducibilidad total no sea posible (ej. datos sensibles), los investigadores deben esforzarse por incluir todos los aspectos que puedan de un marco de trabajo abierto.
 
-En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, que se ilustra en la figura 3: desde la publicación sin materiales, que no es reproducible, hasta la replicación completa, considerada el estándar de oro.
+En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, como ilustra la figura 3.
+
+<figure style="text-align: center;">
+  <img
+    src="img/espectro-reproducibilidad.png"
+    alt="Espectro de reproducibilidad"
+  >
+  <figcaption><strong>Figura 3</strong>. Espectro de reproducibilidad. Fuente: Graser (2021), con base en Peng (2011).</figcaption>
+</figure>
+
+La figura 4 sintetiza el espectro en español: desde la publicación sin materiales, que no es reproducible, hasta la replicación completa, considerada el estándar de oro.
 
 ```{mermaid}
 flowchart LR
@@ -259,9 +269,7 @@ flowchart LR
   style E fill:#ffe08a,stroke:#b8860b
 ```
 
-<p style="text-align: center;"><strong>Figura 3</strong>. Espectro de reproducibilidad. Elaboración propia con base en Peng (2011).</p>
-
-Una explicación del espectro de reproducibilidad y de su aplicación en la ciencia de datos geoespaciales puede verse en la charla de Graser (2021).
+<p style="text-align: center;"><strong>Figura 4</strong>. Síntesis del espectro de reproducibilidad. Elaboración propia con base en Peng (2011).</p>
 
 Este curso practica la reproducibilidad con sus propias herramientas: los materiales se desarrollan en repositorios públicos de GitHub, las lecciones incluyen cuadernos de notas ejecutables y el ambiente de programación se documenta, con versiones fijadas, en un archivo `environment.yml`.
 
