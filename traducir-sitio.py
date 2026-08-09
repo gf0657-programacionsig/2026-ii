@@ -28,8 +28,8 @@ RAIZ = Path(__file__).parent / "_build" / "html"
 # (patrón exacto en inglés, reemplazo en español)
 REEMPLAZOS = [
     # Pie de página
-    ('"Made with MyST"', '"Hecho con MyST"'),
-    (">Made with MyST<", ">Hecho con MyST<"),
+    ('"Made with MyST"', '"Desarrollado con MyST"'),
+    (">Made with MyST<", ">Desarrollado con MyST<"),
     # Búsqueda
     ('children:"Search"', 'children:"Buscar"'),
     ('placeholder:"Search"', 'placeholder:"Buscar"'),
