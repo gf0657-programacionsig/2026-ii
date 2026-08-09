@@ -4,10 +4,15 @@
 
 ### Lecturas
 
+Antes de la clase, revise las siguientes lecturas. De la primera interesan especialmente las secciones 1.1 y 1.2, sobre los datos, las observaciones, las variables y sus tipos; de la segunda, el modelo del ciclo de vida de la ciencia de datos. Ambas están en inglés; de la segunda existe una traducción al español de su primera edición, cuyo capítulo introductorio cubre esencialmente el mismo contenido y se lista como alternativa.
+
 Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
 \
 \
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
+\
+\
+Wickham, H. y Grolemund, G. (2023). Introducción. En *R para ciencia de datos* (Comunidad de R de América Latina, trad.). https://es.r4ds.hadley.nz/01-intro.html (Obra original publicada en 2017)
 
 ## Introducción
 
