@@ -22,8 +22,8 @@ En términos generales, los **datos** son representaciones simbólicas (numéric
 Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de la especie [*Bradypus variegatus*](https://es.wikipedia.org/wiki/Bradypus_variegatus) (perezoso de tres dedos).
 
 <figure style="text-align: center; margin: 20px 0;">
+    <figcaption><strong>Tabla 1</strong>. Registros de presencia de <em>Bradypus variegatus</em>. Fuente: GBIF <a href="https://www.gbif.org/occurrence/download/0065516-241126133413365">(https://www.gbif.org/occurrence/download/0065516-241126133413365)</a>.</figcaption>
     <table class="table table-bordered table-striped" style="margin: 0 auto;">
-    <caption><strong>Tabla 1</strong>. Registros de presencia de <em>Bradypus variegatus</em>. Fuente: GBIF <a href="https://www.gbif.org/occurrence/download/0065516-241126133413365">(https://www.gbif.org/occurrence/download/0065516-241126133413365).</a></caption>
         <thead>
             <tr>
                 <th>Tipo de registro</th>
@@ -138,19 +138,9 @@ La presentación y descripción efectivas de los datos constituyen el primer pas
 
 Como otro ejemplo, la tabla 2 muestra registros de presencia de varias especies, con un conjunto más amplio de tipos de variables.
 
-<table border="0" cellspacing="10" class="dataframe">
-  <style>
-    .dataframe {
-        border-spacing: 10px 10px;
-    }
-    .dataframe td, .dataframe th {
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 2px;
-        padding-bottom: 2px;
-    }
-  </style>
-  <caption><strong>Tabla 2. Registros de presencia de especies.</strong></caption>
+<figure style="text-align: center; margin: 20px 0;">
+    <figcaption><strong>Tabla 2</strong>. Registros de presencia de especies.</figcaption>
+    <table class="table table-bordered table-striped" style="margin: 0 auto;">
   <thead>
     <tr>
       <th>Nombre científico</th>
@@ -276,7 +266,8 @@ Como otro ejemplo, la tabla 2 muestra registros de presencia de varias especies,
       <td>En peligro (EN)</td>
     </tr>
   </tbody>
-</table>
+    </table>
+</figure>
 
 ### Tipos de variables
 
