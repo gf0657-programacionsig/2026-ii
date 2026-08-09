@@ -57,7 +57,19 @@ siguen la misma estructura de secciones, en este orden:
 Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran
 consecutivamente dentro de cada capítulo (`Tabla 1`, `Figura 1`, …) y llevan
-leyenda con la fuente.
+leyenda con la fuente. Las tablas en HTML se envuelven en `<figure>` con la
+leyenda en `<figcaption>` antes del `<table>` — **no** usar `<caption>`
+dentro de la tabla, porque MyST lo descarta y la leyenda no aparece en el
+sitio:
+
+```html
+<figure style="text-align: center; margin: 20px 0;">
+    <figcaption><strong>Tabla N</strong>. Descripción. Fuente: ...</figcaption>
+    <table class="table table-bordered table-striped" style="margin: 0 auto;">
+    ...
+    </table>
+</figure>
+```
 
 ### Enlaces con DOI en las referencias
 
