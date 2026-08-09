@@ -1,4 +1,6 @@
-# GF-0657 Programación en SIG - 2026-II
+---
+title: GF-0657 Programación en SIG - 2026-II
+---
 
 Este curso trata sobre el manejo, la visualización y el análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones de sistemas de información geográfica (SIG), incluidas las destinadas a la Web. Se muestra cómo las metodologías y técnicas de ciencia de datos pueden aplicarse al componente geoespacial de diversos problemas. Además, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
 
