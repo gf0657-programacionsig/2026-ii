@@ -155,12 +155,14 @@ flowchart TD
   T --> TH([Horas])
   T --> TFH([Fechas y horas])
   V --> E([Espaciales])
-  E --> EP([Puntos])
-  E --> EL([Líneas])
-  E --> EPO([Polígonos])
+  E --> EV([Vectoriales])
+  EV --> EP([Puntos])
+  EV --> EL([Líneas])
+  EV --> EPO([Polígonos])
+  E --> ER([Ráster])
 ```
 
-<p style="text-align: center;"><strong>Figura 1</strong>. Tipos de variables. Elaboración propia con base en Çetinkaya-Rundel y Hardin (2024), McKinney (2022) y Open Geospatial Consortium (2011).</p>
+<p style="text-align: center;"><strong>Figura 1</strong>. Tipos de variables. Elaboración propia con base en Çetinkaya-Rundel y Hardin (2024), McKinney (2022), Olaya (2020) y Open Geospatial Consortium (2011).</p>
 
 #### Numéricas
 
@@ -192,7 +194,7 @@ Representan puntos en el tiempo: fechas, horas o combinaciones de ambas (McKinne
 
 #### Espaciales
 
-Representan la ubicación y la forma de los objetos en el espacio geográfico mediante geometrías como puntos, líneas y polígonos, según el estándar *Simple Feature Access* (Open Geospatial Consortium, 2011). En la tabla 1 no hay una variable espacial como tal, pero las variables `decimalLongitude` y `decimalLatitude`, que por separado son numéricas continuas, pueden combinarse para construir una de tipo punto: la ubicación de cada registro de presencia. Esta distinción entre coordenadas y geometrías se retomará al estudiar el procesamiento de datos geoespaciales.
+Representan la ubicación y la forma de los objetos y fenómenos en el espacio geográfico, mediante dos modelos principales (Olaya, 2020). En el modelo **vectorial**, los objetos se representan con geometrías como puntos, líneas y polígonos, según el estándar *Simple Feature Access* (Open Geospatial Consortium, 2011). En el modelo **ráster**, una matriz de celdas representa la variación continua de una variable en el espacio, como la altitud o la temperatura. En la tabla 1 no hay una variable espacial como tal, pero las variables `decimalLongitude` y `decimalLatitude`, que por separado son numéricas continuas, pueden combinarse para construir una vectorial de tipo punto: la ubicación de cada registro de presencia. Esta distinción entre coordenadas y geometrías, así como el modelo ráster, se retomarán al estudiar el procesamiento de datos geoespaciales.
 
 Existen otros tipos adicionales, como el texto libre y los valores lógicos (verdadero o falso), que se estudiarán como tipos de datos del lenguaje Python.
 
@@ -289,6 +291,9 @@ ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organ
 \
 \
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
+\
+\
+Olaya, V. (2020). *Sistemas de información geográfica* (versión 3.0). https://volaya.github.io/libro-sig/
 \
 \
 Open Geospatial Consortium. (2011). *OpenGIS implementation standard for geographic information - Simple feature access - Part 1: Common architecture* (OGC 06-103r4). https://www.ogc.org/standard/sfa/
