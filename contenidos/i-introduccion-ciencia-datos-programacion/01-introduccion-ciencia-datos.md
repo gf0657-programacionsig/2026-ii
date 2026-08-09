@@ -202,7 +202,9 @@ Esta clasificación no es un fin en sí misma: el tipo de cada variable determin
 
 ## Ciencia de datos
 
-Los datos, en su estado original, carecen de contexto e interpretación. La **ciencia de datos** es una disciplina que permite convertir datos sin procesar en entendimiento, comprensión y conocimiento (Wickham et al., 2023). Combina estadística, matemáticas y programación de computadoras. A diferencia de otros enfoques de generación de conocimiento, la ciencia de datos intenta resolver problemas mediante el uso de grandes volúmenes de datos y de técnicas avanzadas de modelado, apoyándose fuertemente en la programación de computadoras y en el aprendizaje automático (*machine learning*). El surgimiento y la popularidad de la ciencia de datos están motivados por un incremento acelerado de la cantidad de datos existentes, así como por la disponibilidad de herramientas computacionales para procesarlos y analizarlos. Además, estos avances tecnológicos han sido apoyados por un cambio cultural propiciado por movimientos como el de ciencia abierta (*open science*), el cual promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodologías y el código fuente.
+Los datos, en su estado original, carecen de contexto e interpretación. La **ciencia de datos** es una disciplina que permite convertir datos sin procesar en entendimiento, comprensión y conocimiento (Wickham et al., 2023). Combina estadística, matemáticas y programación de computadoras, y se apoya en volúmenes de datos frecuentemente grandes, en técnicas de modelado y en el aprendizaje automático (*machine learning*).
+
+El surgimiento y la popularidad de la ciencia de datos están motivados por un incremento acelerado de la cantidad de datos existentes, así como por la disponibilidad de herramientas computacionales para procesarlos y analizarlos. Estos avances han sido acompañados por un cambio cultural propiciado por movimientos como el de ciencia abierta (*open science*), el cual promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodologías y el código fuente, tema que se retoma en la sección de reproducibilidad.
 
 La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos, el cual incluye los procesos de importar, ordenar, transformar, visualizar, modelar y comunicar. Todos se articulan mediante programación de computadoras.
 
@@ -211,7 +213,7 @@ La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos,
     src="img/modelo-ciencia-datos.svg"
     alt="Procesos de ciencia de datos"
   >
-  <figcaption><strong>Figura 2</strong>. Procesos de ciencia de datos. Fuente: Wickham et al. (2023).</figcaption>
+  <figcaption><strong>Figura 2</strong>. Procesos de ciencia de datos. Fuente: Wickham y Grolemund (2017/2023).</figcaption>
 </figure>
 
 **Importar** los datos generalmente implica leerlos de un archivo, una base de datos o una [interfaz de programación de aplicaciones (API)](https://es.wikipedia.org/wiki/API) y cargarlos en estructuras apropiadas para este propósito en un lenguaje de programación.
@@ -220,15 +222,15 @@ La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos,
 
 **Transformar** los datos incluye, entre otras operaciones, la generación de algún subconjunto de observaciones o variables del conjunto original, la creación de nuevas variables a partir de las ya existentes o el cálculo de estadísticas como conteos y promedios.
 
-Una vez que los datos están bien estructurados y con las variables que se requieren para el análisis, se puede proceder a la generación de conocimiento mediante dos mecanismos: la visualización y la modelización. Ambos tienen fortalezas y debilidades y es común iterar varias veces entre uno y otro.
+Una vez que los datos están bien estructurados y con las variables que se requieren para el análisis, se puede proceder a la generación de conocimiento mediante dos mecanismos: la visualización y el modelado. Ambos tienen fortalezas y debilidades y es común iterar varias veces entre uno y otro.
 
 **Visualizar** los datos en tablas, gráficos, mapas u otros formatos permite encontrar patrones inesperados o formular nuevas preguntas. Una buena visualización también puede indicar si se están formulando preguntas equivocadas o utilizando datos que no son apropiados para el problema que se desea resolver. Es importante tener en cuenta que las visualizaciones deben ser interpretadas por seres humanos. Por este motivo, visualizaciones como gráficos estadísticos y mapas deben ser seleccionadas con cuidado y elaborarse detalladamente.
 
-**Modelar** es crear una representación abstracta y estructurada de los datos, con el fin de facilitar su análisis y realizar predicciones. Al ser herramientas matemáticas o computacionales, los modelos muchas veces pueden mejorarse mediante el empleo de mayores capacidades de cómputo, lo que los hace menos dependientes de la intervención humana, como en el caso de las visualizaciones.
+**Modelar** es crear una representación abstracta y estructurada de los datos, con el fin de facilitar su análisis y realizar predicciones. Al ser herramientas matemáticas o computacionales, los modelos muchas veces pueden mejorarse mediante el empleo de mayores capacidades de cómputo, lo que los hace menos dependientes de la intervención humana que las visualizaciones, las cuales deben ser interpretadas por personas.
 
 **Comunicar** es el último paso y es una actividad crítica de cualquier proyecto de análisis de datos o de ciencia en general. No importa lo bien que los modelos y visualizaciones ayuden a entender los datos si los resultados no pueden ser comunicados a otras personas.
 
-Estos procesos se ilustran, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb), el cual también puede abrirse y ejecutarse en Google Colab.
+Cuatro de estos procesos (importar, ordenar, transformar y visualizar) se ilustran, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb), el cual también puede abrirse y ejecutarse en Google Colab.
 
 ## Reproducibilidad
 
@@ -308,3 +310,6 @@ Singleton, A. D., Spielman, S. y Brunsdon, C. (2016). Establishing a framework f
 \
 \
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
+\
+\
+Wickham, H. y Grolemund, G. (2023). *R para ciencia de datos* (Comunidad de R de América Latina, trad.; coord. por R. Quiroga). https://es.r4ds.hadley.nz/ (Obra original publicada en 2017)
