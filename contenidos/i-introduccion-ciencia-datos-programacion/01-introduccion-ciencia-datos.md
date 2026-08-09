@@ -170,7 +170,7 @@ Corresponden a números a los cuales se les pueden aplicar operaciones como suma
 
 ##### Discretas
 
-Toman valores específicos que se pueden contar. La variable `individualCount` (cantidad de individuos observados en cada registro), en este caso, es discreta.
+Toman valores específicos que se pueden contar. Surgen típicamente de conteos, por lo que entre dos valores consecutivos no existen valores intermedios posibles: pueden observarse 2 o 3 individuos, pero no 2.5. La variable `individualCount` (cantidad de individuos observados en cada registro), en este caso, es discreta.
 
 ##### Continuas
 
@@ -182,11 +182,11 @@ Las variables categóricas (también llamadas cualitativas), son aquellas que de
 
 ##### Nominales
 
-No existe un orden inherente o jerarquía entre las categorías. Las variables `species` (nombre científico) y `basisOfRecord` (tipo de registro) son nominales. También lo es `gbifID`: aunque sus valores son números, funcionan como etiquetas que identifican cada registro, por lo que no tiene sentido aplicarles operaciones aritméticas.
+No existe un orden inherente o jerarquía entre las categorías. Las variables `species` (nombre científico) y `basisOfRecord` (tipo de registro) son nominales. También lo es `gbifID`: aunque sus valores son números, funcionan como etiquetas que identifican cada registro, por lo que no tiene sentido aplicarles operaciones aritméticas. Las variables nominales solo admiten comparaciones de igualdad y suelen resumirse mediante conteos y frecuencias (ej. cuántos registros hay de cada especie).
 
 ##### Ordinales
 
-Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyas categorías siguen un orden creciente de riesgo de extinción (LC < NT < VU < EN).
+Hay un orden o jerarquía clara entre las categorías, como en el caso de la variable `iucnRedListCategory`, cuyas categorías siguen un orden creciente de riesgo de extinción (LC < NT < VU < EN). Sin embargo, ese orden no implica que las distancias entre categorías sean uniformes: no puede afirmarse que la diferencia entre LC y NT sea igual a la diferencia entre VU y EN. Por eso las variables ordinales, a pesar de su orden, no admiten las operaciones aritméticas de las variables numéricas.
 
 #### Temporales
 
@@ -197,6 +197,8 @@ Representan puntos en el tiempo: fechas, horas o combinaciones de ambas (McKinne
 Representan la ubicación y la forma de los objetos y fenómenos en el espacio geográfico, mediante dos modelos principales (Olaya, 2020). En el modelo **vectorial**, los objetos se representan con geometrías como puntos, líneas y polígonos, según el estándar *Simple Feature Access* (Open Geospatial Consortium, 2011). En el modelo **ráster**, una matriz de celdas representa la variación continua de una variable en el espacio, como la altitud o la temperatura. En la tabla 1 no hay una variable espacial como tal, pero las variables `decimalLongitude` y `decimalLatitude`, que por separado son numéricas continuas, pueden combinarse para construir una vectorial de tipo punto: la ubicación de cada registro de presencia. Esta distinción entre coordenadas y geometrías, así como el modelo ráster, se retomarán al estudiar el procesamiento de datos geoespaciales.
 
 Existen otros tipos adicionales, como el texto libre y los valores lógicos (verdadero o falso), que se estudiarán como tipos de datos del lenguaje Python.
+
+Esta clasificación no es un fin en sí misma: el tipo de cada variable determina qué operaciones, estadísticas y visualizaciones son válidas (Çetinkaya-Rundel y Hardin, 2024). Por ejemplo, tiene sentido calcular el promedio de `individualCount`, pero no el "promedio" de `basisOfRecord`; una variable ordinal admite mediana pero no media; y una nominal se resume con frecuencias. Al estudiar la visualización de datos se verá, además, que la elección del tipo de gráfico depende de los tipos de las variables representadas.
 
 ## Ciencia de datos
 
