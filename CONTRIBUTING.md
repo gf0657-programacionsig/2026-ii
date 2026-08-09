@@ -1,8 +1,8 @@
 # Convenciones del repositorio
 
-Este documento describe las convenciones de Git usadas en este repositorio.
-Además de mantener el orden del proyecto, sirve como material de referencia
-para el curso.
+Este documento describe las convenciones de Git y de contenido usadas en
+este repositorio. Además de mantener el orden del proyecto, sirve como
+material de referencia para el curso.
 
 ## Mensajes de commit
 
@@ -40,6 +40,54 @@ para el curso.
   `programa-ajuste-evaluacion`, `sitio-leccion-01`.
 - **Cambios triviales** (erratas, fechas, regeneración de archivos
   derivados): commit directo a `main`.
+
+## Estructura de los capítulos del sitio web
+
+Todos los capítulos (lecciones en `contenidos/`, tanto `.md` como `.ipynb`)
+siguen la misma estructura de secciones, en este orden:
+
+1. `# Título del capítulo`
+2. `## Trabajo previo` — con subsecciones `### Lecturas` y, si aplica,
+   `### Tutoriales` u otros recursos que deben revisarse antes de la clase.
+3. `## Introducción` — presentación breve del tema y su motivación.
+4. Secciones de contenido (`##`) propias del tema.
+5. `## Ejercicios` — en los capítulos prácticos (típicamente notebooks).
+6. `## Referencias bibliográficas` — en formato APA, al final.
+
+Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
+capítulo introductorio sin trabajo previo). Las tablas y figuras se numeran
+consecutivamente dentro de cada capítulo (`Tabla 1`, `Figura 1`, …) y llevan
+leyenda con la fuente.
+
+### Gráficos interactivos y mapas en notebooks
+
+El sitio se publica como HTML estático, por lo que las salidas basadas en
+JavaScript requieren patrones específicos (verificados en el sitio de
+TPB-708 2026-I, que usa el mismo tema `book-theme`):
+
+- **Plotly**: no usar `fig.show()`, que no se renderiza en el sitio. Cada
+  notebook define al inicio una función auxiliar y la usa en todo el
+  capítulo:
+
+  ```python
+  from IPython.display import display
+
+  def mostrar(fig):
+      """Despliega un gráfico de plotly de forma compatible con book-theme."""
+      display(fig)
+  ```
+
+  `display(fig)` produce una salida con el MIME
+  `application/vnd.plotly.v1+json`, que el sitio, Jupyter y Colab
+  renderizan de forma interactiva.
+- **Folium**: no requiere tratamiento especial. Una celda que termina en el
+  objeto del mapa (`m`) guarda la salida como `text/html` (un *iframe*
+  autocontenido) que el sitio muestra correctamente.
+- **Leafmap** (y otros basados en *widgets* de Jupyter, como ipyleaflet):
+  sus salidas **no** se publican en el sitio. Después de cada celda de
+  código se agrega una captura de pantalla PNG en un bloque `<figure>`
+  numerado como el resto de las figuras del capítulo, con la imagen en el
+  subdirectorio `img/` de la sección.
 
 ## Qué no se versiona
 
