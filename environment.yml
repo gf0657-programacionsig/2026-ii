@@ -1,0 +1,34 @@
+# Ambiente conda del curso GF-0657 Programación en SIG (2026-II).
+#
+# Estudiantes (crea el ambiente "geopython"):
+#   conda env create -f environment.yml
+#
+# Profesor (mismo contenido, con nombre propio):
+#   conda env create -f environment.yml -n gf0657-programacionsig-2026-ii
+#
+# Actualización cuando cambie este archivo:
+#   conda env update -f environment.yml [-n nombre]
+name: geopython
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  # Base
+  - python=3.14.6
+  - git=2.55.0
+  - jupyter=1.1.1
+  # Sitio web del curso (MyST)
+  - nodejs=26.6.0
+  - mystmd=1.10.1
+  # Análisis y visualización de datos
+  - numpy=2.5.1
+  - pandas=3.0.5
+  - matplotlib=3.11.1
+  - plotly=6.9.0
+  # Datos geoespaciales
+  - geopandas=1.1.4
+  - rasterio=1.5.1
+  - folium=0.20.0
+  - leafmap=0.63.0
+  # Aplicaciones web
+  - streamlit=1.61.1

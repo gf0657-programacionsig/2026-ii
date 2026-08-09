@@ -7,6 +7,12 @@ Curso de la Escuela de Geografía de la Universidad de Costa Rica (UCR).
 
 ## Estructura del repositorio
 
+- `myst.yml`, `index.md`, `contenidos/`: fuentes del sitio web del curso,
+  construido con [MyST](https://mystmd.org/) y desplegado en GitHub Pages
+  mediante GitHub Actions (`.github/workflows/deploy.yml`).
+- `environment.yml`: ambiente conda del curso, compartido por estudiantes
+  (`conda env create -f environment.yml`, crea el ambiente `geopython`) y
+  profesor (mismo comando con `-n gf0657-programacionsig-2026-ii`).
 - `programa/`: programa del curso.
   - `programa.md`: fuente de la verdad del contenido del programa.
   - `generar-referencia.py`: crea `referencia.docx` (plantilla oficial de la
@@ -28,3 +34,18 @@ trabajo, qué no se versiona) están documentadas en
 1. Editar `programa/programa.md`.
 2. Ejecutar `programa/generar.sh`.
 3. Revisar `programa/gf0657-programacionsig-g001-2026-ii.pdf`.
+
+## Flujo de trabajo del sitio web
+
+```bash
+conda activate gf0657-programacionsig-2026-ii
+
+# Construir el sitio HTML estático (salida en _build/html/)
+myst build --html
+
+# Servidor de desarrollo local (puerto 3000)
+myst start
+```
+
+Los push a `main` construyen y despliegan el sitio automáticamente en
+GitHub Pages.
