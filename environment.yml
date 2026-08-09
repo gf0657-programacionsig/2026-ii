@@ -25,6 +25,8 @@ dependencies:
   - pandas=3.0.5
   - matplotlib=3.11.1
   - plotly=6.9.0
+  # Acceso a datos de biodiversidad (API de GBIF)
+  - pygbif=0.6.6
   # Datos geoespaciales
   - geopandas=1.1.4
   - rasterio=1.5.1

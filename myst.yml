@@ -14,6 +14,7 @@ project:
     - title: "I. Introducción a la ciencia de datos y a la programación de computadoras"
       children:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md
+        - file: contenidos/i-introduccion-ciencia-datos-programacion/02-ejemplo-visualizacion-datos-biodiversidad.ipynb
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
