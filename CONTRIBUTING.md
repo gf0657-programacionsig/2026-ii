@@ -51,10 +51,13 @@ siguen la misma estructura de secciones, en este orden:
    `### Tutoriales` u otros recursos que deben revisarse antes de la clase.
 3. `## Introducción` — presentación breve del tema y su motivación.
 4. Secciones de contenido (`##`) propias del tema.
-5. `## Ejercicios` — en los capítulos prácticos (típicamente notebooks).
-   Además, una sección de contenido puede cerrar con una subsección
-   `### Ejercicio` cuando convenga realizarlo en ese punto de la lectura
-   (ej. abrir un notebook que implementa lo recién explicado).
+5. `## Ejercicios` — con numeración continua y, cuando el capítulo lo
+   amerite, subdividida en subsecciones espejo de las secciones de
+   contenido (`### Datos`, `### Ciencia de datos`, …), con un destino
+   `(ejercicios-x)=` sobre cada una. Cada sección de contenido cierra
+   entonces con una línea `*Ejercicios de esta sección: [...](#ejercicios-x).*`,
+   lo que permite intercalar teoría y práctica durante las clases sin
+   alterar la estructura del capítulo.
 6. `## Referencias bibliográficas` — al final, según la sección
    [Referencias bibliográficas](#referencias-bibliográficas).
 

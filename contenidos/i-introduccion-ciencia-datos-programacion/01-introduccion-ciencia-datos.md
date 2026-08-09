@@ -205,6 +205,8 @@ Existen otros tipos adicionales, como el texto libre y los valores lógicos (ver
 
 Esta clasificación no es un fin en sí misma: el tipo de cada variable determina qué operaciones, estadísticas y visualizaciones son válidas (Çetinkaya-Rundel y Hardin, 2024). Por ejemplo, tiene sentido calcular el promedio de `individualCount`, pero no el "promedio" de `basisOfRecord`; una variable ordinal admite mediana pero no media; y una nominal se resume con frecuencias. Al estudiar la visualización de datos se verá, además, que la elección del tipo de gráfico depende de los tipos de las variables representadas.
 
+*Ejercicios de esta sección: [ejercicios sobre datos](#ejercicios-datos).*
+
 ## Ciencia de datos
 
 Los datos, en su estado original, carecen de contexto e interpretación. La **ciencia de datos** es una disciplina que permite convertir datos sin procesar en entendimiento, comprensión y conocimiento (Wickham et al., 2023). Combina estadística, matemáticas y programación de computadoras, y se apoya en volúmenes de datos frecuentemente grandes, en técnicas de modelado y en el aprendizaje automático (*machine learning*).
@@ -237,9 +239,7 @@ Una vez que los datos están bien estructurados y con las variables que se requi
 
 **Comunicar** es el último paso y es una actividad crítica de cualquier proyecto de análisis de datos o de ciencia en general. No importa lo bien que los modelos y visualizaciones ayuden a entender los datos si los resultados no pueden ser comunicados a otras personas.
 
-### Ejercicio
-
-Cuatro de los procesos descritos (importar, ordenar, transformar y visualizar) se implementan, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb). Ábralo, observe cómo se implementa cada proceso y realice los ejercicios que contiene; el primero explica cómo ejecutarlo y copiarlo en Google Colab.
+*Ejercicios de esta sección: [ejercicios sobre ciencia de datos](#ejercicios-ciencia-datos).*
 
 ## Reproducibilidad
 
@@ -278,6 +278,8 @@ flowchart LR
 
 Este curso practica la reproducibilidad con sus propias herramientas: los materiales se desarrollan en repositorios públicos de GitHub, las lecciones incluyen cuadernos de notas ejecutables y el ambiente de programación se documenta, con versiones fijadas, en un archivo `environment.yml`.
 
+*Ejercicios de esta sección: [ejercicios sobre reproducibilidad](#ejercicios-reproducibilidad).*
+
 ## Herramientas
 
 La implementación de un proyecto de ciencia de datos requiere del uso de herramientas informáticas como lenguajes de programación, ambientes y gestores de paquetes, cuadernos de notas, sintaxis y formatos para documentación y sistemas de control de versiones.
@@ -304,6 +306,11 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 ## Ejercicios
 
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+
+(ejercicios-datos)=
+### Datos
+
 1. En el portal de [GBIF](https://www.gbif.org/occurrence/search) busque registros de presencia de una especie de su interés (puede filtrar por país u otros criterios). Elija un registro y examine su página de detalle.
     - Identifique al menos cinco variables presentes en el registro y clasifique cada una según la jerarquía de la figura 1.
     - ¿Cuáles variables del registro tienen valores faltantes?
@@ -313,7 +320,15 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
     - Clasifique las variables principales (fecha, hora, latitud, longitud, profundidad, magnitud y tipo de evento) según la jerarquía de la figura 1.
     - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos?
     - Como ejercicio adicional, repita el análisis con otro conjunto de datos de Kaggle de su interés.
-4. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad de la figura 3 se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
+(ejercicios-ciencia-datos)=
+### Ciencia de datos
+
+4. Cuatro de los procesos descritos en la sección (importar, ordenar, transformar y visualizar) se implementan, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb). Ábralo, observe cómo se implementa cada proceso y realice los ejercicios que contiene; el primero explica cómo ejecutarlo y copiarlo en Google Colab.
+
+(ejercicios-reproducibilidad)=
+### Reproducibilidad
+
+5. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad (figuras 3 y 4) se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
 
 ## Referencias bibliográficas
 
