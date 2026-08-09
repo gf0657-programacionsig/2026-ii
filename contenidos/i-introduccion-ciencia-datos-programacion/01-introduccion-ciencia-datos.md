@@ -130,6 +130,8 @@ Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de
     </table>
 </figure>
 
+Los registros de la tabla 1 corresponden a especies conocidas en Costa Rica como jaguar (*Panthera onca*), puma (*Puma concolor*), danta (*Tapirella bairdii*), mono araña centroamericano (*Ateles geoffroyi*), cocodrilo americano (*Crocodylus acutus*), tortuga verde (*Chelonia mydas*) y lapa roja (*Ara macao*).
+
 El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y nueve variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan valores faltantes, algo que debe tenerse en cuenta al procesarlos.
 
 ### Observaciones y variables
