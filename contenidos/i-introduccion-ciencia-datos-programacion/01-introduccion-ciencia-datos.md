@@ -16,7 +16,7 @@ Wickham, H. y Grolemund, G. (2023). Introducción. En *R para ciencia de datos* 
 
 ## Introducción
 
-Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2024).
+Quienes hacen ciencia tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2024). En geografía, esos datos suelen tener un componente espacial: registros de presencia de especies, mediciones climáticas, imágenes satelitales o coordenadas de lugares y fenómenos, como los que se analizarán a lo largo de este curso.
 
 Este capítulo introduce los conceptos fundamentales sobre los datos —observaciones, variables y sus tipos— y presenta la ciencia de datos como la disciplina que permite convertirlos en conocimiento. Además, aborda dos ideas que acompañarán todo el curso: la reproducibilidad de los análisis y las herramientas informáticas que la hacen posible.
 
