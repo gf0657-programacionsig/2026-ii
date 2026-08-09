@@ -275,19 +275,27 @@ Este curso practica la reproducibilidad con sus propias herramientas: los materi
 
 ## Herramientas
 
-La implementación de un proyecto de ciencia de datos requiere del uso de herramientas informáticas como lenguajes de programación, sintaxis y formatos para documentación y sistemas de control de versiones.
+La implementación de un proyecto de ciencia de datos requiere del uso de herramientas informáticas como lenguajes de programación, ambientes y gestores de paquetes, cuadernos de notas, sintaxis y formatos para documentación y sistemas de control de versiones.
 
 ### Lenguajes de programación
 
-Como se ha mencionado, la programación de computadoras es una actividad presente durante todos los procesos de ciencia de datos. Hay muchos lenguajes que pueden utilizarse en este campo. Entre los más populares, pueden mencionarse [Python](https://www.python.org/), [R](https://www.r-project.org/), [SQL](https://www.iso.org/standard/76583.html) y [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/).
+Como se ha mencionado, la programación de computadoras es una actividad presente durante todos los procesos de ciencia de datos. Hay muchos lenguajes que pueden utilizarse en este campo. Entre los más populares, pueden mencionarse [Python](https://www.python.org/), [R](https://www.r-project.org/), [SQL](https://www.iso.org/standard/76583.html) y [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/). En este curso se utiliza Python, por la amplitud de su ecosistema de bibliotecas para ciencia de datos y para análisis geoespacial. R es también muy utilizado en ciencia de datos; de hecho, las lecturas de este capítulo provienen de libros basados en ese lenguaje, cuyos conceptos trascienden el lenguaje de programación empleado.
+
+### Ambientes y gestores de paquetes
+
+Los proyectos de ciencia de datos dependen de bibliotecas que evolucionan con el tiempo. Un **ambiente de programación** agrupa un conjunto de bibliotecas, con versiones específicas, aislado de otros proyectos. Los gestores de paquetes y de ambientes, como [conda](https://docs.conda.io/), permiten crear ambientes, documentarlos y recrearlos en otras computadoras, lo cual es clave para la reproducibilidad. El ambiente de este curso, por ejemplo, está documentado, con versiones fijadas, en un archivo `environment.yml` a partir del cual cualquier persona puede recrearlo; su instalación se estudiará en las próximas semanas.
+
+### Cuadernos de notas
+
+Los **cuadernos de notas** (*notebooks*), como los de [Jupyter](https://jupyter.org/), combinan en un solo documento código ejecutable, texto en Markdown y resultados como tablas, gráficos y mapas. Esa combinación los convierte en una herramienta idónea para la ciencia de datos reproducible y para la comunicación de resultados. Pueden ejecutarse localmente o en servicios en la nube como [Google Colab](https://colab.research.google.com/); el cuaderno de ejemplo de este capítulo ilustra ambas posibilidades: puede leerse en el sitio web del curso o abrirse y ejecutarse en Colab.
 
 ### Sintaxis y formatos para documentación
 
-La documentación es vital durante todo el ciclo de vida de una investigación reproducible. Se recomienda utilizar mecanismos estandarizados y abiertos como el [lenguaje de marcado de hipertexto (HTML, en inglés, *HyperText Markup Language*)](https://es.wikipedia.org/wiki/HTML) o [Markdown](https://en.wikipedia.org/wiki/Markdown), con los cuales pueden crearse documentos mediante editores de texto simples (i.e. no se requiere de software propietario), y exportables a varios formatos (ej. [LaTeX](https://es.wikipedia.org/wiki/LaTeX), [PDF](https://es.wikipedia.org/wiki/PDF)).
+La documentación es vital durante todo el ciclo de vida de una investigación reproducible. Se recomienda utilizar mecanismos estandarizados y abiertos como [Markdown](https://es.wikipedia.org/wiki/Markdown) o el [lenguaje de marcado de hipertexto (HTML, en inglés, *HyperText Markup Language*)](https://es.wikipedia.org/wiki/HTML), con los cuales pueden crearse documentos mediante editores de texto simples (es decir, no se requiere software propietario), exportables a varios formatos (ej. [LaTeX](https://es.wikipedia.org/wiki/LaTeX), [PDF](https://es.wikipedia.org/wiki/PDF)). En este curso, Markdown se usa en las celdas de texto de los cuadernos de notas y en la documentación de los repositorios; este mismo sitio web está escrito en Markdown.
 
 ### Sistemas de control de versiones
 
-Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como hospedaje de sitios web.
+Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como el hospedaje de sitios web mediante [GitHub Pages](https://pages.github.com/). En este curso, Git y GitHub se utilizan para desarrollar y publicar los materiales — incluido este sitio web — y el estudiantado los empleará en las tareas y en el proyecto.
 
 ## Ejercicios
 
