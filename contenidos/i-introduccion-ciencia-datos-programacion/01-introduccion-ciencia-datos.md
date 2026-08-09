@@ -238,9 +238,9 @@ Cuatro de los procesos descritos (importar, ordenar, transformar y visualizar) s
 
 ## Reproducibilidad
 
-La **reproducibilidad** es la capacidad de un ensayo o experimento de ser reproducido por otros. Más formalmente, en investigación cuantitativa, un análisis se considera reproducible si *el código fuente y los datos utilizados por un investigador para llegar a un resultado están disponibles y son suficientes para que otro investigador, trabajando de manera independiente, pueda llegar al mismo resultado* (Gandrud, 2020).
+La **reproducibilidad** es la capacidad de un análisis de ser reproducido por otras personas. Más formalmente, en investigación cuantitativa, un análisis se considera reproducible si *el código fuente y los datos utilizados por un investigador para llegar a un resultado están disponibles y son suficientes para que otro investigador, trabajando de manera independiente, pueda llegar al mismo resultado* (Gandrud, 2020). La reproducibilidad se distingue de la **replicabilidad**: un estudio es replicable si una investigación nueva, con datos nuevos, llega a hallazgos consistentes con los del estudio original (National Academies of Sciences, Engineering, and Medicine, 2019).
 
-El concepto de reproducibilidad es cada vez más importante debido, entre otras razones, al aumento exponencial de datos disponibles y a la aplicación de la programación de computadoras, para procesar estos datos, por parte de especialistas de muchas disciplinas. Sin embargo, en años recientes, se ha generado una creciente preocupación debido a que muchos estudios científicos publicados fallan las pruebas de reproducibilidad.
+El concepto de reproducibilidad es cada vez más importante debido, entre otras razones, al aumento acelerado de los datos disponibles y a que especialistas de muchas disciplinas los procesan mediante programación de computadoras. Sin embargo, en años recientes ha crecido la preocupación por la llamada **crisis de reproducibilidad**: en una encuesta de la revista *Nature*, alrededor del 70 % de los investigadores declaró haber intentado reproducir experimentos de otros científicos sin conseguirlo (Baker, 2016).
 
 Singleton et al. (2016) han identificado los siguientes retos para la reproducibilidad en ciencia de datos geoespaciales:
 
@@ -250,15 +250,20 @@ Singleton et al. (2016) han identificado los siguientes retos para la reproducib
 4. El proceso de [revisión por pares (*peer review process*)](https://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares) y la publicación académica deben requerir la presentación de un modelo de flujo de trabajo e idealmente la disponibilidad de los materiales necesarios para la replicación.
 5. En los casos en los que la reproducibilidad total no sea posible (ej. datos sensibles), los investigadores deben esforzarse por incluir todos los aspectos que puedan de un marco de trabajo abierto.
 
-En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, que se ilustra en la figura 3.
+En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, que se ilustra en la figura 3: desde la publicación sin materiales, que no es reproducible, hasta la replicación completa, considerada el estándar de oro.
 
-<figure style="text-align: center;">
-  <img
-    src="img/espectro-reproducibilidad.png"
-    alt="Espectro de reproducibilidad"
-  >
-  <figcaption><strong>Figura 3</strong>. Espectro de reproducibilidad. Fuente: <a href="https://www.youtube.com/watch?v=ZjXb53pOor0">Anita Graser</a> con base en Peng (2011).</figcaption>
-</figure>
+```{mermaid}
+flowchart LR
+  A["Solo<br>publicación"] --> B["Publicación<br>+ código"] --> C["Publicación<br>+ código y datos"] --> D["Publicación<br>+ código y datos<br>enlazados y ejecutables"] --> E["Replicación<br>completa"]
+  style A fill:#f5f5f5,stroke:#999999
+  style E fill:#ffe08a,stroke:#b8860b
+```
+
+<p style="text-align: center;"><strong>Figura 3</strong>. Espectro de reproducibilidad. Elaboración propia con base en Peng (2011).</p>
+
+Una explicación del espectro de reproducibilidad y de su aplicación en la ciencia de datos geoespaciales puede verse en la charla de Graser (2021).
+
+Este curso practica la reproducibilidad con sus propias herramientas: los materiales se desarrollan en repositorios públicos de GitHub, las lecciones incluyen cuadernos de notas ejecutables y el ambiente de programación se documenta, con versiones fijadas, en un archivo `environment.yml`.
 
 ## Herramientas
 
@@ -286,6 +291,9 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 ## Referencias bibliográficas
 
+Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. *Nature*, 533(7604), 452-454. https://www.nature.com/articles/533452a
+\
+\
 Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner.
 \
 \
@@ -295,10 +303,16 @@ Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. G
 Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC Press.
 \
 \
+Graser, A. (2021). *Open source for open spatial data science* [Video]. YouTube. https://www.youtube.com/watch?v=ZjXb53pOor0
+\
+\
 ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organization for Standardization.
 \
 \
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
+\
+\
+National Academies of Sciences, Engineering, and Medicine. (2019). *Reproducibility and replicability in science*. The National Academies Press. https://nap.nationalacademies.org/catalog/25303/reproducibility-and-replicability-in-science
 \
 \
 Olaya, V. (2020). *Sistemas de información geográfica* (versión 3.0). https://volaya.github.io/libro-sig/
