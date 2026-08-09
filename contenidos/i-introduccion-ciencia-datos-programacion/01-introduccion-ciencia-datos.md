@@ -230,7 +230,9 @@ Una vez que los datos están bien estructurados y con las variables que se requi
 
 **Comunicar** es el último paso y es una actividad crítica de cualquier proyecto de análisis de datos o de ciencia en general. No importa lo bien que los modelos y visualizaciones ayuden a entender los datos si los resultados no pueden ser comunicados a otras personas.
 
-Cuatro de estos procesos (importar, ordenar, transformar y visualizar) se ilustran, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb), el cual también puede abrirse y ejecutarse en Google Colab.
+### Ejercicio
+
+Cuatro de los procesos descritos (importar, ordenar, transformar y visualizar) se implementan, con datos de biodiversidad, en el cuaderno de notas [Ejemplo de procesos de ciencia de datos](02-ejemplo-procesos-ciencia-datos.ipynb). Ábralo, observe cómo se implementa cada proceso y realice los ejercicios que contiene; el primero explica cómo ejecutarlo y copiarlo en Google Colab.
 
 ## Reproducibilidad
 

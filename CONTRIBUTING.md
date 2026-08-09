@@ -52,6 +52,9 @@ siguen la misma estructura de secciones, en este orden:
 3. `## Introducción` — presentación breve del tema y su motivación.
 4. Secciones de contenido (`##`) propias del tema.
 5. `## Ejercicios` — en los capítulos prácticos (típicamente notebooks).
+   Además, una sección de contenido puede cerrar con una subsección
+   `### Ejercicio` cuando convenga realizarlo en ese punto de la lectura
+   (ej. abrir un notebook que implementa lo recién explicado).
 6. `## Referencias bibliográficas` — al final, según la sección
    [Referencias bibliográficas](#referencias-bibliográficas).
 
