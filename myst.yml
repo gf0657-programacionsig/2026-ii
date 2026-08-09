@@ -15,6 +15,10 @@ project:
       children:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md
 site:
+  # El título del sitio se deja vacío para que el tema no lo agregue como
+  # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
+  # (GitHub Pages), el sufijo duplicaba el nombre del curso en la portada.
+  title: ""
   template: book-theme
   # options:
   #   favicon: favicon.ico
