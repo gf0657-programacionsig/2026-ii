@@ -303,7 +303,12 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
     - Identifique al menos cinco variables presentes en el registro y clasifique cada una según la jerarquía de la figura 1.
     - ¿Cuáles variables del registro tienen valores faltantes?
 2. Un conjunto de datos de estaciones meteorológicas de Costa Rica contiene las siguientes variables: nombre de la estación, provincia, altitud, temperatura promedio anual, cantidad de días con lluvia al año y categoría climática (seca, intermedia, lluviosa). Clasifique cada variable según la jerarquía de la figura 1 y justifique cada clasificación.
-3. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad de la figura 3 se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
+3. [Kaggle](https://www.kaggle.com/datasets) es una plataforma que reúne miles de conjuntos de datos abiertos y que se utilizará más adelante en el curso. Explore el conjunto de datos [Significant Earthquakes, 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database), del Servicio Geológico de los Estados Unidos (USGS), el cual contiene registros de los sismos más significativos de ese período. A partir de la descripción del conjunto y de la vista previa de los datos:
+    - Determine cuántas observaciones y cuántas variables tiene el conjunto y qué representa cada observación.
+    - Clasifique las variables principales (fecha, hora, latitud, longitud, profundidad, magnitud y tipo de evento) según la jerarquía de la figura 1.
+    - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos?
+    - Como ejercicio adicional, repita el análisis con otro conjunto de datos de Kaggle de su interés.
+4. Considere un trabajo de análisis de datos que haya realizado en otro curso o contexto (ej. una tarea, un informe, una investigación). ¿En qué punto del espectro de reproducibilidad de la figura 3 se ubica? ¿Qué se necesitaría para acercarlo a la reproducibilidad completa?
 
 ## Referencias bibliográficas
 
