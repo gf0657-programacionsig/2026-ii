@@ -4,14 +4,14 @@
 
 ### Lecturas
 
-Çetinkaya-Rundel, M. y Hardin, J. (2021). Chapter 1: Hello data. En *Introduction to modern statistics* (1.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
 \
 \
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
 
 ## Introducción
 
-Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2021).
+Los científicos tratan de responder preguntas mediante métodos rigurosos y observaciones cuidadosas. Estas observaciones, recopiladas de notas de campo, encuestas y experimentos, entre otras fuentes, forman la columna vertebral de una investigación y se denominan datos (Çetinkaya-Rundel y Hardin, 2024).
 
 Este capítulo introduce los conceptos fundamentales sobre los datos —observaciones, variables y sus tipos— y presenta la ciencia de datos como la disciplina que permite convertirlos en conocimiento. Además, aborda dos ideas que acompañarán todo el curso: la reproducibilidad de los análisis y las herramientas informáticas que la hacen posible.
 
@@ -125,7 +125,7 @@ El conjunto de datos de la tabla 1 consta de ocho observaciones (filas) y ocho v
 
 ### Observaciones y variables
 
-La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel y Hardin, 2021). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
+La presentación y descripción efectivas de los datos constituyen el primer paso en un análisis (Çetinkaya-Rundel y Hardin, 2024). Una de las formas más comunes de representar datos es mediante tablas en las cuales cada fila es una **observación** y cada columna es una **variable**. Una observación corresponde a un elemento de datos que ha sido estudiado y cada variable a una característica de ese elemento. En la tabla 1, por ejemplo, cada observación corresponde a un registro de presencia de una especie, descrito por ocho variables.
 
 ### Tipos de variables
 
@@ -136,7 +136,7 @@ Las variables de los datos de la tabla 1 son de varios tipos, cuya jerarquía se
     src="img/tipos-variables-estadisticas.png"
     alt="Tipos de variables"
   >
-  <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: Çetinkaya-Rundel y Hardin (2021).</figcaption>
+  <figcaption><strong>Figura 1</strong>. Tipos de variables. Fuente: Çetinkaya-Rundel y Hardin (2024).</figcaption>
 </figure>
 
 #### Numéricas
@@ -243,10 +243,10 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 ## Referencias bibliográficas
 
-Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner. https://www.gartner.com/doc/2057415
+Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner.
 \
 \
-Çetinkaya-Rundel, M. y Hardin, J. (2021). Chapter 1: Hello data. En *Introduction to modern statistics* (1.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintro-ims.netlify.app/data-hello
 \
 \
 Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC Press.
