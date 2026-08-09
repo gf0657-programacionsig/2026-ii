@@ -206,6 +206,8 @@ Los datos, en su estado original, carecen de contexto e interpretación. La **ci
 
 El surgimiento y la popularidad de la ciencia de datos están motivados por un incremento acelerado de la cantidad de datos existentes, así como por la disponibilidad de herramientas computacionales para procesarlos y analizarlos. Estos avances han sido acompañados por un cambio cultural propiciado por movimientos como el de ciencia abierta (*open science*), el cual promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodologías y el código fuente, tema que se retoma en la sección de reproducibilidad.
 
+### Procesos
+
 La figura 2 ilustra el ciclo de vida de un proyecto típico de ciencia de datos, el cual incluye los procesos de importar, ordenar, transformar, visualizar, modelar y comunicar. Todos se articulan mediante programación de computadoras.
 
 <figure style="text-align: center;">
