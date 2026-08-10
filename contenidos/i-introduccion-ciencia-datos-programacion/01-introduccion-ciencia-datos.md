@@ -139,7 +139,7 @@ Los registros de la tabla 1 corresponden a especies conocidas en Costa Rica como
 
 Algunos detalles ayudan a leer la tabla. La columna `gbifID` contiene el identificador único que GBIF le asigna a cada registro y enlaza a su página original (`gbifID` e `iucnRedListCategory` son campos agregados por GBIF, no términos del estándar Darwin Core). La altitud (`elevation`) se expresa en metros. Los valores de `iucnRedListCategory` corresponden a las categorías de riesgo de extinción de la [Lista Roja](https://www.iucnredlist.org/es) de la Unión Internacional para la Conservación de la Naturaleza (UICN): LC (preocupación menor), NT (casi amenazada), VU (vulnerable) y EN (en peligro).
 
-El conjunto de datos consta de ocho observaciones (filas) y nueve variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan valores faltantes, algo que debe tenerse en cuenta al procesarlos.
+El conjunto de datos consta de ocho observaciones (filas) y nueve variables (columnas). Nótese que algunas celdas están vacías: es común que los datos reales contengan **valores faltantes**, algo que debe tenerse en cuenta al procesarlos.
 
 ### Observaciones y variables
 
@@ -211,9 +211,9 @@ Esta clasificación no es un fin en sí misma: el tipo de cada variable determin
 
 ## Ciencia de datos
 
-Los datos, en su estado original, carecen de contexto e interpretación. La **ciencia de datos** es una disciplina que permite convertir datos sin procesar en entendimiento, comprensión y conocimiento (Wickham et al., 2023). Combina estadística, matemáticas y programación de computadoras, y se apoya en volúmenes de datos frecuentemente grandes, en técnicas de modelado y en el aprendizaje automático (*machine learning*).
+Los datos, en su estado original, carecen de contexto e interpretación. La **ciencia de datos** es una disciplina que permite convertir datos sin procesar en entendimiento, comprensión y conocimiento (Wickham et al., 2023). Combina estadística, matemáticas y programación de computadoras, y se apoya en volúmenes de datos frecuentemente grandes, en técnicas de modelado y en el [aprendizaje automático](https://es.wikipedia.org/wiki/Aprendizaje_autom%C3%A1tico) (*machine learning*).
 
-El surgimiento y la popularidad de la ciencia de datos están motivados por un incremento acelerado de la cantidad de datos existentes, así como por la disponibilidad de herramientas computacionales para procesarlos y analizarlos. Estos avances han sido acompañados por un cambio cultural propiciado por movimientos como el de ciencia abierta (*open science*), el cual promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodologías y el código fuente, tema que se retoma en la sección de reproducibilidad.
+El surgimiento y la popularidad de la ciencia de datos están motivados por un incremento acelerado de la cantidad de datos existentes, así como por la disponibilidad de herramientas computacionales para procesarlos y analizarlos. Estos avances han sido acompañados por un cambio cultural propiciado por movimientos como el de la [ciencia abierta](https://es.wikipedia.org/wiki/Ciencia_abierta) (*open science*), el cual promueve el acceso libre a la investigación científica, incluidas las publicaciones, los datos, las metodologías y el código fuente, tema que se retoma en la sección de reproducibilidad.
 
 ### Procesos
 
@@ -327,7 +327,7 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 1. En el portal de [GBIF](https://www.gbif.org/occurrence/search) busque registros de presencia de una especie de su interés (puede filtrar por país u otros criterios). Elija un registro y examine su página de detalle.
     - Identifique al menos cinco variables presentes en el registro y clasifique cada una según la jerarquía de la figura 1.
     - ¿Cuáles variables del registro tienen valores faltantes?
-2. [Kaggle](https://www.kaggle.com/datasets) es una plataforma que reúne miles de conjuntos de datos abiertos y que se utilizará más adelante en el curso. Explore el conjunto de datos [Significant Earthquakes, 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database), del Servicio Geológico de los Estados Unidos (USGS), el cual contiene registros de los sismos más significativos de ese período. A partir de la descripción del conjunto y de la vista previa de los datos:
+2. [Kaggle](https://www.kaggle.com/datasets) es una plataforma que reúne miles de conjuntos de datos abiertos y que se utilizará más adelante en el curso. Explore el conjunto de datos [Significant Earthquakes, 1965-2016](https://www.kaggle.com/datasets/usgs/earthquake-database), del [Servicio Geológico de los Estados Unidos (USGS)](https://www.usgs.gov/), el cual contiene registros de los sismos más significativos de ese período. A partir de la descripción del conjunto y de la vista previa de los datos:
     - Determine cuántas observaciones y cuántas variables tiene el conjunto y qué representa cada observación.
     - Clasifique las variables principales (fecha, hora, latitud, longitud, profundidad, magnitud y tipo de evento) según la jerarquía de la figura 1.
     - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos? Para cada tipo ausente, proponga una variable de ese tipo que podría agregarse al conjunto.

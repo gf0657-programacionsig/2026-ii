@@ -67,7 +67,13 @@ Las secciones 2, 5, 6 y 7 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Los nombres de las bibliotecas de
 Python se escriben en minúsculas en la prosa (pandas, plotly, folium),
 como en el programa del curso; los títulos de las obras citadas conservan
-su forma original. Las tablas y figuras se numeran
+su forma original. Las **negritas** destacan cada concepto del capítulo
+en su primera aparición y los términos clave del resumen; no se usan para
+énfasis. Los **hipervínculos** amplían información en la primera mención:
+Wikipedia en español para conceptos auxiliares que el capítulo menciona
+pero no desarrolla, y el sitio oficial para herramientas, organizaciones
+y estándares; los conceptos que el propio capítulo desarrolla no se
+enlazan. Las tablas y figuras se numeran
 consecutivamente dentro de cada capítulo (`Tabla 1`, `Figura 1`, …) y llevan
 leyenda con la fuente. Las tablas en HTML se envuelven en `<figure>` con la
 leyenda en `<figcaption>` antes del `<table>` — **no** usar `<caption>`
