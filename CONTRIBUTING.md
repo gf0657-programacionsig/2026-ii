@@ -51,17 +51,19 @@ siguen la misma estructura de secciones, en este orden:
    `### Tutoriales` u otros recursos que deben revisarse antes de la clase.
 3. `## Introducción` — presentación breve del tema y su motivación.
 4. Secciones de contenido (`##`) propias del tema.
-5. `## Ejercicios` — con numeración continua y, cuando el capítulo lo
+5. `## Resumen` — síntesis breve, típicamente en viñetas, de las ideas
+   principales del capítulo.
+6. `## Ejercicios` — con numeración continua y, cuando el capítulo lo
    amerite, subdividida en subsecciones espejo de las secciones de
    contenido (`### Datos`, `### Ciencia de datos`, …), con un destino
    `(ejercicios-x)=` sobre cada una. Cada sección de contenido cierra
    entonces con una línea `*Ejercicios de esta sección: [...](#ejercicios-x).*`,
    lo que permite intercalar teoría y práctica durante las clases sin
    alterar la estructura del capítulo.
-6. `## Referencias bibliográficas` — al final, según la sección
+7. `## Referencias bibliográficas` — al final, según la sección
    [Referencias bibliográficas](#referencias-bibliográficas).
 
-Las secciones 2, 5 y 6 pueden omitirse solo cuando no aplican (ej. un
+Las secciones 2, 5, 6 y 7 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Los nombres de las bibliotecas de
 Python se escriben en minúsculas en la prosa (pandas, plotly, folium),
 como en el programa del curso; los títulos de las obras citadas conservan

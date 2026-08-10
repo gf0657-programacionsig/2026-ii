@@ -308,6 +308,15 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 *Ejercicios de esta sección: [ejercicios sobre herramientas](#ejercicios-herramientas).*
 
+## Resumen
+
+- Los **datos** son representaciones simbólicas que adquieren sentido al ser analizados, contextualizados y combinados. En geografía suelen tener un componente espacial.
+- Una forma común de representar datos son las tablas, en las que cada fila es una **observación** y cada columna una **variable**.
+- Las variables se clasifican en **numéricas** (discretas y continuas), **categóricas** (nominales y ordinales), **temporales** y **espaciales** (vectoriales — puntos, líneas y polígonos — y ráster). El tipo de cada variable determina qué operaciones, estadísticas y gráficos son válidos.
+- La **ciencia de datos** convierte datos sin procesar en entendimiento, comprensión y conocimiento, mediante los procesos de importar, ordenar, transformar, visualizar, modelar y comunicar, articulados por la programación de computadoras.
+- Un análisis es **reproducible** si sus datos y su código permiten a otra persona llegar al mismo resultado; se distingue de la **replicabilidad** (un estudio nuevo con hallazgos consistentes). Entre ambos extremos hay un espectro de posibilidades.
+- Las herramientas que hacen posible lo anterior — y que se usarán en el curso — incluyen el lenguaje **Python**, los ambientes de **conda**, los cuadernos de notas de **Jupyter** y **Colab**, la sintaxis **Markdown** y el control de versiones con **Git** y **GitHub**.
+
 ## Ejercicios
 
 Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
