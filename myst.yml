@@ -21,6 +21,7 @@ site:
   # (GitHub Pages), el sufijo duplicaba el nombre del curso en la portada.
   title: ""
   template: book-theme
-  # options:
+  options:
+    style: estilos.css
   #   favicon: favicon.ico
   #   logo: site_logo.png

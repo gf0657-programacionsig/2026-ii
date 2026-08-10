@@ -1,0 +1,6 @@
+/* Estilos propios del sitio del curso. */
+
+/* Alineación derecha para celdas numéricas de tablas (convención de CONTRIBUTING.md). */
+.align-right {
+  text-align: right;
+}

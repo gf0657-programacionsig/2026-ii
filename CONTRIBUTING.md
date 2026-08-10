@@ -72,6 +72,9 @@ leyenda en `<figcaption>` antes del `<table>` — **no** usar `<caption>`
 dentro de la tabla, porque MyST lo descarta y la leyenda no aparece en el
 sitio:
 
+Las celdas con valores numéricos llevan `class="align-right"`, definida
+en la hoja de estilos del sitio (`estilos.css`).
+
 ```html
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla N</strong>. Descripción. Fuente: ...</figcaption>
