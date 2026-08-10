@@ -296,7 +296,7 @@ Los proyectos de ciencia de datos dependen de bibliotecas que evolucionan con el
 
 ### Cuadernos de notas
 
-Los **cuadernos de notas** (*notebooks*), como los de [Jupyter](https://jupyter.org/), combinan en un solo documento código ejecutable, texto en [Markdown](https://es.wikipedia.org/wiki/Markdown) y resultados como tablas, gráficos y mapas. Esa combinación los convierte en una herramienta idónea para la ciencia de datos reproducible y para la comunicación de resultados. Pueden ejecutarse localmente o en servicios en la nube como [Google Colab](https://colab.research.google.com/); el cuaderno de ejemplo de este capítulo ilustra ambas posibilidades: puede leerse en el sitio web del curso o abrirse y ejecutarse en Colab.
+Los **cuadernos de notas** (*notebooks*), como los de [Jupyter](https://jupyter.org/), combinan en un solo documento código ejecutable, texto en [Markdown](https://es.wikipedia.org/wiki/Markdown) y resultados como tablas, gráficos y mapas. Esa combinación los convierte en una herramienta idónea para la ciencia de datos reproducible y para la comunicación de resultados. Pueden ejecutarse localmente o en servicios en la nube como [Google Colab](https://colab.research.google.com/); el cuaderno de ejemplo de este capítulo ilustra ambas posibilidades: puede leerse en el sitio web del curso o abrirse y ejecutarse en Colab (los requisitos de cuenta y el acceso se explican en la guía de [Google Colab](../software/colab.md) de la sección de software).
 
 ### Sintaxis y formatos para documentación
 

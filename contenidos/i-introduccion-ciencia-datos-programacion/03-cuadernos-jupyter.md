@@ -4,7 +4,7 @@
 
 ### Lecturas
 
-Antes de la clase, revise las siguientes lecturas. La primera es el cuaderno interactivo de bienvenida a Google Colab, el servicio en el que se trabajará durante las primeras semanas del curso; la segunda, en inglés, presenta Jupyter y sus fundamentos (interesa especialmente la sección 2.2).
+Antes de la clase, revise las siguientes lecturas. La primera es el cuaderno interactivo de bienvenida a Google Colab, el servicio en el que se trabajará durante las primeras semanas del curso; la segunda, en inglés, presenta Jupyter y sus fundamentos (interesa especialmente la sección 2.2). Además, asegúrese de contar con una cuenta de Google antes de la clase; los requisitos se explican en la guía de [Google Colab](../software/colab.md) de la sección de software.
 
 Google. (s. f.). *Te damos la bienvenida a Colab* [cuaderno de notas]. Google Colab. Recuperado el 9 de agosto de 2026, de https://colab.research.google.com/
 \
@@ -64,7 +64,7 @@ Ejecutar celdas fuera de orden es una fuente frecuente de confusión y de result
 - **Colaboración**: un cuaderno puede compartirse para que varias personas lo lean o editen.
 - **Aceleradores de hardware**: ofrece acceso limitado y gratuito a GPU y TPU, útiles en aprendizaje automático.
 
-También tiene limitaciones que conviene conocer: requiere una cuenta de Google y conexión a Internet; las sesiones se reinician tras un período de inactividad, con lo que se pierde el estado del kernel; y las bibliotecas que no vienen preinstaladas deben instalarse en cada sesión, como hace el cuaderno de ejemplo con pygbif.
+También tiene limitaciones que conviene conocer: requiere una [cuenta de Google](../software/colab.md) y conexión a Internet; las sesiones se reinician tras un período de inactividad, con lo que se pierde el estado del kernel; y las bibliotecas que no vienen preinstaladas deben instalarse en cada sesión, como hace el cuaderno de ejemplo con pygbif.
 
 *Ejercicios de esta sección: [ejercicios sobre Google Colab](#ejercicios-colab).*
 

@@ -63,6 +63,11 @@ siguen la misma estructura de secciones, en este orden:
 7. `## Referencias bibliográficas` — al final, según la sección
    [Referencias bibliográficas](#referencias-bibliográficas).
 
+Las guías de la sección Software (`contenidos/software/`) son un género
+distinto: instrucciones de instalación, configuración y acceso, con pasos
+numerados cuando corresponda, sin la estructura completa de capítulos;
+las lecciones remiten a ellas en lugar de repetir instrucciones.
+
 Las secciones 2, 5, 6 y 7 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Los nombres de las bibliotecas de
 Python se escriben en minúsculas en la prosa (pandas, plotly, folium),
