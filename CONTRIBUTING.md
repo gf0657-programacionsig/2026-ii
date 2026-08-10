@@ -107,6 +107,19 @@ los enlaces Markdown de las referencias se codifica la barra del DOI como
 Los enlaces en HTML (`<a href="...">`) no son procesados por MyST y no
 necesitan este ajuste.
 
+### Ejecución de notebooks
+
+Los notebooks se publican con sus salidas guardadas (el sitio no los
+ejecuta), por lo que antes de confirmarlos se ejecutan de punta a punta
+con el ambiente conda del curso:
+
+```bash
+NUMEXPR_MAX_THREADS=16 jupyter nbconvert --to notebook --execute --inplace <archivo>.ipynb
+```
+
+La variable `NUMEXPR_MAX_THREADS` evita que NumExpr imprima mensajes
+informativos en las salidas.
+
 ### Gráficos interactivos y mapas en notebooks
 
 El sitio se publica como HTML estático, por lo que las salidas basadas en
