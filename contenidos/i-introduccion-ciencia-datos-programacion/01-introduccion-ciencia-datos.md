@@ -12,7 +12,7 @@ Antes de la clase, revise las siguientes lecturas. De la primera interesan espec
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
 \
 \
-Wickham, H. y Grolemund, G. (2023). Introducción. En *R para ciencia de datos* (Comunidad de R de América Latina, trad.). https://es.r4ds.hadley.nz/01-intro.html (Obra original publicada en 2017)
+Wickham, H. y Grolemund, G. (2023). Introducción. En *R para ciencia de datos* (Comunidad de R de América Latina, trad.; coord. por R. Quiroga). https://es.r4ds.hadley.nz/01-intro.html (Obra original publicada en 2017)
 
 ## Introducción
 
@@ -22,7 +22,7 @@ Este capítulo introduce los conceptos fundamentales sobre los datos —observac
 
 ## Datos
 
-En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology - Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
+En términos generales, los **datos** son representaciones simbólicas (numéricas, alfabéticas, visuales o de cualquier otro tipo) susceptibles de ser comunicadas, interpretadas y procesadas para generar información o conocimiento. La norma internacional ISO/IEC 2382 (Information technology — Vocabulary) describe los datos como *hechos relacionados con un objeto o evento, que pueden registrarse o transmitirse con fines de procesamiento* (ISO/IEC 2382, 2015). Por su parte, Beyer y Laney (2012) señalan que los datos son la *materia prima de la información y, en su conjunto, pueden constituir activos de gran valor para organizaciones y sistemas de conocimiento*. Los datos, por sí mismos, no siempre constituyen información, sino que adquieren sentido al ser analizados, contextualizados y combinados.
 
 Por ejemplo, la tabla 1 muestra un conjunto de datos conformado por registros de presencia de especies de fauna silvestre en Costa Rica, obtenidos de [GBIF](https://www.gbif.org/) (Infraestructura Mundial de Información en Biodiversidad). Los nombres de las variables corresponden a términos del estándar [Darwin Core](https://dwc.tdwg.org/), tal como los entrega GBIF.
 
@@ -185,7 +185,7 @@ Pueden tomar cualquier valor dentro de un intervalo o rango continuo. Estas vari
 
 #### Categóricas
 
-Las variables categóricas (también llamadas cualitativas), son aquellas que describen una característica o cualidad de una observación y pueden utilizarse para clasificar las observaciones en grupos o categorías. A diferencia de las variables numéricas, que expresan cantidades, las variables categóricas expresan atributos no numéricos. Las variables categóricas pueden ser nominales u ordinales.
+Las variables categóricas (también llamadas cualitativas) son aquellas que describen una característica o cualidad de una observación y pueden utilizarse para clasificar las observaciones en grupos o categorías. A diferencia de las variables numéricas, que expresan cantidades, las variables categóricas expresan atributos no numéricos. Las variables categóricas pueden ser nominales u ordinales.
 
 ##### Nominales
 
@@ -203,9 +203,9 @@ Representan puntos en el tiempo: fechas, horas o combinaciones de ambas (McKinne
 
 Representan la ubicación y la forma de los objetos y fenómenos en el espacio geográfico, mediante dos modelos principales (Olaya, 2020). En el modelo **vectorial**, los objetos se representan con geometrías como puntos, líneas y polígonos, según el estándar *Simple Feature Access* (Open Geospatial Consortium, 2011). En el modelo **ráster**, una matriz de celdas representa la variación continua de una variable en el espacio, como la altitud o la temperatura. En la tabla 1 no hay una variable espacial como tal, pero las variables `decimalLongitude` y `decimalLatitude`, que por separado son numéricas continuas, pueden combinarse para construir una vectorial de tipo punto: la ubicación de cada registro de presencia. Esta distinción entre coordenadas y geometrías, así como el modelo ráster, se retomarán al estudiar el procesamiento de datos geoespaciales.
 
-Existen otros tipos adicionales, como el texto libre y los valores lógicos (verdadero o falso), que se estudiarán como tipos de datos del lenguaje Python.
+Existen otros tipos, como el texto libre y los valores lógicos (verdadero o falso), que se estudiarán como tipos de datos del lenguaje Python.
 
-Esta clasificación no es un fin en sí misma: el tipo de cada variable determina qué operaciones, estadísticas y visualizaciones son válidas (Çetinkaya-Rundel y Hardin, 2024). Por ejemplo, tiene sentido calcular el promedio de `individualCount`, pero no el "promedio" de `basisOfRecord`; una variable ordinal admite mediana pero no media; y una nominal se resume con frecuencias. Al estudiar la visualización de datos se verá, además, que la elección del tipo de gráfico depende de los tipos de las variables representadas.
+Esta clasificación no es un fin en sí misma: el tipo de cada variable determina qué operaciones, estadísticas y visualizaciones son válidas (Çetinkaya-Rundel y Hardin, 2024). Por ejemplo, tiene sentido calcular el promedio de `individualCount`, pero no el «promedio» de `basisOfRecord`; una variable ordinal admite mediana pero no media; y una nominal se resume con frecuencias. Al estudiar la visualización de datos se verá, además, que la elección del tipo de gráfico depende de los tipos de las variables representadas.
 
 *Ejercicios de esta sección: [ejercicios sobre datos](#ejercicios-datos).*
 
@@ -245,19 +245,19 @@ Una vez que los datos están bien estructurados y con las variables que se requi
 
 ## Reproducibilidad
 
-La **reproducibilidad** es la capacidad de un análisis de ser reproducido por otras personas. Más formalmente, en investigación cuantitativa, un análisis se considera reproducible si *el código fuente y los datos utilizados por un investigador para llegar a un resultado están disponibles y son suficientes para que otro investigador, trabajando de manera independiente, pueda llegar al mismo resultado* (Gandrud, 2020). La reproducibilidad se distingue de la **replicabilidad**: un estudio es replicable si una investigación nueva, con datos nuevos, llega a hallazgos consistentes con los del estudio original (National Academies of Sciences, Engineering, and Medicine, 2019).
+La **reproducibilidad** es la capacidad de un análisis de ser reproducido por otras personas. Más formalmente, en investigación cuantitativa, un análisis se considera reproducible si *el código fuente y los datos utilizados para llegar a un resultado están disponibles y son suficientes para que otra persona, trabajando de manera independiente, pueda llegar al mismo resultado* (Gandrud, 2020). La reproducibilidad se distingue de la **replicabilidad**: un estudio es replicable si una investigación nueva, con datos nuevos, llega a hallazgos consistentes con los del estudio original (National Academies of Sciences, Engineering, and Medicine, 2019).
 
-El concepto de reproducibilidad es cada vez más importante debido, entre otras razones, al aumento acelerado de los datos disponibles y a que especialistas de muchas disciplinas los procesan mediante programación de computadoras. Sin embargo, en años recientes ha crecido la preocupación por la llamada **crisis de reproducibilidad**: en una encuesta de la revista *Nature*, alrededor del 70 % de los investigadores declaró haber intentado reproducir experimentos de otros científicos sin conseguirlo (Baker, 2016).
+El concepto de reproducibilidad es cada vez más importante debido, entre otras razones, al aumento acelerado de los datos disponibles y a que especialistas de muchas disciplinas los procesan mediante programación de computadoras. Sin embargo, en años recientes ha crecido la preocupación por la llamada **crisis de reproducibilidad**: en una encuesta de la revista *Nature*, alrededor del 70 % de las personas encuestadas declaró haber intentado reproducir experimentos ajenos sin conseguirlo (Baker, 2016).
 
 Singleton et al. (2016) han identificado los siguientes retos para la reproducibilidad en ciencia de datos geoespaciales:
 
-1. Los datos deben ser de dominio público y estar disponibles para los investigadores.
+1. Los datos deben ser de dominio público y estar disponibles para quienes investigan.
 2. El software utilizado debe ser de código abierto (*open source*) y estar disponible para ser revisado.
 3. Siempre que sea posible, los [flujos de trabajo](https://es.wikipedia.org/wiki/Flujo_de_trabajo) deben ser públicos y con enlaces a los datos, software y métodos de análisis, junto con la documentación necesaria.
 4. El proceso de [revisión por pares (*peer review process*)](https://es.wikipedia.org/wiki/Revisi%C3%B3n_por_pares) y la publicación académica deben requerir la presentación de un modelo de flujo de trabajo e idealmente la disponibilidad de los materiales necesarios para la replicación.
-5. En los casos en los que la reproducibilidad total no sea posible (ej. datos sensibles), los investigadores deben esforzarse por incluir todos los aspectos que puedan de un marco de trabajo abierto.
+5. En los casos en los que la reproducibilidad total no sea posible (ej. datos sensibles), quienes investigan deben esforzarse por incluir todos los aspectos que puedan de un marco de trabajo abierto.
 
-En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otros investigadores (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, como ilustra la figura 3.
+En general, el estándar mínimo de reproducibilidad requiere que los datos y el código fuente estén disponibles para otras personas (Peng, 2011). Sin embargo, dependiendo de las circunstancias y recursos disponibles, existe todo un espectro de posibilidades, como ilustra la figura 3.
 
 <figure style="text-align: center;">
   <img
@@ -288,7 +288,7 @@ La implementación de un proyecto de ciencia de datos requiere del uso de herram
 
 ### Lenguajes de programación
 
-Como se ha mencionado, la programación de computadoras es una actividad presente durante todos los procesos de ciencia de datos. Hay muchos lenguajes que pueden utilizarse en este campo. Entre los más populares, pueden mencionarse [Python](https://www.python.org/), [R](https://www.r-project.org/), [SQL](https://www.iso.org/standard/76583.html) y [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/). En este curso se utiliza Python, por la amplitud de su ecosistema de bibliotecas para ciencia de datos y para análisis geoespacial. R es también muy utilizado en ciencia de datos; de hecho, las lecturas de este capítulo provienen de libros basados en ese lenguaje, cuyos conceptos trascienden el lenguaje de programación empleado.
+Como se ha mencionado, la programación de computadoras es una actividad presente durante todos los procesos de ciencia de datos. Hay muchos lenguajes que pueden utilizarse en este campo. Entre los más populares, pueden mencionarse [Python](https://www.python.org/), [R](https://www.r-project.org/), [SQL](https://www.iso.org/standard/76583.html) y [JavaScript](https://ecma-international.org/publications-and-standards/standards/ecma-262/). En este curso se utiliza Python, por la amplitud de su ecosistema de bibliotecas para ciencia de datos y para análisis geoespacial. R es también muy utilizado en ciencia de datos; de hecho, las lecturas de este capítulo provienen de libros basados en R, cuyos conceptos trascienden el lenguaje de programación empleado.
 
 ### Ambientes y gestores de paquetes
 
@@ -296,15 +296,15 @@ Los proyectos de ciencia de datos dependen de bibliotecas que evolucionan con el
 
 ### Cuadernos de notas
 
-Los **cuadernos de notas** (*notebooks*), como los de [Jupyter](https://jupyter.org/), combinan en un solo documento código ejecutable, texto en Markdown y resultados como tablas, gráficos y mapas. Esa combinación los convierte en una herramienta idónea para la ciencia de datos reproducible y para la comunicación de resultados. Pueden ejecutarse localmente o en servicios en la nube como [Google Colab](https://colab.research.google.com/); el cuaderno de ejemplo de este capítulo ilustra ambas posibilidades: puede leerse en el sitio web del curso o abrirse y ejecutarse en Colab.
+Los **cuadernos de notas** (*notebooks*), como los de [Jupyter](https://jupyter.org/), combinan en un solo documento código ejecutable, texto en [Markdown](https://es.wikipedia.org/wiki/Markdown) y resultados como tablas, gráficos y mapas. Esa combinación los convierte en una herramienta idónea para la ciencia de datos reproducible y para la comunicación de resultados. Pueden ejecutarse localmente o en servicios en la nube como [Google Colab](https://colab.research.google.com/); el cuaderno de ejemplo de este capítulo ilustra ambas posibilidades: puede leerse en el sitio web del curso o abrirse y ejecutarse en Colab.
 
 ### Sintaxis y formatos para documentación
 
-La documentación es vital durante todo el ciclo de vida de una investigación reproducible. Se recomienda utilizar mecanismos estandarizados y abiertos como [Markdown](https://es.wikipedia.org/wiki/Markdown) o el [lenguaje de marcado de hipertexto (HTML, en inglés, *HyperText Markup Language*)](https://es.wikipedia.org/wiki/HTML), con los cuales pueden crearse documentos mediante editores de texto simples (es decir, no se requiere software propietario), exportables a varios formatos (ej. [LaTeX](https://es.wikipedia.org/wiki/LaTeX), [PDF](https://es.wikipedia.org/wiki/PDF)). En este curso, Markdown se usa en las celdas de texto de los cuadernos de notas y en la documentación de los repositorios; este mismo sitio web está escrito en Markdown.
+La documentación es vital durante todo el ciclo de vida de una investigación reproducible. Se recomienda utilizar mecanismos estandarizados y abiertos como Markdown o el [lenguaje de marcado de hipertexto (HTML, en inglés, *HyperText Markup Language*)](https://es.wikipedia.org/wiki/HTML), con los cuales pueden crearse documentos mediante editores de texto simples (es decir, no se requiere software propietario), exportables a varios formatos (ej. [LaTeX](https://es.wikipedia.org/wiki/LaTeX), [PDF](https://es.wikipedia.org/wiki/PDF)). En este curso, Markdown se usa en las celdas de texto de los cuadernos de notas y en la documentación de los repositorios; este mismo sitio web está escrito en Markdown.
 
 ### Sistemas de control de versiones
 
-Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como el hospedaje de sitios web mediante [GitHub Pages](https://pages.github.com/). En este curso, Git y GitHub se utilizan para desarrollar y publicar los materiales — incluido este sitio web — y el estudiantado los empleará en las tareas y en el proyecto.
+Para dar mantenimiento, tanto al código fuente como a la documentación, es necesario un sistema de [control de versiones](https://es.wikipedia.org/wiki/Control_de_versiones) como [Git](https://es.wikipedia.org/wiki/Git), el cual permite llevar el registro de los cambios en archivos y también facilita el trabajo colaborativo al reunir las modificaciones hechas por varias personas. Git es usado en varias plataformas que comparten código fuente (ej. [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) y que ofrecen servicios relacionados, como el hospedaje de sitios web mediante [GitHub Pages](https://pages.github.com/). En este curso, Git y GitHub se utilizan para desarrollar y publicar los materiales —incluido este sitio web— y el estudiantado los empleará en las tareas y en el proyecto.
 
 *Ejercicios de esta sección: [ejercicios sobre herramientas](#ejercicios-herramientas).*
 
@@ -312,10 +312,10 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 - Los **datos** son representaciones simbólicas que adquieren sentido al ser analizados, contextualizados y combinados. En geografía suelen tener un componente espacial.
 - Una forma común de representar datos son las tablas, en las que cada fila es una **observación** y cada columna una **variable**.
-- Las variables se clasifican en **numéricas** (discretas y continuas), **categóricas** (nominales y ordinales), **temporales** y **espaciales** (vectoriales — puntos, líneas y polígonos — y ráster). El tipo de cada variable determina qué operaciones, estadísticas y gráficos son válidos.
+- Las variables se clasifican en **numéricas** (discretas y continuas), **categóricas** (nominales y ordinales), **temporales** y **espaciales** (vectoriales —puntos, líneas y polígonos— y ráster). El tipo de cada variable determina qué operaciones, estadísticas y gráficos son válidos.
 - La **ciencia de datos** convierte datos sin procesar en entendimiento, comprensión y conocimiento, mediante los procesos de importar, ordenar, transformar, visualizar, modelar y comunicar, articulados por la programación de computadoras.
 - Un análisis es **reproducible** si sus datos y su código permiten a otra persona llegar al mismo resultado; se distingue de la **replicabilidad** (un estudio nuevo con hallazgos consistentes). Entre ambos extremos hay un espectro de posibilidades.
-- Las herramientas que hacen posible lo anterior — y que se usarán en el curso — incluyen el lenguaje **Python**, los ambientes de **conda**, los cuadernos de notas de **Jupyter** y **Colab**, la sintaxis **Markdown** y el control de versiones con **Git** y **GitHub**.
+- Las herramientas que hacen posible lo anterior —y que se usarán en el curso— incluyen el lenguaje **Python**, los ambientes de **conda**, los cuadernos de notas de **Jupyter** y **Colab**, la sintaxis **Markdown** y el control de versiones con **Git** y **GitHub**.
 
 ## Ejercicios
 
@@ -332,6 +332,7 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
     - Clasifique las variables principales (fecha, hora, latitud, longitud, profundidad, magnitud y tipo de evento) según la jerarquía de la figura 1.
     - ¿Hay tipos de la jerarquía que no estén representados en el conjunto de datos? Para cada tipo ausente, proponga una variable de ese tipo que podría agregarse al conjunto.
     - Como ejercicio adicional, repita el análisis con otro conjunto de datos de Kaggle de su interés.
+
 (ejercicios-ciencia-datos)=
 ### Ciencia de datos
 
