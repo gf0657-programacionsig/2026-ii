@@ -77,22 +77,40 @@ También tiene limitaciones que conviene conocer: requiere una [cuenta de Google
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. La sintaxis de Markdown y el lenguaje Python se estudiarán en las próximas semanas: en estos ejercicios basta con copiar el texto y el código que se indican, pues su objetivo es el manejo del cuaderno y no la sintaxis.
 
 (ejercicios-estructura)=
 ### Estructura de un cuaderno
 
 1. Cree un cuaderno nuevo en [Google Colab](https://colab.research.google.com/) y construya en él un ejemplo mínimo con ambos tipos de celda:
-    - Una celda de texto con un título, un párrafo y una lista en Markdown (puede usar el botón *+ Texto*).
-    - Una celda de código que defina dos variables numéricas e imprima el resultado de una operación entre ellas.
+    - Agregue una celda de texto (botón *+ Texto*) y copie en ella el siguiente contenido en Markdown:
+
+      ```
+      # Mi primer cuaderno
+
+      Este cuaderno practica los dos tipos de celda:
+
+      - celdas de texto
+      - celdas de código
+      ```
+
+    - Agregue una celda de código (botón *+ Código*), copie en ella el siguiente código y ejecútela:
+
+      ```python
+      dias = 7
+      horas = dias * 24
+      print(horas)
+      ```
+
+    - Observe la diferencia entre ambos tipos de celda y dónde aparece la salida del código.
 
 (ejercicios-kernel)=
 ### El kernel
 
 2. En el cuaderno del ejercicio anterior, experimente con el estado del kernel:
-    - Agregue una celda que imprima una variable que todavía no ha sido definida y ejecútela: observe el error.
-    - Defina la variable en una celda posterior, ejecútela y vuelva a ejecutar la celda anterior: observe que ahora funciona, aunque la definición aparece después en el documento.
-    - Revise los números entre corchetes de las celdas y explique en una celda de texto por qué el cuaderno "funciona" a pesar de estar en desorden.
+    - Agregue una celda de código con `print(minutos)` y ejecútela: observe el error, pues esa variable no ha sido definida.
+    - Agregue después otra celda de código con `minutos = horas * 60`, ejecútela y vuelva a ejecutar la celda de `print(minutos)`: observe que ahora funciona, aunque la definición aparece después en el documento (y que usa la variable `horas` del ejercicio anterior: las celdas comparten el estado).
+    - Revise los números entre corchetes de las celdas y explique en una celda de texto, con sus palabras, por qué el cuaderno «funciona» a pesar de estar en desorden.
 
 (ejercicios-colab)=
 ### Google Colab
