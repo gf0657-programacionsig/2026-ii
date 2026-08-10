@@ -6,7 +6,7 @@
 
 Antes de la clase, revise las siguientes lecturas. De la primera interesan especialmente las secciones 1.1 y 1.2, sobre los datos, las observaciones, las variables y sus tipos; de la segunda, el modelo del ciclo de vida de la ciencia de datos. Ambas están en inglés; de la segunda existe una traducción al español de su primera edición, cuyo capítulo introductorio cubre esencialmente el mismo contenido y se lista como alternativa.
 
-Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
 \
 \
 Wickham, H., Çetinkaya-Rundel, M. y Grolemund, G. (2023). Introduction. En *R for data science: Import, tidy, transform, visualize, and model data* (2.ª ed.). O'Reilly Media. https://r4ds.hadley.nz/intro
@@ -352,13 +352,13 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 
 ## Referencias bibliográficas
 
-Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. *Nature*, 533(7604), 452-454. https://www.nature.com/articles/533452a
+Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. *Nature*, 533(7604), 452–454. https://www.nature.com/articles/533452a
 \
 \
 Beyer, M. A. y Laney, D. (2012). *The importance of 'big data': A definition*. Gartner.
 \
 \
-Çetinkaya-Rundel, M. y Hardin, J. (2024). Chapter 1: Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
+Çetinkaya-Rundel, M. y Hardin, J. (2024). Hello data. En *Introduction to modern statistics* (2.ª ed.). OpenIntro. https://openintrostat.github.io/ims/data-hello.html
 \
 \
 Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC Press.
@@ -367,7 +367,7 @@ Gandrud, C. (2020). *Reproducible research with R and RStudio* (3.ª ed.). CRC P
 Graser, A. (2021). *Open source for open spatial data science* [Video]. YouTube. https://www.youtube.com/watch?v=ZjXb53pOor0
 \
 \
-ISO/IEC 2382. (2015). *Information technology - Vocabulary*. International Organization for Standardization.
+ISO/IEC 2382. (2015). *Information technology — Vocabulary*. International Organization for Standardization.
 \
 \
 McKinney, W. (2022). *Python for data analysis: Data wrangling with pandas, NumPy, and Jupyter* (3.ª ed.). O'Reilly Media. https://wesmckinney.com/book/
@@ -382,7 +382,7 @@ Olaya, V. (2020). *Sistemas de información geográfica* (versión 3.0). https:/
 Open Geospatial Consortium. (2011). *OpenGIS implementation standard for geographic information - Simple feature access - Part 1: Common architecture* (OGC 06-103r4). https://www.ogc.org/standard/sfa/
 \
 \
-Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226-1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
+Peng, R. D. (2011). Reproducible research in computational science. *Science*, 334(6060), 1226–1227. [https://www.science.org/doi/10.1126/science.1213847](https://www.science.org/doi/10.1126%2Fscience.1213847)
 \
 \
 Singleton, A. D., Spielman, S. y Brunsdon, C. (2016). Establishing a framework for Open Geographic Information science. *International Journal of Geographical Information Science*, 30(8), 1507–1521. [https://www.tandfonline.com/doi/full/10.1080/13658816.2015.1137579](https://www.tandfonline.com/doi/full/10.1080%2F13658816.2015.1137579)

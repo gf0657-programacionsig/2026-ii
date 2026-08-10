@@ -145,6 +145,11 @@ español:
 - Títulos con mayúscula solo en la primera palabra (y en nombres propios),
   en el idioma original de la obra.
 - Ediciones en español: «(2.ª ed.)».
+- Rangos de páginas con semiraya: «452–454», no «452-454».
+- «Recuperado el [fecha]» únicamente en fuentes diseñadas para cambiar y
+  sin edición ni versión (ej. sitios de documentación como los citados en
+  el programa); las obras con edición, versión o fecha de publicación no
+  llevan fecha de recuperación.
 - Citas en el texto: «(Autor, año)» o «Autor (año)»; en las leyendas de
   tablas y figuras se usa la forma narrativa («Fuente: Autor (año)»).
 
