@@ -53,7 +53,7 @@ Ejecutar celdas fuera de orden es una fuente frecuente de confusión y de result
 
 ## Jupyter
 
-[Jupyter](https://jupyter.org/) es el proyecto de código abierto que desarrolla el formato de los cuadernos y las aplicaciones para trabajar con ellos en la computadora local, como Jupyter Notebook y [JupyterLab](https://jupyterlab.readthedocs.io/). El ambiente conda del curso incluye Jupyter; su instalación local se estudiará junto con la de Python, en las próximas semanas. Los archivos `.ipynb` también pueden abrirse y ejecutarse en editores de código como Visual Studio Code, que se estudiará más adelante en el curso.
+[Jupyter](https://jupyter.org/) es el proyecto de código abierto que desarrolla el formato de los cuadernos y las aplicaciones para trabajar con ellos en la computadora local, como Jupyter Notebook y [JupyterLab](https://jupyterlab.readthedocs.io/). El ambiente conda del curso incluye Jupyter; su instalación local se estudiará junto con la de Python, en las próximas semanas. Los archivos `.ipynb` también pueden abrirse y ejecutarse en editores de código como [Visual Studio Code](../software/vscode.md), que se estudiará más adelante en el curso.
 
 ## Google Colab
 

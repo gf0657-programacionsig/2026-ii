@@ -20,6 +20,7 @@ project:
     - title: Software
       children:
         - file: contenidos/software/colab.md
+        - file: contenidos/software/vscode.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
