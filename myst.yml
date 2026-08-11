@@ -19,6 +19,7 @@ project:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/04-markdown.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/05-git-github.md
+        - file: contenidos/i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md
     - title: Software
       children:
         - file: contenidos/software/colab.md
