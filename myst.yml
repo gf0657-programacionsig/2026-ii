@@ -18,6 +18,7 @@ project:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/02-ejemplo-procesos-ciencia-datos.ipynb
         - file: contenidos/i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/04-markdown.md
+        - file: contenidos/i-introduccion-ciencia-datos-programacion/05-git-github.md
     - title: Software
       children:
         - file: contenidos/software/colab.md
