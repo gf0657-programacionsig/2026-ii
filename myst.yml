@@ -21,6 +21,9 @@ project:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/05-git-github.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/07-asistentes-ia.md
+    - title: Evaluaciones
+      children:
+        - file: contenidos/evaluaciones/examen-corto-01.md
     - title: Software
       children:
         - file: contenidos/software/colab.md
