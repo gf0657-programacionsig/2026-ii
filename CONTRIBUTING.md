@@ -68,6 +68,31 @@ distinto: instrucciones de instalación, configuración y acceso, con pasos
 numerados cuando corresponda, sin la estructura completa de capítulos;
 las lecciones remiten a ellas en lugar de repetir instrucciones.
 
+### Soluciones a los ejercicios
+
+Las soluciones se escriben junto con cada lección y se guardan en
+`privado/soluciones-ejercicios/NN-<leccion>.md` (fuera del repositorio
+público) hasta que pasa la clase correspondiente. Después de la clase, la
+solución se publica en el apéndice "Soluciones a los ejercicios", al final
+del sitio:
+
+1. El archivo se mueve a `contenidos/soluciones/NN-soluciones-<leccion>.md`,
+   sin el bloque de notas internas del encabezado. El infijo `soluciones-`
+   evita que el *slug* de la página (MyST descarta el prefijo numérico)
+   choque con el de la lección.
+2. Se agrega la entrada al final de la parte "Soluciones a los ejercicios"
+   del TOC en `myst.yml`.
+
+Las páginas de soluciones son un género propio, como las guías de
+Software: título `Soluciones — <título de la lección>`, un párrafo
+introductorio que enlaza a la lección y una sección `## Ejercicio N` por
+ejercicio, sin la estructura completa de capítulos ni numeración de tablas
+y figuras. Para los ejercicios abiertos se describen los elementos de una
+buena respuesta y los errores esperables, en lugar de una respuesta única.
+
+El repositorio es público: este mecanismo controla la presentación en el
+sitio web, no el secreto de las soluciones.
+
 Las secciones 2, 5, 6 y 7 pueden omitirse solo cuando no aplican (ej. un
 capítulo introductorio sin trabajo previo). Los nombres de las bibliotecas de
 Python se escriben en minúsculas en la prosa (pandas, plotly, folium),
