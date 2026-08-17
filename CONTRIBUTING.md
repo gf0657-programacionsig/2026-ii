@@ -82,6 +82,12 @@ del sitio:
    choque con el de la lección.
 2. Se agrega la entrada al final de la parte "Soluciones a los ejercicios"
    del TOC en `myst.yml`.
+3. Al final del párrafo introductorio de la sección Ejercicios de la
+   lección se agrega la oración "Las [soluciones de estos
+   ejercicios](../soluciones/NN-soluciones-<leccion>.md) se publican
+   después de la clase correspondiente." En los cuadernos de notas el
+   enlace usa la URL absoluta del sitio, para que funcione también con el
+   cuaderno abierto en Colab.
 
 Las páginas de soluciones son un género propio, como las guías de
 Software: título `Soluciones — <título de la lección>`, un párrafo
