@@ -143,6 +143,11 @@ los enlaces Markdown de las referencias se codifica la barra del DOI como
 Los enlaces en HTML (`<a href="...">`) no son procesados por MyST y no
 necesitan este ajuste.
 
+**Excepción**: cuando el destino es directamente `doi.org`, MyST genera la
+sección "References" aunque la barra esté codificada como `%2F` e incluso
+si el enlace está en HTML. En esos casos se usa la URL del artículo en el
+sitio de la revista en lugar del DOI (verificado con la lección 07).
+
 ### Ejecución de notebooks
 
 Los notebooks se publican con sus salidas guardadas (el sitio no los
