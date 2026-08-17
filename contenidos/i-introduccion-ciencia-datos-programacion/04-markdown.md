@@ -38,7 +38,7 @@ Puede encontrarse una lista más extensa en [Markdown Flavors](https://github.co
 El siguiente es un ejemplo de documento en Markdown, con marcas para un encabezado, negritas, itálicas, un hipervínculo y una imagen.
 
 ```md
-### Los satélites galileanos
+# Los satélites galileanos
 
 Se llaman **satélites galileanos** los cuatro satélites
 de Júpiter descubiertos en 1610 por
@@ -53,7 +53,7 @@ siendo visibles incluso con telescopios de baja potencia.
 El documento se visualiza de la siguiente manera:
 
 <div style="border: 1px solid #ccc; border-radius: 6px; padding: 15px 20px; margin: 20px 0;">
-  <p style="font-size: 1.17em; font-weight: bold; margin-top: 0;">Los satélites galileanos</p>
+  <p style="font-size: 2em; font-weight: bold; margin-top: 0;">Los satélites galileanos</p>
   <p>Se llaman <strong>satélites galileanos</strong> los cuatro satélites de Júpiter descubiertos en 1610 por <a href="https://es.wikipedia.org/wiki/Galileo_Galilei">Galileo Galilei</a>: <em>Ío</em>, <em>Europa</em>, <em>Ganimedes</em> y <em>Calisto</em>. Son los más grandes de los satélites de Júpiter, siendo visibles incluso con telescopios de baja potencia.</p>
   <img src="img/jupiter-satelites-galileanos.jpg" alt="Júpiter y los satélites galileanos" height="240">
 </div>
