@@ -1,15 +1,30 @@
 # Visual Studio Code
 
-[Visual Studio Code (VS Code)](https://code.visualstudio.com/) es un editor de código fuente gratuito desarrollado por Microsoft. En este curso se usa para editar documentos Markdown y, más adelante, para programar en Python y trabajar con cuadernos de notas en la computadora local. Esta guía explica cómo instalarlo y configurarlo; como introducción general al editor, puede revisarse el tutorial [Getting started with Visual Studio Code](https://code.visualstudio.com/docs), de Microsoft.
+[Visual Studio Code (VS Code)](https://code.visualstudio.com/) es un editor de código fuente gratuito desarrollado por Microsoft. En este curso se usa para editar documentos Markdown y, más adelante, para programar en Python y trabajar con cuadernos de notas en la computadora local. Esta guía explica cómo instalarlo y configurarlo; como introducción general al editor, puede revisarse el tutorial [Getting started with Visual Studio Code](https://code.visualstudio.com/docs/getstarted/getting-started), de Microsoft.
 
 ## Instalación
 
 1. Ingrese al sitio web de [Visual Studio Code](https://code.visualstudio.com/) y descargue el instalador correspondiente a su sistema operativo.
-2. Ejecute el instalador y siga las instrucciones. En Windows, se recomienda marcar las siguientes opciones durante la instalación:
-    - **Add "Open with Code" action to Windows Explorer file context menu**.
-    - **Add "Open with Code" action to Windows Explorer directory context menu**.
-    - **Add to PATH**.
+2. Instale el programa según su sistema operativo:
+    - **Windows**: ejecute el instalador y siga las instrucciones. Se recomienda marcar las siguientes opciones durante la instalación:
+        - **Add "Open with Code" action to Windows Explorer file context menu**.
+        - **Add "Open with Code" action to Windows Explorer directory context menu**.
+        - **Add to PATH**.
+    - **macOS**: abra el archivo descargado y arrastre la aplicación **Visual Studio Code** a la carpeta **Applications**.
+    - **Linux**: descargue el paquete `.deb` o `.rpm` según su distribución e instálelo con el gestor de paquetes.
 3. Al finalizar la instalación, abra VS Code.
+
+La interfaz de VS Code está en inglés y esta guía usa los nombres de menús y botones en ese idioma. Si prefiere la interfaz en español, puede instalar la extensión [Spanish Language Pack for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-es), según se explica en la sección de instalación de extensiones.
+
+## Carpetas de trabajo
+
+VS Code puede abrir archivos individuales (*File > Open File*), pero la forma habitual de trabajar es abrir una **carpeta** completa (*File > Open Folder*): el panel del explorador, a la izquierda, muestra entonces todos los archivos de la carpeta y permite crear, renombrar y organizar archivos sin salir del editor. Esta forma de trabajo es la apropiada para proyectos compuestos por varios archivos, como los repositorios de Git que se usan en el curso.
+
+Mientras se edita un archivo, un punto en su pestaña indica que hay cambios sin guardar; los cambios se guardan con `Ctrl + S` y otras vistas, como la vista previa de Markdown, se actualizan al guardar. Si lo prefiere, puede activar el guardado automático con *File > Auto Save*.
+
+## Terminal integrada
+
+VS Code incluye una terminal integrada, que se abre con *View > Terminal* o con ``Ctrl + ` ``. En ella pueden ejecutarse comandos sin salir del editor. En este curso se usará a partir de la semana 3, para manejar los ambientes de conda y ejecutar comandos de Git y de Python.
 
 ## Instalación de extensiones
 
@@ -23,8 +38,8 @@ Las extensiones agregan funcionalidades adicionales a VS Code. Para instalar una
 
 - [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
-- [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
-- [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
+
+Como extensiones opcionales, [Markdown Preview Enhanced](https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced) ofrece una vista previa con funciones adicionales a la integrada en VS Code y [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) permite exportar documentos Markdown a PDF.
 
 ### Extensiones recomendadas para Python
 
@@ -42,6 +57,16 @@ Estas extensiones se usan a partir de la instalación de Python en la computador
 
 Puede explorar la lista completa de extensiones en el [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/VSCode).
 
+## Asistente de inteligencia artificial (GitHub Copilot)
+
+[GitHub Copilot](https://github.com/features/copilot) es el asistente de IA integrado en VS Code: sugiere autocompletados de código mientras se escribe y ofrece un chat dentro del editor. Es uno de los asistentes presentados en la lección de [asistentes de programación basados en IA](../i-introduccion-ciencia-datos-programacion/07-asistentes-ia.md) y su uso en el curso comienza en la semana 5. Para activarlo:
+
+1. Haga clic en el ícono de Copilot en la barra de estado (o instale la extensión **GitHub Copilot** desde el panel de extensiones).
+2. Inicie sesión con la cuenta de GitHub creada en la lección de [Git, GitHub y GitHub Pages](../i-introduccion-ciencia-datos-programacion/05-git-github.md).
+3. El plan gratuito para cuentas personales tiene límites mensuales de uso (a agosto de 2026, 2000 autocompletados y 50 mensajes de chat). Además, [GitHub Education](https://github.com/education) ofrece el plan Copilot Pro sin costo a estudiantes verificados con su correo institucional.
+
+Las sugerencias automáticas pueden pausarse o desactivarse desde el menú del ícono de Copilot en la barra de estado. Se recomienda mantenerlas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue).
+
 ## Cuadernos de notas en VS Code
 
 VS Code puede abrir y ejecutar los archivos `.ipynb` de los [cuadernos de notas](../i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md), como alternativa a Google Colab y a las aplicaciones del proyecto Jupyter. Requiere las extensiones de Python y de Jupyter mencionadas en la sección anterior y una instalación local de Python, que se realiza en la semana 3 del curso. Los pasos generales son:
@@ -52,16 +77,19 @@ VS Code puede abrir y ejecutar los archivos `.ipynb` de los [cuadernos de notas]
 
 ## Teclas rápidas recomendadas
 
+En macOS, sustituya `Ctrl` por `Cmd` en las combinaciones siguientes.
+
 - Paleta de comandos: `Ctrl + Shift + P`
 - Buscar y abrir un archivo: `Ctrl + P`
 - Abrir el panel de extensiones: `Ctrl + Shift + X`
+- Abrir la terminal integrada: ``Ctrl + ` ``
 - Guardar un archivo: `Ctrl + S`
 - Ir a una línea: `Ctrl + G`
 - Mover una línea hacia arriba y hacia abajo: `Alt + Flecha arriba / Flecha abajo`
 - Cortar una línea completa: `Ctrl + X`
-- Activar la vista previa de un documento Markdown: `Ctrl + K V`
+- Activar la vista previa de un documento Markdown: `Ctrl + Shift + V` (en la misma pestaña) o `Ctrl + K V` (a la par del documento)
 - Activar y desactivar el modo Zen: `Ctrl + K Z`
-- Dividir la vista: *View > Editor Layout > Split Up / Split Down / Split Left / Split Right*
+- Dividir la vista: `Ctrl + \` (también en *View > Editor Layout*)
 - Editar varias líneas simultáneamente: `Alt + Clic` (coloca un cursor adicional en cada sitio en el que se desea editar)
 
 La lista completa de teclas rápidas está disponible para [Windows](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf), [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf) y [Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf).
