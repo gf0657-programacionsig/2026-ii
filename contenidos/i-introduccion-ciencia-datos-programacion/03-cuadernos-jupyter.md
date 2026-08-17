@@ -77,7 +77,7 @@ También tiene limitaciones que conviene conocer: requiere una [cuenta de Google
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. La sintaxis de Markdown y el lenguaje Python se estudiarán en las próximas semanas: en estos ejercicios basta con copiar el texto y el código que se indican, pues su objetivo es el manejo del cuaderno y no la sintaxis.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. La sintaxis de Markdown y el lenguaje Python se estudiarán en las próximas semanas: en estos ejercicios basta con copiar el texto y el código que se indican, pues su objetivo es el manejo del cuaderno y no la sintaxis. Las [soluciones de estos ejercicios](../soluciones/03-soluciones-cuadernos-jupyter.md) se publican después de la clase correspondiente.
 
 (ejercicios-estructura)=
 ### Estructura de un cuaderno

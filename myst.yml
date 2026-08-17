@@ -24,6 +24,11 @@ project:
       children:
         - file: contenidos/software/colab.md
         - file: contenidos/software/vscode.md
+    - title: Soluciones a los ejercicios
+      children:
+        - file: contenidos/soluciones/01-soluciones-introduccion-ciencia-datos.md
+        - file: contenidos/soluciones/02-soluciones-ejemplo-procesos-ciencia-datos.md
+        - file: contenidos/soluciones/03-soluciones-cuadernos-jupyter.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL

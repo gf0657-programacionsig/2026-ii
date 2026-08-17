@@ -319,7 +319,7 @@ Para dar mantenimiento, tanto al código fuente como a la documentación, es nec
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Las [soluciones de estos ejercicios](../soluciones/01-soluciones-introduccion-ciencia-datos.md) se publican después de la clase correspondiente.
 
 (ejercicios-datos)=
 ### Datos
