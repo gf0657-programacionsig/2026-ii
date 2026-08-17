@@ -17,7 +17,7 @@ En la lección de [introducción a la ciencia de datos](01-introduccion-ciencia-
 
 ## Control de versiones
 
-Un sistema de **control de versiones** registra la historia de los cambios de un conjunto de archivos, de manera que sea posible consultar quién cambió qué y cuándo, comparar versiones y recuperar cualquier estado anterior (Chacon y Straub, 2014). Resuelve un problema que cualquiera ha enfrentado: sin control de versiones, la historia de un documento termina dispersa en copias como `informe.docx`, `informe-final.docx` e `informe-final-v2-DEFINITIVO.docx`, sin registro de qué cambió entre una y otra.
+Un sistema de **control de versiones** registra la historia de los cambios de un conjunto de archivos, de manera que sea posible consultar quién cambió qué y cuándo, comparar versiones y recuperar cualquier estado anterior (Chacon y Straub, 2014). Resuelve un problema que cualquiera ha enfrentado: sin control de versiones, la historia de un documento termina dispersa en copias como `informe.docx`, `informe-final.docx` e `informe-final-v2-DEFINITIVO.docx`, sin registro de qué cambió entre una y otra. Aunque estos sistemas nacieron ligados al desarrollo de software, sirven para cualquier conjunto de archivos: código, documentos, datos o configuraciones; los materiales de este curso, por ejemplo, se gestionan con uno.
 
 Además de ordenar la historia, el control de versiones facilita la **colaboración**: varias personas pueden modificar los mismos archivos y el sistema se encarga de reunir sus cambios y de señalar los conflictos. Para la ciencia de datos tiene un valor adicional, ligado a la reproducibilidad: el historial documenta la procedencia del código y de los datos de un análisis, y permite examinar y reproducir cualquiera de sus versiones, no solo la más reciente.
 
@@ -46,6 +46,10 @@ flowchart LR
 
 <p style="text-align: center;"><strong>Figura 1</strong>. Flujo de trabajo básico de Git. Elaboración propia con base en Chacon y Straub (2014).</p>
 
+En este flujo, un archivo pasa por tres estados: **modificado**, cuando tiene cambios que aún no se han seleccionado; **preparado** (*staged*), cuando sus cambios están en el área de preparación, listos para el siguiente *commit*; y **confirmado** (*committed*), cuando ya forman parte del historial (Chacon y Straub, 2014). Este es el vocabulario que usa Git en sus mensajes: `git status`, por ejemplo, informa cuáles archivos están modificados y cuáles preparados.
+
+Una analogía útil es la de una compra en línea (Higgins, s. f.): el área de preparación funciona como el carrito de compras, donde se agregan y se quitan artículos sin compromiso; el *commit* equivale a confirmar el pedido, que queda registrado con su fecha y su detalle; y el *push* corresponde al envío.
+
 Git se maneja principalmente desde la línea de comandos. La tabla 1 resume los comandos que implementan el flujo anterior.
 
 <figure style="text-align: center; margin: 20px 0;">
@@ -58,6 +62,10 @@ Git se maneja principalmente desde la línea de comandos. La tabla 1 resume los 
       </tr>
     </thead>
     <tbody>
+      <tr>
+        <td><code>git config</code></td>
+        <td style="text-align: left;">Establece opciones de configuración, como el nombre y el correo que identifican a la persona autora de los <em>commits</em>.</td>
+      </tr>
       <tr>
         <td><code>git init</code></td>
         <td style="text-align: left;">Crea un repositorio nuevo en el directorio actual.</td>
@@ -94,6 +102,24 @@ Git se maneja principalmente desde la línea de comandos. La tabla 1 resume los 
     </table>
 </figure>
 
+Las ramas merecen una mirada más de cerca, porque en ellas descansa el trabajo en paralelo. Una rama se crea a partir de un punto del historial, avanza con sus propios *commits* sin afectar a `main` y, cuando el cambio está listo, se **fusiona** (*merge*) de vuelta en la rama principal, como ilustra la figura 2. Así se desarrollan, por ejemplo, los materiales de este curso: cada lección nueva se prepara en una rama propia que se fusiona en `main` al estar terminada.
+
+```{mermaid}
+gitGraph
+   commit id: "sitio inicial"
+   commit id: "lección 1"
+   branch leccion-2
+   commit id: "borrador"
+   commit id: "revisión"
+   checkout main
+   commit id: "corrige errata"
+   merge leccion-2 id: "fusión"
+```
+
+<p style="text-align: center;"><strong>Figura 2</strong>. Una rama se separa de <code>main</code>, avanza con sus propios <em>commits</em> y se fusiona de vuelta. Elaboración propia con base en Chacon y Straub (2014).</p>
+
+Si dos ramas —o dos personas— modifican las mismas líneas de un archivo, al fusionar se produce un **conflicto**: Git no decide por su cuenta cuál versión conservar, sino que marca en el archivo los fragmentos en disputa para que alguien los revise, elija o combine las versiones y confirme el resultado. Los conflictos no dañan el repositorio; son la forma en que el sistema pide criterio humano.
+
 En esta lección, Git se practica desde el navegador, a través de GitHub, que ejecuta las operaciones por nosotros. La línea de comandos se retomará cuando se instale el ambiente local del curso, en la próxima semana: el ambiente conda incluye Git, y [Visual Studio Code](../software/vscode.md) lo integra en su vista de control de código fuente (*Source Control*).
 
 Un buen mensaje de *commit* es breve y describe el cambio de forma específica ("Corrige la fórmula de densidad de población", no "cambios"). Como referencia, las convenciones que siguen los materiales de este curso están documentadas en el archivo [CONTRIBUTING](https://github.com/gf0657-programacionsig/2026-ii/blob/main/CONTRIBUTING.md) de su repositorio.
@@ -102,9 +128,13 @@ Un buen mensaje de *commit* es breve y describe el cambio de forma específica (
 
 ## GitHub
 
-**GitHub** es una plataforma en la nube que aloja repositorios Git y agrega, sobre ellos, servicios de colaboración: gestión de incidencias (*issues*), solicitudes de cambios (*pull requests*), revisión de código y automatización, además de la publicación de sitios web con GitHub Pages (GitHub, s. f.-a). Es la plataforma de este tipo más utilizada; existen alternativas como [GitLab](https://about.gitlab.com/) y [Bitbucket](https://bitbucket.org/).
+**GitHub** es una plataforma en la nube que aloja repositorios Git y agrega, sobre ellos, servicios de colaboración: gestión de incidencias (*issues*), solicitudes de cambios (*pull requests*), revisión de código y automatización, además de la publicación de sitios web con GitHub Pages (GitHub, s. f.-c). Es la plataforma de este tipo más utilizada; existen alternativas como [GitLab](https://about.gitlab.com/) y [Bitbucket](https://bitbucket.org/).
 
 Un repositorio de GitHub puede ser **público** (visible para cualquier persona, aunque solo quienes tengan permiso pueden modificarlo) o **privado**. Su página principal muestra los archivos y, renderizado debajo de ellos, el contenido del archivo **README.md**: un documento escrito en [Markdown](04-markdown.md) que presenta el proyecto, explica qué contiene el repositorio y cómo usarlo.
+
+El mecanismo central de colaboración es la **solicitud de cambios** (*pull request*): una propuesta de fusionar una rama en otra que, antes de aplicarse, puede discutirse y revisarse *commit* por *commit*. En los proyectos con varias personas es la práctica habitual —nadie escribe directamente sobre `main`; se proponen los cambios y otra persona los revisa y aprueba—. Las **incidencias** (*issues*) complementan ese flujo: registran errores, ideas y tareas pendientes del proyecto.
+
+No todo lo que hay en un directorio de trabajo debe versionarse. El archivo **.gitignore**, en la raíz del repositorio, lista los archivos y directorios que Git debe ignorar: archivos regenerables, credenciales y, muy relevante en SIG, datos de gran tamaño. GitHub rechaza archivos de más de 100 MB (GitHub, s. f.-a), por lo que los datos geoespaciales voluminosos —imágenes satelitales, modelos de elevación— suelen distribuirse por otros medios y documentarse su origen en el README. El repositorio de este curso, por ejemplo, ignora un directorio `privado/` con documentos que no deben publicarse.
 
 Aunque el uso pleno de Git requiere la línea de comandos o un editor, GitHub permite realizar las operaciones esenciales directamente en el navegador: crear repositorios, crear y editar archivos —cada edición genera un *commit*—, examinar el historial y comparar versiones. Así se trabaja durante esta semana. En el curso, GitHub es también el medio de entrega: cada tarea y el proyecto final se desarrollan en repositorios propios, y los materiales del curso están en la organización [gf0657-programacionsig](https://github.com/gf0657-programacionsig).
 
@@ -127,8 +157,8 @@ Este es el mecanismo con el que se publicará la documentación de las tareas de
 ## Resumen
 
 - Un sistema de **control de versiones** registra la historia de los cambios de un conjunto de archivos: quién cambió qué y cuándo, con la posibilidad de comparar y recuperar versiones y de reunir el trabajo de varias personas. Ese historial es parte de la procedencia de un análisis reproducible.
-- **Git** es el sistema de control de versiones más utilizado. Su flujo básico prepara los cambios (`git add`), los confirma en *commits* con mensajes descriptivos (`git commit`) y los sincroniza con un repositorio remoto (`git push`, `git pull`).
-- **GitHub** aloja repositorios Git en la nube y agrega colaboración y servicios; su archivo **README.md**, escrito en Markdown, presenta cada repositorio. Las operaciones esenciales pueden realizarse desde el navegador.
+- **Git** es el sistema de control de versiones más utilizado. Su flujo básico prepara los cambios (`git add`), los confirma en *commits* con mensajes descriptivos (`git commit`) y los sincroniza con un repositorio remoto (`git push`, `git pull`). Las **ramas** permiten desarrollar cambios en paralelo y fusionarlos cuando están listos; si dos cambios tocan las mismas líneas, el **conflicto** resultante se resuelve con revisión humana.
+- **GitHub** aloja repositorios Git en la nube y agrega colaboración y servicios; su archivo **README.md**, escrito en Markdown, presenta cada repositorio. Las **solicitudes de cambios** (*pull requests*) canalizan la revisión y fusión del trabajo, el archivo **.gitignore** excluye lo que no debe versionarse y las operaciones esenciales pueden realizarse desde el navegador.
 - **GitHub Pages** publica sitios web estáticos desde un repositorio; con Jekyll, los documentos Markdown se convierten en páginas HTML. Es el mecanismo de publicación de la documentación de las tareas y de este sitio web.
 
 ## Ejercicios
@@ -140,12 +170,13 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 
 1. En su cuenta de GitHub, cree un repositorio público llamado `practica-markdown`, marcando la opción *Add a README file*. Edite el `README.md` desde el navegador (ícono de lápiz), reemplace su contenido con el documento Markdown que elaboró en los [ejercicios de la lección anterior](04-markdown.md), escriba un mensaje de *commit* que describa el cambio y confírmelo (*Commit changes*). Verifique que el documento se muestre renderizado en la página principal del repositorio.
 2. Realice un segundo cambio —por ejemplo, agregue una sección con una tabla o corrija un texto— con su propio mensaje de *commit*. Abra el historial del archivo (*History*), compare las dos versiones y observe cómo se señalan las líneas agregadas y eliminadas. Abra también la vista *Raw* y compare la fuente Markdown con la versión renderizada.
+3. Observe Git "en producción" en el [repositorio de este curso](https://github.com/gf0657-programacionsig/2026-ii): abra el historial del archivo de esta lección (`contenidos/i-introduccion-ciencia-datos-programacion/05-git-github.md`) y examine el diff de alguno de sus *commits*. Luego, en la pestaña *Pull requests* (filtro *Closed*), elija una solicitud de cambios fusionada e identifique la rama en que se preparó, los *commits* que la componen y el momento de la fusión. Compare los mensajes de *commit* que encuentre con las convenciones del archivo [CONTRIBUTING](https://github.com/gf0657-programacionsig/2026-ii/blob/main/CONTRIBUTING.md).
 
 (ejercicios-pages)=
 ### GitHub Pages
 
-3. Active GitHub Pages en el repositorio (*Settings > Pages*), publicando la rama `main`. Siga el proceso de publicación en la pestaña *Actions* y, al concluir, visite `https://su-usuario.github.io/practica-markdown/`. Compare la página publicada con el `README.md` renderizado en GitHub: contenido igual, presentación distinta.
-4. En una celda de texto de un cuaderno o en un documento aparte, explique en qué lugar del [espectro de reproducibilidad](01-introduccion-ciencia-datos.md) quedaría un análisis cuyo código, datos y documentación se publican en un repositorio como el que acaba de crear, y qué aporta el historial de *commits* a esa valoración.
+4. Active GitHub Pages en el repositorio (*Settings > Pages*), publicando la rama `main`. Siga el proceso de publicación en la pestaña *Actions* y, al concluir, visite `https://su-usuario.github.io/practica-markdown/`. Compare la página publicada con el `README.md` renderizado en GitHub: contenido igual, presentación distinta.
+5. En una celda de texto de un cuaderno o en un documento aparte, explique en qué lugar del [espectro de reproducibilidad](01-introduccion-ciencia-datos.md) quedaría un análisis cuyo código, datos y documentación se publican en un repositorio como el que acaba de crear, y qué aporta el historial de *commits* a esa valoración.
 
 ## Referencias bibliográficas
 
@@ -155,7 +186,13 @@ Abba, I. V. (2021). *Git and GitHub tutorial – Version control for beginners*.
 Chacon, S. y Straub, B. (2014). *Pro Git* (2.ª ed.). Apress. https://git-scm.com/book/es/v2
 \
 \
-GitHub. (s. f.-a). *What is GitHub?* GitHub Docs. Recuperado el 11 de agosto de 2026, de https://docs.github.com/en/get-started/start-your-journey/what-is-github
+GitHub. (s. f.-a). *About large files on GitHub*. GitHub Docs. Recuperado el 17 de agosto de 2026, de https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github
 \
 \
 GitHub. (s. f.-b). *Quickstart for GitHub Pages*. GitHub Docs. Recuperado el 11 de agosto de 2026, de https://docs.github.com/en/pages/quickstart
+\
+\
+GitHub. (s. f.-c). *What is GitHub?* GitHub Docs. Recuperado el 11 de agosto de 2026, de https://docs.github.com/en/get-started/start-your-journey/what-is-github
+\
+\
+Higgins, M. (s. f.). *Reproducible templates for analysis and dissemination* [curso en línea]. Coursera. Recuperado el 17 de agosto de 2026, de https://www.coursera.org/learn/reproducible-templates-analysis
