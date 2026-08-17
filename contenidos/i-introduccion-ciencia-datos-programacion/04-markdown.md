@@ -58,7 +58,7 @@ El documento se visualiza de la siguiente manera:
   <img src="img/jupiter-satelites-galileanos.jpg" alt="Júpiter y los satélites galileanos" height="240">
 </div>
 
-El contenido de este ejemplo está basado en el artículo [Satélite galileano](https://es.wikipedia.org/wiki/Sat%C3%A9lite_galileano) de Wikipedia.
+El contenido de este ejemplo está basado en el artículo [Satélite galileano](https://es.wikipedia.org/wiki/Sat%C3%A9lite_galileano) de Wikipedia; la imagen, tomada del mismo artículo, es un montaje de la misión Galileo (NASA/JPL/DLR, dominio público).
 
 ## Sintaxis
 
@@ -163,7 +163,7 @@ La negrita se marca con dos asteriscos (`**`) o dos guiones bajos (`__`) antes y
 
 ### Listas
 
-Las listas numeradas se definen con números seguidos de punto (`1.`, `2.`, `3.`, …) antes de cada elemento; las no numeradas, con guiones (`-`) o asteriscos (`*`). Un elemento se anida dentro de otro sangrándolo con espacios. La tabla 3 muestra ambos tipos.
+Las listas numeradas se definen con números seguidos de punto (`1.`, `2.`, `3.`, …) antes de cada elemento; las no numeradas, con guiones (`-`) o asteriscos (`*`). Un elemento se anida dentro de otro sangrándolo con espacios. Las listas deben separarse del párrafo anterior con una línea en blanco; de lo contrario, algunos renderizadores —como el de GitHub— las muestran como texto corrido, uno de los errores más frecuentes al empezar a usar Markdown. La tabla 3 muestra ambos tipos de lista.
 
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla 3</strong>. Sintaxis y salida de las listas. Elaboración propia.</figcaption>
@@ -210,9 +210,11 @@ Las listas numeradas se definen con números seguidos de punto (`1.`, `2.`, `3.`
     </table>
 </figure>
 
+En GFM, una lista no numerada se convierte en **lista de tareas** agregando corchetes después del guion: `- [ ]` marca una tarea pendiente y `- [x]` una completada. GitHub las muestra como casillas de verificación; son comunes en los archivos `README` y en el seguimiento de trabajo pendiente.
+
 ### Enlaces e imágenes
 
-Un enlace (hipervínculo) se define con paréntesis cuadrados (`[]`), que contienen el texto del enlace, seguidos de paréntesis redondos (`()`), que contienen la dirección del documento al que conduce. Una imagen usa la misma sintaxis precedida por un signo de admiración de cierre (`!`); los paréntesis cuadrados contienen entonces un texto alternativo, que se muestra cuando la imagen no puede desplegarse. La tabla 4 muestra ambos elementos.
+Un enlace (hipervínculo) se define con paréntesis cuadrados (`[]`), que contienen el texto del enlace, seguidos de paréntesis redondos (`()`), que contienen la dirección del documento al que conduce. Una imagen usa la misma sintaxis precedida por un signo de admiración de cierre (`!`); los paréntesis cuadrados contienen entonces un texto alternativo, que se muestra cuando la imagen no puede desplegarse y que utilizan los lectores de pantalla para describirla, por lo que conviene redactarlo siempre. La tabla 4 muestra ambos elementos.
 
 <figure style="text-align: center; margin: 20px 0;">
     <figcaption><strong>Tabla 4</strong>. Sintaxis y salida de los enlaces y las imágenes. Elaboración propia.</figcaption>
@@ -323,12 +325,14 @@ Los detalles de la sintaxis de las expresiones pueden consultarse en el wikilibr
 Markdown acepta HTML intercalado en el documento, lo que permite lograr efectos para los que no tiene marcas propias. Dos usos frecuentes en este curso:
 
 - **Superíndices y subíndices**, con los elementos `<sup>` y `<sub>`: `km<sup>2</sup>` se visualiza como km<sup>2</sup>, y `CO<sub>2</sub>` como CO<sub>2</sub>.
+- **Comentarios**, con la marca `<!-- ... -->`: el texto que contiene no aparece en la salida, lo que permite dejar notas o recordatorios en la fuente del documento. Por ejemplo: `<!-- Pendiente: actualizar la tabla -->`.
 - **Tamaño de las imágenes**, con los atributos `height` y `width` del elemento [img](https://developer.mozilla.org/es/docs/Web/HTML/Element/img), que especifican la altura y el ancho en pixeles; si se usa solo uno, el otro se ajusta automáticamente para conservar las proporciones. Por ejemplo: `<img src="jupiter.jpg" height="50" alt="Júpiter y sus satélites">`.
 
 ### Otros elementos
 
 - Una **línea horizontal** se genera con una línea de tres o más guiones (`---`) o asteriscos (`***`), separada del texto por líneas en blanco.
 - Para mostrar literalmente un carácter que Markdown interpretaría como marca, se antepone una barra invertida: `\*asteriscos visibles\*` se visualiza como \*asteriscos visibles\*.
+- Los diagramas de este sitio web —como los de las lecciones de [introducción a la ciencia de datos](01-introduccion-ciencia-datos.md) y de [Git, GitHub y GitHub Pages](05-git-github.md)— se escriben dentro del propio Markdown, como bloques de código en el lenguaje de [Mermaid](https://mermaid.js.org/), una extensión que GitHub y MyST convierten en diagramas (Colab no la soporta).
 
 *Ejercicios de esta sección: [ejercicios sobre la sintaxis](#ejercicios-sintaxis).*
 
@@ -351,7 +355,7 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 (ejercicios-sintaxis)=
 ### Sintaxis
 
-2. En VS Code, cree un archivo con extensión `.md` y redacte en Markdown un documento de una página sobre un tema geográfico de su interés —idealmente, el que considera explorar en el proyecto del curso—. Active la vista previa (`Ctrl + K V`) y verifique que el documento incluya, al menos: un título y dos encabezados de sección, negritas e itálicas, una lista, un enlace, una imagen remota, una tabla y un bloque de código (puede copiar el de esta lección). Conserve el archivo: se usará en los ejercicios de la próxima lección.
+2. En VS Code, cree un archivo con extensión `.md` y redacte en Markdown un documento de una página sobre un tema geográfico de su interés —idealmente, el que considera explorar en el proyecto del curso—. Active la vista previa (`Ctrl + K V` o `Ctrl + Shift + V`) y verifique que el documento incluya, al menos: un título y dos encabezados de sección, negritas e itálicas, una lista, un enlace, una imagen remota, una tabla y un bloque de código (puede copiar el de esta lección). Conserve el archivo: se usará en los ejercicios de la próxima lección.
 
 3. Agregue al documento anterior una expresión matemática propia de la geografía (ej. la densidad de población de un cantón, con valores reales) en su propio bloque, y un superíndice con HTML (ej. la extensión de Costa Rica: 51 100 km<sup>2</sup>). Verifique ambos en la vista previa.
 
