@@ -1,6 +1,6 @@
 # Examen corto 1
 
-El primer examen corto del curso es una prueba **presencial e individual**, sin asistencia de herramientas de inteligencia artificial, con un valor del **5 %** de la calificación final. Evalúa la comprensión de las lecturas y de los conceptos teóricos y prácticos cubiertos en clase, según lo establecido en el [programa del curso](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/programa.pdf).
+El primer examen corto del curso es una prueba **presencial e individual**, con un valor del **5 %** de la calificación final. Evalúa los conceptos teóricos y prácticos cubiertos en clase, según lo establecido en el [programa del curso](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/programa.pdf).
 
 ## Fecha
 
@@ -8,7 +8,7 @@ Martes 25 de agosto de 2026, durante la clase (aula 215).
 
 ## Temas a evaluar
 
-Los temas de la sección I del curso, incluidas las lecturas indicadas en el trabajo previo de cada lección:
+Los temas de la sección I del curso:
 
 - [Introducción a la ciencia de datos](../i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md)
 - [Ejemplo de procesos de ciencia de datos](../i-introduccion-ciencia-datos-programacion/02-ejemplo-procesos-ciencia-datos.ipynb)
