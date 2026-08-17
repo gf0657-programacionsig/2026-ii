@@ -68,6 +68,15 @@ distinto: instrucciones de instalación, configuración y acceso, con pasos
 numerados cuando corresponda, sin la estructura completa de capítulos;
 las lecciones remiten a ellas en lugar de repetir instrucciones.
 
+Las entradas de la sección Evaluaciones (`contenidos/evaluaciones/`,
+archivos `examen-corto-NN.md`, `tarea-NN.md`, `proyecto-final.md`) son
+también un género propio: anuncian cada evaluación con un párrafo
+introductorio (modalidad, valor porcentual y propósito, tomados del
+programa del curso) y las secciones `## Fecha`, `## Temas a evaluar`
+(lista de enlaces relativos a las lecciones) y, cuando aplique,
+`## Preparación` u otras con las indicaciones propias de la evaluación.
+Estas páginas son las que se enlazan desde Mediación Virtual.
+
 ### Soluciones a los ejercicios
 
 Las soluciones se escriben junto con cada lección y se guardan en
