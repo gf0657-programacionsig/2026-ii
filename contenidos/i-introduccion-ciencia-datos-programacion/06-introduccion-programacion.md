@@ -190,11 +190,27 @@ Las computadoras descienden de una larga línea de máquinas de calcular. En el 
   <figcaption><strong>Figura 2</strong>. Diagrama del algoritmo para el cálculo de los números de Bernoulli en la máquina analítica. Fuente: Ada Lovelace, a través de <a href="https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg">Wikimedia Commons</a>.</figcaption>
 </figure>
 
-En 1936, el matemático británico [Alan Turing](https://es.wikipedia.org/wiki/Alan_Turing), considerado uno de los padres de la computación moderna, propuso la **máquina de Turing**: un modelo matemático —no un dispositivo físico— que manipula símbolos en una cinta según una tabla de reglas y que, pese a su simpleza, puede ejecutar cualquier algoritmo si dispone del tiempo y los recursos necesarios. Un sistema con esa capacidad —como una computadora o un lenguaje de programación de propósito general— se dice [Turing-completo](https://es.wikipedia.org/wiki/Turing_completo). Las primeras computadoras electrónicas se construyeron durante la Segunda Guerra Mundial: [Colossus](https://es.wikipedia.org/wiki/Colossus), en el Reino Unido, para descifrar mensajes codificados, y [ENIAC](https://es.wikipedia.org/wiki/ENIAC), terminada en 1945 en Estados Unidos y considerada la primera computadora electrónica digital de propósito general.
+En 1936, el matemático británico [Alan Turing](https://es.wikipedia.org/wiki/Alan_Turing), considerado uno de los padres de la computación moderna, propuso la **máquina de Turing**: un modelo matemático —no un dispositivo físico— que manipula símbolos en una cinta según una tabla de reglas y que, pese a su simpleza, puede ejecutar cualquier algoritmo si dispone del tiempo y los recursos necesarios. La figura 3 muestra una representación artística. Un sistema con esa capacidad —como una computadora o un lenguaje de programación de propósito general— se dice [Turing-completo](https://es.wikipedia.org/wiki/Turing_completo). Las primeras computadoras electrónicas se construyeron durante la Segunda Guerra Mundial: [Colossus](https://es.wikipedia.org/wiki/Colossus), en el Reino Unido, para descifrar mensajes codificados, y [ENIAC](https://es.wikipedia.org/wiki/ENIAC), terminada en 1945 en Estados Unidos y considerada la primera computadora electrónica digital de propósito general.
+
+<figure style="text-align: center;">
+  <img
+    src="img/maquina-turing.png"
+    alt="Representación artística de la máquina de Turing"
+  >
+  <figcaption><strong>Figura 3</strong>. Representación artística de la máquina de Turing. Fuente: Porao, a través de <a href="https://commons.wikimedia.org/wiki/File:Turing_Machine.png">Wikimedia Commons</a>.</figcaption>
+</figure>
 
 ## La computadora moderna
 
-En 1945, el matemático húngaro-estadounidense [John von Neumann](https://es.wikipedia.org/wiki/John_von_Neumann) propuso el concepto de [programa almacenado](https://es.wikipedia.org/wiki/Computador_de_programa_almacenado): los programas se guardan en la memoria, junto con los datos, lo que hace a las computadoras mucho más fáciles de reprogramar. Este modelo, conocido como **arquitectura de von Neumann**, es la base de las computadoras actuales (Severance, 2016) y comprende tres componentes: la **memoria principal** (RAM), que almacena los programas en ejecución y los datos que estos utilizan; la **unidad central de procesamiento** (CPU), que ejecuta las instrucciones; y los **sistemas de entrada y salida**, que comunican la computadora con el mundo exterior (ej. teclado, pantalla, discos, red).
+En 1945, el matemático húngaro-estadounidense [John von Neumann](https://es.wikipedia.org/wiki/John_von_Neumann) propuso el concepto de [programa almacenado](https://es.wikipedia.org/wiki/Computador_de_programa_almacenado): los programas se guardan en la memoria, junto con los datos, lo que hace a las computadoras mucho más fáciles de reprogramar. Este modelo, conocido como **arquitectura de von Neumann**, es la base de las computadoras actuales (Severance, 2016) y comprende tres componentes: la **memoria principal** (RAM), que almacena los programas en ejecución y los datos que estos utilizan; la **unidad central de procesamiento** (CPU), que ejecuta las instrucciones; y los **sistemas de entrada y salida**, que comunican la computadora con el mundo exterior (ej. teclado, pantalla, discos, red). Su esquema se muestra en la figura 4.
+
+<figure style="text-align: center;">
+  <img
+    src="img/arquitectura-von-neumann.jpg"
+    alt="Arquitectura de von Neumann"
+  >
+  <figcaption><strong>Figura 4</strong>. Arquitectura de von Neumann. Fuente: David Strigoi, a través de <a href="https://commons.wikimedia.org/wiki/File:Arquitecturaneumann.jpg">Wikimedia Commons</a>.</figcaption>
+</figure>
 
 Para el trabajo con datos conviene retener la distinción entre la memoria principal —rápida, pero limitada y volátil: su contenido se pierde al apagar la computadora— y el almacenamiento en disco —persistente y de mayor capacidad—. Un programa típico lee los datos del disco, los procesa en la memoria y escribe los resultados de vuelta en el disco; por eso un conjunto de datos puede "no caber" en la memoria aunque quepa holgadamente en el disco, situación frecuente con datos geoespaciales voluminosos, como las imágenes satelitales.
 
