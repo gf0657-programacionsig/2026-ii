@@ -216,7 +216,15 @@ Para el trabajo con datos conviene retener la distinción entre la memoria princ
 
 Internamente, las computadoras representan toda la información —números, texto, imágenes, sonido— en forma **binaria**: con dos valores, denotados 0 y 1. Cada dígito binario se denomina **bit** (*binary digit*) y los bits se agrupan de ocho en ocho en [*bytes*](https://es.wikipedia.org/wiki/Byte). De ahí provienen las unidades con las que se mide el tamaño de los datos (kilobytes, megabytes, gigabytes) y algunos detalles que reaparecerán en el curso: los tipos numéricos como `int64` y `float64`, que se estudiarán con pandas, ocupan 64 bits (8 bytes) por valor, y los caracteres de texto se representan mediante codificaciones como [ASCII](https://es.wikipedia.org/wiki/ASCII) y [UTF-8](https://es.wikipedia.org/wiki/UTF-8) — conocer su existencia ayuda a entender, por ejemplo, los errores con tildes y eñes al leer archivos de datos.
 
-La CPU solo ejecuta directamente instrucciones binarias, el llamado **código máquina**: el único lenguaje que las computadoras "entienden", específico de cada arquitectura de procesador (ej. x86, ARM).
+La CPU solo ejecuta directamente instrucciones binarias, el llamado **código máquina**: el único lenguaje que las computadoras "entienden", específico de cada arquitectura de procesador (ej. x86, ARM). La figura 5 muestra un programa en código máquina examinado en la pantalla de una computadora: cada línea presenta una dirección de memoria, los bytes de una instrucción —en [notación hexadecimal](https://es.wikipedia.org/wiki/Sistema_hexadecimal), una forma compacta de escribir números binarios— y su traducción a una notación legible.
+
+<figure style="text-align: center;">
+  <img
+    src="img/monitor-codigo-maquina.jpg"
+    alt="Monitor de código máquina de una computadora W65C816S"
+  >
+  <figcaption><strong>Figura 5</strong>. Programa en código máquina examinado en el monitor de una computadora W65C816S. Fuente: BigDumbDinosaur (BCS Technology Limited), a través de <a href="https://commons.wikimedia.org/wiki/File:W65C816S_Machine_Code_Monitor.jpeg">Wikimedia Commons</a>.</figcaption>
+</figure>
 
 ## Lenguajes de programación
 
