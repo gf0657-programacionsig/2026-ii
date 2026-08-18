@@ -21,7 +21,7 @@ Un sistema de **control de versiones** registra la historia de los cambios de un
 
 Además de ordenar la historia, el control de versiones facilita la **colaboración**: varias personas pueden modificar los mismos archivos y el sistema se encarga de reunir sus cambios y de señalar los conflictos. Para la ciencia de datos tiene un valor adicional, ligado a la reproducibilidad: el historial documenta la procedencia del código y de los datos de un análisis, y permite examinar y reproducir cualquiera de sus versiones, no solo la más reciente.
 
-*Ejercicios de esta sección: [ejercicios sobre GitHub](#ejercicios-github).*
+*Ejercicios de esta sección: [ejercicios sobre control de versiones, Git y GitHub](#ejercicios-github).*
 
 ## Git
 
@@ -124,7 +124,7 @@ En esta lección, Git se practica desde el navegador, a través de GitHub, que e
 
 Un buen mensaje de *commit* es breve y describe el cambio de forma específica ("Corrige la fórmula de densidad de población", no "cambios"). Como referencia, las convenciones que siguen los materiales de este curso están documentadas en el archivo [CONTRIBUTING](https://github.com/gf0657-programacionsig/2026-ii/blob/main/CONTRIBUTING.md) de su repositorio.
 
-*Ejercicios de esta sección: [ejercicios sobre GitHub](#ejercicios-github).*
+*Ejercicios de esta sección: [ejercicios sobre control de versiones, Git y GitHub](#ejercicios-github).*
 
 ## GitHub
 
@@ -138,7 +138,7 @@ No todo lo que hay en un directorio de trabajo debe versionarse. El archivo **.g
 
 Aunque el uso pleno de Git requiere la línea de comandos o un editor, GitHub permite realizar las operaciones esenciales directamente en el navegador: crear repositorios, crear y editar archivos —cada edición genera un *commit*—, examinar el historial y comparar versiones. Así se trabaja durante esta semana. En el curso, GitHub es también el medio de entrega: cada tarea y el proyecto final se desarrollan en repositorios propios, y los materiales del curso están en la organización [gf0657-programacionsig](https://github.com/gf0657-programacionsig).
 
-*Ejercicios de esta sección: [ejercicios sobre GitHub](#ejercicios-github).*
+*Ejercicios de esta sección: [ejercicios sobre control de versiones, Git y GitHub](#ejercicios-github).*
 
 ## GitHub Pages
 
