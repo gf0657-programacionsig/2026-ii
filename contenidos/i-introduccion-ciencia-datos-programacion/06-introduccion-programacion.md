@@ -180,155 +180,31 @@ Aunque la sintaxis difiere —se estudiará la de Python a partir de la próxima
 
 ## Breve historia de las computadoras
 
-### Calculadoras mecánicas
-
-Durante el siglo XVII, varios matemáticos construyeron calculadoras mecánicas capaces de realizar operaciones aritméticas. Alrededor de 1645, el filósofo y matemático francés [Blaise Pascal](https://es.wikipedia.org/wiki/Blaise_Pascal) (1623–1662) inventó la [Pascalina](https://es.wikipedia.org/wiki/Pascalina), una calculadora de ruedas y engranajes que podía sumar y restar, creada para ayudar a su padre en cálculos de aritmética comercial. En 1672, el científico alemán [Gottfried Leibniz](https://es.wikipedia.org/wiki/Gottfried_Leibniz) (1646–1716) extendió las ideas de Pascal con la [máquina de Leibniz](https://es.wikipedia.org/wiki/Stepped_Reckoner) (*Stepped Reckoner*), que además podía multiplicar, dividir y calcular raíces cuadradas, basada en un tambor cilíndrico conocido como [rueda de Leibniz](https://es.wikipedia.org/wiki/Rueda_de_Leibniz). La figura 2 muestra una réplica.
-
-<figure style="text-align: center;">
-  <img
-    src="img/maquina-leibniz.jpg"
-    alt="Réplica de la máquina de Leibniz"
-  >
-  <figcaption><strong>Figura 2</strong>. Réplica de la máquina de Leibniz. Fuente: Kolossos, a través de <a href="https://commons.wikimedia.org/wiki/File:Leibnitzrechenmaschine.jpg">Wikimedia Commons</a>.</figcaption>
-</figure>
-
-El objetivo de Leibniz era realizar cálculos de manera "fácil, rápida y fiable", aunque las primeras versiones de su máquina fallaban con frecuencia por problemas mecánicos. Los derivados de estas calculadoras continuaron produciéndose durante tres siglos, hasta que sus equivalentes electrónicos se volvieron baratos y accesibles a inicios de la década de 1970.
-
-### La máquina analítica de Babbage
-
-En la primera mitad del siglo XIX, el matemático inglés [Charles Babbage](https://es.wikipedia.org/wiki/Charles_Babbage) (1791–1871) diseñó la [máquina analítica](https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica), una computadora mecánica considerada la primera computadora programable de la historia, que incorporaba características de las computadoras modernas: usaba tarjetas perforadas para la entrada de datos, una unidad aritmética para las operaciones y una memoria capaz de almacenar 1000 números, y su lenguaje de programación —similar a los actuales [lenguajes ensambladores](https://es.wikipedia.org/wiki/Lenguaje_ensamblador)— admitía ciclos y condicionales. Nunca fue terminada, por limitaciones técnicas y económicas. La figura 3 muestra la parte construida.
-
-<figure style="text-align: center;">
-  <img
-    src="img/maquina-analitica.jpg"
-    alt="Máquina analítica de Babbage"
-  >
-  <figcaption><strong>Figura 3</strong>. Máquina analítica de Babbage. Fuente: Bruno Barral, a través de <a href="https://commons.wikimedia.org/wiki/File:AnalyticalMachine_Babbage_London.jpg">Wikimedia Commons</a>.</figcaption>
-</figure>
-
-En 1843, la matemática británica [Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace) (1815–1852) tradujo al inglés una descripción de la máquina analítica escrita por el matemático italiano [Luigi Menabrea](https://es.wikipedia.org/wiki/Luigi_Menabrea). En las notas que agregó a la traducción —más extensas que el propio artículo— incluyó los pasos con los que la máquina podría calcular los [números de Bernoulli](https://es.wikipedia.org/wiki/N%C3%BAmero_de_Bernoulli), elaborados en colaboración con Babbage y considerados el primer programa de computadora publicado. El diagrama correspondiente se muestra en la figura 4.
+Las computadoras descienden de una larga línea de máquinas de calcular. En el siglo XVII, [Blaise Pascal](https://es.wikipedia.org/wiki/Blaise_Pascal) y [Gottfried Leibniz](https://es.wikipedia.org/wiki/Gottfried_Leibniz) construyeron calculadoras mecánicas capaces de realizar operaciones aritméticas, cuyos derivados continuaron produciéndose durante tres siglos. El salto conceptual llegó en el siglo XIX con la [máquina analítica](https://es.wikipedia.org/wiki/M%C3%A1quina_anal%C3%ADtica) del matemático inglés [Charles Babbage](https://es.wikipedia.org/wiki/Charles_Babbage): una computadora mecánica —nunca terminada, por limitaciones técnicas y económicas— considerada la primera programable de la historia. Para esa máquina, la matemática británica [Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace) publicó en 1843 los pasos con los que podrían calcularse los [números de Bernoulli](https://es.wikipedia.org/wiki/N%C3%BAmero_de_Bernoulli), considerados el primer programa de computadora publicado (figura 2). Lovelace fue, además, la primera persona en reconocer que estas máquinas podían ir más allá del cálculo numérico: anticipó que en el futuro podrían componer música o generar gráficos.
 
 <figure style="text-align: center;">
   <img
     src="img/programa-maquina-analitica.jpg"
     alt="Diagrama del algoritmo para el cálculo de los números de Bernoulli en la máquina analítica"
   >
-  <figcaption><strong>Figura 4</strong>. Diagrama del algoritmo para el cálculo de los números de Bernoulli en la máquina analítica. Fuente: Ada Lovelace, a través de <a href="https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg">Wikimedia Commons</a>.</figcaption>
+  <figcaption><strong>Figura 2</strong>. Diagrama del algoritmo para el cálculo de los números de Bernoulli en la máquina analítica. Fuente: Ada Lovelace, a través de <a href="https://commons.wikimedia.org/wiki/File:Diagram_for_the_computation_of_Bernoulli_numbers.jpg">Wikimedia Commons</a>.</figcaption>
 </figure>
 
-El aporte de Lovelace fue fundamental porque fue la primera persona en reconocer que la capacidad de las máquinas podía ir más allá del cálculo numérico: anticipó que en el futuro podrían componer música o generar gráficos, y enfatizó la diferencia entre la máquina analítica —programable para problemas de complejidad arbitraria— y las calculadoras que la precedieron.
-
-### La máquina de Turing
-
-En 1936, el matemático británico [Alan Turing](https://es.wikipedia.org/wiki/Alan_Turing) (1912–1954) propuso la **máquina de Turing**, un modelo matemático —no un dispositivo físico— que manipula símbolos en una cinta según un conjunto de reglas. La figura 5 muestra una representación artística.
-
-<figure style="text-align: center;">
-  <img
-    src="img/maquina-turing.png"
-    alt="Representación artística de la máquina de Turing"
-  >
-  <figcaption><strong>Figura 5</strong>. Representación artística de la máquina de Turing. Fuente: Porao, a través de <a href="https://commons.wikimedia.org/wiki/File:Turing_Machine.png">Wikimedia Commons</a>.</figcaption>
-</figure>
-
-Una máquina de Turing se compone de:
-
-1. **Una cinta**: actúa como memoria; se divide en celdas, cada una de las cuales puede contener un símbolo (ej. una letra, un número).
-2. **Una cabeza lectora/escritora**: lee y escribe símbolos en la cinta.
-3. **Un conjunto de estados**: entre los que la máquina cambia en respuesta a lo que lee; hay un estado inicial y uno o más estados de parada que indican que la computación terminó.
-4. **Una tabla de acciones**: indica, para cada combinación de estado actual y símbolo leído, qué debe hacer la máquina: escribir un símbolo, mover la cabeza a la izquierda o a la derecha, o cambiar de estado.
-
-Con este esquema tan simple, una máquina de Turing puede ejecutar cualquier algoritmo, si dispone del tiempo y los recursos necesarios. Un sistema capaz de resolver cualquier problema computable —como una computadora o un lenguaje de programación de propósito general— se dice [Turing-completo](https://es.wikipedia.org/wiki/Turing_completo); no todos los sistemas lo son, pues algunos se diseñan con restricciones para propósitos específicos. Turing es considerado uno de los padres de la computación moderna por sus contribuciones a la [teoría de la computación](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_computaci%C3%B3n) y a la [inteligencia artificial](https://es.wikipedia.org/wiki/Inteligencia_artificial), campo en el que propuso la [prueba de Turing](https://es.wikipedia.org/wiki/Prueba_de_Turing) para evaluar si una máquina exhibe un comportamiento equivalente al de una persona.
-
-### Primeras computadoras electrónicas
-
-Durante la Segunda Guerra Mundial (1939–1945) se construyeron en el Reino Unido máquinas para descifrar mensajes codificados: la [Bombe](https://es.wikipedia.org/wiki/Bombe), un dispositivo electromecánico en cuyo diseño participó el propio Turing, y [Colossus](https://es.wikipedia.org/wiki/Colossus), considerada una de las primeras computadoras electrónicas digitales programables. Su programación, sin embargo, se realizaba mediante interruptores y conexiones de *hardware*, no con un programa almacenado en memoria. La figura 6 muestra una computadora Colossus.
-
-<figure style="text-align: center;">
-  <img
-    src="img/colossus.jpg"
-    alt="Computadora Colossus operada por integrantes del Women's Royal Naval Service (WRNS)"
-  >
-  <figcaption><strong>Figura 6</strong>. Computadora Colossus operada por integrantes del <em>Women's Royal Naval Service</em> (WRNS). Fuente: fotografía de autoría desconocida, a través de <a href="https://commons.wikimedia.org/wiki/File:Colossus.jpg">Wikimedia Commons</a>.</figcaption>
-</figure>
-
-En la misma época, el ejército de Estados Unidos construyó [ENIAC](https://es.wikipedia.org/wiki/ENIAC) (*Electronic Numerical Integrator and Computer*), terminada en 1945 para calcular tablas de tiro de artillería y considerada la primera computadora electrónica digital de propósito general: era Turing-completa. La figura 7 la muestra.
-
-<figure style="text-align: center;">
-  <img
-    src="img/eniac.jpg"
-    alt="Computadora ENIAC en Filadelfia, Estados Unidos"
-  >
-  <figcaption><strong>Figura 7</strong>. Computadora ENIAC en Filadelfia, Estados Unidos. Fuente: fotografía del Ejército de los Estados Unidos, a través de <a href="https://commons.wikimedia.org/wiki/File:Eniac.jpg">Wikimedia Commons</a>.</figcaption>
-</figure>
+En 1936, el matemático británico [Alan Turing](https://es.wikipedia.org/wiki/Alan_Turing), considerado uno de los padres de la computación moderna, propuso la **máquina de Turing**: un modelo matemático —no un dispositivo físico— que manipula símbolos en una cinta según una tabla de reglas y que, pese a su simpleza, puede ejecutar cualquier algoritmo si dispone del tiempo y los recursos necesarios. Un sistema con esa capacidad —como una computadora o un lenguaje de programación de propósito general— se dice [Turing-completo](https://es.wikipedia.org/wiki/Turing_completo). Las primeras computadoras electrónicas se construyeron durante la Segunda Guerra Mundial: [Colossus](https://es.wikipedia.org/wiki/Colossus), en el Reino Unido, para descifrar mensajes codificados, y [ENIAC](https://es.wikipedia.org/wiki/ENIAC), terminada en 1945 en Estados Unidos y considerada la primera computadora electrónica digital de propósito general.
 
 ## La computadora moderna
 
-### La arquitectura de von Neumann
+En 1945, el matemático húngaro-estadounidense [John von Neumann](https://es.wikipedia.org/wiki/John_von_Neumann) propuso el concepto de [programa almacenado](https://es.wikipedia.org/wiki/Computador_de_programa_almacenado): los programas se guardan en la memoria, junto con los datos, lo que hace a las computadoras mucho más fáciles de reprogramar. Este modelo, conocido como **arquitectura de von Neumann**, es la base de las computadoras actuales (Severance, 2016) y comprende tres componentes: la **memoria principal** (RAM), que almacena los programas en ejecución y los datos que estos utilizan; la **unidad central de procesamiento** (CPU), que ejecuta las instrucciones; y los **sistemas de entrada y salida**, que comunican la computadora con el mundo exterior (ej. teclado, pantalla, discos, red).
 
-En 1945, el matemático húngaro-estadounidense [John von Neumann](https://es.wikipedia.org/wiki/John_von_Neumann) (1903–1957) propuso el concepto de [programa almacenado](https://es.wikipedia.org/wiki/Computador_de_programa_almacenado): los datos y los programas se guardan en una estructura llamada memoria, separada de los componentes que ejecutan las instrucciones, lo que hace a las computadoras mucho más fáciles de reprogramar. Este modelo, conocido como **arquitectura de von Neumann**, es la base de las computadoras actuales (Severance, 2016). Su esquema se muestra en la figura 8.
+Para el trabajo con datos conviene retener la distinción entre la memoria principal —rápida, pero limitada y volátil: su contenido se pierde al apagar la computadora— y el almacenamiento en disco —persistente y de mayor capacidad—. Un programa típico lee los datos del disco, los procesa en la memoria y escribe los resultados de vuelta en el disco; por eso un conjunto de datos puede "no caber" en la memoria aunque quepa holgadamente en el disco, situación frecuente con datos geoespaciales voluminosos, como las imágenes satelitales.
 
-<figure style="text-align: center;">
-  <img
-    src="img/arquitectura-von-neumann.jpg"
-    alt="Arquitectura de von Neumann"
-  >
-  <figcaption><strong>Figura 8</strong>. Arquitectura de von Neumann. Fuente: David Strigoi, a través de <a href="https://commons.wikimedia.org/wiki/File:Arquitecturaneumann.jpg">Wikimedia Commons</a>.</figcaption>
-</figure>
+Internamente, las computadoras representan toda la información —números, texto, imágenes, sonido— en forma **binaria**: con dos valores, denotados 0 y 1. Cada dígito binario se denomina **bit** (*binary digit*) y los bits se agrupan de ocho en ocho en [*bytes*](https://es.wikipedia.org/wiki/Byte). De ahí provienen las unidades con las que se mide el tamaño de los datos (kilobytes, megabytes, gigabytes) y algunos detalles que reaparecerán en el curso: los tipos numéricos como `int64` y `float64`, que se estudiarán con pandas, ocupan 64 bits (8 bytes) por valor, y los caracteres de texto se representan mediante codificaciones como [ASCII](https://es.wikipedia.org/wiki/ASCII) y [UTF-8](https://es.wikipedia.org/wiki/UTF-8) — conocer su existencia ayuda a entender, por ejemplo, los errores con tildes y eñes al leer archivos de datos.
 
-Sus componentes principales son:
-
-- **Memoria principal**: almacena las instrucciones de los programas y los datos que estos utilizan. Se le denomina RAM (*random access memory*, memoria de acceso aleatorio) porque acceder a cualquiera de sus posiciones toma el mismo tiempo; cada posición tiene una dirección que se usa para leerla o escribirla.
-- **Unidad central de procesamiento** (CPU, *central processing unit*): ejecuta las instrucciones de los programas. Contiene memorias temporales de alta velocidad y poca capacidad, llamadas registros, y se compone de la **unidad de control**, que determina cuál es la siguiente instrucción a ejecutar, y la **unidad de aritmética y lógica** (ALU), que ejecuta las operaciones.
-- **Sistemas de entrada y salida**: comunican la computadora con el mundo exterior; por ejemplo, el teclado y el ratón (entrada) y la pantalla y la impresora (salida).
-
-### Sistemas binarios
-
-Las computadoras modernas se construyen con [circuitos integrados](https://es.wikipedia.org/wiki/Circuito_integrado), también llamados *chips* o *microchips*, como el de la figura 9.
-
-<figure style="text-align: center;">
-  <img
-    src="img/circuito-integrado.jpg"
-    alt="Procesador Intel"
-  >
-  <figcaption><strong>Figura 9</strong>. Procesador Intel. Fuente: Slejven Djurakovic, a través de <a href="https://unsplash.com/s/photos/chip">Unsplash</a>.</figcaption>
-</figure>
-
-Los circuitos integrados procesan información digital, generalmente **binaria**: de dos valores, representados internamente con dos niveles de tensión eléctrica (bajo y alto) que se denotan con 0 y 1. Cada dígito binario se denomina **bit** (*binary digit*) y los bits se agrupan de ocho en ocho en [*bytes*](https://es.wikipedia.org/wiki/Byte) para representar información más compleja, como números grandes o caracteres de texto. Por ejemplo:
-
-- El número decimal 14 se representa en binario como `1110`, pues `1110` = 2³×1 + 2²×1 + 2¹×1 + 2⁰×0 = 8 + 4 + 2 + 0 = 14.
-- La palabra "bit" se representa en [código ASCII](https://es.wikipedia.org/wiki/ASCII) como `01100010 01101001 01110100`.
-
-De manera similar se representan otras clases de información, como imágenes, sonidos o videos.
-
-El uso de solo dos estados tiene ventajas: los circuitos que manejan señales binarias son más simples, confiables y baratos que los que tendrían que distinguir múltiples estados, y facilita aplicar dos herramientas matemáticas fundamentales: la [teoría de la información](https://es.wikipedia.org/wiki/Teor%C3%ADa_de_la_informaci%C3%B3n) —el estudio de la cuantificación, el almacenamiento y la comunicación de la información, propuesto por [Claude Shannon](https://es.wikipedia.org/wiki/Claude_Shannon) (1916–2001) en la década de 1940, con el bit como unidad fundamental— y el [álgebra de Boole](https://es.wikipedia.org/wiki/%C3%81lgebra_de_Boole) —introducida por [George Boole](https://es.wikipedia.org/wiki/George_Boole) (1815–1864) en 1847—, que opera con dos valores, verdadero (1) y falso (0), mediante operaciones lógicas como `AND` (y), `OR` (o) y `NOT` (no).
-
-*Ejercicios de esta sección: [ejercicios sobre sistemas binarios](#ejercicios-binarios).*
-
-### Código máquina
-
-El **código máquina** es el conjunto de instrucciones binarias que la CPU de una computadora puede ejecutar directamente: es el único lenguaje que las computadoras "entienden". Las instrucciones disponibles varían según la arquitectura del procesador (ej. x86, ARM), pero en general comprenden operaciones aritméticas y lógicas, movimiento de datos entre la memoria y los registros, entrada/salida, comparaciones y control de flujo. La figura 10 muestra una instrucción en código máquina que suma los contenidos de los registros 1 y 2 de una CPU y almacena el resultado en el registro 6.
-
-<figure style="text-align: center;">
-  <img
-    src="img/lenguaje-maquina.png"
-    alt="Instrucción en código máquina"
-  >
-  <figcaption><strong>Figura 10</strong>. Instrucción en código máquina. Fuente: <a href="https://en.wikipedia.org/wiki/Machine_code">Wikipedia</a>.</figcaption>
-</figure>
-
-La figura 11 muestra el programa ["Hola mundo"](https://es.wikipedia.org/wiki/Hola_mundo) en código máquina. Este programa se limita a imprimir esa hilera de texto en la pantalla y es, tradicionalmente, el primer ejemplo con el que se estudia un lenguaje de programación.
-
-<figure style="text-align: center;">
-  <img
-    src="img/lenguaje-maquina-hola-mundo.png"
-    alt="Programa Hola mundo en código máquina"
-  >
-  <figcaption><strong>Figura 11</strong>. Programa <em>Hola mundo</em> en código máquina. Fuente: CS50 (2024).</figcaption>
-</figure>
+La CPU solo ejecuta directamente instrucciones binarias, el llamado **código máquina**: el único lenguaje que las computadoras "entienden", específico de cada arquitectura de procesador (ej. x86, ARM).
 
 ## Lenguajes de programación
 
-Programar directamente en código máquina es lento y propenso a errores. Por eso, a partir de la década de 1950 comenzaron a crearse los **lenguajes de programación**: notaciones que expresan las instrucciones con palabras —usualmente en inglés— y símbolos, y que programas especiales traducen a código máquina. Como ejemplo, el programa "Hola mundo" se muestra a continuación en tres lenguajes: [C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)), Python y R.
+Programar directamente en código máquina es lento y propenso a errores. Por eso, a partir de la década de 1950 comenzaron a crearse los **lenguajes de programación**: notaciones que expresan las instrucciones con palabras —usualmente en inglés— y símbolos, y que programas especiales traducen a código máquina. Como ejemplo, el programa ["Hola mundo"](https://es.wikipedia.org/wiki/Hola_mundo) —que se limita a imprimir esa hilera de texto y es, tradicionalmente, el primer ejemplo con el que se estudia un lenguaje— se muestra a continuación en tres lenguajes: [C](https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)), Python y R.
 
 ```c
 /* Hola mundo en lenguaje C */
@@ -362,8 +238,8 @@ Existe una gran [variedad de lenguajes de programación](https://es.wikipedia.or
 - Una **computadora** es una máquina de **propósito general**: ejecuta programas que pueden cambiarse sin alterar sus componentes físicos. Aprender a programarla permite ponerla al servicio de las preguntas de la propia disciplina.
 - Un **algoritmo** es un conjunto de pasos definidos, no ambiguos, ordenados y finitos que soluciona un problema; recibe entradas, las procesa y genera salidas (modelo **entrada–procesamiento–salida**). Formular problemas de esta manera es la esencia del **pensamiento computacional**.
 - Un mismo algoritmo puede implementarse como **programa** en distintos lenguajes de programación.
-- La historia de las computadoras va de las calculadoras mecánicas de Pascal y Leibniz, la máquina analítica de Babbage y las notas de Ada Lovelace, al modelo teórico de Turing y a las primeras computadoras electrónicas; las actuales siguen la **arquitectura de von Neumann**: memoria principal, CPU y sistemas de entrada y salida.
-- Internamente, las computadoras representan la información en **sistemas binarios** (bits y bytes) y ejecutan **código máquina**; los **lenguajes de programación**, como Python, permiten escribir instrucciones legibles que se traducen a ese código.
+- La historia de las computadoras va de las calculadoras mecánicas y la máquina analítica de Babbage —para la que Ada Lovelace publicó el primer programa— al modelo teórico de Turing y a las primeras computadoras electrónicas; las actuales siguen la **arquitectura de von Neumann**: memoria principal, CPU y sistemas de entrada y salida. Para el trabajo con datos importa la distinción entre la memoria —rápida, limitada y volátil— y el disco —persistente y de mayor capacidad—.
+- Internamente, las computadoras representan la información en forma **binaria** —el bit y el byte, de donde provienen las unidades de tamaño de los datos, los tipos numéricos como `int64` y las codificaciones de texto como UTF-8— y ejecutan **código máquina**; los **lenguajes de programación**, como Python, permiten escribir instrucciones legibles que se traducen a ese código.
 
 ## Ejercicios
 
@@ -381,11 +257,6 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 3. Ejecute el programa del valor máximo en ambos lenguajes: el de Python en un cuaderno de [Google Colab](https://colab.research.google.com/) y el de R en un [ambiente de ejecución en línea](https://www.mycompiler.io/new/r). Solo debe copiar el código y ejecutarlo; compare las salidas.
 4. Modifique el programa de Python para que obtenga el valor mínimo, implementando el algoritmo que diseñó en el ejercicio 1, y ejecútelo en Colab.
 5. Escriba en Python un programa que calcule la densidad de población de un territorio, siguiendo el algoritmo de la sección del modelo entrada–procesamiento–salida: defina las variables `poblacion` y `area` con valores reales de un cantón, calcule la densidad e imprímala con `print()`.
-
-(ejercicios-binarios)=
-### Sistemas binarios
-
-6. Siguiendo el ejemplo del número 14, represente en binario los números 21 y 64 y muestre la comprobación con las potencias de 2. Luego, con ayuda de la [tabla del código ASCII](https://es.wikipedia.org/wiki/ASCII), escriba la representación binaria de sus iniciales.
 
 ## Referencias bibliográficas
 
