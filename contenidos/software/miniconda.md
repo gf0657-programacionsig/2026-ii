@@ -63,6 +63,8 @@ No se recomienda instalar paquetes por su cuenta en `geopython` (ej. con `conda 
 
 ## Uso del ambiente
 
+El ambiente puede usarse de tres maneras **alternativas**, no consecutivas: elija en cada sesión de trabajo la que necesite. En el curso, la principal es la primera.
+
 - **Cuadernos de notas en VS Code**: abra el cuaderno y elija el ambiente `geopython` en **Select Kernel**, como se explica en la [guía de VS Code](vscode.md).
 - **Jupyter en el navegador**: con el ambiente activado, ejecute `jupyter notebook` en la terminal; la aplicación se abre en el navegador y los cuadernos se guardan en la carpeta desde donde se ejecutó el comando.
 - **Python interactivo**: con el ambiente activado, el comando `python` abre el interpretador en la terminal (se sale con `exit()`).
