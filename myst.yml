@@ -33,6 +33,9 @@ project:
         - file: contenidos/soluciones/01-soluciones-introduccion-ciencia-datos.md
         - file: contenidos/soluciones/02-soluciones-ejemplo-procesos-ciencia-datos.md
         - file: contenidos/soluciones/03-soluciones-cuadernos-jupyter.md
+        - file: contenidos/soluciones/04-soluciones-markdown.md
+        - file: contenidos/soluciones/05-soluciones-git-github.md
+        - file: contenidos/soluciones/06-soluciones-introduccion-programacion.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL

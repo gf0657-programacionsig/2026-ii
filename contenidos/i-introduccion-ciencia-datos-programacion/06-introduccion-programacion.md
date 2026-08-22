@@ -267,7 +267,7 @@ Existe una gran [variedad de lenguajes de programación](https://es.wikipedia.or
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Las [soluciones de estos ejercicios](../soluciones/06-soluciones-introduccion-programacion.md) se publican después de la clase correspondiente.
 
 (ejercicios-algoritmos)=
 ### Algoritmos

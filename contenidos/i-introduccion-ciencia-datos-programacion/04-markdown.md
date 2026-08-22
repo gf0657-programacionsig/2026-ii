@@ -345,7 +345,7 @@ Markdown acepta HTML intercalado en el documento, lo que permite lograr efectos 
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Las [soluciones de estos ejercicios](../soluciones/04-soluciones-markdown.md) se publican después de la clase correspondiente.
 
 (ejercicios-lenguajes-marcado)=
 ### Lenguajes de marcado y variantes
