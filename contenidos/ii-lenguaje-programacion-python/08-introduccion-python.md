@@ -60,9 +60,95 @@ Otras características importantes del lenguaje son:
 
 ## Principios de diseño
 
-La filosofía de diseño de Python enfatiza que los programas sean fáciles de leer, de manera que pueda entenderse rápidamente su propósito y funcionamiento. Esto facilita el mantenimiento de los programas existentes y disminuye la necesidad de crear otros nuevos. Esa filosofía está resumida en el [**Zen de Python**](https://peps.python.org/pep-0020/), una lista de 19 principios —como "lo bello es mejor que lo feo", "explícito es mejor que implícito" y "la legibilidad cuenta"— incluida en el propio lenguaje: se despliega al ejecutar la instrucción `import this`.
+La filosofía de diseño de Python enfatiza que los programas sean fáciles de leer, de manera que pueda entenderse rápidamente su propósito y funcionamiento. Esto facilita el mantenimiento de los programas existentes y disminuye la necesidad de crear otros nuevos. Los documentos que expresan esa filosofía son dos [**PEP** (*Python Enhancement Proposals*)](https://peps.python.org/): los documentos públicos y numerados en los que la comunidad de Python propone, discute y registra los cambios y las convenciones del lenguaje — otra muestra del modelo abierto y comunitario con el que se desarrolla.
 
-Los principios se concretan en la [guía de estilo para código Python](https://peps.python.org/pep-0008/), conocida como PEP 8, que establece convenciones para escribir programas: nombres de variables, espacios, longitud de las líneas y organización del código, entre otras. Los programas que siguen estos principios, junto con las mejores prácticas y los [*idioms*](https://en.wikipedia.org/wiki/Programming_idiom) del lenguaje, se consideran "pitónicos" (*pythonic*), y la comunidad llama *pythonistas* a las personas que programan según esta filosofía.
+### El Zen de Python
+
+El [**Zen de Python**](https://peps.python.org/pep-0020/) (PEP 20) resume la filosofía del lenguaje en 19 principios breves, escritos por el programador estadounidense Tim Peters, una de las figuras históricas de la comunidad de Python (Peters, 2004). Está incluido en el propio lenguaje como un [*huevo de pascua*](https://es.wikipedia.org/wiki/Huevo_de_pascua_(virtual)): se despliega, en su inglés original, al ejecutar la instrucción `import this`. La tabla 1 presenta una selección de los principios más relevantes para este curso, con una lectura práctica de cada uno.
+
+<figure style="text-align: center; margin: 20px 0;">
+    <figcaption><strong>Tabla 1</strong>. Selección de principios del Zen de Python. Elaboración propia con base en Peters (2004).</figcaption>
+    <table class="table table-bordered table-striped" style="margin: 0 auto;">
+        <thead>
+            <tr>
+                <th>Principio (original)</th>
+                <th>Traducción</th>
+                <th>En la práctica</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><em>Beautiful is better than ugly</em></td>
+                <td>Lo bello es mejor que lo feo</td>
+                <td>La estética del código importa: un programa ordenado se entiende y se corrige con más facilidad</td>
+            </tr>
+            <tr>
+                <td><em>Explicit is better than implicit</em></td>
+                <td>Explícito es mejor que implícito</td>
+                <td>El código debe decir claramente qué hace, empezando por los nombres de las variables, sin depender de comportamientos ocultos</td>
+            </tr>
+            <tr>
+                <td><em>Simple is better than complex</em></td>
+                <td>Lo simple es mejor que lo complejo</td>
+                <td>Entre dos soluciones que funcionan, conviene la más sencilla</td>
+            </tr>
+            <tr>
+                <td><em>Readability counts</em></td>
+                <td>La legibilidad cuenta</td>
+                <td>El código se lee muchas más veces de las que se escribe: se escribe para las personas, no solo para la computadora</td>
+            </tr>
+            <tr>
+                <td><em>Errors should never pass silently</em></td>
+                <td>Los errores nunca deberían pasar en silencio</td>
+                <td>Es preferible que un error se manifieste y se maneje a que se oculte; se aplicará al estudiar las excepciones, en el próximo cuaderno</td>
+            </tr>
+            <tr>
+                <td><em>There should be one-- and preferably only one --obvious way to do it</em></td>
+                <td>Debería haber una —y preferiblemente solo una— manera obvia de hacerlo</td>
+                <td>El lenguaje favorece las soluciones convencionales, que cualquier persona puede reconocer</td>
+            </tr>
+            <tr>
+                <td><em>If the implementation is hard to explain, it's a bad idea</em></td>
+                <td>Si la implementación es difícil de explicar, es una mala idea</td>
+                <td>Poder explicar el propio código es señal de comprenderlo — el mismo criterio que los lineamientos de IA del curso (lección 7) aplican al código producido con asistentes</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+
+### La guía de estilo PEP 8
+
+Los principios se concretan en la [guía de estilo para código Python](https://peps.python.org/pep-0008/), conocida como **PEP 8** (van Rossum et al., 2001), que establece convenciones para escribir programas. Las que se aplican desde ya en el curso son:
+
+- Nombres de variables **significativos**, en minúsculas y con guiones bajos para separar palabras (ej. `densidad_poblacion`).
+- Un espacio a cada lado de los operadores (`=`, `+`, `>`) y después de cada coma.
+- Indentación con cuatro espacios (se aplicará con los condicionales, en el próximo cuaderno).
+- Líneas de no más de 79 caracteres.
+- Comentarios que expliquen lo que el código no dice por sí mismo y que se actualicen junto con él.
+
+El efecto de estas convenciones se aprecia comparando dos versiones del mismo programa. La primera funciona, pero ignora la guía de estilo:
+
+```python
+p=352381
+A  =44.6
+print("densidad:",p/A)
+```
+
+La segunda hace lo mismo, con las convenciones de PEP 8:
+
+```python
+# Densidad de población del cantón de San José (INEC, Censo 2022)
+poblacion = 352381
+area = 44.6
+
+print("Densidad (hab/km2):", poblacion / area)
+```
+
+Ambas producen la misma salida; la diferencia es para quien lee: en la segunda versión, los nombres, los espacios y el comentario cuentan qué hace el programa y de dónde vienen los datos.
+
+### Código pitónico
+
+Los programas que siguen estos principios, junto con las mejores prácticas y los [*idioms*](https://en.wikipedia.org/wiki/Programming_idiom) del lenguaje —como los recopilados en [The Hitchhiker's Guide to Python](https://docs.python-guide.org/)—, se consideran "pitónicos" (*pythonic*), y la comunidad llama *pythonistas* a las personas que programan según esta filosofía.
 
 *Ejercicios de esta sección: [ejercicios sobre los principios de diseño](#ejercicios-principios).*
 
@@ -107,7 +193,7 @@ Los pasos de instalación están en la [guía de Miniconda](../software/minicond
 
 - **Python** es un lenguaje de programación de propósito general creado por Guido van Rossum y publicado por primera vez en 1991. Es uno de los lenguajes más populares y de los más usados para enseñar programación, en buena parte por su **legibilidad**.
 - Es un lenguaje **interpretado**, con **tipos de datos dinámicos**, **administración automática de memoria**, soporte de varios **paradigmas** y distribución de **código abierto**.
-- Su filosofía de diseño está resumida en el **Zen de Python** y se concreta en la guía de estilo **PEP 8**; los programas que la siguen se consideran "pitónicos".
+- Su filosofía de diseño está documentada en los **PEP**, los documentos públicos con los que la comunidad registra los cambios y convenciones del lenguaje: el **Zen de Python** (PEP 20) la resume en 19 principios y la guía de estilo **PEP 8** la concreta en convenciones de escritura; los programas que las siguen se consideran "pitónicos".
 - Una comunidad mundial, coordinada por la **Python Software Foundation**, desarrolla el lenguaje y sus **bibliotecas**, compartidas en repositorios como PyPI y conda-forge.
 - Python es el lenguaje de automatización y extensión de los principales **SIG** (ArcGIS, QGIS, GRASS) y cuenta con bibliotecas geoespaciales independientes (geopandas, rasterio, folium), lo que lo convierte en el lenguaje de este curso.
 - En el curso, Python se ejecuta en la nube (Google Colab) y, a partir de esta semana, localmente (Miniconda y el ambiente `geopython`, con VS Code).
@@ -119,22 +205,33 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 (ejercicios-principios)=
 ### Principios de diseño
 
-1. En un cuaderno de [Google Colab](https://colab.research.google.com/), ejecute en una celda de código la instrucción `import this` para desplegar el Zen de Python. Elija dos de sus principios y, en una celda de texto, explíquelos con sus propias palabras y relaciónelos con lo que este capítulo dice sobre la legibilidad de los programas.
+1. En un cuaderno de [Google Colab](https://colab.research.google.com/), ejecute en una celda de código la instrucción `import this` para desplegar el Zen de Python. Elija dos de sus principios —pueden ser de la tabla 1 o de los restantes— y, en una celda de texto, explíquelos con sus propias palabras y relaciónelos con lo que este capítulo dice sobre la legibilidad de los programas.
+
+2. El siguiente programa funciona, pero ignora las convenciones de PEP 8. En una celda de código, reescríbalo aplicando las convenciones estudiadas en esta sección (nombres significativos, espacios, comentario con la fuente de los datos) y verifique que produce el mismo resultado. Los datos son la población de Costa Rica según el Censo 2022 del [INEC](https://inec.cr/) y el área del país en km².
+
+    ```python
+    x=5044197
+    Y  =51100
+    print("la densidad de poblacion de costa rica es",x/Y)
+    ```
 
 (ejercicios-comunidad)=
 ### Comunidad y bibliotecas
 
-2. Explore el [Python Package Index (PyPI)](https://pypi.org/) buscando bibliotecas relacionadas con el tema geográfico que considera desarrollar en el proyecto del curso (ej. "biodiversity", "climate", "remote sensing", "geospatial"). Elija una y anote, en el mismo cuaderno del ejercicio anterior: su nombre, qué hace (según su descripción) y la fecha de su versión más reciente, como indicador de si el proyecto se mantiene activo.
+3. Explore el [Python Package Index (PyPI)](https://pypi.org/) buscando bibliotecas relacionadas con el tema geográfico que considera desarrollar en el proyecto del curso (ej. "biodiversity", "climate", "remote sensing", "geospatial"). Elija una y anote, en el mismo cuaderno del ejercicio anterior: su nombre, qué hace (según su descripción) y la fecha de su versión más reciente, como indicador de si el proyecto se mantiene activo.
 
 (ejercicios-instalacion)=
 ### Instalación local
 
-3. Instale Miniconda y cree el ambiente `geopython` siguiendo la [guía de Miniconda](../software/miniconda.md). Verifique la instalación con los comandos `conda env list` (el ambiente debe aparecer en la lista) y, con el ambiente activado, `python --version`.
-4. En Visual Studio Code, cree un cuaderno de notas nuevo, seleccione el ambiente `geopython` como kernel —según la [guía de VS Code](../software/vscode.md)— y ejecute una celda con el programa "Hola mundo" de la [lección anterior](../i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md). Agregue otra celda con las instrucciones `import sys` y `print(sys.version)` y compare la versión desplegada con la del ejercicio 3.
+4. Instale Miniconda y cree el ambiente `geopython` siguiendo la [guía de Miniconda](../software/miniconda.md). Verifique la instalación con los comandos `conda env list` (el ambiente debe aparecer en la lista) y, con el ambiente activado, `python --version`.
+5. En Visual Studio Code, cree un cuaderno de notas nuevo, seleccione el ambiente `geopython` como kernel —según la [guía de VS Code](../software/vscode.md)— y ejecute una celda con el programa "Hola mundo" de la [lección anterior](../i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md). Agregue otra celda con las instrucciones `import sys` y `print(sys.version)` y compare la versión desplegada con la del ejercicio 4.
 
 ## Referencias bibliográficas
 
 Guo, P. (2014, 7 de julio). Python is now the most popular introductory teaching language at top U.S. universities. *Blog@CACM*. https://cacm.acm.org/blogcacm/python-is-now-the-most-popular-introductory-teaching-language-at-top-u-s-universities/
+\
+\
+Peters, T. (2004). *PEP 20 – The Zen of Python*. Python Enhancement Proposals. https://peps.python.org/pep-0020/
 \
 \
 Python Software Foundation. (s. f.). Abriendo el apetito. En *El tutorial de Python*. Recuperado el 21 de agosto de 2026, de https://docs.python.org/es/3/tutorial/appetite.html
@@ -144,6 +241,9 @@ TIOBE. (s. f.). *TIOBE index*. Recuperado el 21 de agosto de 2026, de https://ww
 \
 \
 van Rossum, G. (1996). *Foreword for "Programming Python" (1st ed.)*. Python Software Foundation. https://www.python.org/doc/essays/foreword/
+\
+\
+van Rossum, G., Warsaw, B. y Coghlan, A. (2001). *PEP 8 – Style guide for Python code*. Python Enhancement Proposals. https://peps.python.org/pep-0008/
 \
 \
 Zambelli, P., Gebbert, S. y Ciolli, M. (2013). PyGRASS: An object oriented Python application programming interface (API) for Geographic Resources Analysis Support System (GRASS) geographic information system (GIS). *ISPRS International Journal of Geo-Information*, *2*(1), 201–219. https://www.mdpi.com/2220-9964/2/1/201
