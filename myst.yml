@@ -21,6 +21,9 @@ project:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/05-git-github.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md
         - file: contenidos/i-introduccion-ciencia-datos-programacion/07-asistentes-ia.md
+    - title: "II. El lenguaje de programación Python"
+      children:
+        - file: contenidos/ii-lenguaje-programacion-python/08-introduccion-python.md
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
