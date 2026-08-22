@@ -25,9 +25,10 @@ conda --version
 
 ## Creación del ambiente del curso
 
-1. Descargue el archivo [environment.yml](https://raw.githubusercontent.com/gf0657-programacionsig/2026-ii/main/environment.yml) del repositorio del curso (clic derecho sobre el enlace y *Guardar enlace como*) y colóquelo en la carpeta de trabajo del curso.
-2. En la terminal con conda habilitado, muévase a esa carpeta con el comando `cd` (ej. `cd Documentos\gf0657`). También puede usar la [terminal integrada de Visual Studio Code](vscode.md) con la carpeta de trabajo abierta, que ya inicia ubicada en ella.
-3. Cree el ambiente:
+1. Si aún no la tiene, cree una carpeta para los archivos del curso, en una ubicación fácil de encontrar y con un nombre sin espacios ni tildes (ej. `Documentos\gf0657` en Windows, `Documentos/gf0657` en macOS y Linux). Puede crearla con el explorador de archivos o desde la terminal, con el comando `mkdir`. Se recomienda abrir esta carpeta en VS Code como [carpeta de trabajo](vscode.md) (*File > Open Folder*): ahí se irán guardando los cuadernos de notas y los demás archivos del curso.
+2. Descargue el archivo [environment.yml](https://raw.githubusercontent.com/gf0657-programacionsig/2026-ii/main/environment.yml) del repositorio del curso (clic derecho sobre el enlace y *Guardar enlace como*) y colóquelo en la carpeta del curso. La carpeta no afecta la instalación —el ambiente se crea siempre en el directorio de Miniconda, no donde esté el archivo—, así que puede usarse cualquier otra (ej. Descargas), siempre que el comando del paso 4 se ejecute desde ella; la del curso se recomienda para conservar el archivo, que se usará de nuevo al actualizar el ambiente.
+3. En la terminal con conda habilitado, muévase a la carpeta donde quedó el archivo, con el comando `cd` (ej. `cd Documentos\gf0657`). También puede usar la [terminal integrada de Visual Studio Code](vscode.md) con la carpeta de trabajo abierta, que ya inicia ubicada en ella.
+4. Cree el ambiente:
 
 ```shell
 conda env create -f environment.yml
@@ -35,7 +36,7 @@ conda env create -f environment.yml
 
 El comando crea un ambiente llamado `geopython` (el nombre está definido en el archivo) y descarga e instala todos los paquetes del curso, entre ellos Python, git, Jupyter, pandas y las bibliotecas geoespaciales. La descarga toma varios minutos.
 
-4. Active el ambiente y verifique la versión de Python:
+5. Active el ambiente y verifique la versión de Python:
 
 ```shell
 conda activate geopython
@@ -44,7 +45,7 @@ python --version
 
 Al activarse el ambiente, su nombre aparece al inicio de la línea de la terminal: `(geopython)`. Los comandos que se ejecuten a partir de ese momento usan los programas del ambiente.
 
-5. Al finalizar la sesión de trabajo, desactive el ambiente:
+6. Al finalizar la sesión de trabajo, desactive el ambiente:
 
 ```shell
 conda deactivate
