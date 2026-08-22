@@ -63,7 +63,15 @@ Puede explorar la lista completa de extensiones en el [Visual Studio Code Market
 
 1. Haga clic en el ícono de Copilot en la barra de estado (o instale la extensión **GitHub Copilot** desde el panel de extensiones).
 2. Inicie sesión con la cuenta de GitHub creada en la lección de [Git, GitHub y GitHub Pages](../i-introduccion-ciencia-datos-programacion/05-git-github.md).
-3. El plan gratuito para cuentas personales tiene límites mensuales de uso (a agosto de 2026, 2000 autocompletados y 50 mensajes de chat). Además, [GitHub Education](https://github.com/education) ofrece el plan Copilot Pro sin costo a estudiantes verificados con su correo institucional.
+3. El plan gratuito para cuentas personales tiene límites mensuales de uso (a agosto de 2026, 2000 autocompletados y 50 mensajes de chat): suficientes para los ejercicios del curso, pero ajustados para el proyecto final.
+
+### Copilot Pro gratuito con GitHub Education
+
+[GitHub Education](https://github.com/education) ofrece el plan Copilot Pro —sin los límites anteriores— gratis a estudiantes verificados. **Se recomienda solicitar la verificación desde ya**: el proceso puede tardar varios días y conviene tenerla lista antes de la semana 5, cuando el curso comienza a usar los asistentes de IA.
+
+1. Agregue su correo institucional (`@ucr.ac.cr`) a su cuenta de GitHub (*Settings > Emails*).
+2. En [GitHub Education](https://github.com/education), solicite los beneficios de estudiante (*Join GitHub Education*) con ese correo, y aporte la prueba de matrícula que se le pida (ej. una constancia o el carné).
+3. Al aprobarse la solicitud, active Copilot Pro desde la [página de configuración de Copilot](https://github.com/settings/copilot).
 
 Las sugerencias automáticas pueden pausarse o desactivarse desde el menú del ícono de Copilot en la barra de estado. Se recomienda mantenerlas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue).
 
