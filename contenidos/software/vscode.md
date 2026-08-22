@@ -69,10 +69,10 @@ Las sugerencias automáticas pueden pausarse o desactivarse desde el menú del �
 
 ## Cuadernos de notas en VS Code
 
-VS Code puede abrir y ejecutar los archivos `.ipynb` de los [cuadernos de notas](../i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md), como alternativa a Google Colab y a las aplicaciones del proyecto Jupyter. Requiere las extensiones de Python y de Jupyter mencionadas en la sección anterior y una instalación local de Python, que se realiza en la semana 3 del curso. Los pasos generales son:
+VS Code puede abrir y ejecutar los archivos `.ipynb` de los [cuadernos de notas](../i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md), como alternativa a Google Colab y a las aplicaciones del proyecto Jupyter. Requiere las extensiones de Python y de Jupyter mencionadas en la sección anterior y una instalación local de Python, que se realiza siguiendo la [guía de Miniconda](miniconda.md). Los pasos generales son:
 
 1. Cree un cuaderno nuevo con el comando **Create: New Jupyter Notebook** de la paleta de comandos (`Ctrl + Shift + P`) y guárdelo con la extensión `.ipynb`, o abra un cuaderno existente (*File > Open File*).
-2. Haga clic en **Select Kernel**, en la esquina superior derecha, y elija el ambiente de Python del curso.
+2. Haga clic en **Select Kernel**, en la esquina superior derecha, y elija el ambiente de Python del curso (`geopython`), creado con la guía de Miniconda.
 3. Ejecute las celdas con el botón de ejecución o con `Shift + Enter`, como en cualquier otra aplicación de cuadernos.
 
 ## Teclas rápidas recomendadas
