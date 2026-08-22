@@ -163,7 +163,7 @@ Este es el mecanismo con el que se publicará la documentación de las tareas de
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Continúan el trabajo de la lección de Markdown: el documento elaborado en aquellos ejercicios se convertirá aquí en un repositorio con una página web publicada.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Continúan el trabajo de la lección de Markdown: el documento elaborado en aquellos ejercicios se convertirá aquí en un repositorio con una página web publicada. Las [soluciones de estos ejercicios](../soluciones/05-soluciones-git-github.md) se publican después de la clase correspondiente.
 
 (ejercicios-github)=
 ### Control de versiones, Git y GitHub
