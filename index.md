@@ -6,13 +6,13 @@ title: GF-0657 Programación en SIG - 2026-II
 
 :::{image} img/ucr.png
 :alt: Universidad de Costa Rica
-:height: 80px
+:height: 120px
 :class: logo-institucional
 :::
 
 :::{image} img/escuela-geografia.png
 :alt: Escuela de Geografía
-:height: 80px
+:height: 120px
 :class: logo-institucional
 :::
 
