@@ -13,3 +13,8 @@
   border-radius: 8px;
   width: auto;
 }
+
+/* Logo del encabezado más grande (el tema lo fija en h-9 = 36 px). */
+.myst-home-link-logo img {
+  height: 3.25rem;
+}
