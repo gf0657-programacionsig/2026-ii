@@ -49,6 +49,11 @@ REEMPLAZOS = [
     ('aria-label="Previous: ', 'aria-label="Anterior: '),
     ('aria-label="Next: ', 'aria-label="Siguiente: '),
     ('"Open Folder"', '"Abrir carpeta"'),
+    # Botón de descarga del encabezado
+    (">Downloads<", ">Descargas<"),
+    ('children:"Downloads"', 'children:"Descargas"'),
+    ("<title>Download</title>", "<title>Descargar</title>"),
+    ('title:"Download"', 'title:"Descargar"'),
     ('"Link to this Section"', '"Enlace a esta sección"'),
     # Selector de tema claro/oscuro
     (
