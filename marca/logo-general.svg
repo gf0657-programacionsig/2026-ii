@@ -1,8 +1,10 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <title>GF-0657 Programación en SIG</title>
   <rect width="512" height="512" rx="96" fill="#14324F"/>
-  <path d="M 228,180 C 135,168 120,240 185,252 C 255,265 240,335 145,323" fill="none" stroke="#FFD43B" stroke-width="38" stroke-linecap="round"/>
-  <circle cx="228" cy="180" r="27" fill="#FFD43B"/>
-  <circle cx="237" cy="172" r="6.5" fill="#14324F"/>
-  <text x="272" y="330" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="230" fill="#F4F8FB">IG</text>
+  <circle cx="256" cy="276" r="156" fill="none" stroke="#4B8BBE" stroke-width="12"/>
+  <path d="M256,104 V136 M256,416 V448 M84,276 H116 M396,276 H428" stroke="#4B8BBE" stroke-width="12" stroke-linecap="round"/>
+  <text x="256" y="84" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="60" fill="#F4F8FB">N</text>
+  <path d="M 248,394 C 196,354 314,330 262,288 C 216,250 300,230 260,196" fill="none" stroke="#FFD43B" stroke-width="27" stroke-linecap="round"/>
+  <circle cx="258" cy="190" r="25" fill="#FFD43B"/>
+  <circle cx="264" cy="181" r="6" fill="#14324F"/>
 </svg>
