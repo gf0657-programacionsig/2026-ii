@@ -25,6 +25,8 @@ project:
       children:
         - file: contenidos/ii-lenguaje-programacion-python/08-introduccion-python.md
         - file: contenidos/ii-lenguaje-programacion-python/09-fundamentos-python.ipynb
+        - file: contenidos/ii-lenguaje-programacion-python/10-funciones-iteracion.ipynb
+        - file: contenidos/ii-lenguaje-programacion-python/11-estructuras-datos-apis.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
