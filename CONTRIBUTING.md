@@ -59,9 +59,21 @@ siguen la misma estructura de secciones, en este orden:
    `(ejercicios-x)=` sobre cada una. Cada sección de contenido cierra
    entonces con una línea `*Ejercicios de esta sección: [...](#ejercicios-x).*`,
    lo que permite intercalar teoría y práctica durante las clases sin
-   alterar la estructura del capítulo.
+   alterar la estructura del capítulo. Los destinos `(x)=` son globales
+   al proyecto: usar nombres únicos entre capítulos.
 7. `## Referencias bibliográficas` — al final, según la sección
    [Referencias bibliográficas](#referencias-bibliográficas).
+
+En los **cuadernos de notas** (`.ipynb`) los enlaces se escriben para que
+funcionen también con el cuaderno abierto en Colab, donde MyST no
+interviene: (1) los enlaces a otras páginas del sitio usan la URL
+absoluta (`https://gf0657-programacionsig.github.io/2026-ii/<pagina>/`),
+no rutas relativas; (2) los punteros a los ejercicios espejo van como
+texto plano ("*Ejercicios de esta sección: …, en la sección de
+ejercicios al final del cuaderno.*"), sin destinos `(x)=` ni enlaces
+`#ancla` — los destinos de MyST no existen en Colab (el enlace queda
+muerto y la línea `(x)=` se ve como texto suelto) y las anclas HTML
+`<a id>` no sobreviven al build de MyST.
 
 Las guías de la sección Software (`contenidos/software/`) son un género
 distinto: instrucciones de instalación, configuración y acceso, con pasos
