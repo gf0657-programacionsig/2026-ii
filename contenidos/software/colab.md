@@ -28,7 +28,7 @@ Los cuadernos del curso se abren desde GitHub en modo de solo lectura: los cambi
 
 Colab integra funciones de [asistencia con IA](../i-introduccion-ciencia-datos-programacion/07-asistentes-ia.md) basadas en Gemini, como el autocompletado de código y un chat en el que se pueden pedir explicaciones o generación de código. Según la [documentación de Colab](https://research.google.com/colaboratory/faq.html), estas funciones requieren que la cuenta pertenezca a una persona mayor de 18 años; el uso básico de Colab no tiene esa restricción.
 
-Estas funciones pueden ocultarse o mostrarse en *Herramientas > Configuración*, en la sección de asistencia de IA. Al igual que con las sugerencias de GitHub Copilot en [Visual Studio Code](vscode.md), se recomienda mantenerlas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue).
+Estas funciones pueden ocultarse o mostrarse en *Herramientas > Configuración*, en la sección de asistencia de IA. Al igual que con las sugerencias de [GitHub Copilot](copilot.md) en Visual Studio Code, se recomienda mantenerlas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue).
 
 ## Limitaciones
 
