@@ -242,9 +242,10 @@ plantilla oficial de la Escuela de Geografía.
 
 ## Marca del curso
 
-El logo del curso es el monograma **SIG** con la S dibujada por una
-serpiente estilizada, en la paleta de Python: amarillo (`#FFD43B` sobre
-fondo oscuro, `#FFC61E` sobre claro) y azul profundo (`#14324F`). La
+El logo del curso es una **brújula** que enmarca una serpiente
+caricaturesca enrollada en forma de 8 (con cruce del cuerpo, ojos y
+lengua), en la paleta de Python: amarillo `#FFD43B` con contorno azul
+profundo `#14324F` y aro azul `#3776AB`, sobre fondo claro. La
 serpiente y la paleta identifican al lenguaje sin imitar el logo de la
 Python Software Foundation, que es marca registrada. En `marca/` están la
 variante **general** (`logo-general.svg/png`), sin año, que se usa como

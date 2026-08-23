@@ -1,8 +1,29 @@
 <svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
   <title>GF-0657 Programación en SIG</title>
-  <rect width="512" height="512" rx="96" fill="#14324F"/>
-  <path d="M 228,180 C 135,168 120,240 185,252 C 255,265 240,335 145,323" fill="none" stroke="#FFD43B" stroke-width="38" stroke-linecap="round"/>
-  <circle cx="228" cy="180" r="27" fill="#FFD43B"/>
-  <circle cx="237" cy="172" r="6.5" fill="#14324F"/>
-  <text x="272" y="330" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="230" fill="#F4F8FB">IG</text>
+  <rect width="512" height="512" rx="96" fill="#F4F8FB"/>
+  <circle cx="256" cy="276" r="164" fill="none" stroke="#3776AB" stroke-width="12"/>
+  <path d="M256,96 V128 M256,424 V456 M76,276 H108 M404,276 H436" stroke="#3776AB" stroke-width="12" stroke-linecap="round"/>
+  <text x="256" y="78" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="58" fill="#14324F">N</text>
+  <g transform="translate(256,286) scale(0.80) translate(-258,-282)">
+    <path d="M 210,362 C 178,376 162,392 156,412" fill="none" stroke="#14324F" stroke-width="32" stroke-linecap="round"/>
+    <path d="M 210,362 C 178,376 162,392 156,412" fill="none" stroke="#FFD43B" stroke-width="19" stroke-linecap="round"/>
+    <g fill="none" stroke-linecap="round">
+      <path d="M 296,186 C 296,148 212,146 206,204 C 202,244 238,266 276,284 C 330,308 344,342 320,370 C 292,404 202,402 188,362 C 174,324 208,298 248,284 C 286,270 300,248 298,220" stroke="#14324F" stroke-width="44"/>
+      <path d="M 296,186 C 296,148 212,146 206,204 C 202,244 238,266 276,284 C 330,308 344,342 320,370 C 292,404 202,402 188,362 C 174,324 208,298 248,284 C 286,270 300,248 298,220" stroke="#FFD43B" stroke-width="30"/>
+      <path d="M 206,204 C 202,244 238,266 276,284 C 330,308 344,342 320,370" stroke="#14324F" stroke-width="44"/>
+      <path d="M 206,204 C 202,244 238,266 276,284 C 330,308 344,342 320,370" stroke="#FFD43B" stroke-width="30"/>
+    </g>
+    <circle cx="234" cy="384" r="8" fill="#FFF6D6"/>
+    <circle cx="272" cy="380" r="8" fill="#FFF6D6"/>
+    <circle cx="196" cy="330" r="7" fill="#FFF6D6"/>
+    <ellipse cx="300" cy="186" rx="40" ry="32" fill="none" stroke="#14324F" stroke-width="10"/>
+    <ellipse cx="336" cy="196" rx="20" ry="14" fill="none" stroke="#14324F" stroke-width="10"/>
+    <ellipse cx="300" cy="186" rx="40" ry="32" fill="#FFD43B"/>
+    <ellipse cx="336" cy="196" rx="20" ry="14" fill="#FFD43B"/>
+    <circle cx="287" cy="177" r="10" fill="#FFFFFF" stroke="#14324F" stroke-width="3"/>
+    <circle cx="289" cy="179" r="4.5" fill="#14324F"/>
+    <circle cx="311" cy="177" r="10" fill="#FFFFFF" stroke="#14324F" stroke-width="3"/>
+    <circle cx="313" cy="179" r="4.5" fill="#14324F"/>
+    <path d="M 354,200 C 366,200 372,198 378,194 M 372,196 L 382,202" stroke="#E4572E" stroke-width="7" stroke-linecap="round" fill="none"/>
+  </g>
 </svg>
