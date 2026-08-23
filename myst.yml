@@ -8,10 +8,11 @@ project:
     - README.md
     - CONTRIBUTING.md
     - CLAUDE.md
-    - programa/**
     - privado/**
   toc:
     - file: index.md
+    - file: programa/programa.md
+      title: Programa del curso
     - title: "I. Introducción a la ciencia de datos y a la programación de computadoras"
       children:
         - file: contenidos/i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md

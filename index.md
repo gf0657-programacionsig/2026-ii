@@ -24,7 +24,7 @@ El curso se imparte en la [Escuela de Geografía](https://www.geografia.fcs.ucr.
 
 El curso es presencial y el entorno virtual se emplea como apoyo a los aprendizajes. Los contenidos y los recursos relacionados se comparten en este sitio web, así como en la plataforma [Mediación Virtual](https://mv.mediacionvirtual.ucr.ac.cr/course/view.php?id=15265) de la Universidad de Costa Rica.
 
-El [programa del curso](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/gf0657-programacionsig-g001-2026-ii.pdf) detalla los objetivos, los contenidos, la metodología, la evaluación y la bibliografía.
+El [programa del curso](programa/programa.md) detalla los objetivos, los contenidos, la metodología, la evaluación y la bibliografía; también está disponible su [versión oficial en PDF](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/gf0657-programacionsig-g001-2026-ii.pdf).
 
 Si tiene alguna pregunta o comentario sobre este curso, por favor contacte a:
 
