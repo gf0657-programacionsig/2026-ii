@@ -273,7 +273,7 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
 ### Algoritmos
 
 1. Escriba, en pasos numerados como los del ejemplo, un algoritmo para obtener el valor **mínimo** de una lista. Verifique que cumpla las cuatro características básicas (entradas, salidas, pasos claros, finitud) y aplíquelo manualmente a la lista `[8.5, 3.2, -4.7, 10.9, 0.6]`, mostrando el "mínimo actual" en cada paso del recorrido.
-2. Elabore una hoja electrónica que calcule la densidad de población de los cantones de una provincia de Costa Rica (busque la población y el área de al menos cinco cantones en fuentes oficiales, como el [Instituto Nacional de Estadística y Censos](https://inec.cr/)). Identifique en la hoja los componentes de entrada, procesamiento y salida del modelo.
+2. Elabore una hoja electrónica que calcule la densidad de población de los cantones de una provincia de Costa Rica (busque la población y el área de al menos cinco cantones en fuentes oficiales, como el [Instituto Nacional de Estadística y Censos](https://inec.cr/); su archivo de [resultados de población y vivienda 2022](https://admin.inec.cr/sites/default/files/2023-11/reResultadosEstimacionPoblacionVivienda2022_3.xlsx) contiene, en un solo documento, los cuadros con la población y con la extensión territorial en km² de cada cantón). Identifique en la hoja los componentes de entrada, procesamiento y salida del modelo.
 
 (ejercicios-programas)=
 ### Programas
