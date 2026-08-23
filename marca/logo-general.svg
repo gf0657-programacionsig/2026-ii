@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <title>GF-0657 Programación en SIG</title>
+  <rect width="512" height="512" rx="96" fill="#14324F"/>
+  <path d="M 228,180 C 135,168 120,240 185,252 C 255,265 240,335 145,323" fill="none" stroke="#FFD43B" stroke-width="38" stroke-linecap="round"/>
+  <circle cx="228" cy="180" r="27" fill="#FFD43B"/>
+  <circle cx="237" cy="172" r="6.5" fill="#14324F"/>
+  <text x="272" y="330" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="230" fill="#F4F8FB">IG</text>
+</svg>

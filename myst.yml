@@ -51,5 +51,6 @@ site:
   template: book-theme
   options:
     style: estilos.css
-  #   favicon: favicon.ico
-  #   logo: site_logo.png
+    favicon: favicon.ico
+    logo: logo.svg
+    logo_dark: logo-oscuro.svg

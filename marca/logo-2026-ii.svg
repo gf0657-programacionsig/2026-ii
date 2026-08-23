@@ -1,0 +1,12 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <title>GF-0657 Programación en SIG 2026-II</title>
+  <rect width="512" height="512" rx="96" fill="#14324F"/>
+  <g transform="translate(0,-34)">
+    <path d="M 228,180 C 135,168 120,240 185,252 C 255,265 240,335 145,323" fill="none" stroke="#FFD43B" stroke-width="38" stroke-linecap="round"/>
+    <circle cx="228" cy="180" r="27" fill="#FFD43B"/>
+    <circle cx="237" cy="172" r="6.5" fill="#14324F"/>
+    <text x="272" y="330" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="230" fill="#F4F8FB">IG</text>
+  </g>
+  <rect x="126" y="386" width="260" height="74" rx="37" fill="#FFD43B"/>
+  <text x="256" y="439" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="54" fill="#14324F">2026-II</text>
+</svg>

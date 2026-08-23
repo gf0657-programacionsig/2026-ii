@@ -1,0 +1,9 @@
+<svg width="620" height="132" viewBox="0 0 940 200" xmlns="http://www.w3.org/2000/svg">
+  <title>GF-0657 Programación en SIG 2026-II</title>
+  <path d="M 96,63 C 40,56 32,100 71,107 C 114,115 106,158 49,152" fill="none" stroke="#FFC61E" stroke-width="21" stroke-linecap="round"/>
+  <circle cx="97" cy="63" r="15" fill="#FFC61E"/>
+  <circle cx="102" cy="58" r="3.6" fill="#14324F"/>
+  <text x="122" y="150" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="126" fill="#14324F">IG</text>
+  <text x="330" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="bold" font-size="56" fill="#14324F">GF-0657</text>
+  <text x="330" y="155" font-family="Arial, Helvetica, sans-serif" font-size="44" fill="#51626F">Programación en SIG · 2026-II</text>
+</svg>
