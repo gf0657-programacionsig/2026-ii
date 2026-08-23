@@ -183,4 +183,4 @@ Wu, Q. (s. f.). *Leafmap*. Recuperado el 3 de agosto de 2026, de https://leafmap
 
 #### Bibliografía complementaria
 
-Wing, J. M. (2006). Computational thinking. *Communications of the ACM, 49*(3), 33-35. https://doi.org/10.1145/1118178.1118215
+Wing, J. M. (2006). Computational thinking. *Communications of the ACM, 49*(3), 33-35. [https://dl.acm.org/doi/10.1145/1118178.1118215](https://dl.acm.org/doi/10.1145%2F1118178.1118215)
