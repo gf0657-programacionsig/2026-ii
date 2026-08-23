@@ -240,6 +240,22 @@ impreso del curso**, cuyo cronograma cita con nombres completos
 ("Charles Severance (2016, capítulos 1-3)") por requerimiento de la
 plantilla oficial de la Escuela de Geografía.
 
+## Marca del curso
+
+El logo del curso es el monograma **SIG** con la S dibujada por una
+serpiente estilizada, en la paleta de Python: amarillo (`#FFD43B` sobre
+fondo oscuro, `#FFC61E` sobre claro) y azul profundo (`#14324F`). La
+serpiente y la paleta identifican al lenguaje sin imitar el logo de la
+Python Software Foundation, que es marca registrada. En `marca/` están la
+variante **general** (`logo-general.svg/png`), sin año, que se usa como
+avatar de la organización de GitHub y sirve para todas las ediciones, y
+la **de edición** (`logo-2026-ii.svg/png`), con la banda del ciclo. El
+sitio usa el logo horizontal (`logo.svg` y `logo-oscuro.svg` en la raíz,
+configurados en `myst.yml` como `logo` y `logo_dark`) y el `favicon.ico`
+(la S sola, generado de `marca/marca-favicon.svg`). Los logos de la UCR
+y de la Escuela de Geografía de la portada (`img/`) provienen del
+programa del curso.
+
 ## Qué no se versiona
 
 - El directorio `privado/` (calificaciones, documentos administrativos
