@@ -36,6 +36,7 @@ project:
         - file: contenidos/software/colab.md
         - file: contenidos/software/vscode.md
         - file: contenidos/software/miniconda.md
+        - file: contenidos/software/copilot.md
     - title: Soluciones a los ejercicios
       children:
         - file: contenidos/soluciones/01-soluciones-introduccion-ciencia-datos.md
