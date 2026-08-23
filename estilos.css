@@ -4,3 +4,13 @@
 .align-right {
   text-align: right;
 }
+
+/* Logos institucionales de la portada: chip blanco para que se lean
+   igual en el tema claro y en el oscuro. */
+.logo-institucional {
+  background-color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  height: 96px;
+  width: auto;
+}

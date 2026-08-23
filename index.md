@@ -2,6 +2,22 @@
 title: GF-0657 Programación en SIG - 2026-II
 ---
 
+::::{grid} 1 2 2 2
+
+:::{image} img/ucr.png
+:alt: Universidad de Costa Rica
+:height: 80px
+:class: logo-institucional
+:::
+
+:::{image} img/escuela-geografia.png
+:alt: Escuela de Geografía
+:height: 80px
+:class: logo-institucional
+:::
+
+::::
+
 Este curso trata sobre el manejo, la visualización y el análisis de datos geoespaciales mediante el lenguaje de programación Python. Se estudian los fundamentos de Python, sus bibliotecas geoespaciales y su empleo en el desarrollo de aplicaciones de sistemas de información geográfica (SIG), incluidas las destinadas a la Web. Se muestra cómo las metodologías y técnicas de ciencia de datos pueden aplicarse al componente geoespacial de diversos problemas. Además, se incorpora de manera paulatina y crítica el uso de herramientas de inteligencia artificial (IA) como apoyo en los procesos de programación y de análisis de datos.
 
 El curso se imparte en la [Escuela de Geografía](https://www.geografia.fcs.ucr.ac.cr/) de la [Universidad de Costa Rica](https://www.ucr.ac.cr/), durante el II ciclo lectivo de 2026, para el grupo 001, con horario de lunes y martes de 17:00 a 19:50 (aula 215). El horario de atención al estudiantado es los martes de 14:00 a 16:50.
