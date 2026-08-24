@@ -31,6 +31,8 @@ Python fue creado por el programador neerlandés [Guido van Rossum](https://gvan
   <figcaption><strong>Figura 1</strong>. Guido van Rossum, creador de Python, en 2014. Fuente: Daniel Stroud, a través de <a href="https://commons.wikimedia.org/wiki/File:Guido-portrait-2014-drc.jpg">Wikimedia Commons</a> (CC BY-SA 4.0).</figcaption>
 </figure>
 
+La "cultura" de Python hace referencias ocasionales a Monty Python en tutoriales, ejemplos y otros materiales. Por ejemplo, en el uso de *spam*, *ham* y *eggs* como [variables metasintácticas](https://en.wikipedia.org/wiki/Metasyntactic_variable) —nombres genéricos para los ejemplos de código— en sustitución de las tradicionales *foo*, *bar* y *baz*, en alusión al *sketch* [Spam](https://www.youtube.com/watch?v=_bW4vEo1F4E).
+
 La versión 3.0 de Python se publicó en 2008 e introdujo cambios importantes que la hicieron incompatible con Python 2. Ambas versiones coexistieron durante más de una década, hasta que Python 2 alcanzó su [fin de vida](https://www.python.org/doc/sunset-python-2/) en enero de 2020. En la actualidad se usa exclusivamente Python 3, con versiones nuevas cada año; la serie estable más reciente es la 3.14, que es también la incluida en el ambiente del curso. La figura 2 resume estos hitos.
 
 ```{mermaid}
@@ -42,8 +44,6 @@ flowchart LR
 ```
 
 <p style="text-align: center;"><strong>Figura 2</strong>. Hitos en la historia de Python. Elaboración propia con base en van Rossum (1996) y Python Software Foundation (s. f.).</p>
-
-La "cultura" de Python hace referencias ocasionales a Monty Python en tutoriales, ejemplos y otros materiales. Por ejemplo, en el uso de *spam*, *ham* y *eggs* como [variables metasintácticas](https://en.wikipedia.org/wiki/Metasyntactic_variable) —nombres genéricos para los ejemplos de código— en sustitución de las tradicionales *foo*, *bar* y *baz*, en alusión al *sketch* [Spam](https://www.youtube.com/watch?v=_bW4vEo1F4E).
 
 ## Características
 
