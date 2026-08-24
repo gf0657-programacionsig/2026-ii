@@ -122,7 +122,7 @@ Los principios se concretan en la [guía de estilo para código Python](https://
 
 - Nombres de variables **significativos**, en minúsculas y con guiones bajos para separar palabras (ej. `densidad_poblacion`).
 - Un espacio a cada lado de los operadores (`=`, `+`, `>`) y después de cada coma.
-- Indentación con cuatro espacios (se aplicará con los condicionales, en el próximo cuaderno).
+- Sangría de cuatro espacios (se aplicará con los condicionales, en el próximo cuaderno).
 - Líneas de no más de 79 caracteres.
 - Comentarios que expliquen lo que el código no dice por sí mismo y que se actualicen junto con él.
 
