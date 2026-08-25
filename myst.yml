@@ -31,6 +31,7 @@ project:
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
+        - file: contenidos/evaluaciones/tarea-01.md
     - title: Software
       children:
         - file: contenidos/software/colab.md
