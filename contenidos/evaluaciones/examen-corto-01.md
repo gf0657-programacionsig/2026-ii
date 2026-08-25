@@ -1,6 +1,6 @@
 # Examen corto 1
 
-El primer examen corto del curso es una prueba **presencial e individual**, con un valor del **5 %** de la calificación final. Evalúa los conceptos teóricos y prácticos cubiertos en clase, según lo establecido en el [programa del curso](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/programa.pdf).
+El primer examen corto del curso es una prueba **presencial e individual**, con un valor del **5 %** de la calificación final. Evalúa los conceptos teóricos y prácticos cubiertos en clase, según lo establecido en el [programa del curso](../../programa/programa.md).
 
 ## Fecha
 

@@ -1,6 +1,6 @@
 # Tarea 1
 
-La primera tarea del curso es un ejercicio **individual**, con un valor del **10 %** de la calificación final, según lo establecido en el [programa del curso](https://github.com/gf0657-programacionsig/2026-ii/blob/main/programa/programa.pdf). Su propósito es elegir el tema que cada estudiante desarrollará de manera incremental en las tareas 2 y 3 y en el proyecto final, y presentarlo en un sitio web escrito en Markdown y publicado en Internet.
+La primera tarea del curso es un ejercicio **individual**, con un valor del **10 %** de la calificación final, según lo establecido en el [programa del curso](../../programa/programa.md). Su propósito es elegir el tema que cada estudiante desarrollará de manera incremental en las tareas 2 y 3 y en el proyecto final, y presentarlo en un sitio web escrito en Markdown y publicado en Internet.
 
 ## Fecha y hora límite de entrega
 
