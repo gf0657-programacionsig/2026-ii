@@ -142,7 +142,7 @@ El uso no declarado de herramientas de IA, así como la incapacidad de explicar 
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Para realizarlos se requiere una cuenta en al menos un asistente conversacional de la tabla 1; puede usarse la versión gratuita de cualquiera de ellos.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Para realizarlos se requiere una cuenta en al menos un asistente conversacional de la tabla 1; puede usarse la versión gratuita de cualquiera de ellos. Las [soluciones de estos ejercicios](../soluciones/07-soluciones-asistentes-ia.md) se publican después de la clase correspondiente.
 
 (ejercicios-llm)=
 ### Modelos de lenguaje
