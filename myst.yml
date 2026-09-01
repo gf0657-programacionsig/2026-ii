@@ -40,16 +40,20 @@ project:
         - file: contenidos/software/copilot.md
     - title: Soluciones a los ejercicios
       children:
-        - file: contenidos/soluciones/01-soluciones-introduccion-ciencia-datos.md
-        - file: contenidos/soluciones/02-soluciones-ejemplo-procesos-ciencia-datos.md
-        - file: contenidos/soluciones/03-soluciones-cuadernos-jupyter.md
-        - file: contenidos/soluciones/04-soluciones-markdown.md
-        - file: contenidos/soluciones/05-soluciones-git-github.md
-        - file: contenidos/soluciones/06-soluciones-introduccion-programacion.md
-        - file: contenidos/soluciones/07-soluciones-asistentes-ia.md
-        - file: contenidos/soluciones/08-soluciones-introduccion-python.md
-        - file: contenidos/soluciones/09-soluciones-fundamentos-python.md
-        - file: contenidos/soluciones/10-soluciones-funciones-iteracion.md
+        - title: "I. Introducción a la ciencia de datos y a la programación de computadoras"
+          children:
+            - file: contenidos/soluciones/01-soluciones-introduccion-ciencia-datos.md
+            - file: contenidos/soluciones/02-soluciones-ejemplo-procesos-ciencia-datos.md
+            - file: contenidos/soluciones/03-soluciones-cuadernos-jupyter.md
+            - file: contenidos/soluciones/04-soluciones-markdown.md
+            - file: contenidos/soluciones/05-soluciones-git-github.md
+            - file: contenidos/soluciones/06-soluciones-introduccion-programacion.md
+            - file: contenidos/soluciones/07-soluciones-asistentes-ia.md
+        - title: "II. El lenguaje de programación Python"
+          children:
+            - file: contenidos/soluciones/08-soluciones-introduccion-python.md
+            - file: contenidos/soluciones/09-soluciones-fundamentos-python.md
+            - file: contenidos/soluciones/10-soluciones-funciones-iteracion.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL

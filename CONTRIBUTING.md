@@ -101,8 +101,11 @@ del sitio:
    sin el bloque de notas internas del encabezado. El infijo `soluciones-`
    evita que el *slug* de la página (MyST descarta el prefijo numérico)
    choque con el de la lección.
-2. Se agrega la entrada al final de la parte "Soluciones a los ejercicios"
-   del TOC en `myst.yml`.
+2. Se agrega la entrada en la parte "Soluciones a los ejercicios" del TOC
+   en `myst.yml`, dentro del subgrupo de la sección del curso a la que
+   pertenece la lección (los subgrupos repiten los títulos de las
+   secciones: "I. Introducción…", "II. El lenguaje…"); si la lección
+   inaugura una sección, se crea su subgrupo.
 3. Al final del párrafo introductorio de la sección Ejercicios de la
    lección se agrega la oración "Las [soluciones de estos
    ejercicios](../soluciones/NN-soluciones-<leccion>.md) se publican
