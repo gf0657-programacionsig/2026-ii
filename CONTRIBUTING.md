@@ -114,7 +114,9 @@ del sitio:
    cuaderno abierto en Colab.
 
 Las páginas de soluciones son un género propio, como las guías de
-Software: título `Soluciones — <título de la lección>`, un párrafo
+Software: título `Soluciones — <título de la lección>` (y, en el
+*frontmatter*, `short_title: "<título de la lección>"`, que es lo que
+muestra el menú lateral dentro de su subgrupo, sin el prefijo), un párrafo
 introductorio que enlaza a la lección y una sección `## Ejercicio N` por
 ejercicio, sin la estructura completa de capítulos ni numeración de tablas
 y figuras. Para los ejercicios abiertos se describen los elementos de una

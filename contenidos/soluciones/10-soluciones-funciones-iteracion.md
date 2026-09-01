@@ -1,3 +1,7 @@
+---
+short_title: "Fundamentos de Python II: funciones e iteración"
+---
+
 # Soluciones — Fundamentos de Python II: funciones e iteración
 
 Soluciones y pautas de respuesta de los ejercicios del cuaderno de notas [Fundamentos de Python II: funciones e iteración](../ii-lenguaje-programacion-python/10-funciones-iteracion.ipynb). Los ejercicios 1, 2 y 4 a 6 tienen en el propio cuaderno una celda de verificación con `assert`, que comprueba automáticamente el resultado; para los demás se describen los elementos de una buena respuesta y los errores esperables.

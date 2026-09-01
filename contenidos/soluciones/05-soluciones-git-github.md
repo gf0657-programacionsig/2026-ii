@@ -1,3 +1,7 @@
+---
+short_title: "Git, GitHub y GitHub Pages"
+---
+
 # Soluciones — Git, GitHub y GitHub Pages
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Git, GitHub y GitHub Pages](../i-introduccion-ciencia-datos-programacion/05-git-github.md). Los ejercicios son operativos o exploratorios; en cada caso se indican los elementos que deben encontrarse o verificarse y los errores esperables.

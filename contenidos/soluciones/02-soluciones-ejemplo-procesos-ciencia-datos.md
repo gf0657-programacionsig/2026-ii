@@ -1,3 +1,7 @@
+---
+short_title: "Ejemplo de procesos de ciencia de datos"
+---
+
 # Soluciones — Ejemplo de procesos de ciencia de datos
 
 Soluciones y pautas de respuesta de los ejercicios del cuaderno de notas [Ejemplo de procesos de ciencia de datos](../i-introduccion-ciencia-datos-programacion/02-ejemplo-procesos-ciencia-datos.ipynb). Los ejercicios son operativos o abiertos; en cada caso se indican el criterio de éxito y los puntos de discusión.
