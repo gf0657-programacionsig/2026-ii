@@ -131,7 +131,7 @@ print(f"Provincias con más de 100 hab/km2: {conteo_densas}")
   'calcular_densidades' is not defined`. Python sugiere nombres
   parecidos ("Did you mean: 'calcular_densidad'?") — vale la pena
   hacerlo notar.
-- (c) for sin indentar → `IndentationError: expected an indented
+- (c) `for` sin sangrar → `IndentationError: expected an indented
   block after 'for' statement...`.
 - Lo evaluable: anotar la última línea de cada mensaje y explicarla
   con palabras propias. Las anotaciones se retoman en la semana 5
