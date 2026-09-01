@@ -1,3 +1,7 @@
+---
+short_title: "El lenguaje de marcado Markdown"
+---
+
 # Soluciones — El lenguaje de marcado Markdown
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [El lenguaje de marcado Markdown](../i-introduccion-ciencia-datos-programacion/04-markdown.md). Los ejercicios son operativos o de redacción libre; en estos casos se describen los elementos que debe incluir una buena respuesta y los errores esperables.

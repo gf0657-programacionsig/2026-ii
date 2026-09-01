@@ -1,3 +1,7 @@
+---
+short_title: "Introducción a Python"
+---
+
 # Soluciones — Introducción a Python
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Introducción a Python](../ii-lenguaje-programacion-python/08-introduccion-python.md). Para los ejercicios operativos y abiertos se describen los elementos que debe incluir una buena respuesta y los errores esperables.

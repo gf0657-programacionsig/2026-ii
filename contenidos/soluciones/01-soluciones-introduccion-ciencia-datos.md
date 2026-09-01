@@ -1,3 +1,7 @@
+---
+short_title: "Introducción a la ciencia de datos"
+---
+
 # Soluciones — Introducción a la ciencia de datos
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Introducción a la ciencia de datos](../i-introduccion-ciencia-datos-programacion/01-introduccion-ciencia-datos.md). Varios de los ejercicios son abiertos y no tienen una única respuesta correcta; en esos casos se describen los elementos que debe incluir una buena respuesta.

@@ -1,3 +1,7 @@
+---
+short_title: "Introducción a la programación de computadoras"
+---
+
 # Soluciones — Introducción a la programación de computadoras
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Introducción a la programación de computadoras](../i-introduccion-ciencia-datos-programacion/06-introduccion-programacion.md). Para los ejercicios sin una única respuesta correcta se describen los elementos que debe incluir una buena respuesta y los errores esperables.

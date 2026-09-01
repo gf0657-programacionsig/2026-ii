@@ -1,3 +1,7 @@
+---
+short_title: "Asistentes de programación basados en inteligencia artificial"
+---
+
 # Soluciones — Asistentes de programación basados en inteligencia artificial
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Asistentes de programación basados en inteligencia artificial](../i-introduccion-ciencia-datos-programacion/07-asistentes-ia.md). La mayoría de los ejercicios son abiertos: para cada uno se describen los elementos que debe incluir una buena respuesta y los errores esperables.

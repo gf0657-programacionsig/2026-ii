@@ -1,3 +1,7 @@
+---
+short_title: "Cuadernos de notas Jupyter"
+---
+
 # Soluciones — Cuadernos de notas Jupyter
 
 Soluciones y pautas de respuesta de los ejercicios de la lección [Cuadernos de notas Jupyter](../i-introduccion-ciencia-datos-programacion/03-cuadernos-jupyter.md).
