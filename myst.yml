@@ -46,6 +46,10 @@ project:
         - file: contenidos/soluciones/04-soluciones-markdown.md
         - file: contenidos/soluciones/05-soluciones-git-github.md
         - file: contenidos/soluciones/06-soluciones-introduccion-programacion.md
+        - file: contenidos/soluciones/07-soluciones-asistentes-ia.md
+        - file: contenidos/soluciones/08-soluciones-introduccion-python.md
+        - file: contenidos/soluciones/09-soluciones-fundamentos-python.md
+        - file: contenidos/soluciones/10-soluciones-funciones-iteracion.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL

@@ -200,7 +200,7 @@ Los pasos de instalación están en la [guía de Miniconda](../software/minicond
 
 ## Ejercicios
 
-Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva.
+Los ejercicios se agrupan según la sección del capítulo a la que corresponden; se recomienda realizarlos al concluir la sección respectiva. Las [soluciones de estos ejercicios](../soluciones/08-soluciones-introduccion-python.md) se publican después de la clase correspondiente.
 
 (ejercicios-principios)=
 ### Principios de diseño
