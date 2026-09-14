@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="540" viewBox="0 0 1280 540" font-family="Helvetica, Arial, 'DejaVu Sans', sans-serif">
+  <defs>
+    <marker id="flecha-azul" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#3776AB"/>
+    </marker>
+    <marker id="flecha-verde" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/>
+    </marker>
+  </defs>
+  <rect width="1280" height="540" fill="#FFFFFF"/>
+
+  <!-- Cliente -->
+  <rect x="40" y="110" width="300" height="360" rx="16" fill="#F4F8FB" stroke="#14324F" stroke-width="3"/>
+  <!-- computadora portátil -->
+  <rect x="115" y="160" width="150" height="95" rx="6" fill="#FFFFFF" stroke="#14324F" stroke-width="3"/>
+  <rect x="125" y="170" width="130" height="75" rx="3" fill="#3776AB"/>
+  <text x="190" y="218" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="20" font-weight="bold" fill="#FFD43B">&gt;_</text>
+  <path d="M95,258 L285,258 L295,272 L85,272 Z" fill="#14324F"/>
+  <text x="190" y="325" text-anchor="middle" font-size="30" font-weight="bold" fill="#14324F">Cliente</text>
+  <text x="190" y="358" text-anchor="middle" font-size="19" fill="#14324F">su programa en Python</text>
+  <text x="190" y="388" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="18" fill="#3776AB">requests.get(...)</text>
+  <text x="190" y="425" text-anchor="middle" font-size="17" fill="#555555">solicita y recibe datos</text>
+
+  <!-- Servidor -->
+  <rect x="940" y="110" width="300" height="360" rx="16" fill="#F4F8FB" stroke="#14324F" stroke-width="3"/>
+  <!-- torre de servidores -->
+  <g stroke="#14324F" stroke-width="3">
+    <rect x="1020" y="150" width="140" height="34" rx="5" fill="#FFFFFF"/>
+    <rect x="1020" y="192" width="140" height="34" rx="5" fill="#FFFFFF"/>
+    <rect x="1020" y="234" width="140" height="34" rx="5" fill="#FFFFFF"/>
+  </g>
+  <g fill="#3776AB">
+    <circle cx="1040" cy="167" r="5"/><circle cx="1040" cy="209" r="5"/><circle cx="1040" cy="251" r="5"/>
+  </g>
+  <g fill="#FFD43B">
+    <circle cx="1058" cy="167" r="5"/><circle cx="1058" cy="209" r="5"/><circle cx="1058" cy="251" r="5"/>
+  </g>
+  <g stroke="#14324F" stroke-width="3" stroke-linecap="round">
+    <line x1="1090" y1="167" x2="1145" y2="167"/><line x1="1090" y1="209" x2="1145" y2="209"/><line x1="1090" y1="251" x2="1145" y2="251"/>
+  </g>
+  <text x="1090" y="325" text-anchor="middle" font-size="30" font-weight="bold" fill="#14324F">Servidor</text>
+  <text x="1090" y="358" text-anchor="middle" font-size="19" fill="#14324F">la API REST de GBIF</text>
+  <text x="1090" y="388" text-anchor="middle" font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="18" fill="#3776AB">api.gbif.org</text>
+  <text x="1090" y="425" text-anchor="middle" font-size="17" fill="#555555">atiende solicitudes y responde</text>
+
+  <!-- Internet -->
+  <text x="640" y="80" text-anchor="middle" font-size="18" fill="#555555" font-style="italic">Internet, mediante el protocolo HTTP</text>
+
+  <!-- Solicitud -->
+  <text x="640" y="135" text-anchor="middle" font-size="24" font-weight="bold" fill="#3776AB">1. Solicitud</text>
+  <line x1="345" y1="160" x2="930" y2="160" stroke="#3776AB" stroke-width="4" marker-end="url(#flecha-azul)"/>
+  <rect x="370" y="180" width="540" height="100" rx="10" fill="#FFFFFF" stroke="#3776AB" stroke-width="2"/>
+  <g font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="16" fill="#14324F">
+    <text x="390" y="210"><tspan font-weight="bold" fill="#3776AB">método</tspan>      GET</text>
+    <text x="390" y="237"><tspan font-weight="bold" fill="#3776AB">URL</tspan>         https://api.gbif.org/v1/species/match</text>
+    <text x="390" y="264"><tspan font-weight="bold" fill="#3776AB">parámetros</tspan>  name=Ara ambiguus, strict=true</text>
+  </g>
+
+  <!-- Respuesta -->
+  <text x="640" y="335" text-anchor="middle" font-size="24" font-weight="bold" fill="#2E7D32">2. Respuesta</text>
+  <rect x="370" y="350" width="540" height="100" rx="10" fill="#FFFFFF" stroke="#2E7D32" stroke-width="2"/>
+  <g font-family="'DejaVu Sans Mono', Menlo, monospace" font-size="16" fill="#14324F">
+    <text x="390" y="380"><tspan font-weight="bold" fill="#2E7D32">código de estado</tspan>  200 (éxito)</text>
+    <text x="390" y="407"><tspan font-weight="bold" fill="#2E7D32">datos en JSON</tspan>     {"usageKey": 5959233,</text>
+    <text x="524" y="434">"scientificName": "Ara ambiguus", ...}</text>
+  </g>
+  <line x1="935" y1="475" x2="350" y2="475" stroke="#2E7D32" stroke-width="4" marker-end="url(#flecha-verde)"/>
+</svg>
