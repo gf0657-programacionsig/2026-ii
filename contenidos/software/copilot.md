@@ -4,9 +4,25 @@
 
 ## Activación
 
-1. Haga clic en el ícono de Copilot en la barra de estado de VS Code (o instale la extensión **GitHub Copilot Chat**, publicada por GitHub, desde el panel de extensiones). Esa sola extensión incluye los autocompletados y el chat; la extensión **GitHub Copilot** (sin "Chat") quedó obsoleta y no hace falta instalarla, y las demás con nombre parecido (*for Azure*, *Nightly*, etc.) no se usan en el curso.
-2. Inicie sesión con su cuenta de GitHub.
-3. Con el plan gratuito basta para comenzar; sus límites y la forma de eliminarlos se explican en la sección siguiente.
+### Instalación de la extensión
+
+Haga clic en el ícono de Copilot en la barra de estado de VS Code (abajo a la derecha) y elija *Set up Copilot*: VS Code instala la extensión necesaria. Si prefiere hacerlo a mano, instale desde el panel de extensiones la extensión **GitHub Copilot Chat**, publicada por GitHub. Esa sola extensión incluye los autocompletados y el chat; la extensión **GitHub Copilot** (sin "Chat") quedó obsoleta y no hace falta instalarla, y las demás con nombre parecido (*for Azure*, *Nightly*, etc.) no se usan en el curso.
+
+### Inicio de sesión con la cuenta de GitHub
+
+1. Haga clic en el ícono de Copilot en la barra de estado y elija *Sign in to use Copilot*. Otra vía es el ícono de *Accounts* (la silueta, abajo a la izquierda) y luego *Sign in with GitHub to use GitHub Copilot*.
+2. VS Code abre el navegador en GitHub. Si no tiene la sesión iniciada, ingrese con su usuario, su contraseña y el segundo factor de autenticación, si lo tiene activado.
+3. GitHub pide autorizar a *Visual Studio Code* para usar su cuenta. Haga clic en *Authorize* (o *Continue*).
+4. El navegador pregunta si desea volver a VS Code. Acepte, y en VS Code confirme el aviso *Allow an extension to open this URI*.
+5. Si es la primera vez y su cuenta no tiene plan de Copilot, VS Code ofrece activar el plan gratuito con un clic.
+
+Si el navegador no logra devolverle a VS Code (ocurre a veces en Linux o cuando el navegador usa otro perfil), en el diálogo de inicio de sesión elija la opción de código de dispositivo: VS Code muestra un código de ocho caracteres; abra [github.com/login/device](https://github.com/login/device), ingrese el código y autorice.
+
+### Verificación
+
+Al terminar, el ícono de Copilot en la barra de estado deja de mostrar la marca de alerta y, al escribir código, aparecen sugerencias en gris que se aceptan con la tecla *Tab*. Para comprobar la cuenta conectada, haga clic en el ícono de *Accounts*: debe listar su usuario de GitHub. Si necesita cambiar de cuenta, elija ahí *Sign out* y repita el inicio de sesión.
+
+Con el plan gratuito basta para comenzar; sus límites y la forma de eliminarlos se explican en la sección siguiente.
 
 ## Planes
 
