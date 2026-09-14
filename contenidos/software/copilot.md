@@ -38,7 +38,16 @@ El plan gratuito para cuentas personales tiene límites mensuales de uso (a agos
 
 ## Sugerencias automáticas y aprendizaje
 
-Las sugerencias automáticas pueden pausarse o desactivarse desde el menú del ícono de Copilot en la barra de estado. Se recomienda mantenerlas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue).
+Se recomienda mantener las sugerencias automáticas desactivadas mientras se aprende un tema nuevo: primero intente resolver los ejercicios por su cuenta y use el asistente para pedir explicaciones o revisar su solución, según los lineamientos de uso de IA del curso (declarar el uso, comprender y verificar todo el código que entregue). Desactivarlas no afecta al chat: el panel de chat y el chat en línea siguen funcionando, que es justo la combinación recomendada.
+
+### Desactivar y reactivar las sugerencias
+
+Desde el ícono de Copilot en la barra de estado de VS Code (abajo a la derecha):
+
+- **Desactivar**: haga clic en el ícono y elija *Snooze* para pausarlas por unos minutos, o desmarque *Code completions* (en versiones anteriores, *Disable completions*). Ahí mismo puede desactivarlas solo para el lenguaje del archivo abierto, por ejemplo Python, y dejarlas activas para el resto.
+- **Reactivar**: en el mismo menú, marque de nuevo *Code completions* (o *Enable completions*). Si usó *Snooze*, vuelven solas al terminar el tiempo, o antes con *Unsnooze*.
+
+El ícono cambia de aspecto cuando están desactivadas (aparece tachado o con una marca), así que el estado se nota de un vistazo. También sirve la paleta de comandos (`Ctrl+Shift+P`) escribiendo *Copilot: Disable Completions* o *Copilot: Enable Completions*. La configuración permanente está en *File > Preferences > Settings*, buscando `github.copilot.enable`, donde puede fijar por lenguaje cuáles reciben sugerencias.
 
 ## Uso en el curso
 
