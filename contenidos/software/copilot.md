@@ -4,7 +4,7 @@
 
 ## Activación
 
-1. Haga clic en el ícono de Copilot en la barra de estado de VS Code (o instale la extensión **GitHub Copilot** desde el panel de extensiones).
+1. Haga clic en el ícono de Copilot en la barra de estado de VS Code (o instale la extensión **GitHub Copilot Chat**, publicada por GitHub, desde el panel de extensiones). Esa sola extensión incluye los autocompletados y el chat; la extensión **GitHub Copilot** (sin "Chat") quedó obsoleta y no hace falta instalarla, y las demás con nombre parecido (*for Azure*, *Nightly*, etc.) no se usan en el curso.
 2. Inicie sesión con su cuenta de GitHub.
 3. Con el plan gratuito basta para comenzar; sus límites y la forma de eliminarlos se explican en la sección siguiente.
 
