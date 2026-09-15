@@ -58,3 +58,20 @@ El curso incorpora Copilot de forma paulatina, según el calendario de la lecci�
 - **Semana 15**: herramientas agénticas, revisión crítica del código generado y documentación de su uso.
 
 En todas las etapas aplican los mismos lineamientos: el uso se declara en los trabajos, y todo el código que se entregue debe comprenderse y poder explicarse.
+
+### Abrir el chat
+
+Con la extensión instalada y la sesión de GitHub iniciada, el chat ya está activo; solo hay que abrirlo:
+
+- **Panel de chat**: haga clic en el ícono de Copilot en la barra superior de VS Code (al centro, junto al cuadro de búsqueda) y elija *Open Chat*, o use el atajo `Ctrl+Alt+I` (`Ctrl+Cmd+I` en macOS). Se abre un panel lateral con el cuadro para escribir.
+- **Chat en línea**: con el cursor sobre el código, o con líneas seleccionadas, presione `Ctrl+I`. Aparece un cuadro flotante para pedir una explicación o un cambio sobre ese fragmento.
+- **Paleta de comandos**: `Ctrl+Shift+P` y escriba *Chat: Open Chat*.
+
+Arriba del cuadro de texto está el selector de modo. Para la semana 5 conviene dejarlo en *Ask*, que solo responde sin modificar los archivos; los modos *Edit* y *Agent* corresponden a etapas posteriores del curso.
+
+Si el ícono no aparece o el atajo no hace nada, revise en este orden:
+
+1. **La extensión instalada es Copilot Chat**, no otra con nombre parecido. En el panel de extensiones (`Ctrl+Shift+X`) busque "GitHub Copilot Chat" y confirme que dice *Installed* y no *Disabled*.
+2. **La sesión está iniciada**: el ícono de *Accounts*, abajo a la izquierda, debe listar su usuario de GitHub. Si no, siga los pasos de [inicio de sesión](#inicio-de-sesion-con-la-cuenta-de-github).
+3. **La cuenta tiene plan**: si es la primera vez, al abrir el chat VS Code ofrece activar el plan gratuito con un botón. Acéptelo. Si ya tiene Copilot Pro por GitHub Education, no pide nada.
+4. **VS Code está actualizado**: el chat requiere una versión reciente. Use *Help > Check for Updates* (o el gestor de paquetes, en Linux).
