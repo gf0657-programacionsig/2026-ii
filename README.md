@@ -16,6 +16,9 @@ Curso de la Escuela de Geografía de la Universidad de Costa Rica (UCR).
 - `environment.yml`: ambiente conda del curso, compartido por estudiantes
   (`conda env create -f environment.yml`, crea el ambiente `geopython`) y
   profesor (mismo comando con `-n gf0657-programacionsig-2026-ii`).
+- `datos/`: conjuntos de datos usados en los cuadernos de notas del sitio
+  (ej. `datos/inec/`, con los resultados de la Estimación de Población y
+  Vivienda 2022 del INEC, el programa que los prepara y su documentación).
 - `programa/`: programa del curso.
   - `programa.md`: fuente de la verdad del contenido del programa.
   - `generar-referencia.py`: crea `referencia.docx` (plantilla oficial de la
