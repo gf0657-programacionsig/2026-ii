@@ -43,8 +43,9 @@ https://admin.inec.cr/sites/default/files/2023-07/mePoblacEstimacionPoblacionBas
 
 ## Advertencias
 
-- La división territorial es la del Censo 2011: 82 cantones. No aparecen
-  Monteverde (2021) ni Puerto Jiménez (2022). Al unir estos datos con una
+- La división territorial es la del Censo 2011: 82 cantones. Monteverde
+  (cantón desde 2021) y Puerto Jiménez (desde 2022) aparecen como distritos
+  de Puntarenas y de Golfito, respectivamente. Al unir estos datos con una
   capa geoespacial de cantones debe usarse una capa con la misma división.
 - Los códigos de provincia y cantón se asignaron según el orden de los
   cuadros del INEC, que coincide con el de la División Territorial
