@@ -59,6 +59,10 @@ project:
             - file: contenidos/soluciones/08-soluciones-introduccion-python.md
             - file: contenidos/soluciones/09-soluciones-fundamentos-python.md
             - file: contenidos/soluciones/10-soluciones-funciones-iteracion.md
+            - file: contenidos/soluciones/11-soluciones-estructuras-datos-apis.md
+        - title: "III. Análisis y visualización de datos"
+          children:
+            - file: contenidos/soluciones/12-soluciones-pandas-series-dataframes.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
