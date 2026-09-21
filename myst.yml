@@ -31,6 +31,7 @@ project:
     - title: "III. Análisis y visualización de datos"
       children:
         - file: contenidos/iii-analisis-visualizacion-datos/12-pandas-series-dataframes.ipynb
+        - file: contenidos/iii-analisis-visualizacion-datos/13-pandas-agrupacion-uniones.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
