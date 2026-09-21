@@ -8,6 +8,7 @@
 
 Haga clic en el ícono de Copilot en la barra de estado de VS Code (abajo a la derecha) y elija *Set up Copilot*: VS Code instala la extensión necesaria. Si prefiere hacerlo a mano, instale desde el panel de extensiones la extensión **GitHub Copilot Chat**, publicada por GitHub. Esa sola extensión incluye los autocompletados y el chat; la extensión **GitHub Copilot** (sin "Chat") quedó obsoleta y no hace falta instalarla, y las demás con nombre parecido (*for Azure*, *Nightly*, etc.) no se usan en el curso.
 
+(copilot-inicio-sesion)=
 ### Inicio de sesión con la cuenta de GitHub
 
 1. Haga clic en el ícono de Copilot en la barra de estado y elija *Sign in to use Copilot*. Otra vía es el ícono de *Accounts* (la silueta, abajo a la izquierda) y luego *Sign in with GitHub to use GitHub Copilot*.
@@ -72,6 +73,6 @@ Arriba del cuadro de texto está el selector de modo. Para la semana 5 conviene 
 Si el ícono no aparece o el atajo no hace nada, revise en este orden:
 
 1. **La extensión instalada es Copilot Chat**, no otra con nombre parecido. En el panel de extensiones (`Ctrl+Shift+X`) busque "GitHub Copilot Chat" y confirme que dice *Installed* y no *Disabled*.
-2. **La sesión está iniciada**: el ícono de *Accounts*, abajo a la izquierda, debe listar su usuario de GitHub. Si no, siga los pasos de [inicio de sesión](#inicio-de-sesion-con-la-cuenta-de-github).
+2. **La sesión está iniciada**: el ícono de *Accounts*, abajo a la izquierda, debe listar su usuario de GitHub. Si no, siga los pasos de [inicio de sesión](#copilot-inicio-sesion).
 3. **La cuenta tiene plan**: si es la primera vez, al abrir el chat VS Code ofrece activar el plan gratuito con un botón. Acéptelo. Si ya tiene Copilot Pro por GitHub Education, no pide nada.
 4. **VS Code está actualizado**: el chat requiere una versión reciente. Use *Help > Check for Updates* (o el gestor de paquetes, en Linux).
