@@ -28,6 +28,9 @@ project:
         - file: contenidos/ii-lenguaje-programacion-python/09-fundamentos-python.ipynb
         - file: contenidos/ii-lenguaje-programacion-python/10-funciones-iteracion.ipynb
         - file: contenidos/ii-lenguaje-programacion-python/11-estructuras-datos-apis.ipynb
+    - title: "III. Análisis y visualización de datos"
+      children:
+        - file: contenidos/iii-analisis-visualizacion-datos/12-pandas-series-dataframes.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
