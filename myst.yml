@@ -32,6 +32,7 @@ project:
       children:
         - file: contenidos/iii-analisis-visualizacion-datos/12-pandas-series-dataframes.ipynb
         - file: contenidos/iii-analisis-visualizacion-datos/13-pandas-agrupacion-uniones.ipynb
+        - file: contenidos/iii-analisis-visualizacion-datos/14-pandas-graficos-matplotlib.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
