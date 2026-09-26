@@ -64,6 +64,7 @@ project:
         - title: "III. Análisis y visualización de datos"
           children:
             - file: contenidos/soluciones/12-soluciones-pandas-series-dataframes.md
+            - file: contenidos/soluciones/13-soluciones-pandas-agrupacion-uniones.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
