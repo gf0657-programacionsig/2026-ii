@@ -69,5 +69,6 @@ Los contenidos evaluados en esta tarea se cubrieron en los siguientes cuadernos 
 - [pandas I: Series y DataFrames](../iii-analisis-visualizacion-datos/12-pandas-series-dataframes.ipynb)
 - [pandas II: agrupación, uniones y datos faltantes](../iii-analisis-visualizacion-datos/13-pandas-agrupacion-uniones.ipynb)
 - [pandas III: gráficos con matplotlib](../iii-analisis-visualizacion-datos/14-pandas-graficos-matplotlib.ipynb), que incluye la estructura de un cuaderno de análisis de datos, el modelo de esta tarea.
+- [plotly: gráficos interactivos](../iii-analisis-visualizacion-datos/15-plotly-graficos-interactivos.ipynb), si prefiere hacer los gráficos con plotly.
 
 Para subir un archivo de datos a GitHub sin la línea de comandos: en el repositorio, botón *Add file > Upload files*, arrastre el archivo y confirme con *Commit changes*. Luego abra el archivo, haga clic en *Raw* y copie la dirección del navegador: esa es la URL que se pasa a `read_csv()`. El cuaderno `.ipynb` se sube de la misma forma; GitHub lo muestra con sus salidas.
