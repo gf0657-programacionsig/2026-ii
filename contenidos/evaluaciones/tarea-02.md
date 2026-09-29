@@ -4,7 +4,7 @@ La segunda tarea del curso es un ejercicio **individual**, con un valor del **15
 
 ## Fecha y hora límite de entrega
 
-Viernes 16 de octubre de 2026, 11:59 p.m.
+Viernes 9 de octubre de 2026, 11:59 p.m.
 
 ## Objetivos
 
