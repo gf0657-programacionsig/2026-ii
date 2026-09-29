@@ -17,11 +17,13 @@ Cada estudiante debe mostrar que es capaz de:
 
 ## Entregables
 
-1. Dirección de un repositorio en GitHub (ej. `https://github.com/usuario/tarea-02`) que contenga:
-    - El cuaderno de notas, un archivo `.ipynb` **ejecutado**, es decir, con las salidas de todas las celdas (tablas y gráficos) guardadas, de modo que GitHub lo muestre completo sin necesidad de ejecutarlo. Si trabaja en Colab, el menú *Archivo > Guardar una copia en GitHub* lo sube al repositorio; si trabaja localmente, súbalo como cualquier otro archivo.
-    - Los archivos de datos (CSV, Excel u otros) que el cuaderno carga, en el mismo repositorio, salvo que se carguen directamente desde una URL de la fuente original.
-    - Un archivo `README.md` breve con el título del trabajo, el nombre del autor y un enlace al cuaderno.
-2. La dirección que abre el cuaderno en Google Colab. Es **opcional si los gráficos son de matplotlib** y **obligatoria si son de plotly**: el visor de cuadernos de GitHub no ejecuta JavaScript y no muestra los gráficos de plotly, por lo que solo en Colab pueden revisarse. Tanto si trabajó en Colab como localmente, la forma más simple es la dirección `https://colab.research.google.com/github/usuario/tarea-02/blob/main/cuaderno.ipynb`, que abre en Colab el archivo del repositorio, sin copiarlo ni compartirlo. También puede compartir el cuaderno desde Colab (menú *Compartir*, con acceso para cualquier persona con el enlace).
+El entregable es la dirección de un repositorio en GitHub (ej. `https://github.com/usuario/tarea-02`) que contenga:
+
+- El cuaderno de notas, un archivo `.ipynb` **ejecutado**, es decir, con las salidas de todas las celdas (tablas y gráficos) guardadas, de modo que GitHub lo muestre completo sin necesidad de ejecutarlo. Si trabaja en Colab, el menú *Archivo > Guardar una copia en GitHub* lo sube al repositorio; si trabaja localmente, súbalo como cualquier otro archivo.
+- Los archivos de datos (CSV, Excel u otros) que el cuaderno carga, en el mismo repositorio, salvo que se carguen directamente desde una URL de la fuente original.
+- Un archivo `README.md` breve con el título del trabajo, el nombre del autor y un enlace al cuaderno.
+
+Si los gráficos son de plotly, el visor de GitHub no los muestra, porque no ejecuta JavaScript. En ese caso el profesor abrirá y ejecutará el cuaderno en Colab, con la dirección `https://colab.research.google.com/github/usuario/tarea-02/blob/main/cuaderno.ipynb`. Compruebe antes de entregar que el cuaderno se ejecuta allí de principio a fin sin errores.
 
 La entrega debe realizarse a través de la plataforma Mediación Virtual. El cuaderno debe cargar los datos desde una **URL** (la del archivo en el repositorio, con el botón *Raw* de GitHub, o la de la fuente original), no desde una ruta local de su computadora, para que pueda ejecutarse en cualquier lugar.
 
@@ -58,7 +60,7 @@ Entre paréntesis, se muestra el porcentaje correspondiente a cada aspecto que s
 - (10 %) Tabla de resumen con formato e interpretación.
 - (40 %) Gráficos (tipo adecuado, corrección, título, etiquetas y unidades, interpretación).
 - (5 %) Conclusiones y referencias bibliográficas.
-- (5 %) Entrega correcta: repositorio con el cuaderno ejecutado y los datos accesibles, enlace a Colab cuando corresponda, y declaración de uso de IA.
+- (5 %) Entrega correcta: repositorio con el cuaderno ejecutado y los datos accesibles, y declaración de uso de IA.
 
 ## Recursos
 
