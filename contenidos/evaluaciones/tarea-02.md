@@ -1,6 +1,6 @@
 # Tarea 2
 
-La segunda tarea del curso es un ejercicio **individual**, con un valor del **15 %** de la calificación final, según lo establecido en el [programa del curso](../../programa/programa.md). Su propósito es procesar con pandas los datos del tema elegido en la tarea 1 y presentar los resultados en tablas y gráficos, en un cuaderno de notas de Jupyter publicado en Internet.
+La segunda tarea del curso es un ejercicio **individual**, con un valor del **15 %** de la calificación final, según lo establecido en el [programa del curso](../../programa/programa.md). Su propósito es procesar con pandas los datos del tema elegido en la tarea 1 y presentar los resultados en tablas y gráficos, en un cuaderno de notas de Jupyter publicado en Internet. El cuaderno puede desarrollarse en **Google Colab** o **localmente**, en VS Code o en Jupyter con el ambiente conda del curso; en ambos casos se entrega en un repositorio de GitHub.
 
 ## Fecha y hora límite de entrega
 
@@ -18,10 +18,10 @@ Cada estudiante debe mostrar que es capaz de:
 ## Entregables
 
 1. Dirección de un repositorio en GitHub (ej. `https://github.com/usuario/tarea-02`) que contenga:
-    - El cuaderno de notas, un archivo `.ipynb` **ejecutado**, es decir, con las salidas de todas las celdas (tablas y gráficos) guardadas, de modo que GitHub lo muestre completo sin necesidad de ejecutarlo.
+    - El cuaderno de notas, un archivo `.ipynb` **ejecutado**, es decir, con las salidas de todas las celdas (tablas y gráficos) guardadas, de modo que GitHub lo muestre completo sin necesidad de ejecutarlo. Si trabaja en Colab, el menú *Archivo > Guardar una copia en GitHub* lo sube al repositorio; si trabaja localmente, súbalo como cualquier otro archivo.
     - Los archivos de datos (CSV, Excel u otros) que el cuaderno carga, en el mismo repositorio, salvo que se carguen directamente desde una URL de la fuente original.
     - Un archivo `README.md` breve con el título del trabajo, el nombre del autor y un enlace al cuaderno.
-2. La dirección del cuaderno en Google Colab (menú *Archivo > Guardar una copia en GitHub* o *Compartir*, con acceso para cualquier persona con el enlace). Es **opcional si los gráficos son de matplotlib** y **obligatoria si son de plotly**: el visor de cuadernos de GitHub no ejecuta JavaScript y no muestra los gráficos de plotly, por lo que solo en Colab pueden revisarse. Si trabaja el cuaderno en VS Code o en otro entorno local, no necesita copiarlo a Colab: basta con la dirección `https://colab.research.google.com/github/usuario/tarea-02/blob/main/cuaderno.ipynb`, que abre en Colab el archivo del repositorio.
+2. La dirección que abre el cuaderno en Google Colab. Es **opcional si los gráficos son de matplotlib** y **obligatoria si son de plotly**: el visor de cuadernos de GitHub no ejecuta JavaScript y no muestra los gráficos de plotly, por lo que solo en Colab pueden revisarse. Tanto si trabajó en Colab como localmente, la forma más simple es la dirección `https://colab.research.google.com/github/usuario/tarea-02/blob/main/cuaderno.ipynb`, que abre en Colab el archivo del repositorio, sin copiarlo ni compartirlo. También puede compartir el cuaderno desde Colab (menú *Compartir*, con acceso para cualquier persona con el enlace).
 
 La entrega debe realizarse a través de la plataforma Mediación Virtual. El cuaderno debe cargar los datos desde una **URL** (la del archivo en el repositorio, con el botón *Raw* de GitHub, o la de la fuente original), no desde una ruta local de su computadora, para que pueda ejecutarse en cualquier lugar.
 
