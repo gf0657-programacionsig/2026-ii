@@ -56,9 +56,9 @@ Entre paréntesis, se muestra el porcentaje correspondiente a cada aspecto que s
 
 - (10 %) Coherencia y presentación general del cuaderno (estructura, encabezados, texto, código comentado).
 - (10 %) Introducción: tema, preguntas, fuentes de los datos con sus citas y descripción de las variables.
-- (20 %) Carga y preparación de los datos con pandas (lectura desde una URL, exploración y transformaciones explicadas).
+- (15 %) Carga y preparación de los datos con pandas (lectura desde una URL, exploración y transformaciones explicadas).
 - (10 %) Tabla de resumen con formato e interpretación.
-- (40 %) Gráficos (tipo adecuado, corrección, título, etiquetas y unidades, interpretación).
+- (45 %) Gráficos, 15 % cada uno (tipo adecuado, corrección, título, etiquetas y unidades, interpretación).
 - (5 %) Conclusiones y referencias bibliográficas.
 - (5 %) Entrega correcta: repositorio con el cuaderno ejecutado y los datos accesibles, y declaración de uso de IA.
 
