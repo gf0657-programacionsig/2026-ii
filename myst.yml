@@ -34,6 +34,10 @@ project:
         - file: contenidos/iii-analisis-visualizacion-datos/13-pandas-agrupacion-uniones.ipynb
         - file: contenidos/iii-analisis-visualizacion-datos/14-pandas-graficos-matplotlib.ipynb
         - file: contenidos/iii-analisis-visualizacion-datos/15-plotly-graficos-interactivos.ipynb
+    - title: "IV. Procesamiento de datos geoespaciales"
+      children:
+        - file: contenidos/iv-procesamiento-datos-geoespaciales/16-datos-geoespaciales.md
+        - file: contenidos/iv-procesamiento-datos-geoespaciales/17-geopandas-datos-vectoriales.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
