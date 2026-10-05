@@ -4,9 +4,9 @@ Descarga los archivos originales (ZIP con Shapefile) del CDN de Natural Earth
 y escribe, en EPSG:4326 y con nombres de columnas en español:
 
 - paises.gpkg: países a escala 1:110 M (177 polígonos).
-- centroamerica.gpkg: los 8 países de la subregión América Central (México a
-  Panamá; se excluye la Isla Clipperton) a escala 1:10 M, para mapas a
-  escala regional.
+- centroamerica.gpkg: los 7 países de Centroamérica (de Guatemala a Panamá)
+  a escala 1:10 M, para mapas a escala regional. Se excluyen México y la
+  Isla Clipperton, que Natural Earth incluye en la subregión.
 - ciudades.csv: ciudades principales a escala 1:110 M (243), como tabla con
   longitud y latitud.
 - aeropuertos.gpkg: aeropuertos a escala 1:10 M (893 puntos).
@@ -76,7 +76,10 @@ print("paises.gpkg:", paises.shape)
 
 # Centroamérica 1:10 M
 paises_10m = paises_es(leer("10m/cultural/ne_10m_admin_0_countries"))
-centroamerica = paises_10m[(paises_10m["subregion"] == "América Central") & (paises_10m["nombre"] != "Isla Clipperton")]
+# Natural Earth sigue el esquema M49 de la ONU, que incluye a México en América Central; el curso usa
+# la acepción de Centroamérica como los siete países entre Guatemala y Panamá.
+centroamerica = paises_10m[(paises_10m["subregion"] == "América Central") & ~paises_10m["nombre"].isin(["México", "Isla Clipperton"])]
+assert len(centroamerica) == 7, sorted(centroamerica["nombre"])
 centroamerica.to_file("centroamerica.gpkg", driver="GPKG")
 print("centroamerica.gpkg:", centroamerica.shape, sorted(centroamerica["nombre"]))
 

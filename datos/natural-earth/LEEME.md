@@ -21,10 +21,12 @@ directorio en WGS84 (EPSG:4326) y con nombres de columnas en español.
   las columnas y los valores de continente, subregión y grupo de ingreso se
   traducen en el script; los nombres de los países vienen en español de la
   propia fuente (`NAME_ES`).
-- `centroamerica.gpkg` (8 polígonos, escala 1:10 M): los países de la
-  subregión América Central (de México a Panamá), con las mismas columnas,
-  para mapas a escala regional en los que la escala 1:110 M es demasiado
-  gruesa.
+- `centroamerica.gpkg` (7 polígonos, escala 1:10 M): los países de
+  Centroamérica (Guatemala, Belice, Honduras, El Salvador, Nicaragua,
+  Costa Rica y Panamá), con las mismas columnas, para mapas a escala
+  regional en los que la escala 1:110 M es demasiado gruesa. Natural Earth
+  incluye a México en la subregión "América Central", según el esquema
+  geográfico de la ONU; aquí se excluye.
 - `ciudades.csv` (243 filas, escala 1:110 M): ciudades principales del
   mundo, casi todas capitales, como tabla con `nombre`, `pais`,
   `codigo_pais`, `capital` (verdadero o falso), `poblacion` y las
