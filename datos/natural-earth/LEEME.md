@@ -14,11 +14,15 @@ directorio en WGS84 (EPSG:4326) y con nombres de columnas en español.
   letras de Natural Earth, `ADM0_A3`), `iso3` (código ISO 3166-1 alfa-3,
   `ISO_A3`; es `-99` en Francia, Noruega, Kosovo, Somalilandia y el norte
   de Chipre), `nombre` (en español), `nombre_en`, `continente` (en
-  español), `subregion` (en inglés, según la ONU), `poblacion_estimada`
+  español), `subregion` (según el esquema geográfico de la ONU, en español),
+  `poblacion_estimada`
   (estimación de Natural Earth, 2019), `pib_millones` (PIB en millones de
-  dólares, 2019) y `grupo_ingreso`.
+  dólares, 2019) y `grupo_ingreso` (cinco grupos, en español). Los nombres de
+  las columnas y los valores de continente, subregión y grupo de ingreso se
+  traducen en el script; los nombres de los países vienen en español de la
+  propia fuente (`NAME_ES`).
 - `centroamerica.gpkg` (8 polígonos, escala 1:10 M): los países de la
-  subregión Central America (de México a Panamá), con las mismas columnas,
+  subregión América Central (de México a Panamá), con las mismas columnas,
   para mapas a escala regional en los que la escala 1:110 M es demasiado
   gruesa.
 - `ciudades.csv` (243 filas, escala 1:110 M): ciudades principales del

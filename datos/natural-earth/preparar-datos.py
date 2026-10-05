@@ -4,7 +4,7 @@ Descarga los archivos originales (ZIP con Shapefile) del CDN de Natural Earth
 y escribe, en EPSG:4326 y con nombres de columnas en español:
 
 - paises.gpkg: países a escala 1:110 M (177 polígonos).
-- centroamerica.gpkg: los 8 países de la subregión Central America (México a
+- centroamerica.gpkg: los 8 países de la subregión América Central (México a
   Panamá; se excluye la Isla Clipperton) a escala 1:10 M, para mapas a
   escala regional.
 - ciudades.csv: ciudades principales a escala 1:110 M (243), como tabla con
@@ -28,6 +28,25 @@ CONTINENTES = {
     "Seven seas (open ocean)": "Siete mares (océano abierto)"
 }
 
+# Subregiones según el esquema geográfico de la ONU (M49), en español
+SUBREGIONES = {
+    "Antarctica": "Antártida", "Australia and New Zealand": "Australia y Nueva Zelanda",
+    "Caribbean": "Caribe", "Central America": "América Central", "Central Asia": "Asia central",
+    "Eastern Africa": "África oriental", "Eastern Asia": "Asia oriental", "Eastern Europe": "Europa oriental",
+    "Melanesia": "Melanesia", "Middle Africa": "África central", "Northern Africa": "África septentrional",
+    "Northern America": "América septentrional", "Northern Europe": "Europa septentrional",
+    "Seven seas (open ocean)": "Siete mares (océano abierto)", "South America": "América del Sur",
+    "South-Eastern Asia": "Asia sudoriental", "Southern Africa": "África austral",
+    "Southern Asia": "Asia meridional", "Southern Europe": "Europa meridional",
+    "Western Africa": "África occidental", "Western Asia": "Asia occidental", "Western Europe": "Europa occidental"
+}
+
+GRUPOS_INGRESO = {
+    "1. High income: OECD": "1. Ingreso alto: OCDE", "2. High income: nonOECD": "2. Ingreso alto: no OCDE",
+    "3. Upper middle income": "3. Ingreso mediano alto", "4. Lower middle income": "4. Ingreso mediano bajo",
+    "5. Low income": "5. Ingreso bajo"
+}
+
 
 def leer(ruta):
     """Lee una capa de Natural Earth a partir de su ruta en el CDN (sin .zip)."""
@@ -42,6 +61,9 @@ def paises_es(capa):
         "GDP_MD": "pib_millones", "INCOME_GRP": "grupo_ingreso"
     })
     capa["continente"] = capa["continente"].map(CONTINENTES)
+    capa["subregion"] = capa["subregion"].map(SUBREGIONES)
+    capa["grupo_ingreso"] = capa["grupo_ingreso"].map(GRUPOS_INGRESO)
+    assert capa[["continente", "subregion", "grupo_ingreso"]].notna().all().all(), "valor sin traducción"
     capa["poblacion_estimada"] = capa["poblacion_estimada"].round().astype("int64")
     return capa[["codigo", "iso3", "nombre", "nombre_en", "continente", "subregion",
                  "poblacion_estimada", "pib_millones", "grupo_ingreso", "geometry"]]
@@ -54,7 +76,7 @@ print("paises.gpkg:", paises.shape)
 
 # Centroamérica 1:10 M
 paises_10m = paises_es(leer("10m/cultural/ne_10m_admin_0_countries"))
-centroamerica = paises_10m[(paises_10m["subregion"] == "Central America") & (paises_10m["nombre"] != "Isla Clipperton")]
+centroamerica = paises_10m[(paises_10m["subregion"] == "América Central") & (paises_10m["nombre"] != "Isla Clipperton")]
 centroamerica.to_file("centroamerica.gpkg", driver="GPKG")
 print("centroamerica.gpkg:", centroamerica.shape, sorted(centroamerica["nombre"]))
 
