@@ -23,28 +23,28 @@ Si el navegador no logra devolverle a VS Code (ocurre a veces en Linux o cuando 
 
 Al terminar, el ícono de Copilot en la barra de estado deja de mostrar la marca de alerta y, al escribir código, aparecen sugerencias en gris que se aceptan con la tecla *Tab*. Para comprobar la cuenta conectada, haga clic en el ícono de *Accounts*: debe listar su usuario de GitHub. Si necesita cambiar de cuenta, elija ahí *Sign out* y repita el inicio de sesión.
 
-Con el plan gratuito basta para comenzar; sus límites y la forma de eliminarlos se explican en la sección siguiente.
+Con el plan gratuito basta para comenzar; sus límites y la forma de ampliarlos se explican en la sección siguiente.
 
 ## Planes
 
-El plan gratuito para cuentas personales tiene límites mensuales de uso (a agosto de 2026, 2000 autocompletados y 50 mensajes de chat): suficientes para los ejercicios del curso, pero ajustados para el proyecto final.
+El plan gratuito para cuentas personales (**Copilot Free**) tiene límites mensuales de uso: a octubre de 2026, 2000 autocompletados y un uso limitado del chat, con el modelo elegido automáticamente por Copilot. Son suficientes para los ejercicios del curso, pero ajustados para el proyecto final.
 
-### Copilot Pro gratuito con GitHub Education
+### Copilot Student gratuito con GitHub Education
 
-[GitHub Education](https://github.com/education) ofrece el plan Copilot Pro —con una asignación mensual mucho más amplia, medida en créditos de IA (ver la sección siguiente)— gratis a estudiantes verificados. **Se recomienda solicitar la verificación desde ya**: el proceso puede tardar varios días y conviene tenerla lista antes de la semana 5.
+[GitHub Education](https://github.com/education) ofrece gratis a estudiantes verificados el plan **Copilot Student**, que desde marzo de 2026 sustituye al Copilot Pro que antes recibían: autocompletados ilimitados y una asignación mensual de créditos de IA para el chat mayor que la del plan gratuito (aunque menor que la de Copilot Pro, el plan de pago), también con selección automática de modelo. **Se recomienda solicitar la verificación desde ya**: el proceso puede tardar varios días y conviene tenerla lista antes de la semana 5.
 
 1. Agregue su correo institucional (`@ucr.ac.cr`) a su cuenta de GitHub (*Settings > Emails*).
 2. En [GitHub Education](https://github.com/education), solicite los beneficios de estudiante (*Join GitHub Education*) con ese correo, y aporte la prueba de matrícula que se le pida (ej. una constancia o el carné).
-3. Al aprobarse la solicitud, active Copilot Pro desde la [página de configuración de Copilot](https://github.com/settings/copilot).
+3. Al aprobarse la solicitud, abra la [página de beneficios de GitHub Education](https://github.com/settings/education/benefits), elija *Learn more* bajo *Free GitHub developer resources for students and teachers* y siga las indicaciones para activar Copilot Student. El beneficio puede tardar varios días en aplicarse después de la verificación; si pasado ese tiempo la [página de configuración de Copilot](https://github.com/settings/copilot) sigue mostrando el plan gratuito, contacte al soporte de GitHub.
 
 ### Consultar el consumo
 
-Cada plan incluye una asignación mensual que se reinicia el primer día de cada mes a las 00:00 UTC; lo que no se usa se pierde. En el plan gratuito la asignación se expresa en autocompletados y mensajes de chat. En Copilot Pro se expresa en **créditos de IA**: cada mensaje al chat descuenta créditos según el modelo elegido y la cantidad de texto que procesa (a octubre de 2026, el plan incluye 1500 créditos al mes). Conviene revisar el consumo de vez en cuando, sobre todo durante el proyecto final, para no quedarse sin asistente a mitad de una tarea. Hay dos vías:
+Cada plan incluye una asignación mensual que se reinicia el primer día de cada mes a las 00:00 UTC; lo que no se usa se pierde. En el plan gratuito la asignación se expresa en autocompletados y en un uso limitado del chat. En Copilot Student y Copilot Pro los autocompletados son ilimitados y el chat se mide en **créditos de IA**: cada mensaje descuenta créditos según el modelo que lo atiende y la cantidad de texto que procesa (a octubre de 2026, Copilot Pro incluye 1500 créditos al mes; GitHub no publica la cifra de Copilot Student). Conviene revisar el consumo de vez en cuando, sobre todo durante el proyecto final, para no quedarse sin asistente a mitad de una tarea. Hay dos vías:
 
 - **En VS Code**: haga clic en el ícono de Copilot en la barra de estado (abajo a la derecha). El menú muestra las funciones incluidas en su plan, el porcentaje consumido de cada límite y la fecha en que se reinicia la asignación. Es la vía más rápida.
 - **En GitHub**: abra la [página de facturación de su cuenta](https://github.com/settings/billing). La sección *Metered usage* muestra, junto al ícono de Copilot, lo consumido en el mes; el apartado de analítica de la barra lateral desglosa el uso por día y por modelo.
 
-Si agota la asignación, los autocompletados y el chat se pausan hasta el siguiente mes, salvo que fije un presupuesto de pago en la misma página de facturación. Para el curso no hace falta: basta con usar el chat con criterio y elegir el modelo predeterminado, que consume menos créditos que los modelos avanzados del selector.
+Si agota la asignación, los autocompletados y el chat se pausan hasta el siguiente mes, salvo que fije un presupuesto de pago en la misma página de facturación. Para el curso no hace falta: basta con usar el chat con criterio, por ejemplo con preguntas concretas sobre el fragmento de código en cuestión en vez de pegar archivos completos.
 
 ## Sugerencias automáticas y aprendizaje
 
@@ -83,5 +83,5 @@ Si el ícono no aparece o el atajo no hace nada, revise en este orden:
 
 1. **La extensión instalada es Copilot Chat**, no otra con nombre parecido. En el panel de extensiones (`Ctrl+Shift+X`) busque "GitHub Copilot Chat" y confirme que dice *Installed* y no *Disabled*.
 2. **La sesión está iniciada**: el ícono de *Accounts*, abajo a la izquierda, debe listar su usuario de GitHub. Si no, siga los pasos de [inicio de sesión](#copilot-inicio-sesion).
-3. **La cuenta tiene plan**: si es la primera vez, al abrir el chat VS Code ofrece activar el plan gratuito con un botón. Acéptelo. Si ya tiene Copilot Pro por GitHub Education, no pide nada.
+3. **La cuenta tiene plan**: si es la primera vez, al abrir el chat VS Code ofrece activar el plan gratuito con un botón. Acéptelo. Si ya tiene Copilot Student por GitHub Education, no pide nada.
 4. **VS Code está actualizado**: el chat requiere una versión reciente. Use *Help > Check for Updates* (o el gestor de paquetes, en Linux).

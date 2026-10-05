@@ -59,7 +59,7 @@ Puede explorar la lista completa de extensiones en el [Visual Studio Code Market
 
 ## Asistente de inteligencia artificial (GitHub Copilot)
 
-VS Code integra el asistente de IA [GitHub Copilot](https://github.com/features/copilot), cuyo uso en el curso comienza en la semana 5. Su activación, sus planes (incluido Copilot Pro gratuito con GitHub Education) y las recomendaciones de uso se explican en la [guía de GitHub Copilot](copilot.md).
+VS Code integra el asistente de IA [GitHub Copilot](https://github.com/features/copilot), cuyo uso en el curso comienza en la semana 5. Su activación, sus planes (incluido Copilot Student gratuito con GitHub Education) y las recomendaciones de uso se explican en la [guía de GitHub Copilot](copilot.md).
 
 ## Cuadernos de notas en VS Code
 
