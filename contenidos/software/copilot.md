@@ -31,11 +31,20 @@ El plan gratuito para cuentas personales tiene límites mensuales de uso (a agos
 
 ### Copilot Pro gratuito con GitHub Education
 
-[GitHub Education](https://github.com/education) ofrece el plan Copilot Pro —sin los límites anteriores— gratis a estudiantes verificados. **Se recomienda solicitar la verificación desde ya**: el proceso puede tardar varios días y conviene tenerla lista antes de la semana 5.
+[GitHub Education](https://github.com/education) ofrece el plan Copilot Pro —con una asignación mensual mucho más amplia, medida en créditos de IA (ver la sección siguiente)— gratis a estudiantes verificados. **Se recomienda solicitar la verificación desde ya**: el proceso puede tardar varios días y conviene tenerla lista antes de la semana 5.
 
 1. Agregue su correo institucional (`@ucr.ac.cr`) a su cuenta de GitHub (*Settings > Emails*).
 2. En [GitHub Education](https://github.com/education), solicite los beneficios de estudiante (*Join GitHub Education*) con ese correo, y aporte la prueba de matrícula que se le pida (ej. una constancia o el carné).
 3. Al aprobarse la solicitud, active Copilot Pro desde la [página de configuración de Copilot](https://github.com/settings/copilot).
+
+### Consultar el consumo
+
+Cada plan incluye una asignación mensual que se reinicia el primer día de cada mes a las 00:00 UTC; lo que no se usa se pierde. En el plan gratuito la asignación se expresa en autocompletados y mensajes de chat. En Copilot Pro se expresa en **créditos de IA**: cada mensaje al chat descuenta créditos según el modelo elegido y la cantidad de texto que procesa (a octubre de 2026, el plan incluye 1500 créditos al mes). Conviene revisar el consumo de vez en cuando, sobre todo durante el proyecto final, para no quedarse sin asistente a mitad de una tarea. Hay dos vías:
+
+- **En VS Code**: haga clic en el ícono de Copilot en la barra de estado (abajo a la derecha). El menú muestra las funciones incluidas en su plan, el porcentaje consumido de cada límite y la fecha en que se reinicia la asignación. Es la vía más rápida.
+- **En GitHub**: abra la [página de facturación de su cuenta](https://github.com/settings/billing). La sección *Metered usage* muestra, junto al ícono de Copilot, lo consumido en el mes; el apartado de analítica de la barra lateral desglosa el uso por día y por modelo.
+
+Si agota la asignación, los autocompletados y el chat se pausan hasta el siguiente mes, salvo que fije un presupuesto de pago en la misma página de facturación. Para el curso no hace falta: basta con usar el chat con criterio y elegir el modelo predeterminado, que consume menos créditos que los modelos avanzados del selector.
 
 ## Sugerencias automáticas y aprendizaje
 
