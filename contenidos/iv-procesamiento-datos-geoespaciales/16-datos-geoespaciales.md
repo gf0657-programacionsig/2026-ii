@@ -85,22 +85,22 @@ Las coordenadas de un punto, `(-84.0512, 9.9377)`, no significan nada por sí so
 <figure style="text-align: center;">
   <img
     src="img/src-geografico-proyectado.png"
-    alt="Las provincias de Costa Rica en un SRC geográfico y en uno proyectado"
+    alt="Los países del mundo en un SRC geográfico y en dos proyectados"
   >
-  <figcaption><strong>Figura 4</strong>. Las provincias de Costa Rica en un SRC geográfico, con coordenadas en grados, y en uno proyectado, con coordenadas en metros. Elaboración propia con datos del IGN (s. f.).</figcaption>
+  <figcaption><strong>Figura 4</strong>. Los países del mundo en un SRC geográfico (WGS84, coordenadas en grados) y en dos proyectados (Mercator y Equal Earth, coordenadas en metros). Mercator conserva las formas pero infla las áreas lejos del ecuador: Groenlandia parece tan grande como Sudamérica; Equal Earth conserva las áreas. Elaboración propia con datos de Natural Earth (s. f.).</figcaption>
 </figure>
 
 ### SRC geográficos
 
-Un **SRC geográfico** ubica los puntos sobre un modelo matemático de la Tierra, un elipsoide, mediante dos ángulos: la **longitud** (este-oeste, de −180° a 180°) y la **latitud** (norte-sur, de −90° a 90°). El más usado es **WGS84** (*World Geodetic System 1984*), el sistema de los receptores GPS, de los teléfonos y de servicios como Google Maps y OpenStreetMap; es también el sistema en que suelen distribuirse los datos globales (GBIF, Natural Earth) y en que trabajan los mapas web. Costa Rica queda, aproximadamente, entre las longitudes −86° y −82,5° y las latitudes 8° y 11,2° (más la Isla del Coco, cerca de −87°, 5,5°).
+Un **SRC geográfico** ubica los puntos sobre un modelo matemático de la Tierra, un elipsoide, mediante dos ángulos: la **longitud** (este-oeste, de −180° a 180°) y la **latitud** (norte-sur, de −90° a 90°). El más usado es **WGS84** (*World Geodetic System 1984*), el sistema de los receptores GPS, de los teléfonos y de servicios como Google Maps y OpenStreetMap; es también el sistema en que suelen distribuirse los datos globales (GBIF, Natural Earth) y en que trabajan los mapas web. Costa Rica queda, aproximadamente, entre las longitudes −86° y −82,5° y las latitudes 8° y 11,2°; la Isla del Coco, cerca de −87°, 5,5°.
 
 Las coordenadas geográficas son universales, pero tienen un inconveniente: sus unidades son **grados**, y un grado no mide lo mismo en todas partes. Un grado de latitud equivale a unos 111 km en cualquier lugar, pero un grado de longitud mide 111 km en el ecuador, unos 109 km en Costa Rica y cero en los polos. Por eso **no sirven para medir**: un área calculada en grados cuadrados o una distancia en grados no tienen interpretación directa.
 
 ### SRC proyectados
 
-Un **SRC proyectado** aplica una **proyección cartográfica**, una transformación matemática que lleva la superficie curva del elipsoide a un plano, y expresa las coordenadas en unidades lineales, casi siempre **metros**, como "este" (*x*) y "norte" (*y*). Toda proyección deforma algo (áreas, formas, distancias o direcciones), por lo que se diseñan para minimizar la deformación en una región determinada.
+Un **SRC proyectado** aplica una **proyección cartográfica**, una transformación matemática que lleva la superficie curva del elipsoide a un plano, y expresa las coordenadas en unidades lineales, casi siempre **metros**, como "este" (*x*) y "norte" (*y*). Toda proyección deforma algo (áreas, formas, distancias o direcciones), por lo que cada una se diseña para conservar una propiedad o para minimizar la deformación en una región determinada. La figura 4 lo muestra a escala mundial: la proyección de **Mercator**, conforme (conserva las formas y los ángulos, por lo que sirvió a la navegación), infla las áreas conforme se aleja del ecuador, hasta hacer que Groenlandia (2,2 millones de km²) parezca tan grande como Sudamérica (17,8 millones); la proyección **Equal Earth** (2018) conserva las áreas a costa de deformar las formas. La **Web Mercator** (EPSG:3857), una variante de Mercator, es la que usan internamente los mapas web (Google Maps, OpenStreetMap, folium), de modo que esa deformación está en casi todos los mapas que se ven en pantalla.
 
-El SRC oficial de Costa Rica es **CRTM05** (*Costa Rica Transversal de Mercator 2005*), definido sobre el datum CR05 y establecido por el Decreto Ejecutivo 33797-MJ-MOPT de 2007. Es una proyección transversal de Mercator centrada en el meridiano −84°, que cubre todo el país con una sola zona y en la que las coordenadas van, aproximadamente, de 280 000 a 660 000 m en *x* y de 880 000 a 1 250 000 m en *y* (figura 4). Las capas del IGN y de la mayoría de las instituciones costarricenses usan CRTM05, y es el sistema en que deben calcularse áreas y distancias en el país. Otros SRC proyectados frecuentes son las zonas **UTM** (*Universal Transversal de Mercator*), que dividen el mundo en 60 franjas de 6° (Costa Rica cae en las zonas 16 y 17 norte), y la **Web Mercator** (EPSG:3857), que usan internamente los mapas web.
+Para medir en un país o una región se usan proyecciones locales, con deformaciones mínimas en su zona. El SRC oficial de Costa Rica es **CR-SIRGAS / CRTM05** (EPSG:8908), que combina el datum CR-SIRGAS, vinculado al marco de referencia de las Américas (SIRGAS), con la proyección **CRTM05** (*Costa Rica Transversal de Mercator 2005*), una transversal de Mercator centrada en el meridiano −84° que cubre todo el país con una sola zona y en la que las coordenadas van, aproximadamente, de 280 000 a 660 000 m en *x* y de 880 000 a 1 250 000 m en *y*. Sustituyó a **CR05 / CRTM05** (EPSG:5367), la misma proyección sobre el datum anterior, en el que todavía están publicadas muchas capas del SNIT (las diferencias entre ambos son de centímetros, pero conviene usar y declarar el oficial). Otros SRC proyectados frecuentes son las zonas **UTM** (*Universal Transversal de Mercator*), que dividen el mundo en 60 franjas de 6° (Costa Rica cae en las zonas 16 y 17 norte).
 
 ### Códigos EPSG
 
@@ -113,15 +113,17 @@ Para no describir un SRC con todos sus parámetros cada vez, se usan los **códi
       <tr><th>Código EPSG</th><th>Nombre</th><th>Tipo</th><th>Unidades</th><th>Uso típico</th></tr>
     </thead>
     <tbody>
-      <tr><td class="align-right">4326</td><td>WGS84</td><td>Geográfico</td><td>Grados</td><td>GPS, datos globales, mapas web, intercambio de datos</td></tr>
-      <tr><td class="align-right">5367</td><td>CR05 / CRTM05</td><td>Proyectado</td><td>Metros</td><td>Capas oficiales de Costa Rica; medición de áreas y distancias en el país</td></tr>
-      <tr><td class="align-right">32616, 32617</td><td>WGS84 / UTM zonas 16N y 17N</td><td>Proyectado</td><td>Metros</td><td>Datos de Costa Rica de fuentes internacionales</td></tr>
-      <tr><td class="align-right">3857</td><td>WGS84 / Pseudo-Mercator (Web Mercator)</td><td>Proyectado</td><td>Metros</td><td>Mapas base de folium, Google Maps y OpenStreetMap</td></tr>
+      <tr><td class="align-right">4326</td><td>WGS84</td><td>Geográfico</td><td>Grados</td><td>GPS, datos globales (Natural Earth, GBIF), intercambio de datos; SRC de entrada de los mapas web</td></tr>
+      <tr><td class="align-right">8857</td><td>WGS84 / Equal Earth Greenwich</td><td>Proyectado, equivalente</td><td>Metros</td><td>Mapas del mundo y medición de áreas a escala global</td></tr>
+      <tr><td class="align-right">3857</td><td>WGS84 / Pseudo-Mercator (Web Mercator)</td><td>Proyectado, conforme</td><td>Metros</td><td>Mapas base de folium, Google Maps y OpenStreetMap</td></tr>
+      <tr><td class="align-right">8908</td><td>CR-SIRGAS / CRTM05</td><td>Proyectado, conforme</td><td>Metros</td><td>SRC oficial de Costa Rica; medición de áreas y distancias en el país</td></tr>
+      <tr><td class="align-right">5367</td><td>CR05 / CRTM05</td><td>Proyectado, conforme</td><td>Metros</td><td>SRC oficial anterior; muchas capas del SNIT siguen en él</td></tr>
+      <tr><td class="align-right">32616, 32617</td><td>WGS84 / UTM zonas 16N y 17N</td><td>Proyectado, conforme</td><td>Metros</td><td>Datos de Costa Rica de fuentes internacionales</td></tr>
     </tbody>
     </table>
 </figure>
 
-Dos reglas prácticas resumen esta sección. Primera: para **medir** (áreas, longitudes, distancias, zonas de influencia) se usa un SRC proyectado adecuado a la región, en Costa Rica CRTM05. Segunda: para **combinar** capas en un mapa o en una operación espacial, todas deben estar en el **mismo** SRC; si no, se reproyectan antes. Los mapas web requieren WGS84, y geopandas y folium se encargan de la conversión a Web Mercator para dibujarlos.
+Dos reglas prácticas resumen esta sección. Primera: para **medir** (áreas, longitudes, distancias, zonas de influencia) se usa un SRC proyectado adecuado a la región y a la magnitud: uno equivalente, como Equal Earth, para áreas a escala mundial; en Costa Rica, CR-SIRGAS / CRTM05. Segunda: para **combinar** capas en un mapa o en una operación espacial, todas deben estar en el **mismo** SRC; si no, se reproyectan antes. Los mapas web requieren WGS84, y geopandas y folium se encargan de la conversión a Web Mercator para dibujarlos.
 
 ## Formatos de archivo
 
@@ -159,7 +161,8 @@ La tabla 3 reúne fuentes de datos geoespaciales abiertas útiles para las tarea
       <tr><td><a href="https://www.snitcr.go.cr/">SNIT</a> (IGN y otras instituciones de Costa Rica)</td><td>División territorial, red vial, hidrografía, curvas de nivel, aeródromos, áreas protegidas, uso de la tierra</td><td>Visor y servicios WFS/WMS</td></tr>
       <tr><td><a href="https://inec.cr/">INEC</a></td><td>Censos y estimaciones de población y vivienda por provincia, cantón y distrito</td><td>Cuadros en Excel y CSV; se unen a las capas del IGN por código</td></tr>
       <tr><td><a href="https://www.gbif.org/">GBIF</a></td><td>Registros de presencia de especies (puntos) de todo el mundo</td><td>API REST y descargas CSV, como en la sección I</td></tr>
-      <tr><td><a href="https://www.naturalearthdata.com/">Natural Earth</a></td><td>Países, ciudades, ríos, lagos y relieve a escalas de 1:10 M a 1:110 M</td><td>Descarga de archivos vectoriales y raster</td></tr>
+      <tr><td><a href="https://www.naturalearthdata.com/">Natural Earth</a></td><td>Países, ciudades, aeropuertos, ríos, lagos y relieve a escalas de 1:10 M a 1:110 M, de dominio público</td><td>Descarga de archivos vectoriales y raster</td></tr>
+      <tr><td><a href="https://datos.bancomundial.org/">Banco Mundial</a></td><td>Indicadores del desarrollo mundial por país y año (población, economía, salud, educación, ambiente); se unen a los países de Natural Earth por código ISO</td><td>Descarga de CSV y API REST</td></tr>
       <tr><td><a href="https://www.openstreetmap.org/">OpenStreetMap</a></td><td>Cartografía colaborativa: vías, edificios, servicios</td><td>Descargas (Geofabrik) y API Overpass</td></tr>
       <tr><td><a href="https://www.worldclim.org/">WorldClim</a>, <a href="https://www.usgs.gov/">USGS</a>, <a href="https://dataspace.copernicus.eu/">Copernicus</a></td><td>Clima, elevación e imágenes satelitales (rasters)</td><td>Descarga de GeoTIFF</td></tr>
     </tbody>
@@ -171,7 +174,7 @@ La tabla 3 reúne fuentes de datos geoespaciales abiertas útiles para las tarea
 - Un **dato geoespacial** tiene atributos y una **ubicación**. Se representa con el **modelo vectorial** (puntos, líneas y polígonos definidos por coordenadas, con atributos) o con el **modelo raster** (una matriz de celdas con un valor cada una, más un encabezado).
 - El estándar **Simple Features** define las geometrías vectoriales (siete tipos usuales, incluidos los "multi") y su representación en texto **WKT**; en Python lo implementa shapely, que geopandas usa internamente.
 - Los rasters representan bien fenómenos **continuos** (elevación, clima, imágenes) y los vectores, objetos con **límites definidos** y muchos atributos.
-- Un **SRC** da significado a las coordenadas. Los **geográficos** (WGS84, EPSG:4326) usan grados y sirven para intercambiar datos y para mapas web; los **proyectados** (CRTM05, EPSG:5367, el oficial de Costa Rica) usan metros y sirven para medir. Para combinar capas, todas deben estar en el mismo SRC.
+- Un **SRC** da significado a las coordenadas. Los **geográficos** (WGS84, EPSG:4326) usan grados y sirven para intercambiar datos y como entrada de los mapas web; los **proyectados** usan metros y sirven para medir, pero toda proyección deforma algo: Mercator conserva formas e infla áreas, Equal Earth (EPSG:8857) conserva áreas. El oficial de Costa Rica es CR-SIRGAS / CRTM05 (EPSG:8908), que sustituyó a CR05 / CRTM05 (EPSG:5367). Para combinar capas, todas deben estar en el mismo SRC.
 - Los **códigos EPSG** identifican cada SRC con un número; reproyectar es `to_crs(codigo)`.
 - **GeoPackage** es el formato recomendado para vectores; **Shapefile** es el más común pero tiene limitaciones; **GeoJSON** es texto para la web; **GeoTIFF** es el estándar raster. Los servicios **WFS** entregan capas vectoriales por la web.
 
@@ -179,19 +182,16 @@ La tabla 3 reúne fuentes de datos geoespaciales abiertas útiles para las tarea
 
 1. Para cada uno de los siguientes conjuntos de datos, indique si lo representaría con el modelo vectorial o con el raster y, en el primer caso, con qué tipo de geometría: (a) las paradas de autobús de San José; (b) la temperatura promedio anual de Costa Rica; (c) los distritos del país; (d) la red de senderos de un parque nacional; (e) una imagen del satélite Sentinel-2; (f) los registros de presencia de una especie descargados de GBIF. Justifique cada elección en una oración.
 
-2. Busque en [epsg.io](https://epsg.io/) los códigos 4326, 5367 y 3857 y anote, para cada uno, el nombre, el tipo (geográfico o proyectado), las unidades y el área de uso. Luego busque el SRC "Costa Rica Lambert Norte" (usado en la cartografía anterior a CRTM05) y anote su código.
+2. Busque en [epsg.io](https://epsg.io/) los códigos 4326, 8857, 8908 y 5367 y anote, para cada uno, el nombre, el tipo (geográfico o proyectado), las unidades y el área de uso. Luego busque el SRC "Costa Rica Lambert Norte" (usado en la cartografía anterior a CRTM05) y anote su código.
 
 3. Escriba en WKT (a) un punto con las coordenadas geográficas de la Escuela de Geografía de la UCR, que puede obtener de Google Maps u OpenStreetMap (recuerde el orden: longitud y luego latitud), y (b) un polígono rectangular que encierre aproximadamente el campus Rodrigo Facio. Verifique el polígono dibujándolo en [geojson.io](https://geojson.io/) o en [wktmap.com](https://wktmap.com/).
 
 4. Entre al [visor del SNIT](https://www.snitcr.go.cr/) y ubique la capa de la división territorial administrativa (límite cantonal) del IGN. Anote el SRC en que se publica y la escala. Si la capa está disponible como servicio WFS, copie la URL del servicio: se usará en el cuaderno siguiente.
 
-5. Un compañero calculó el área de los cantones con una capa en EPSG:4326 y obtuvo valores como 0,0036. Explique qué unidades tiene ese número, por qué no sirve, y qué debió hacer antes de calcular el área.
+5. Alguien calculó el área de los países con una capa en EPSG:4326 y obtuvo valores como 0,0036 para los más pequeños. Explique qué unidades tiene ese número, por qué no sirve, y qué debió hacer antes de calcular el área. Luego, otra persona reproyectó la capa a Web Mercator (EPSG:3857) y obtuvo que Groenlandia es más grande que Brasil. Explique por qué y cuál SRC debió usar.
 
 ## Referencias bibliográficas
 
-Instituto Geográfico Nacional. (s. f.). *División territorial administrativa: límite provincial y límite cantonal* [Conjunto de datos]. Sistema Nacional de Información Territorial. Recuperado el 4 de octubre de 2026, de https://www.snitcr.go.cr/
-\
-\
 Kaggle. (s. f.). Coordinate reference systems. En *Geospatial analysis*. Kaggle Learn. Recuperado el 4 de octubre de 2026, de https://www.kaggle.com/code/alexisbcook/coordinate-reference-systems
 \
 \
@@ -202,6 +202,9 @@ Lovelace, R., Nowosad, J. y Münchow, J. (2025). Geographic data in R. En *Geoco
 \
 \
 MapTiler. (s. f.). *epsg.io: Coordinate systems worldwide*. Recuperado el 4 de octubre de 2026, de https://epsg.io/
+\
+\
+Natural Earth. (s. f.). *Natural Earth: Free vector and raster map data* [Conjunto de datos]. Recuperado el 4 de octubre de 2026, de https://www.naturalearthdata.com/
 \
 \
 Olaya, V. (2020). *Sistemas de información geográfica* (3.ª ed.). https://volaya.github.io/libro-sig/
