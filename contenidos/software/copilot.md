@@ -52,12 +52,12 @@ Se recomienda mantener las sugerencias automáticas desactivadas mientras se apr
 
 ### Desactivar y reactivar las sugerencias
 
-Desde el ícono de Copilot en la barra de estado de VS Code (abajo a la derecha):
+Haga clic en el ícono de Copilot en la barra de estado de VS Code (abajo a la derecha). El menú tiene un apartado *Inline Suggestions* (en versiones anteriores, *Code completions*) con varias casillas:
 
-- **Desactivar**: haga clic en el ícono y elija *Snooze* para pausarlas por unos minutos, o desmarque *Code completions* (en versiones anteriores, *Disable completions*). Ahí mismo puede desactivarlas solo para el lenguaje del archivo abierto, por ejemplo Python, y dejarlas activas para el resto.
-- **Reactivar**: en el mismo menú, marque de nuevo *Code completions* (o *Enable completions*). Si usó *Snooze*, vuelven solas al terminar el tiempo, o antes con *Unsnooze*.
+- **Desactivar**: desmarque *Ghost text suggestions*, la casilla de las sugerencias en gris, para todos los lenguajes. Si prefiere apagarlas solo en Python, desmarque *Ghost text suggestions for Python* y deje la general marcada; el guion que muestra esa casilla indica que hereda el valor de la general. Desmarque también *Next edit suggestions* si no quiere ninguna propuesta automática: son las sugerencias de "siguiente edición", que no se apagan con la casilla anterior. *Snooze* solo las oculta por unos minutos, útil para una demostración breve.
+- **Reactivar**: marque de nuevo las casillas en el mismo menú. Si usó *Snooze*, vuelven solas al terminar el tiempo, o antes con *Unsnooze*.
 
-El ícono cambia de aspecto cuando están desactivadas (aparece tachado o con una marca), así que el estado se nota de un vistazo. También sirve la paleta de comandos (`Ctrl+Shift+P`) escribiendo *Copilot: Disable Completions* o *Copilot: Enable Completions*. La configuración permanente está en *File > Preferences > Settings*, buscando `github.copilot.enable`, donde puede fijar por lenguaje cuáles reciben sugerencias.
+El ícono cambia de aspecto cuando están desactivadas (aparece tachado o con una marca), así que el estado se nota de un vistazo. La configuración permanente está en *File > Preferences > Settings*, buscando `github.copilot.enable`, donde puede fijar por lenguaje cuáles reciben sugerencias.
 
 ## Uso en el curso
 
@@ -85,3 +85,18 @@ Si el ícono no aparece o el atajo no hace nada, revise en este orden:
 2. **La sesión está iniciada**: el ícono de *Accounts*, abajo a la izquierda, debe listar su usuario de GitHub. Si no, siga los pasos de [inicio de sesión](#copilot-inicio-sesion).
 3. **La cuenta tiene plan**: si es la primera vez, al abrir el chat VS Code ofrece activar el plan gratuito con un botón. Acéptelo. Si ya tiene Copilot Pro por GitHub Education, no pide nada.
 4. **VS Code está actualizado**: el chat requiere una versión reciente. Use *Help > Check for Updates* (o el gestor de paquetes, en Linux).
+
+### Generar código a partir de un comentario
+
+Con las sugerencias automáticas activas:
+
+1. Escriba el comentario (por ejemplo, `# calcula la densidad de población de cada cantón`) y presione Enter para pasar a la línea siguiente. Copilot necesita el cursor donde va el código, no al final del comentario.
+2. Espere un instante. La propuesta aparece en gris. A veces hace falta escribir el inicio de la línea, por ejemplo `def ` o el nombre de la variable, para que arranque.
+3. Acepte con Tab o rechace con Esc. `Ctrl+→` acepta solo la siguiente palabra; `Alt+]` y `Alt+[` recorren otras propuestas.
+
+Si desactivó las sugerencias automáticas, como se recomienda al aprender un tema nuevo, no aparece nada por sí solo. Hay dos alternativas:
+
+- **Pedir la sugerencia a mano** con `Alt+\` (comando *Trigger Inline Suggestion* en la paleta). Muestra la propuesta una sola vez, sin reactivar las automáticas.
+- **Usar el chat en línea**: `Ctrl+I` sobre la línea, escriba la instrucción y acepte el cambio. Funciona siempre, con o sin sugerencias automáticas.
+
+En cualquier caso, lea el código antes de aceptarlo y compruébelo ejecutándolo: generar y verificar código es la práctica de la semana 7, y los lineamientos de uso de IA del curso piden comprender y poder explicar todo lo que se entregue.
