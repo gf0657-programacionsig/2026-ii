@@ -33,7 +33,7 @@ SUBREGIONES = {
     "Antarctica": "Antártida", "Australia and New Zealand": "Australia y Nueva Zelanda",
     "Caribbean": "Caribe", "Central America": "América Central", "Central Asia": "Asia central",
     "Eastern Africa": "África oriental", "Eastern Asia": "Asia oriental", "Eastern Europe": "Europa oriental",
-    "Melanesia": "Melanesia", "Middle Africa": "África central", "Northern Africa": "África septentrional",
+    "Melanesia": "Melanesia", "Micronesia": "Micronesia", "Polynesia": "Polinesia", "Middle Africa": "África central", "Northern Africa": "África septentrional",
     "Northern America": "América septentrional", "Northern Europe": "Europa septentrional",
     "Seven seas (open ocean)": "Siete mares (océano abierto)", "South America": "América del Sur",
     "South-Eastern Asia": "Asia sudoriental", "Southern Africa": "África austral",
@@ -44,7 +44,7 @@ SUBREGIONES = {
 GRUPOS_INGRESO = {
     "1. High income: OECD": "1. Ingreso alto: OCDE", "2. High income: nonOECD": "2. Ingreso alto: no OCDE",
     "3. Upper middle income": "3. Ingreso mediano alto", "4. Lower middle income": "4. Ingreso mediano bajo",
-    "5. Low income": "5. Ingreso bajo"
+    "5. Low income": "5. Ingreso bajo", "-99": None  # sin dato en Natural Earth
 }
 
 
@@ -63,7 +63,7 @@ def paises_es(capa):
     capa["continente"] = capa["continente"].map(CONTINENTES)
     capa["subregion"] = capa["subregion"].map(SUBREGIONES)
     capa["grupo_ingreso"] = capa["grupo_ingreso"].map(GRUPOS_INGRESO)
-    assert capa[["continente", "subregion", "grupo_ingreso"]].notna().all().all(), "valor sin traducción"
+    assert capa[["continente", "subregion"]].notna().all().all(), "valor sin traducción"
     capa["poblacion_estimada"] = capa["poblacion_estimada"].round().astype("int64")
     return capa[["codigo", "iso3", "nombre", "nombre_en", "continente", "subregion",
                  "poblacion_estimada", "pib_millones", "grupo_ingreso", "geometry"]]
