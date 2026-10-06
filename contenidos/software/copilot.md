@@ -37,6 +37,7 @@ El plan gratuito para cuentas personales (**Copilot Free**) tiene límites mensu
 2. En [GitHub Education](https://github.com/education), solicite los beneficios de estudiante (*Join GitHub Education*) con ese correo, y aporte la prueba de matrícula que se le pida (ej. una constancia o el carné).
 3. Al aprobarse la solicitud, abra la [página de beneficios de GitHub Education](https://github.com/settings/education/benefits), elija *Learn more* bajo *Free GitHub developer resources for students and teachers* y siga las indicaciones para activar Copilot Student. El beneficio puede tardar varios días en aplicarse después de la verificación; si pasado ese tiempo la [página de configuración de Copilot](https://github.com/settings/copilot) sigue mostrando el plan gratuito, contacte al soporte de GitHub.
 
+(copilot-consumo)=
 ### Consultar el consumo
 
 Cada plan incluye una asignación mensual que se reinicia el primer día de cada mes a las 00:00 UTC; lo que no se usa se pierde. En el plan gratuito la asignación se expresa en autocompletados y en un uso limitado del chat. En Copilot Student y Copilot Pro los autocompletados son ilimitados y el chat se mide en **créditos de IA**: cada mensaje descuenta créditos según el modelo que lo atiende y la cantidad de texto que procesa (a octubre de 2026, Copilot Pro incluye 1500 créditos al mes; GitHub no publica la cifra de Copilot Student). Conviene revisar el consumo de vez en cuando, sobre todo durante el proyecto final, para no quedarse sin asistente a mitad de una tarea. Hay dos vías:
@@ -65,7 +66,7 @@ El curso incorpora Copilot de forma paulatina, según el calendario de la lecci�
 
 - **Semana 5**: el chat, para explicar código y mensajes de error y ayudar a depurar (con la estructura de prompts practicada en el cuaderno de [estructuras de datos y servicios web](../ii-lenguaje-programacion-python/11-estructuras-datos-apis.ipynb)).
 - **Semana 7**: generación y verificación de código de análisis de datos.
-- **Semana 15**: herramientas agénticas, revisión crítica del código generado y documentación de su uso.
+- **Semana 15**: herramientas agénticas (el modo *Agent* del chat y [Copilot CLI](#copilot-cli)), revisión crítica del código generado y documentación de su uso.
 
 En todas las etapas aplican los mismos lineamientos: el uso se declara en los trabajos, y todo el código que se entregue debe comprenderse y poder explicarse.
 
@@ -100,3 +101,48 @@ Si desactivó las sugerencias automáticas, como se recomienda al aprender un te
 - **Usar el chat en línea**: `Ctrl+I` sobre la línea, escriba la instrucción y acepte el cambio. Funciona siempre, con o sin sugerencias automáticas.
 
 En cualquier caso, lea el código antes de aceptarlo y compruébelo ejecutándolo: generar y verificar código es la práctica de la semana 7, y los lineamientos de uso de IA del curso piden comprender y poder explicar todo lo que se entregue.
+
+(copilot-cli)=
+## Copilot CLI
+
+[GitHub Copilot CLI](https://github.com/features/copilot/cli) es la versión de Copilot para la terminal: un agente que conversa en lenguaje natural, lee y modifica los archivos de la carpeta donde se inicia y ejecuta comandos, sin pasar por el editor. Funciona tanto en la [terminal integrada de VS Code](vscode.md) como en la del sistema operativo. Es una de las herramientas agénticas que el curso incorpora en la semana 15; antes de esa semana no hace falta instalarla.
+
+Usa la misma cuenta de GitHub que el chat de VS Code y está incluido en todos los planes, también en Copilot Free y Copilot Student. Cada interacción descuenta créditos de IA de la misma asignación mensual, según el modelo y la cantidad de texto procesado; como un agente lee archivos y encadena varios pasos por instrucción, gasta más que una pregunta en el chat (vea [cómo consultar el consumo](#copilot-consumo)).
+
+### Instalación
+
+Ejecute en la terminal el comando que corresponda a su sistema operativo:
+
+- **Windows**: `winget install GitHub.Copilot`. Copilot CLI requiere PowerShell 6 o superior; si su equipo solo tiene Windows PowerShell 5.1, instale antes la versión actual con `winget install Microsoft.PowerShell`.
+- **macOS y Linux**: `curl -fsSL https://gh.io/copilot-install | bash` o, si usa [Homebrew](https://brew.sh/), `brew install --cask copilot-cli`.
+- **Cualquier sistema con [Node.js](https://nodejs.org/) 22 o superior**: `npm install -g @github/copilot`.
+
+La [documentación de instalación](https://docs.github.com/es/copilot/how-tos/set-up/install-copilot-cli) detalla otras opciones.
+
+### Primer uso
+
+1. En la terminal, muévase con `cd` a la carpeta del proyecto (la terminal integrada de VS Code ya inicia en la carpeta de trabajo) y ejecute `copilot`.
+2. Copilot pide confirmar que confía en los archivos de esa carpeta y de sus subcarpetas. Acepte solo en carpetas de proyectos propios, como la del curso; no lo inicie en su carpeta personal completa.
+3. La primera vez, escriba `/login` y siga las indicaciones: GitHub se abre en el navegador para autorizar el acceso con su cuenta.
+4. Escriba una instrucción y presione Enter, por ejemplo `Explique qué hace este proyecto`.
+5. Para terminar la sesión, escriba `/exit` o presione `Ctrl+C`.
+
+### Aprobación de acciones
+
+Copilot no modifica archivos ni ejecuta comandos sin permiso. Antes de cada acción muestra lo que va a hacer y ofrece tres opciones:
+
+1. *Yes*: aprueba solo esa acción.
+2. *Yes, and approve … for the rest of the running session*: aprueba esa herramienta o comando por el resto de la sesión, sin volver a preguntar.
+3. *No, and tell Copilot what to do differently* (o la tecla Esc): la rechaza y permite indicarle otra forma de proceder.
+
+Mientras aprende a usarlo, elija la primera opción y lea cada comando antes de aprobarlo. No use opciones de aprobación automática como `--allow-all-tools`: con ellas, Copilot puede leer y modificar cualquier archivo y ejecutar cualquier comando con los mismos permisos que usted.
+
+### Comandos útiles
+
+- `Shift+Tab`: alterna el modo de planificación, en el que Copilot propone un plan antes de actuar.
+- `/model`: cambia el modelo, si su plan lo permite.
+- `/context`: muestra cuánto del contexto de la sesión se ha usado.
+- `/compact`: resume la conversación para liberar contexto en sesiones largas.
+- `copilot -p "instrucción"`: ejecuta una sola instrucción y termina, sin abrir la sesión interactiva.
+
+Los lineamientos de uso de IA del curso aplican igual que con el chat. Un agente puede cambiar varios archivos en una sola instrucción, por lo que conviene trabajar en una carpeta con control de versiones y revisar los cambios con `git diff` antes de confirmarlos con un *commit*.
