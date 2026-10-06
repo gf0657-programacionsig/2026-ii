@@ -2,19 +2,20 @@
 
 Fuente: Banco Mundial, base de datos [Indicadores del desarrollo
 mundial](https://datos.bancomundial.org/), consultada mediante su API
-(https://api.worldbank.org/v2/) el 4 de octubre de 2026 con el programa
+(https://api.worldbank.org/v2/) el 6 de octubre de 2026 con el programa
 `preparar-datos.py` (requiere pandas). Los datos del Banco Mundial se
 publican con licencia CC BY 4.0.
 
 ## Archivos
 
-- `indicadores-2022.csv` (217 filas): una fila por país o territorio (se
+- `indicadores-2024.csv` (217 filas): una fila por país o territorio (se
   excluyen los agregados regionales y por ingreso), con `codigo` (ISO
   3166-1 alfa-3, con las variantes del Banco Mundial: `XKX` para Kosovo),
   `pais` (nombre en español), `region`, `grupo_ingreso` y los indicadores
-  de 2022 de la tabla siguiente. Las celdas vacías son valores que el
-  Banco Mundial no publica para ese país.
-- `poblacion-1960-2023.csv` (13 858 filas): población total por país y
+  de 2024 de la tabla siguiente (la superficie terrestre es la de 2023,
+  el último año publicado). Las celdas vacías son valores que el Banco
+  Mundial no publica para ese país.
+- `poblacion-1960-2025.csv` (14 292 filas): población total por país y
   año, en formato largo (`codigo`, `anio`, `poblacion`).
 
 | Variable | Indicador | Descripción |
