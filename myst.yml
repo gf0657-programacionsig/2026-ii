@@ -78,6 +78,7 @@ project:
         - title: "IV. Procesamiento de datos geoespaciales"
           children:
             - file: contenidos/soluciones/17-soluciones-geopandas-datos-vectoriales.md
+            - file: contenidos/soluciones/18-soluciones-geopandas-operaciones-espaciales.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
