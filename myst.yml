@@ -39,6 +39,7 @@ project:
         - file: contenidos/iv-procesamiento-datos-geoespaciales/16-datos-geoespaciales.md
         - file: contenidos/iv-procesamiento-datos-geoespaciales/17-geopandas-datos-vectoriales.ipynb
         - file: contenidos/iv-procesamiento-datos-geoespaciales/18-geopandas-operaciones-espaciales.ipynb
+        - file: contenidos/iv-procesamiento-datos-geoespaciales/19-rasterio-datos-raster.ipynb
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
