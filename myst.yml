@@ -83,6 +83,8 @@ project:
           children:
             - file: contenidos/soluciones/17-soluciones-geopandas-datos-vectoriales.md
             - file: contenidos/soluciones/18-soluciones-geopandas-operaciones-espaciales.md
+            - file: contenidos/soluciones/19-soluciones-rasterio-datos-raster.md
+            - file: contenidos/soluciones/20-soluciones-folium-mapas-web.md
 site:
   # El título del sitio se deja vacío para que el tema no lo agregue como
   # sufijo en la etiqueta <title> de cada página: al construir con BASE_URL
