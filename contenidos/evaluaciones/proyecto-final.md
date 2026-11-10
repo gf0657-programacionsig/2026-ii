@@ -10,7 +10,7 @@ La aplicación reúne, con controles que los filtren, las tablas, los gráficos 
 |---|---|---|
 | Aplicación web interactiva publicada en Internet | 20 % | Martes 24 de noviembre de 2026, 11:59 p.m. |
 | Presentación oral presencial | 5 % | Martes 24 de noviembre de 2026, en la clase |
-| Documento computacional (examen final en modalidad para la casa) | 10 % | Miércoles 2 de diciembre de 2026, 11:59 p.m. |
+| Documento computacional (examen final en modalidad para la casa) | 10 % | Lunes 30 de noviembre de 2026, 11:59 p.m. |
 
 ## Objetivos
 
@@ -36,7 +36,7 @@ Las entregas se realizan a través de la plataforma Mediación Virtual, en la ac
 
 **2. Presentación oral** (martes 24 de noviembre, en clase). No requiere entregar archivos: se presenta la aplicación publicada, en vivo, desde el navegador. Puede apoyarse en unas pocas diapositivas, si lo desea.
 
-**3. Documento computacional** (miércoles 2 de diciembre). La dirección de un repositorio en GitHub (puede ser el mismo del proyecto) con el cuaderno de notas (`.ipynb`) **ejecutado**, con las salidas de todas las celdas guardadas, y los archivos de datos que carga, salvo que se carguen desde una URL. Como en las tareas 2 y 3, el profesor abrirá y ejecutará el cuaderno en Colab, con la dirección `https://colab.research.google.com/github/usuario/repositorio/blob/main/cuaderno.ipynb`; compruebe antes de entregar que se ejecuta allí de principio a fin sin errores.
+**3. Documento computacional** (lunes 30 de noviembre). La dirección de un repositorio en GitHub (puede ser el mismo del proyecto) con el cuaderno de notas (`.ipynb`) **ejecutado**, con las salidas de todas las celdas guardadas, y los archivos de datos que carga, salvo que se carguen desde una URL. Como en las tareas 2 y 3, el profesor abrirá y ejecutará el cuaderno en Colab, con la dirección `https://colab.research.google.com/github/usuario/repositorio/blob/main/cuaderno.ipynb`; compruebe antes de entregar que se ejecuta allí de principio a fin sin errores.
 
 ## Consideraciones adicionales
 
