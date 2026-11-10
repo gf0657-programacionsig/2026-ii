@@ -68,12 +68,12 @@ Opcionalmente, la aplicación puede incluir más controles, más gráficos, una 
 
 ### Presentación oral
 
-Cada estudiante dispone de **10 minutos** para presentar y de **5 minutos** para responder preguntas del profesor y de sus compañeros. La presentación se hace con la aplicación publicada, abierta en el navegador, y cubre:
+Cada estudiante dispone de **15 minutos** para presentar y de **5 minutos** para responder preguntas del profesor y de sus compañeros. La presentación se hace con la aplicación publicada, abierta en el navegador, y cubre:
 
-1. El **tema** y las preguntas que responde la aplicación, y las fuentes de los datos (1-2 minutos).
-2. Una **demostración** de la aplicación: los controles, la tabla, el gráfico y el mapa, y cómo responden a los filtros (4-5 minutos).
-3. Los **hallazgos principales**: qué muestran los datos sobre el tema (2 minutos).
-4. El **proceso de desarrollo**: una decisión de diseño, un problema que tuvo que resolver y cómo usó los asistentes de IA, si los usó (1-2 minutos).
+1. El **tema** y las preguntas que responde la aplicación, y las fuentes de los datos (2 minutos).
+2. Una **demostración** de la aplicación: los controles, la tabla, el gráfico y el mapa, y cómo responden a los filtros (6-7 minutos).
+3. Los **hallazgos principales**: qué muestran los datos sobre el tema (3 minutos).
+4. El **proceso de desarrollo**: una decisión de diseño, un problema que tuvo que resolver y cómo usó los asistentes de IA, si los usó (3 minutos).
 
 ### Documento computacional
 
