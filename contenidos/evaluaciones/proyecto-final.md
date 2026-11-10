@@ -85,7 +85,6 @@ Un cuaderno de notas de Jupyter con la **estructura de un artículo**, que puede
 - **Resultados**: las tablas, los gráficos (matplotlib o plotly) y los mapas (estáticos y web) que responden a las preguntas, cada uno con un párrafo de interpretación.
 - **La aplicación**: la dirección de la aplicación publicada y del repositorio, una descripción de su estructura (qué carga, qué controles tiene y qué muestra), una captura de pantalla, las decisiones de diseño y los problemas que encontró al desarrollarla y publicarla, y cómo los resolvió.
 - **Conclusiones**: las respuestas a las preguntas del proyecto y las limitaciones de los datos y del análisis.
-- **Informe de participación en las jornadas del Día del SIG** (jueves 19 de noviembre): las actividades en las que participó, qué aprendió y qué relación tienen con el tema del proyecto o con el curso.
 - **Referencias bibliográficas** en formato APA, con las fuentes de los datos, la documentación de las bibliotecas y cualquier otra fuente consultada.
 - **Declaración de uso de asistentes de IA**, o la indicación de que no se usaron.
 
@@ -119,7 +118,7 @@ Cada componente se califica sobre 100 y pesa en la calificación final del curso
 - (15 %) Datos y métodos: carga y preparación explicadas, operaciones espaciales con su pregunta y su SRC.
 - (25 %) Resultados: tablas, gráficos y mapas correctos y adecuados a las preguntas, con interpretación.
 - (15 %) Sección de la aplicación: descripción, decisiones de diseño, problemas y soluciones, enlaces y captura.
-- (10 %) Conclusiones e informe de participación en el Día del SIG (5 % cada uno).
+- (10 %) Conclusiones: respuestas a las preguntas del proyecto y limitaciones de los datos y del análisis.
 - (10 %) Referencias bibliográficas en formato APA, declaración de uso de IA y entrega correcta (cuaderno ejecutado, datos accesibles, ejecución en Colab sin errores).
 
 ## Recursos
