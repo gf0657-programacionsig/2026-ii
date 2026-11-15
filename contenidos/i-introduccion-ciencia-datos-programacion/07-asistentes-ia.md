@@ -88,7 +88,7 @@ El uso de estas modalidades se distribuye a lo largo del curso, en paralelo con 
 - **Semana 2**: panorama de los asistentes y lineamientos de uso (este capítulo).
 - **Semana 5**: uso de asistentes para explicar y depurar código.
 - **Semana 7**: uso de asistentes para generación y verificación de código de análisis de datos.
-- **Semana 15**: herramientas agénticas, revisión crítica del código generado y documentación de su uso.
+- **Semana 15**: [herramientas agénticas](../v-desarrollo-aplicaciones-interactivas/23-herramientas-agenticas-ia.md), revisión crítica del código generado y documentación de su uso.
 
 *Ejercicios de esta sección: [ejercicios sobre el panorama de asistentes](#ejercicios-panorama).*
 
