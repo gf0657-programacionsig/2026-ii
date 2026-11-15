@@ -66,7 +66,7 @@ El curso incorpora Copilot de forma paulatina, según el calendario de la lecci�
 
 - **Semana 5**: el chat, para explicar código y mensajes de error y ayudar a depurar (con la estructura de prompts practicada en el cuaderno de [estructuras de datos y servicios web](../ii-lenguaje-programacion-python/11-estructuras-datos-apis.ipynb)).
 - **Semana 7**: generación y verificación de código de análisis de datos.
-- **Semana 15**: herramientas agénticas (el modo *Agent* del chat y [Copilot CLI](#copilot-cli)), revisión crítica del código generado y documentación de su uso.
+- **Semana 15**: [herramientas agénticas](../v-desarrollo-aplicaciones-interactivas/23-herramientas-agenticas-ia.md) (el agente del chat y [Copilot CLI](#copilot-cli)), revisión crítica del código generado y documentación de su uso.
 
 En todas las etapas aplican los mismos lineamientos: el uso se declara en los trabajos, y todo el código que se entregue debe comprenderse y poder explicarse.
 
@@ -105,7 +105,7 @@ En cualquier caso, lea el código antes de aceptarlo y compruébelo ejecutándol
 (copilot-cli)=
 ## Copilot CLI
 
-[GitHub Copilot CLI](https://github.com/features/copilot/cli) es la versión de Copilot para la terminal: un agente que conversa en lenguaje natural, lee y modifica los archivos de la carpeta donde se inicia y ejecuta comandos, sin pasar por el editor. Funciona tanto en la [terminal integrada de VS Code](vscode.md) como en la del sistema operativo. Es una de las herramientas agénticas que el curso incorpora en la semana 15; antes de esa semana no hace falta instalarla.
+[GitHub Copilot CLI](https://github.com/features/copilot/cli) es la versión de Copilot para la terminal: un agente que conversa en lenguaje natural, lee y modifica los archivos de la carpeta donde se inicia y ejecuta comandos, sin pasar por el editor. Funciona tanto en la [terminal integrada de VS Code](vscode.md) como en la del sistema operativo. Es una de las [herramientas agénticas](../v-desarrollo-aplicaciones-interactivas/23-herramientas-agenticas-ia.md) que el curso incorpora en la semana 15; antes de esa semana no hace falta instalarla.
 
 Usa la misma cuenta de GitHub que el chat de VS Code y está incluido en todos los planes, también en Copilot Free y Copilot Student. Cada interacción descuenta créditos de IA de la misma asignación mensual, según el modelo y la cantidad de texto procesado; como un agente lee archivos y encadena varios pasos por instrucción, gasta más que una pregunta en el chat (vea [cómo consultar el consumo](#copilot-consumo)).
 

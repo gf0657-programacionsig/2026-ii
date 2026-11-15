@@ -45,6 +45,7 @@ project:
     - title: "V. Desarrollo de aplicaciones interactivas"
       children:
         - file: contenidos/v-desarrollo-aplicaciones-interactivas/22-streamlit-aplicaciones-web.ipynb
+        - file: contenidos/v-desarrollo-aplicaciones-interactivas/23-herramientas-agenticas-ia.md
     - title: Evaluaciones
       children:
         - file: contenidos/evaluaciones/examen-corto-01.md
