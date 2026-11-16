@@ -46,7 +46,7 @@ Streamlit Community Cloud duerme las aplicaciones sin visitas después de alguno
 
 ### Aplicación web interactiva
 
-A partir de la aplicación de ejemplo del [cuaderno de streamlit](../v-desarrollo-aplicaciones-interactivas/22-streamlit-aplicaciones-web.ipynb) (`apps/07-app-proyecto.py`), desarrolle una aplicación de **una sola página** sobre su tema, con, como mínimo, los siguientes elementos:
+A partir de la aplicación de ejemplo del [cuaderno de streamlit](../v-desarrollo-aplicaciones-interactivas/22-streamlit-aplicaciones-web.ipynb), desarrolle una aplicación de **una sola página** sobre su tema, con, como mínimo, los siguientes elementos:
 
 - **Configuración y encabezado**: `st.set_page_config()` como primera llamada a streamlit, con el título de la pestaña del navegador y la disposición; un título, y un párrafo introductorio que diga de qué trata la aplicación, cuáles datos usa y cómo se usa.
 - **Carga de los datos en caché**: todas las capas y tablas se cargan en funciones decoradas con `@st.cache_data`, desde una **URL** (la de la fuente original, la del repositorio del curso o la de su repositorio, con el botón *Raw* de GitHub) o desde archivos del repositorio con rutas **relativas** a `app.py`. Las capas que van a un mapa se reproyectan a WGS84.
@@ -96,7 +96,7 @@ Cada componente se califica sobre 100 y pesa en la calificación final del curso
 
 Los contenidos evaluados en esta entrega se cubrieron en las siguientes lecciones y cuadernos del sitio del curso:
 
-- [streamlit: aplicaciones web de ciencia de datos](../v-desarrollo-aplicaciones-interactivas/22-streamlit-aplicaciones-web.ipynb): controles, caché, tablas, gráficos, mapas con streamlit-folium, la aplicación de ejemplo del proyecto (`apps/07-app-proyecto.py`), la publicación en Streamlit Community Cloud, la clínica de errores y el prompt para asistentes de IA. Los ejercicios 10 a 12 de ese cuaderno son la primera versión de la aplicación del proyecto.
+- [streamlit: aplicaciones web de ciencia de datos](../v-desarrollo-aplicaciones-interactivas/22-streamlit-aplicaciones-web.ipynb): controles, caché, tablas, gráficos, mapas con streamlit-folium, la aplicación de ejemplo del proyecto, la publicación en Streamlit Community Cloud, la clínica de errores y el prompt para asistentes de IA. Los ejercicios 10 a 12 de ese cuaderno son la primera versión de la aplicación del proyecto.
 - [Herramientas agénticas de inteligencia artificial para programación](../v-desarrollo-aplicaciones-interactivas/23-herramientas-agenticas-ia.md): el flujo de trabajo para delegar tareas a un agente, la revisión del código generado y la declaración de uso de IA que pide el `README.md`.
 - [folium: mapas web interactivos](../iv-procesamiento-datos-geoespaciales/20-folium-mapas-web.ipynb) y [leafmap: análisis geoespacial y mapeo interactivo](../iv-procesamiento-datos-geoespaciales/21-leafmap-mapeo-interactivo.ipynb): el mapa web de la aplicación.
 - [geopandas I](../iv-procesamiento-datos-geoespaciales/17-geopandas-datos-vectoriales.ipynb) y [geopandas II](../iv-procesamiento-datos-geoespaciales/18-geopandas-operaciones-espaciales.ipynb): la carga de las capas y las operaciones espaciales.
