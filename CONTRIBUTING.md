@@ -81,7 +81,7 @@ numerados cuando corresponda, sin la estructura completa de capítulos;
 las lecciones remiten a ellas en lugar de repetir instrucciones.
 
 Las entradas de la sección Evaluaciones (`contenidos/evaluaciones/`,
-archivos `examen-corto-NN.md`, `tarea-NN.md`, `proyecto-final.md`) son
+archivos `examen-corto-NN.md`, `tarea-NN.md`, `proyecto-final*.md`) son
 también un género propio: anuncian cada evaluación con un párrafo
 introductorio (modalidad, valor porcentual y propósito, tomados del
 programa del curso) y las secciones `## Fecha`, `## Temas a evaluar`

@@ -390,7 +390,7 @@ Los ejercicios se agrupan según la sección del capítulo a la que corresponden
     ```
 
 8. Aplique la tabla 2 al diff de su propia tarea del ejercicio 5 (puede verlo de nuevo con `git show`). Anote, para cada pregunta, lo que comprobó y cómo. Si encuentra algo que corregir, corríjalo y confírmelo.
-9. Pida al agente, sin que modifique archivos, que revise su aplicación contra los rubros de calificación de la aplicación del [enunciado del proyecto final](../evaluaciones/proyecto-final.md), pegándolos en la instrucción. Evalúe el informe: ¿cuáles observaciones son correctas?, ¿cuáles no?, ¿qué pasó por alto? Anote dos mejoras que decida hacer y una sugerencia que decida no seguir, con la razón.
+9. Pida al agente, sin que modifique archivos, que revise su aplicación contra los rubros de calificación del [enunciado de la aplicación del proyecto final](../evaluaciones/proyecto-final-aplicacion.md), pegándolos en la instrucción. Evalúe el informe: ¿cuáles observaciones son correctas?, ¿cuáles no?, ¿qué pasó por alto? Anote dos mejoras que decida hacer y una sugerencia que decida no seguir, con la razón.
 
 (ejercicios-riesgos-agentes)=
 ### Riesgos y medidas de seguridad

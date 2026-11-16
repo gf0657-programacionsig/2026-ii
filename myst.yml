@@ -57,6 +57,8 @@ project:
         - file: contenidos/evaluaciones/tarea-02.md
         - file: contenidos/evaluaciones/tarea-03.md
         - file: contenidos/evaluaciones/proyecto-final.md
+        - file: contenidos/evaluaciones/proyecto-final-aplicacion.md
+        - file: contenidos/evaluaciones/proyecto-final-documento.md
     - title: Software
       children:
         - file: contenidos/software/colab.md
