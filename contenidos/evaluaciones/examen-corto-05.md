@@ -4,7 +4,7 @@ El quinto examen corto del curso es una prueba **presencial e individual**, con 
 
 ## Fecha
 
-Lunes 23 de noviembre de 2026, durante la clase (aula 215).
+Martes 24 de noviembre de 2026, durante la clase (aula 215).
 
 ## Temas a evaluar
 
